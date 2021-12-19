@@ -1,0 +1,725 @@
+\[----------------------------------------------------------------------\]
+\[This file includes the following files...\]
+\[Open Interface Hypertext files:\]
+\file "styles.doc"
+\[...End of included files\]
+
+
+\[----------------------------------------------------------------------\]
+\[--Styles Unique to this file--\]
+
+\def_style "MSG" \fg "Color.Green" \bg "Color.Blue" \font "Fonts.Bold10" 
+\[def_style_key "MSG" <Alt>-Q\]
+\def_style "BLK_ITAL" \fg "Color.Magenta" \font "Fonts.Normal11" 
+\[def_style_key "BLK_ITAL" <Alt>-V\]
+\def_style "BLK_BLD_ITAL" \fg "Color.Magenta" \font "Fonts.Bold08" 
+\[def_style_key "BLK_BLD_ITAL" <Alt>-P\]
+\def_style "TEXT" \font "Fonts.Normal10" 
+\def_style "MSG_TEXT" \fg "Color.Blue" \font "Fonts.Bold10" 
+\[def_style_key "MSG_TEXT" <Alt>-M\]
+\def_style "LINK" \fg "Color.ForestGreen" \font "Fonts.Bold10" 
+\[def_style_key "LINK" <Alt>-G\]
+\def_style "BLK_BLD" \font "Fonts.Bold10" 
+\[def_style_key "BLK_BLD" <Alt>-Z\]
+\def_style "New Style - 8" 
+\[----------------------------------------------------------------------\]
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>HXP"
+\0 \{\set_style "bold" Transport Service (HXP) Messages\}\p
+\p
+These messages report diagnostic information and document any abnormal processing in the communication between the InfoSession server and the client workstation.\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgl6>INTHXP010E" INTHXP010E\}\p
+\{\subtopic "<intmsgl6>INTHXP011E" INTHXP011E\}\p
+\{\subtopic "<intmsgl6>INTHXP012E" INTHXP012E\}\p
+\p
+\{\subtopic "<intmsgl6>INTHXP020E" INTHXP020E\}\p
+\{\subtopic "<intmsgl6>INTHXP021E" INTHXP021E\}\p
+\{\subtopic "<intmsgl6>INTHXP022E" INTHXP022E\}\p
+\{\subtopic "<intmsgl6>INTHXP023E" INTHXP023E\}\p
+\p
+\{\subtopic "<intmsgl6>INTHXP050E" INTHXP050E\}\p
+\{\subtopic "<intmsgl6>INTHXP051E" INTHXP051E\}\p
+\{\subtopic "<intmsgl6>INTHXP052E" INTHXP052E\}\p
+\{\subtopic "<intmsgl6>INTHXP053E" INTHXP053E\}\p
+\p
+\{\subtopic "<intmsgl6>INTHXP901I" INTHXP901I\}\p
+\{\subtopic "<intmsgl6>INTHXP902I" INTHXP902I\}\p
+\{\subtopic "<intmsgl6>INTHXP903I" INTHXP903I\}\p
+\{\subtopic "<intmsgl6>INTHXP904I" INTHXP904I\}\p
+\p
+\{\subtopic "<intmsgl6>INTHXP910I" INTHXP910I\}\p
+\{\subtopic "<intmsgl6>INTHXP911I" INTHXP911I\}\p
+\{\subtopic "<intmsgl6>INTHXP912I" INTHXP912I\}                                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP010E"
+\0 \0 \{\set_style "MSG" INTHXP010E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to locate Xport profile: \}\{\set_style "BLK_ITAL" profile\p
+\}\p
+This message is issued when the host transport facility is unable to locate the Xport session profile table entry defining the session characteristics.  The profile name specified in the session setup user data is not define in the profile table.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "BLK_BLD_ITAL" profile \} Name of the profile specified in the session setup user data.\p
+\p
+\{\set_style "MSG_TEXT" Class \} Geninfo\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP011E"
+\0 \0 \{\set_style "MSG" INTHXP011E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to locate Xport header format:\} \{\set_style "BLK_ITAL" format\p
+\}\p
+This message is issued when the host transport facility is unable to locate the request or reply format definitions specified in the session profile table.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "BLK_BLD_ITAL" format \} Name of the request or reply format specified in the Xport profile table.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP012E"
+\0 \0 \{\set_style "MSG" INTHXP012E\}\p
+\p
+\{\set_style "MSG_TEXT" Xport Error: \{\set_style "BLK_ITAL" error code\} msg:\} \{\set_style "BLK_ITAL" message-text\p
+\}\p
+This message is issued when an unexpected error condition occurs in the host transport facility.  The \{\set_style "BLK_BLD_ITAL" error code\} and associated message text describe the reason of the Xport failure.  The \{\set_style "BLK_BLD_ITAL" message-text\} gives a terse description of the reason for the error as follows:\p
+\p
+  \{\set_style "BLK_BLD" Storage allocation Failure\}  Error occurred attempting to allocate storage. Verify that the region size specified in the InfoSession procedure is sufficient for your installations storage requirements.\p
+\p
+ \{\set_style "BLK_BLD"  Filter routine processing error \} Error occurred processing the 3270 data stream in the Xport profile filter routine.  Contact PLATINUM Technical Support.\p
+\p
+ \{\set_style "BLK_BLD"  Unable to locate request method \} Error occurred attempting to locate the request or reply format method.  Contact PLATINUM Technical Support.\p
+\p
+ \{\set_style "BLK_BLD"  Xport header conversion error \} Error occurred converting the Xport header to or from the internal format to profile definition format.  Contact PLATINUM Technical Support.\p
+\p
+  \{\set_style "BLK_BLD" RU send to user process failed \} Attempt to send an inbound request RU message to the associated user process has failed.  Contact PLATINUM Technical Support.\p
+\p
+ \{\set_style "BLK_BLD"  Invalid sequence number received \} Sequence number received in the inbound RU is incorrect.\p
+\p
+\{\set_style "BLK_BLD"   Session request failure \} Error occurred processing a session services request.  An INTVTMnnnS message will accompany this message.\p
+\p
+ \{\set_style "BLK_BLD"  Invalid Xport request received \} Unexpected Xport request was received.  Contact PLATINUM Technical Support.\p
+\p
+ \{\set_style "BLK_BLD"  Protocol segmentation error \} Xport RU was received that violates the protocol defined by the Xport profile.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "BLK_BLD"   Xport profile violation \} Error occurred violating the protocol defined by the Xport profile.  Contact PLATINUM Technical Support.\p
+\p
+  \{\set_style "BLK_BLD" Unable to locate application bloc \} RU that was sent or received specifies an application ID which is no longer valid.  The request is discarded.\p
+\p
+\{\set_style "BLK_BLD"   Logical session not active \} An RU that was sent or received specifies a logical session ID that is no longer valid.  The request is discarded.\p
+\p
+ \{\set_style "BLK_BLD"  Invalid reply method specified for action \} Reply method associated with a specific Xport action request is unsupported.  Contact PLATINUM Technical Support.\p
+\p
+ \{\set_style "BLK_BLD"  Request unit chaining not supported \} Segmented RU was received but the specified Xport profile does not support RU segmentation.  Contact PLATINUM Technical Support.\p
+\p
+ \{\set_style "BLK_BLD"  Xport error encountered \} Unexpected error occurred in the host Xport facility.  error code identifies the type of error which occurred.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP020E"
+\0 \0 \{\set_style "MSG" INTHXP020E\}\p
+\p
+\{\set_style "MSG_TEXT" Xport CPI-C Error:\} \{\set_style "BLK_ITAL" reason-string \}\{\set_style "MSG_TEXT" (\}\{\set_style "BLK_ITAL" retcode\}\{\set_style "MSG_TEXT" ) Function:\} \{\set_style "BLK_ITAL" CPI-C function\p
+\}\p
+A terminating error was encountered while processing the Xport CPI-C (LU6.2) transaction.  \{\set_style "BLK_BLD_ITAL" CPI-C function\}  identifies the function request which encountered an error.  The \{\set_style "BLK_BLD_ITAL" reason-string\}  and \{\set_style "BLK_BLD_ITAL" retcode\}  indicate the reason for the failure.  These return codes are described in the IBM publication:  Systems Application Architecture Common Programming Interface Communications Reference (SC26-4399-06).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP021E"
+\0 \0 \{\set_style "MSG" INTHXP021E\}\p
+\p
+\{\set_style "MSG_TEXT" Xport CPI-C Driver Failure, RC:\} \{\set_style "BLK_ITAL" return code\}\p
+\p
+A terminating error was encountered while processing the Xport CPI-C (LU6.2) transaction. The \{\set_style "BLK_BLD_ITAL" return code\} identifies the reason for the failure.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                   
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP022E"
+\0 \0 \{\set_style "MSG" INTHXP022E\}\p
+\p
+\{\set_style "MSG_TEXT" Xport TCP/IP Error:\} \{\set_style "BLK_ITAL" reason-string\} \{\set_style "MSG_TEXT" (\}\{\set_style "BLK_ITAL" retcode\}\{\set_style "MSG_TEXT" ) FUNCTION:\} \{\set_style "BLK_ITAL" TCP/IP function\p
+\}\p
+A terminating error was encountered in the Xport TCP/IP application driver.  \{\set_style "BLK_BLD_ITAL" TCP/IP function\} identifies the function request which encountered an error.  The \{\set_style "BLK_BLD_ITAL" reason-string\} and \{\set_style "BLK_BLD_ITAL" retcode\} indicate the reason for the failure.  These return codes are described in the IBM publication: IBM TCP/IP for MVS Application Programming Interface Reference (SC31-7187-00).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                   
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP023E"
+\0 \0 \{\set_style "MSG" INTHXP023E\}\p
+\p
+\{\set_style "MSG_TEXT" XPORT TCP/IP Driver Failure, RC:\} \{\set_style "BLK_ITAL" return code \p
+\}\p
+A terminating error was encountered in the Xport TCP/IP application driver.  The \{\set_style "BLK_BLD_ITAL" return code\} identifies the reason for the failure.  Contact PLATINUM technical support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP050E"
+\0 \0 \{\set_style "MSG" INTHXP050E\}\p
+\p
+\{\set_style "MSG_TEXT" Error \}\{\set_style "BLK_ITAL" nn - reason-string\}  \{\set_style "MSG_TEXT" in default Xport userdata options - entry \}\{\set_style "BLK_ITAL" nn\p
+\}\p
+A terminating error was encountered while processing the Xport session startup user data.  The ERROR description includes an error number and a terse reason-string.  Refer to message \{\goto "<intmsgl6>INTHXP053E" INTHXP053E\} for a description of \{\set_style "BLK_BLD_ITAL" reason-string\}.  Entry identifies the default parameter value table entry in error.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP051E"
+\0 \0 \{\set_style "MSG" INTHXP051E\}\p
+\p
+When a Xport session setup user data parameter is found to be in error, this message is issued to highlight the particular parameter token found in error.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP052E"
+\0 \0 \{\set_style "MSG" INTHXP052E\}\p
+\p
+\{\set_style "MSG_TEXT" Userdata parameter(s) rejected - \}\{\set_style "BLK_ITAL" reason-for-rejection\p
+\}\p
+A Xport session setup user data parameter is found invalid.  Message \{\goto "<intmsgl6>INTHXP051E" INTHXP051E\} is often issued prior to this message to highlight the parameter token in error.  Refer to message INTCMD010E for a discussion of the various \{\set_style "BLK_BLD_ITAL" reason-for-rejection\} messages that might be presented.\p
+\p
+\{\set_style "MSG_TEXT" Class \} Geninfo                                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP053E"
+\0 \0 \{\set_style "MSG" INTHXP053E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid value provided for keyword - Reason:\} \{\set_style "BLK_ITAL" reason-for-rejection\}\p
+\p
+A parameter value specified in the Xport session setup user data is invalid.  The keyword identifies the portion of the entry in error.  The \{\set_style "BLK_BLD_ITAL" reason-for-rejection\} string gives a terse description of the reason for error as follows:\p
+\p
+ \{\set_style "BLK_BLD"  keyword ID\}  Keyword is not defined.\p
+\p
+  \{\set_style "BLK_BLD" value size \} Size or length of a value string does not satisfy requirements.\p
+\p
+\{\set_style "BLK_BLD"   data type \} A value string does not conform to the expected data type.  For example, alpha characters were found in a value which is expected to be numeric.\p
+\p
+  \{\set_style "BLK_BLD" definition\}  Improperly defined keyword or value.  Contact PLATINUM Technical Support.\p
+\p
+  \{\set_style "BLK_BLD" unknown\}  Error encountered does not fall under one of the reason-for-rejection previously described.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP901I"
+\0 \0 \{\set_style "MSG" INTHXP901I\p
+\}\p
+\{\set_style "BLK_ITAL" seq-dir-seg \}\{\set_style "MSG_TEXT" Req(\}\{\set_style "BLK_ITAL" req\}\{\set_style "MSG_TEXT" ) Sess(\}\{\set_style "BLK_ITAL" session\}\{\set_style "MSG_TEXT" ) Len(\}\{\set_style "BLK_ITAL" physical, logical, xmit\}\{\set_style "MSG_TEXT" ) Cmp(\}\{\set_style "BLK_ITAL" cmp \}\{\set_style "BLK_ITAL" \{\set_style "MSG_TEXT" )\}\{\set_style "MSG_TEXT" \{\set_style "MSG_TEXT"  \}Id(\}\}\{\set_style "BLK_ITAL" ID\}\{\set_style "MSG_TEXT"  )\p
+\}\p
+This message traces the inbound and outbound Xport request or response packets.\p
+\p
+  \{\set_style "BLK_BLD_ITAL" seq\}  Identifies the Xport packet sequence number.\p
+\p
+  \{\set_style "BLK_BLD_ITAL" dir\}  Identifies the Xport packet direction in relationship to the host server.  \{\set_style "BLK_BLD" IN \}- Inbound packet.  \{\set_style "BLK_BLD" OUT\} - Outbound packet.\p
+\p
+  \{\set_style "BLK_BLD_ITAL" seq\}  Identifies the packet segment.  \{\set_style "BLK_BLD" F\} - First, \{\set_style "BLK_BLD" M \}- Middle, \{\set_style "BLK_BLD" L \}- Last, \{\set_style "BLK_BLD" O\} - Only, \{\set_style "BLK_BLD" N \}- None (header only).\p
+\p
+  \{\set_style "BLK_BLD_ITAL" req\}  Identifies the packet request type.  \{\set_style "BLK_BLD" A \}- Avail, \{\set_style "BLK_BLD" N\} - Newsess, \{\set_style "BLK_BLD" K\} - Killsess, \{\set_style "BLK_BLD" D\} - Drop logical session, \{\set_style "BLK_BLD" C\} - Converse.\p
+\p
+  \{\set_style "BLK_BLD_ITAL" session\}  Identifies the Xport logical session ID associated with the request.\p
+\p
+  \{\set_style "BLK_BLD_ITAL" physical\}  Specifies the physical length of the accumulated chain packet.\p
+\p
+  \{\set_style "BLK_BLD_ITAL" logical\}  Specifies the logical length of the accumulated chain packet in uncompressed format.\p
+\p
+  \{\set_style "BLK_BLD_ITAL" xmit\}  Specifies the transmitted length of the data in the current segment.\p
+\p
+  \{\set_style "BLK_BLD_ITAL" cmp\}  Specifies yes or no if the packet is transmitted in compressed format.\p
+\p
+  \{\set_style "BLK_BLD_ITAL" ID\}  Specifies the accumulated packet identification number.  This ID number can be matched with ID number in the associated \{\goto "<intmsgl6>INTHXP902I" INTHXP902I\} message for the packet data display.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Trace                                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP902I"
+\0 \0 \{\set_style "MSG" INTHXP902I\p
+\}\p
+\{\set_style "BLK_ITAL" direction \}\{\set_style "MSG_TEXT"  Xport Buffer:  Length(\}\{\set_style "BLK_ITAL" len \}\{\set_style "MSG_TEXT" ) Id(\}\{\set_style "BLK_ITAL" ID \}\{\set_style "MSG_TEXT" )\p
+\}\p
+This trace message proceeds the Xport Buffer hex/char packet display described by message \{\goto "<intmsgl6>INTHXP903I" INTHXP903I\}.\p
+\p
+  \{\set_style "BLK_BLD_ITAL" direction\}  Identifies the Xport packet direction in relationship to the host server.  \p
+\p
+      \{\set_style "BLK_BLD" Inbound\}  Inbound packet.  \p
+\p
+      \{\set_style "BLK_BLD" Outbound\}  Outbound packet.\p
+\p
+  \{\set_style "BLK_BLD_ITAL" len\}  Specifies the actual length of the Xport Buffer packet.\p
+\p
+  \{\set_style "BLK_BLD_ITAL" ID\}  Specifies the accumulated packet identification number.  This ID number can be matched with ID number in the associated \{\goto "<intmsgl6>INTHXP901I" INTHXP901I\} message describing the packet header.\p
+\{\set_style "MSG_TEXT" \p
+Class  \}Trace                                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP903I"
+\0 \0 \{\set_style "MSG" INTHXP903I\p
+\}\p
+This trace message accompanies the hexadecimal and character display of the Xport Buffer.  This message is composed of an offset, 1-16 bytes of packet data in hexadecimal format and the associated data in EBCDIC format.  Multiple INTHXP903I messages are issued for the Xport Buffer display up to length specified in the \{\goto "<intmsgl6>INTHXP902I" INTHXP902I\} message.\p
+\p
+\{\set_style "MSG_TEXT" Class \} Trace                                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP904I"
+\0 \0 \{\set_style "MSG" INTHXP904I\}\p
+\p
+\{\set_style "MSG_TEXT" Inbound Request Received:  \}\{\set_style "BLK_ITAL" request method - request type\p
+\}\p
+This trace message describes the method and type of the request received from the Xport client session partner. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Trace                                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP910I"
+\0 \0 \{\set_style "MSG" INTHXP910I\}\p
+\p
+\{\set_style "MSG_TEXT" Xport CPI-C Transaction Start PartnerLuname: \}\{\set_style "BLK_ITAL" luname\}  \{\set_style "MSG_TEXT" Modename: \}\{\set_style "BLK_ITAL" modename\}  \{\set_style "MSG_TEXT" ConvID:\} \{\set_style "BLK_ITAL" convid\}\p
+\p
+This trace message is issued when the Xport LU6.2 transaction is initially started.  This message contains the requesting partner logical unit name, the VTAM mode entry name, and associated session conversation identifier.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Trace                                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP911I"
+\0 \0 \{\set_style "MSG" INTHXP911I\}\p
+\p
+\{\set_style "MSG_TEXT" Xport CPI-C Transaction Ended PartnerLuname:\} \{\set_style "BLK_ITAL" luname \} \{\set_style "MSG_TEXT" Modename:\} \{\set_style "BLK_ITAL" modename\}\{\set_style "MSG_TEXT"  ConvID:\} \{\set_style "BLK_ITAL" convid\}\p
+\p
+This trace message is issued when the Xport LU6.2 transaction is terminating.  This message contains the associated partner logical unit name, the VTAM mode entry name, and session conversation identifier.\p
+\p
+\{\set_style "MSG_TEXT" Class \} Trace                                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTHXP912I"
+\0 \0 \{\set_style "MSG" INTHXP912I\}\p
+\p
+\{\set_style "MSG_TEXT" Xport CPI-C Trace, Func: \}\{\set_style "BLK_ITAL" function \}\{\set_style "MSG_TEXT"  RC:\} \{\set_style "BLK_ITAL" reason-string\}  \{\set_style "MSG_TEXT" (\}\{\set_style "BLK_ITAL" retcode \}\{\set_style "MSG_TEXT" )\p
+\}     \{\set_style "MSG_TEXT" Requested Len: \}   \{\set_style "BLK_ITAL" length       \}\{\set_style "MSG_TEXT" Conv State:  \}            \{\set_style "BLK_ITAL" state\}\p
+    \{\set_style "MSG_TEXT"  Received Len: \}      \{\set_style "BLK_ITAL" length       \}\{\set_style "MSG_TEXT" DataRecv Type: \}    \{\set_style "BLK_ITAL" type\}\p
+\{\set_style "MSG_TEXT"     Send Len:\}              \{\set_style "BLK_ITAL" length        \}\{\set_style "MSG_TEXT" Status Rcv: \}            \{\set_style "BLK_ITAL" status\}\p
+\{\set_style "MSG_TEXT"     Total Rcv Len: \}    \{\set_style "BLK_ITAL" length         \}\{\set_style "MSG_TEXT" ReqToSend: \}       \{\set_style "BLK_ITAL"   rts status\p
+\}\p
+This trace message is issued after each CPI-C function from the Xport LU6.2 transaction.  The trace information displayed in this message describes the completion status and session state information from the CPI-C request.  The \{\set_style "BLK_BLD_ITAL" reason-string\} and \{\set_style "BLK_BLD_ITAL" retcode\} indicate the completion status of the request.  The \{\set_style "BLK_BLD_ITAL" state\}, \{\set_style "BLK_BLD_ITAL" type\}, \{\set_style "BLK_BLD_ITAL" status\}, and \{\set_style "BLK_BLD_ITAL" rts status\} describe the conversation state and received data status.  These return and status codes are described in the IBM publication:  Systems Application Architecture Common Programming Interface Communications Reference (SC26-4399-06).\p
+\p
+\{\set_style "MSG_TEXT" Class \} Trace                                                   
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INF"
+\0 \0 \{\set_style "code" Information Exchange (INF) Messages\}\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgl6>INTINF001I" INTINF001I\}\p
+\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTINF001I"
+\0 \0 \{\set_style "MSG" INTINF001I\}\p
+\p
+\{\set_style "BLK_ITAL" type\} \{\set_style "MSG_TEXT" user started at\} \{\set_style "BLK_ITAL" hh:mm:ss\} \{\set_style "MSG_TEXT" PROCESS:\} \{\set_style "BLK_ITAL" process-name\} \{\set_style "MSG_TEXT" Client\} \{\set_style "MSG_TEXT" Release:\} \{\set_style "BLK_ITAL" release\}  \p
+\p
+This message is issued when a new user connects to the InfoSession host server component.   The user type, time of access and the client software release are specified in this message.  \p
+\p
+\{\set_style "BLK_BLD_ITAL" type\}  One of the following:\p
+\p
+     \{\set_style "BLK_BLD" Workbench\}  Indicates that a new Workbench user has connected to InfoSession.\p
+\p
+     \{\set_style "BLK_BLD" Run-time\}  Indicates that a new run-time user has connected to InfoSession.\p
+\p
+     \{\set_style "BLK_BLD" Helpdesk\}  Indicates that a new Helpdesk user has connected to InfoSession.\p
+\p
+\{\set_style "BLK_BLD_ITAL" process-name\}  Identifies the workunit name associated with the user's access.\p
+\p
+\{\set_style "BLK_BLD_ITAL" release\}  Specifies the release level of the client software accessing the host component.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>JRN"
+\0 \0 \{\set_style "code" Journal (JRN) Messages\}\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgl6>INTJRN001I" INTJRN001I\}\p
+\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTJRN001I"
+\0 \0 \{\set_style "MSG" INTJRN001I\}\p
+\p
+\{\set_style "BLK_ITAL" source  message_text\}\p
+\p
+This message is issued on behalf of a SQLPTISendLogMsg( ) run-time function.  Each message added to the message log packet using the SQLPTIAddLogMsg( ) run-time function is routed to the specified destinations.  Source specifies the originator of the message.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Journal                                       
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>L62"
+\0 \0 \{\set_style "code" Logical Unit 6.2 (L62) Messages\}\p
+\p
+L62 component messages are produced by InfoSession LU6.2 processing routines.\p
+\p
+The following messages are avaiable:\p
+\p
+\{\subtopic "<intmsgl6>INTL62000I" INTL62000I\}\p
+\{\subtopic "<intmsgl6>INTL62001E" INTL62001E\}\p
+\{\subtopic "<intmsgl6>INTL62002I" INTL62002I\}\p
+\{\subtopic "<intmsgl6>INTL62003E" INTL62003E\}\p
+\{\subtopic "<intmsgl6>INTL62004E" INTL62004E\}\p
+\{\subtopic "<intmsgl6>INTL62005E" INTL62005E\}\p
+\p
+\{\subtopic "<intmsgl6>INTL62900E" INTL62900E\}\p
+\{\subtopic "<intmsgl6>INTL62901I" INTL62901I\}\p
+\p
+\{\subtopic "<intmsgl6>INTL62979I" INTL62979I\}\p
+\{\subtopic "<intmsgl6>INTL62980I" INTL62980I\}\p
+\{\subtopic "<intmsgl6>INTL62981I" INTL62981I\}\p
+\{\subtopic "<intmsgl6>INTL62982I" INTL62982I\}\p
+\{\subtopic "<intmsgl6>INTL62983I" INTL62983I\}\p
+\{\subtopic "<intmsgl6>INTL62984I" INTL62984I\}\p
+\{\subtopic "<intmsgl6>INTL62985I" INTL62985I\}\p
+\p
+\{\subtopic "<intmsgl6>INTL62991I" INTL62991I\}\p
+\p
+\{\subtopic "<intmsgl6>INTL62996I" INTL62996I\}\p
+\{\subtopic "<intmsgl6>INTL62997I" INTL62997I\}\p
+\{\subtopic "<intmsgl6>INTL62998I" INTL62998I\}\p
+\{\subtopic "<intmsgl6>INTL62999I" INTL62999I\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62000I"
+\0 \0 \{\set_style "MSG" INTL62000I\}\p
+\p
+\{\set_style "MSG_TEXT" LU62 testing:\}  \{\set_style "BLK_ITAL" message-text\}\p
+\p
+This message is used by InfoSession test transaction programs and should not appear in a production system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" message-text\}   Variable message text created by the test program.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62001E"
+\0 \0 \{\set_style "MSG" INTL62001E\}\p
+\p
+\{\set_style "MSG_TEXT" LU62 isess\} \{\set_style "BLK_ITAL" isess-addr user-token - session-token\} \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-addr\} \{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-addr\} \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" taskname\}\p
+\{\set_style "MSG_TEXT" LU6.2 session rejected from\} \{\set_style "BLK_ITAL" remote-lu\} \{\set_style "MSG_TEXT" to\} \{\set_style "BLK_ITAL" acbname\} \{\set_style "MSG_TEXT" using logmode\} \{\set_style "BLK_ITAL" modename\} \{\set_style "MSG_TEXT" and pool\} \{\set_style "BLK_ITAL" poolname\}\p
+\{\set_style "MSG_TEXT" explanation:\} \{\set_style "MSG_TEXT" InfoSession ACB not compatible\}\p
+\p
+This message is used in some circumstances to log the rejection of an LU6.2 session request from a remote partner.  It is typically issued when an LU6.2 logon is directed to an InfoSession APPLID other than the APPLID that is specifically defined for LU6.2 communication.  It is most likely caused by a workstation InfoSession configuration that is selecting the wrong APPLID for an LU6.2 connection to the InfoSession host component.  Change the workstation configuration to specify the correct InfoSession APPLID.\p
+\p
+\{\set_style "BLK_BLD_ITAL" isess-addr\}  Address of the session control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-token - session-token\}  InfoSession's unique session identifier.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-addr\}  Address of the task control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-addr\}  Address of the process control bloc.\p
+\p
+\{\set_style "BLK_BLD_ITAL" taskname\}  Name of task receiving the request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remote-lu\}  Name of remote LU associated with the request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" acbname\}  Name of InfoSession ACB receiving the request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" modename\}  Name of session parameters mode being used.\p
+\p
+\{\set_style "BLK_BLD_ITAL" poolname\}  Name of pool associated with the InfoSession ACB.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62002I"
+\0 \0 \{\set_style "MSG" INTL62002I\}\p
+\p
+\{\set_style "MSG_TEXT" LU62 CNOS:\}  \{\set_style "BLK_ITAL" message-text\}\p
+\p
+This message is used by InfoSession to log the progress of a Change Number Of Sessions (CNOS) transaction program that is executing.  The CNOS transactions are primarily used to activate and deactivate modenames for use by transaction programs.\p
+\p
+\{\set_style "BLK_BLD_ITAL" message-text\}  Variable message text created by the CNOS transaction program.  Each message text is documented separately below:\p
+\p
+   \{\set_style "BLK_BLD" Target start:  ID=convid, PARTNER=partner_luname, MODE=modename\}   Remote LU6.2 partner has initiated a CNOS transaction at this InfoSession for the specified modename.\p
+\p
+   \{\set_style "BLK_BLD" Source start:  ID=convid, PARTNER=partner_luname, MODE=modename\}   InfoSession has initiated a CNOS transaction at a remote partner for the specified modename.\p
+\p
+   \{\set_style "BLK_BLD" Request (received): CNOS-variable\}   InfoSession is the target and has received a CNOS request from the partner.\p
+\p
+   \{\set_style "BLK_BLD" Request (sent): CNOS-variable\}   InfoSession is the source and has sent a CNOS request to the partner.\p
+\p
+   \{\set_style "BLK_BLD" Reply (received): CNOS-variable\}   InfoSession is the source and has received a CNOS reply from the partner.\p
+\p
+   \{\set_style "BLK_BLD" Reply (sent): CNOS-variable\}   InfoSession is the target and has sent a CNOS reply to the partner.\p
+\p
+   \{\set_style "BLK_BLD" Negotiation has completed normally\}   CNOS exchange is complete and the request/reply was valid.  InfoSession will asynchronously perform any session change activity that it is responsible for as a result of the CNOS exchange.\p
+\p
+   \{\set_style "BLK_BLD" Negotiation has completed abnormally\}   CNOS exchange has been aborted.  The reason for the failure is documented in a CNOS message that precedes this message in the logfile.  InfoSession will attempt to deallocate-abend the conversation.\p
+\p
+   \{\set_style "BLK_BLD" Unexpected convtype\}   Partner did not specify a basic conversation.  InfoSession will end the negotiation abnormally.\p
+\p
+   \{\set_style "BLK_BLD" Unexpected synclevel\}   Partner did not specify a synclevel(none) for the conversation.  InfoSession will end the negotiation abnormally.\p
+\p
+   \{\set_style "BLK_BLD" Complete data expected\}   Partner sent an unrecognizable CNOS variable.  InfoSession will end the negotiation abnormally.\p
+\p
+   \{\set_style "BLK_BLD" Send state expected\}   Partner violated the protocols for the CNOS exchange.  InfoSession will end the negotiation abnormally.\p
+\p
+   \{\set_style "BLK_BLD" Unexpected cnos request length\}   Partner sent an unrecognizable CNOS variable.  InfoSession will end the negotiation abnormally.\p
+\p
+   \{\set_style "BLK_BLD" Unexpected rc from xcpcv\}   Return code from the Process CNOS Variable function indicates an error in the request/reply CNOS variable that was sent by the partner.  InfoSession will end the negotiation abnormally.\p
+\p
+   \{\set_style "BLK_BLD" Unexpected parm\}   Parm field used to initiate a CNOS exchange from this InfoSession was invalid.  This indicates an internal processing error within InfoSession.  The CNOS transaction program will terminate without attempting negotiation.\p
+\p
+   \{\set_style "BLK_BLD" Unexpected rc from rcv\}   Actual return code from a CPIC CMRCV call was not the expected return code.  The actual return code is documented by a preceding CNOS message.  InfoSession will end the negotiation abnormally.\p
+\p
+   \{\set_style "BLK_BLD" Incomplete data expected\}   Partner sent an unrecognizable CNOS variable.  InfoSession will end the negotiation abnormally.\p
+\p
+   \{\set_style "BLK_BLD" Unexpected status rcv'd\}   Partner violated the protocols for the CNOS exchange.  InfoSession will end the negotiation abnormally.\p
+\p
+   \{\set_style "BLK_BLD" Unexpected length rcv'd\}   Partner sent an unrecognizable CNOS variable.  InfoSession will end the negotiation abnormally.\p
+\p
+   \{\set_style "BLK_BLD" Unexpected cnos reply length\}   Partner sent an unrecognizable CNOS reply variable.  InfoSession will end the negotiation abnormally.\p
+\p
+   \{\set_style "BLK_BLD" Deallocation expected\}   Partner violated the protocols for the CNOS exchange.  InfoSession will end the negotiation abnormally.\p
+\p
+   \{\set_style "BLK_BLD" Complete data expected\}   Partner sent an unrecognizable CNOS reply variable.  InfoSession will end the negotiation abnormally.\p
+\p
+   \{\set_style "BLK_BLD" Return code from cpic-function: value\}    CPIC function has returned an unexpected value.  InfoSession will end the negotiation abnormally.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62003E"
+\0 \0 \{\set_style "MSG" INTL62003E\}\p
+\p
+\{\set_style "MSG_TEXT" LU62 error log data sent/received\p
+isess\} \{\set_style "BLK_ITAL" isess-addr user-token - session-token\} \{\set_style "MSG_TEXT" plu\} \{\set_style "BLK_ITAL" primary_lu\}  \{\set_style "MSG_TEXT" slu\} \{\set_style "BLK_ITAL" secondary_lu\}\p
+\p
+This message is used to log an LU6.2 error log GDS (Generalized Data Stream) variable that has been sent or received.  An error log GDS variable is optionally used to provide additional information regarding an error detected by the LU (for example, the inability to initiate a transaction program because the security information was insufficient or incorrect) or an error detected by the transaction program (for example, an unknown employee ID).  The error log GDS variable follows an LU6.2 FMH-7 (Function Management Header) and contains a maximum of 512 bytes of error log data.  This message is followed by as many occurrences of message \{\goto "<intmsgl6>INTL62004E" INTL62004E\} as are required to display the 512 bytes of error log data.\p
+\p
+\{\set_style "BLK_BLD_ITAL" isess-addr\}  Address of the session control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-token - session-token\}   InfoSession's unique session identifier.\p
+\p
+\{\set_style "BLK_BLD_ITAL" primary_lu\}  Luname of the primary LU session partner.\p
+\p
+\{\set_style "BLK_BLD_ITAL" secondary_lu\}  Luname of the secondary LU session partner.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62004E"
+\0 \0 \{\set_style "MSG" INTL62004E\}\p
+\p
+\{\set_style "MSG_TEXT" +\}\{\set_style "BLK_ITAL" offset: xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx cccccccccccccccc\}\p
+\p
+This message follows message \{\goto "<intmsgl6>INTL62003E" INTL62003E\} and is used to record the actual error log data received in the error log GDS (Generalized Data Stream) variable.\p
+\p
+\{\set_style "BLK_BLD_ITAL" offset\}  Offset (from zero) into the error log GDS variable at which the following data was located.\p
+\p
+\{\set_style "BLK_BLD_ITAL" xxxxxxxx\}  Four bytes of error log data displayed in hexadecimal format.\p
+\p
+\{\set_style "BLK_BLD_ITAL" cccccccccccccccc\}  EBCDIC character representation of the error log data.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62005E"
+\0 \0 \{\set_style "MSG" INTL62005E\}\p
+\p
+\{\set_style "MSG_TEXT" +\}\{\set_style "BLK_ITAL" offset1\}\{\set_style "MSG_TEXT" -\}\{\set_style "BLK_ITAL" offset2\}\{\set_style "MSG_TEXT" : all zero\}\p
+\p
+The message is used in conjunction with message \{\goto "<intmsgl6>INTL62004E" INTL62004E\} to record segments of error log data that contain all zeros.\p
+\p
+\{\set_style "BLK_BLD_ITAL" offset1\}  Relative offset into the storage area of the beginning of the all zeros data.\p
+\p
+\{\set_style "BLK_BLD_ITAL" offset2\}  Relative offset into the storage area of the end of the all zeros data.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62900E"
+\0 \0 \{\set_style "MSG" INTL62900E\}\p
+\p
+\{\set_style "MSG_TEXT" LU62 error:\}  \{\set_style "BLK_ITAL" message-text\}\p
+\p
+This message is used by InfoSession test transaction programs and should not appear in a production system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" message-text\}   Variable message text created by the test program.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62901I"
+\0 \0 \{\set_style "MSG" INTL62901I\}\p
+\p
+\{\set_style "MSG_TEXT" LU62 testing:\}  \{\set_style "BLK_ITAL" message-text\}\p
+\p
+This message is used by InfoSession test transaction programs and should not appear in a production system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" message-text\}   Variable message text created by the test program.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62979I"
+\0 \0 \{\set_style "MSG" INTL62979I\}\p
+\p
+\{\set_style "MSG_TEXT" LU62\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" request ignored, session\} \{\set_style "BLK_ITAL" user-token - session-token\} \{\set_style "MSG_TEXT" gone\}\p
+\p
+This message is used to log an LU6.2 exception that has occurred.  A protocol function was not completed because the associated session has ended.  Normal session cleanup processing will continue for the session.  No action is required.\p
+\p
+\{\set_style "BLK_BLD_ITAL" request-name\}  Protocol function that was not completed.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-token - session-token\}  InfoSession's unique session identifier.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62980I"
+\0 \0 \{\set_style "MSG" INTL62980I\}\p
+\p
+\{\set_style "MSG_TEXT" LU62 splist\} \{\set_style "BLK_ITAL" splist-addr\} \{\set_style "MSG_TEXT" trace:\} \{\set_style "BLK_ITAL" trace-ID\}\p
+\p
+This diagnostic message is issued to log LU6.2 session activity when message class Vtamtrace has been activated for gathering problem determination data.  The header line documented here is followed by several lines of diagnostic data.  Messages \{\goto "<intmsgl6>INTL62981I" INTL62981I\}, \{\goto "<intmsgl6>INTL62982I" INTL62982I\}, \{\goto "<intmsgl6>INTL62983I" INTL62983I\}, and \{\goto "<intmsgl6>INTL62984I" INTL62984I\} follow this message to complete the logging of diagnostic data for a single trace point.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62981I"
+\0 \0 \{\set_style "MSG" INTL62981I\}\p
+\p
+\{\set_style "MSG_TEXT" rcb\} \{\set_style "BLK_ITAL" rcb-addr\} \{\set_style "MSG_TEXT" ship-splist\} \{\set_style "BLK_ITAL" splist-addr\} \{\set_style "MSG_TEXT" receive-splist\} \{\set_style "BLK_ITAL" splist addr\}\p
+\p
+This diagnostic message is issued to log LU6.2 session activity when message class Vtamtrace has been activated for gathering problem determination data.  The header line documented here is followed by several lines of diagnostic data.  Message \{\goto "<intmsgl6>INTL62980I" INTL62980I\} precedes and messages \{\goto "<intmsgl6>INTL62982I" INTL62982I\}, \{\goto "<intmsgl6>INTL62983I" INTL62983I\}, and \{\goto "<intmsgl6>INTL62984I" INTL62984I\} follow this message to complete the logging of diagnostic data for a single trace point.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62982I"
+\0 \0 \{\set_style "MSG" INTL62982I\}\p
+\p
+\{\set_style "MSG_TEXT" Fsm-sc\} \{\set_style "BLK_ITAL" xxxx\} \{\set_style "MSG_TEXT" fsm-rc\} \{\set_style "BLK_ITAL" xxxx\} \{\set_style "MSG_TEXT" fsm-br\} \{\set_style "BLK_ITAL" xxxx\} \{\set_style "MSG_TEXT" fsm-cd\} \{\set_style "BLK_ITAL" xxxx\}\p
+\p
+This diagnostic message is issued to log LU6.2 session activity when message class Vtamtrace has been activated for gathering problem determination data.  Messages \{\goto "<intmsgl6>INTL62980I" INTL62980I\} and \{\goto "<intmsgl6>INTL62981I" INTL62981I\} precede and messages \{\goto "<intmsgl6>INTL62983I" INTL62983I\} and \{\goto "<intmsgl6>INTL62984I" INTL62984I\} follow this message to complete the logging of diagnostic data for a single trace point.  This message completes the logging of diagnostic data when additional data (that is, messages \{\goto "<intmsgl6>INTL62983I" INTL62983I\} and \{\goto "<intmsgl6>INTL62984I" INTL62984I\}) is not present.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62983I"
+\0 \0 \{\set_style "MSG" INTL62983I\}\p
+\p
+\{\set_style "MSG_TEXT" Additional diagnostic data: address\} \{\set_style "BLK_ITAL" addr\} \{\set_style "MSG_TEXT" length\} \{\set_style "BLK_ITAL" xxxxxxxx\}\p
+\p
+This diagnostic message is issued to log LU6.2 session activity when message class Vtamtrace has been activated for gathering problem determination data.  Messages \{\goto "<intmsgl6>INTL62980I" INTL62980I\}, \{\goto "<intmsgl6>INTL62981I" INTL62981I\}, and \{\goto "<intmsgl6>INTL62982I" INTL62982I\} precede and message \{\goto "<intmsgl6>INTL62984I" INTL62984I\} follows this message to complete the logging of diagnostic data for a single trace point.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62984I"
+\0 \0 \{\set_style "MSG" INTL62984I\}\p
+\p
+\{\set_style "MSG_TEXT" +\}\{\set_style "BLK_ITAL" offset: xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx cccccccccccccccc\}\p
+\p
+This diagnostic message is issued to log LU6.2 session activity when message class Vtamtrace has been activated for gathering problem determination data.  Messages \{\goto "<intmsgl6>INTL62980I" INTL62980I\}, \{\goto "<intmsgl6>INTL62981I" INTL62981I\}, \{\goto "<intmsgl6>INTL62982I" INTL62982I\}, and \{\goto "<intmsgl6>INTL62983I" INTL62983I\} precede this message.  This message completes the logging of diagnostic data for a single trace point when additional data (that is, messages \{\goto "<intmsgl6>INTL62983I" INTL62983I\} and \{\goto "<intmsgl6>INTL62984I" INTL62984I\}) is present.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62985I"
+\0 \0 \{\set_style "MSG" INTL62985I\}\p
+\p
+\{\set_style "MSG_TEXT" +\}\{\set_style "BLK_ITAL" offset1\}\{\set_style "MSG_TEXT" -\}\{\set_style "BLK_ITAL" offset2\}\{\set_style "MSG_TEXT" : all zero\}\p
+\p
+The diagnostic message is used in conjunction with message \{\goto "<intmsgl6>INTL62984I" INTL62984I\} to record segments of additional  data that contain all zeros.\p
+\p
+\{\set_style "BLK_BLD_ITAL" offset1\}  Relative offset into the storage area of the beginning of the all zeros data.\p
+\p
+\{\set_style "BLK_BLD_ITAL" offset2\}  Relative offset into the storage area of the end of the all zeros data.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62991I"
+\0 \0 \{\set_style "MSG" INTL62991I\}\p
+\p
+\{\set_style "MSG_TEXT" LU62 conv end - tkb:\}  \{\set_style "BLK_ITAL" tkb-addr\} \{\set_style "MSG_TEXT" rcb:\} \{\set_style "BLK_ITAL" rcb-addr\}  \{\set_style "MSG_TEXT" session\} \{\set_style "BLK_ITAL" session-token\}\p
+   \{\set_style "MSG_TEXT" task:\} \{\set_style "BLK_ITAL" taskname/task-addr\} \{\set_style "MSG_TEXT" proc:\} \{\set_style "BLK_ITAL" procname/proc-addr\}\p
+   \{\set_style "MSG_TEXT" convid:\} \{\set_style "BLK_ITAL" convid\}  \{\set_style "MSG_TEXT" tpn:\} \{\set_style "BLK_ITAL" tpname\}\p
+\p
+This message is used to log the end of a conversation instance.  A conversation instance is ended explicitly when an LU6.2 deallocate operation is completed.  A conversation instance can be ended implicitly if a transaction program ends before the conversation has been deallocated.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tkb-addr\}  Address of the transaction program block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" rcb-addr\}  Address of the conversation control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" session-token\}  InfoSession's unique session identifier.\p
+\p
+\{\set_style "BLK_BLD_ITAL" taskname\}  Name of the task.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-addr\}  Address of the task control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" procname\}  Name of the process.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-addr\}  Address of the process control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" convid\}  CPIC conversation-ID.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tpname\}  Name of the transaction program executing at the InfoSession's LU.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62996I"
+\0 \0 \{\set_style "MSG" INTL62996I\}\p
+\p
+\{\set_style "MSG_TEXT" LU62 request posting failed epb:\}  \{\set_style "BLK_ITAL" epb-address\}  \{\set_style "MSG_TEXT" work unit token:\} \{\set_style "BLK_ITAL" wu-token\} \{\set_style "MSG_TEXT" post code:\}  \{\set_style "BLK_ITAL" value\}\p
+\p
+This message is used to log the occurrence of a post operation that could not be completed.  This commonly occurs when a transaction program unexpectedly ends while a CPIC operation is in progress for the transaction program.\p
+\p
+\{\set_style "BLK_BLD_ITAL" epb-addr\}  Address of the event block for which posting was attempted.\p
+\p
+\{\set_style "BLK_BLD_ITAL" wu-token\}  Token of the work unit that owned the request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" value\}  Post code that would have been issued.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62997I"
+\0 \0 \{\set_style "MSG" INTL62997I\}\p
+\p
+\{\set_style "MSG_TEXT" LU62 conv start - tkb:\}  \{\set_style "BLK_ITAL" tkb-addr\} \{\set_style "MSG_TEXT" rcb:\} \{\set_style "BLK_ITAL" rcb-addr\}  \p
+\{\set_style "MSG_TEXT" task:\} \{\set_style "BLK_ITAL" task-name/task-addr\} \{\set_style "MSG_TEXT" proc:\} \{\set_style "BLK_ITAL" proc-name/proc-addr\} \{\set_style "MSG_TEXT" convid:\} \{\set_style "BLK_ITAL" convid\}\{\set_style "MSG_TEXT"  tpn:\} \{\set_style "BLK_ITAL" tpname\}\p
+\p
+This message is used to log the creation of a conversation instance.  The conversation might have been created explicitly by a transaction program that has issued a CMINIT call or the conversation might have been created implicitly by the LU6.2 component in response to the receipt of a transaction program request (that is, an LU6.2 FMH-5) from a remote system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tkb-addr\}  Address of the transaction program block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" rcb-addr\}  Address of the conversation control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-name\}  Name of the task.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-addr\}  Address of the task control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-name\}  Name of the process.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-addr\}  Address of the process control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" convid\}  CPIC conversation-ID.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tpname\}  Name of the transaction program executing at the InfoSession's LU.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62998I"
+\0 \0 \{\set_style "MSG" INTL62998I\}\p
+\p
+\{\set_style "MSG_TEXT" LU62 tpn end - tkb:\}  \{\set_style "BLK_ITAL" tkb-addr\} \{\set_style "MSG_TEXT" task:\} \{\set_style "BLK_ITAL" taskname/task-addr\} \{\set_style "MSG_TEXT" proc:\} \{\set_style "BLK_ITAL" procname/proc-addr\} \{\set_style "MSG_TEXT" tpn:\} \{\set_style "BLK_ITAL" tpname\}\p
+\p
+This message is used to log the end of a transaction program instance.  The transaction program instance is ended when the associated InfoSession process terminates.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tkb-addr\}   Address of the transaction program block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" taskname\}   Name of the task.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-addr\}   Address of the task control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" procname\}   Name of the process.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-addr\}   Address of the process control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tpname\}   Name of the transaction program executing at the InfoSession's LU.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgl6>INTL62999I"
+\0 \0 \{\set_style "MSG" INTL62999I\}\p
+\p
+\{\set_style "MSG_TEXT" LU62 tpn start - tkb:\}  \{\set_style "BLK_ITAL" tkb-addr\}  \{\set_style "MSG_TEXT" task:\} \{\set_style "BLK_ITAL" taskname/task-addr\} \{\set_style "MSG_TEXT" proc:\} \{\set_style "BLK_ITAL" procname/proc-addr\}  \{\set_style "MSG_TEXT" tpn:\} \{\set_style "BLK_ITAL" tpname\}\p
+\p
+This message is used to log the creation of a transaction program instance.  The transaction program might have been started locally (for example, a CNOS transaction program started in response to a TPLIMITS RESET command) or the transaction program might have been started by the LU6.2 component in response to the receipt of a transaction program request (that is, an LU6.2 FMH-5) from a remote system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tkb-addr\}  Address of the transaction program block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" taskname\}  Name of the task.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-addr\}  Address of the task control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" procname\}  Name of the process.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-addr\}  Address of the process control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tpname\}  Name of the transaction program executing at the InfoSession's LU.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                     

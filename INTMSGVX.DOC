@@ -1,0 +1,1877 @@
+\[----------------------------------------------------------------------\]
+\[This file includes the following files...\]
+\[Open Interface Hypertext files:\]
+\file "styles.doc"
+\[...End of included files\]
+
+
+\[----------------------------------------------------------------------\]
+\[--Styles Unique to this file--\]
+
+\def_style "MSG" \fg "Color.Green" \bg "Color.Blue" \font "Fonts.Bold10" 
+\[def_style_key "MSG" <Alt>-Q\]
+\def_style "BLK_ITAL" \fg "Color.Magenta" \font "Fonts.Normal11" 
+\[def_style_key "BLK_ITAL" <Alt>-V\]
+\def_style "BLK_BLD_ITAL" \fg "Color.Magenta" \font "Fonts.Bold08" 
+\[def_style_key "BLK_BLD_ITAL" <Alt>-P\]
+\def_style "TEXT" \font "Fonts.Normal10" 
+\def_style "MSG_TEXT" \fg "Color.Blue" \font "Fonts.Bold10" 
+\[def_style_key "MSG_TEXT" <Alt>-M\]
+\def_style "LINK" \fg "Color.ForestGreen" \font "Fonts.Bold10" 
+\[def_style_key "LINK" <Alt>-G\]
+\def_style "BLK_BLD" \font "Fonts.Bold10" 
+\[def_style_key "BLK_BLD" <Alt>-Z\]
+\def_style "New Style - 8" 
+\[----------------------------------------------------------------------\]
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>VSE"
+\0 \0 \{\set_style "code" Virtual Session Management (VSE) Messages\}\p
+\p
+These messages describe the interaction between the InfoSession emulator and the Recording component and are issued by the InfoSession emulator.\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgvx>INTVSE001E" INTVSE001E\}\p
+\{\subtopic "<intmsgvx>INTVSE002E" INTVSE002E\}\p
+\{\subtopic "<intmsgvx>INTVSE003E" INTVSE003E\}\p
+\{\subtopic "<intmsgvx>INTVSE004E" INTVSE004E\}\p
+\{\subtopic "<intmsgvx>INTVSE005E" INTVSE005E\}\p
+\{\subtopic "<intmsgvx>INTVSE006E" INTVSE006E\}\p
+\{\subtopic "<intmsgvx>INTVSE007E" INTVSE007E\}\p
+\p
+\{\subtopic "<intmsgvx>INTVSE010E" INTVSE010E\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVSE001E"
+\0 \0 \{\set_style "MSG" INTVSE001E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to complete\} \{\set_style "BLK_ITAL" applname\} \{\set_style "MSG_TEXT" request for application - RC:\} \{\set_style "BLK_ITAL" retcode\} \p
+\p
+This message is issued whenever a session management request such as session start or session stop does not complete.  Additional INTVSE messages document the nature of the error.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVSE002E"
+\0 \0 \{\set_style "MSG" INTVSE002E\}\p
+\p
+\{\set_style "MSG_TEXT" Session has terminated unexpectedly\}\p
+\p
+A session management request was received but the session it refers to is no longer active.  Consult the product log for session management error entries.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVSE003E"
+\0 \0 \{\set_style "MSG" INTVSE003E\}\p
+\p
+\{\set_style "MSG_TEXT" SLU driver initialization failed - RC:\} \{\set_style "BLK_ITAL" retcode\}\p
+\p
+A session start request was received but the session driver encountered a terminating error.  Search the log for recently issued INTVTM messages to further identify the cause of the error.  The \{\set_style "BLK_BLD_ITAL" retcode\} provided in this message can be used by PLATINUM Technical Support to diagnose the error.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVSE004E"
+\0 \0 \{\set_style "MSG" INTVSE004E\}\p
+\p
+\{\set_style "MSG_TEXT" Application is not defined\}\p
+\p
+A session start request was received by the application it named is not defined.  The Workbench Configure facility can be used to correct the application name list.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVSE005E"
+\0 \0 \{\set_style "MSG" INTVSE005E\}\p
+\p
+\{\set_style "MSG_TEXT" Session already active\}\p
+\p
+The remote process attempted to establish a session over a communication channel (logical session) already allocated to another session.  Ensure that the remote process is running a compatible version of the product software.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVSE006E"
+\0 \0 \{\set_style "MSG" INTVSE006E\}\p
+\p
+\{\set_style "MSG_TEXT" A session recording is active\}\p
+\p
+A session stop request was received but a session recording is active.  Terminate the recording and then reissue the session stop request.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVSE007E"
+\0 \0 \{\set_style "MSG" INTVSE007E\}\p
+\p
+\{\set_style "MSG_TEXT" Unsupported LOGMODE, LU2 connection required\}\p
+\p
+A session start was requested but the Logmode selected explicitly or by default does not specify an LU2 bind.  The Workbench Configure facility can be used to correct the application Logmode.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVSE010E"
+\0 \0 \{\set_style "MSG" INTVSE010E\}\p
+\p
+\{\set_style "MSG_TEXT" Unanticipated request error  RC:\} \{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\} \{\set_style "MSG_TEXT" INFO:\} \{\set_style "BLK_ITAL" infocode\}\p
+\p
+A session stop was requested, but the session driver produced an unanticipated error status.  In most cases, session termination will be performed.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>VTM"
+\0 \0 \{\set_style "code" VTAM Services (VTM) Messages\}\p
+\p
+These messages give the status of the VTAM component and the VTAM session services and are issued by the VTAM session services.  These messages report on the workstation's access to InfoSession and InfoSession's access to your legacy applications.\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgvx>INTVTM001I" INTVTM001I\}\p
+\{\subtopic "<intmsgvx>INTVTM002I" INTVTM002I\}\p
+\{\subtopic "<intmsgvx>INTVTM003I" INTVTM003I\}\p
+\{\subtopic "<intmsgvx>INTVTM004I" INTVTM004I\}\p
+\{\subtopic "<intmsgvx>INTVTM005E" INTVTM005E\}\p
+\{\subtopic "<intmsgvx>INTVTM006I" INTVTM006I\}\p
+\{\subtopic "<intmsgvx>INTVTM007I" INTVTM007I\}\p
+\{\subtopic "<intmsgvx>INTVTM008I" INTVTM008I\}\p
+\{\subtopic "<intmsgvx>INTVTM009I" INTVTM009I\}\p
+\{\subtopic "<intmsgvx>INTVTM010I" INTVTM010I\}\p
+\{\subtopic "<intmsgvx>INTVTM011E" INTVTM011E\}\p
+\{\subtopic "<intmsgvx>INTVTM012I" INTVTM012I\}\p
+\{\subtopic "<intmsgvx>INTVTM013E" INTVTM013E\}\p
+\{\subtopic "<intmsgvx>INTVTM014I" INTVTM014I\}\p
+\{\subtopic "<intmsgvx>INTVTM015I" INTVTM015I\}\p
+\{\subtopic "<intmsgvx>INTVTM016I" INTVTM016I\}\p
+\{\subtopic "<intmsgvx>INTVTM017I" INTVTM017I\}\p
+\{\subtopic "<intmsgvx>INTVTM018I" INTVTM018I\}\p
+\{\subtopic "<intmsgvx>INTVTM019I" INTVTM019I\}\p
+\{\subtopic "<intmsgvx>INTVTM020E" INTVTM020E\}\p
+\p
+\{\subtopic "<intmsgvx>INTVTM022I" INTVTM022I\}\p
+\{\subtopic "<intmsgvx>INTVTM023E" INTVTM023E\}\p
+\{\subtopic "<intmsgvx>INTVTM024E" INTVTM024E\}\p
+\{\subtopic "<intmsgvx>INTVTM025E" INTVTM025E\}\p
+\{\subtopic "<intmsgvx>INTVTM026E" INTVTM026E\}\p
+\{\subtopic "<intmsgvx>INTVTM027E" INTVTM027E\}\p
+\{\subtopic "<intmsgvx>INTVTM028E" INTVTM028E\}\p
+\p
+\{\subtopic "<intmsgvx>INTVTM100E" INTVTM100E\}\p
+\{\subtopic "<intmsgvx>INTVTM101E" INTVTM101E\}\p
+\p
+\{\subtopic "<intmsgvx>INTVTM112E" INTVTM112E\}\p
+\p
+\{\subtopic "<intmsgvx>INTVTM116E" INTVTM116E\}\p
+\p
+\{\subtopic "<intmsgvx>INTVTM120E" INTVTM120E\}\p
+\p
+\{\subtopic "<intmsgvx>INTVTM124E" INTVTM124E\}\p
+\p
+\{\subtopic "<intmsgvx>INTVTM132E" INTVTM132E\}\p
+\p
+\{\subtopic "<intmsgvx>INTVTM150E" INTVTM150E\}\p
+\{\subtopic "<intmsgvx>INTVTM151E" INTVTM151E\}\p
+\{\subtopic "<intmsgvx>INTVTM152E" INTVTM152E\}\p
+\{\subtopic "<intmsgvx>INTVTM153E" INTVTM153E\}\p
+\p
+\{\subtopic "<intmsgvx>INTVTM161E" INTVTM161E\}\p
+\{\subtopic "<intmsgvx>INTVTM162E" INTVTM162E\}\p
+\{\subtopic "<intmsgvx>INTVTM163E" INTVTM163E\}\p
+\{\subtopic "<intmsgvx>INTVTM164E" INTVTM164E\}\p
+\{\subtopic "<intmsgvx>INTVTM165E" INTVTM165E\}\p
+\{\subtopic "<intmsgvx>INTVTM166E" INTVTM166E\}\p
+\p
+\{\subtopic "<intmsgvx>INTVTM171E" INTVTM171E\}\p
+\{\subtopic "<intmsgvx>INTVTM172E" INTVTM172E\}\p
+\{\subtopic "<intmsgvx>INTVTM173E" INTVTM173E\}\p
+\{\subtopic "<intmsgvx>INTVTM174E" INTVTM174E\}\p
+\{\subtopic "<intmsgvx>INTVTM175E" INTVTM175E\}\p
+\{\subtopic "<intmsgvx>INTVTM176E" INTVTM176E\}\p
+\p
+\{\subtopic "<intmsgvx>INTVTM900I" INTVTM900I\}\p
+\{\subtopic "<intmsgvx>INTVTM901I" INTVTM901I\}\p
+\{\subtopic "<intmsgvx>INTVTM902I" INTVTM902I\}\p
+\p
+\{\subtopic "<intmsgvx>INTVTM962E" INTVTM962E\}\p
+\{\subtopic "<intmsgvx>INTVTM963E" INTVTM963E\}\p
+\{\subtopic "<intmsgvx>INTVTM964E" INTVTM964E\}\p
+\{\subtopic "<intmsgvx>INTVTM965E" INTVTM965E\}\p
+\{\subtopic "<intmsgvx>INTVTM966E" INTVTM966E\}\p
+\{\subtopic "<intmsgvx>INTVTM967E" INTVTM967E\}\p
+\{\subtopic "<intmsgvx>INTVTM968E" INTVTM968E\}\p
+\{\subtopic "<intmsgvx>INTVTM969E" INTVTM969E\}\p
+\{\subtopic "<intmsgvx>INTVTM970E" INTVTM970E\}\p
+\{\subtopic "<intmsgvx>INTVTM971E" INTVTM971E\}\p
+\{\subtopic "<intmsgvx>INTVTM972E" INTVTM972E\}\p
+\{\subtopic "<intmsgvx>INTVTM973E" INTVTM973E\}\p
+\{\subtopic "<intmsgvx>INTVTM974E" INTVTM974E\}\p
+\{\subtopic "<intmsgvx>INTVTM975E" INTVTM975E\}\p
+\{\subtopic "<intmsgvx>INTVTM976E" INTVTM976E\}\p
+\{\subtopic "<intmsgvx>INTVTM977E" INTVTM977E\}\p
+\{\subtopic "<intmsgvx>INTVTM978I" INTVTM978I\}\p
+\{\subtopic "<intmsgvx>INTVTM979I" INTVTM979I\}\p
+\{\subtopic "<intmsgvx>INTVTM980I" INTVTM980I\}\p
+\{\subtopic "<intmsgvx>INTVTM981E" INTVTM981E\}\p
+\{\subtopic "<intmsgvx>INTVTM982I" INTVTM982I\}\p
+\{\subtopic "<intmsgvx>INTVTM983I" INTVTM983I\}\p
+\{\subtopic "<intmsgvx>INTVTM984I" INTVTM984I\}\p
+\{\subtopic "<intmsgvx>INTVTM985I" INTVTM985I\}\p
+\{\subtopic "<intmsgvx>INTVTM986I" INTVTM986I\}\p
+\{\subtopic "<intmsgvx>INTVTM987I" INTVTM987I\}\p
+\{\subtopic "<intmsgvx>INTVTM988I" INTVTM988I\}\p
+\{\subtopic "<intmsgvx>INTVTM989I" INTVTM989I\}\p
+\{\subtopic "<intmsgvx>INTVTM990I" INTVTM990I\}\p
+\{\subtopic "<intmsgvx>INTVTM991E" INTVTM991E\}\p
+\{\subtopic "<intmsgvx>INTVTM992I" INTVTM992I\}\p
+\{\subtopic "<intmsgvx>INTVTM993E" INTVTM993E\}\p
+\{\subtopic "<intmsgvx>INTVTM994I" INTVTM994I\}\p
+\{\subtopic "<intmsgvx>INTVTM995E" INTVTM995E\}\p
+\{\subtopic "<intmsgvx>INTVTM996E" INTVTM996E\}\p
+\{\subtopic "<intmsgvx>INTVTM997E" INTVTM997E\}\p
+\{\subtopic "<intmsgvx>INTVTM998E" INTVTM998E\}\p
+\{\subtopic "<intmsgvx>INTVTM999I" INTVTM999I\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM001I"
+\0 \0 \{\set_style "MSG" INTVTM001I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM task initialization in progress\}\p
+\p
+This message is issued at startup to identify the beginning of initialization for the VTAM component.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM002I"
+\0 \0 \{\set_style "MSG" INTVTM002I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM Release Level =\} \{\set_style "BLK_ITAL" release-level-information\}\p
+\p
+This message is issued during VTAM component initialization to record information to facilitate serviceability.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM003I"
+\0 \0 \{\set_style "MSG" INTVTM003I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM Component ID =\} \{\set_style "BLK_ITAL" component-ID\}\p
+\p
+This message is issued during VTAM component initialization to record information to facilitate serviceability.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM004I"
+\0 \0 \{\set_style "MSG" INTVTM004I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM Function-List =\}  \{\set_style "BLK_ITAL" function-list\p
+\}\p
+This message is issued during VTAM component initialization to record information to facilitate serviceability.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM005E"
+\0 \0 \{\set_style "MSG" INTVTM005E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM OPEN ACB failed for\} \{\set_style "BLK_ITAL" acbname\}\{\set_style "MSG_TEXT" : R15=\} \{\set_style "BLK_ITAL" return-code\}   \{\set_style "MSG_TEXT" ACBERFLG=\} \{\set_style "BLK_ITAL" acberflg\}\p
+\p
+An OPEN SVC failed to open the specified \{\set_style "BLK_BLD_ITAL" acbname\}.  The \{\set_style "BLK_BLD_ITAL" return-code\} and the acberflg indicate why the OPEN failed.  An explanation of these values can be found in the IBM VTAM Programming manual.\p
+\p
+NOTE:  It is common to receive this message when the VTAM APPL name is not defined or when the APPL name has not been activated by VTAM.  If this error occurs when InfoSession's main ACB is being opened during initialization, the initialization will be aborted and the InfoSession job or started task will end.  You should correct the error condition and restart InfoSession.  If this error occurs at any other time for any VTAM ACB, the ACB will be marked as unusable in InfoSession.  You should correct the error condition and use the InfoSession TPSTART command to OPEN the ACB.  Successfully opening the ACB will remove the unusable condition.\p
+\p
+\{\set_style "BLK_BLD_ITAL" return-code\}  All possible VTAM OPEN return code values are explained below.\p
+\p
+ \{\set_style "BLK_BLD"  X'04' =\} All ACBs opened but there was a warning message issued for a VSAM ACB (this return-code should not occur in (InfoSession).\p
+\p
+  \{\set_style "BLK_BLD" X'08' =\} ACB did not open.  Try to correct the error condition indicated by acberflg and then issue the TPSTART  ACB(acbname) to open the ACB.\p
+\p
+  \{\set_style "BLK_BLD" X'0C' =\} ACB did not open.  VTAM will not allow another OPEN to be issued for the ACB.\p
+\{\set_style "BLK_BLD_ITAL" \p
+acberflg\}  Common values are documented below for convenience.  If the error you experienced is not documented here, refer to the appropriate VTAM manual for additional information.\p
+\p
+  \{\set_style "BLK_BLD" X'14' =\} VTAM temporary storage shortage.\p
+\p
+  \{\set_style "BLK_BLD" X'24' =\} VTAM ACB password security failed or the MVS security subsystem determined that InfoSession is not authorized to OPEN the ACB.\p
+\p
+   \{\set_style "BLK_BLD" X'50' =\} VTAM is not part of the operating system.\p
+  \p
+  \{\set_style "BLK_BLD" X'52' =\} VTAM is not active or is in the process of shutting down.\p
+\p
+  \{\set_style "BLK_BLD" X'54' =\} VTAM could not find the acbname in the VTAM APPL definitions.  InfoSession VTAM APPLs must be included in SYS1.VTAMLST and activated by VTAM using a V NET,ACT... command.\p
+\p
+  \{\set_style "BLK_BLD" X'56' =\} VTAM found the acbname in the VTAM definitions but the name was not associated with an APPL.  This might occur if the name used as the acbname was also used as the name of another VTAM resource.  The name conflict in the VTAM definitions must be resolved.\p
+\p
+ \{\set_style "BLK_BLD"  X'58' =\} ACB with the same acbname is already OPEN.  This might occur if two or more InfoSessions are defined to use the same acbname and you attempt to start more that one of the InfoSessions.  The name conflict in the InfoSession definitions must be resolved.  Note that it is also possible that the same acbname is in use by another non-InfoSession VTAM application.  For example, virtual terminal ACBs might have been borrowed from another VTAM application that is currently active.\p
+\p
+  \{\set_style "BLK_BLD" X'5A' =\} VTAM could not find the acbname in the VTAM APPL definitions.  InfoSession VTAM APPLs must be included in SYS1.VTAMLST and activated by VTAM using a V NET,ACT... command.\p
+\p
+  \{\set_style "BLK_BLD" X'5C' =\} VTAM is inactive.\p
+\p
+  \{\set_style "BLK_BLD" X'68' =\} APPL was defined with AUTH=PPO and this conflicts with another VTAM application that is already active.  InfoSession does not use the PPO facility and this authorization should be removed from the InfoSession APPL definition(s).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM006I"
+\0 \0 \{\set_style "MSG" INTVTM006I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM ivuser\} \{\set_style "BLK_ITAL" ivuser-addr\}  \{\set_style "MSG_TEXT" token\} \{\set_style "BLK_ITAL" user-token\}  \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-addr\}  \{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-addr\}  \{\set_style "MSG_TEXT" for workstation starting\}\p
+\p
+This diagnostic message is issued when a new user task is started.  A new user task is started each time a workstation logs on to the system.  This message will be logged if message class Vtamtrace is activated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM007I"
+\0 \0 \{\set_style "MSG" INTVTM007I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM isess\} \{\set_style "BLK_ITAL" isess-addr\}  \{\set_style "MSG_TEXT" token\} \{\set_style "BLK_ITAL" user-token - session-token\}  \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-addr\}  \{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-addr\}  \{\set_style "MSG_TEXT" for workstation starting\}\p
+\p
+Diagnostic message issued when a new session proc is started.  A new session proc is started for each workstation session and for each virtual session created on behalf of a workstation user.  This message will be logged if the message class Vtamtrace is activated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM008I"
+\0 \0 \{\set_style "MSG" INTVTM008I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM RPL display for RPL/IRPL at\} \{\set_style "BLK_ITAL" rpl-address\} \{\set_style "MSG_TEXT" (1 OF 3)\}\p
+\p
+This diagnostic message is issued to provide a formatted display of VTAM RPL fields.  Messages \{\goto "<intmsgvx>INTVTM009I" INTVTM009I\} and \{\goto "<intmsgvx>INTVTM010I" INTVTM010I\} follow this message and complete the display of a single RPL.  This formatted display is not used during normal system operation (see message \{\goto "<intmsgvx>INTVTM016I" INTVTM016I\}).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM009I"
+\0 \0 \{\set_style "MSG" INTVTM009I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM RPL display for RPL/IRPL at\} \{\set_style "BLK_ITAL" rpl-address\} \{\set_style "MSG_TEXT" (2 OF 3)\p
+\}\p
+See message \{\goto "<intmsgvx>INTVTM008I" INTVTM008I\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM010I"
+\0 \0 \{\set_style "MSG" INTVTM010I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM RPL display for RPL/IRPL at\} \{\set_style "BLK_ITAL" rpl-address\} \{\set_style "MSG_TEXT" (3 OF 3)\}\p
+\p
+See message \{\goto "<intmsgvx>INTVTM008I" INTVTM008I\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM011E"
+\0 \0 \{\set_style "MSG" INTVTM011E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM SETLOGON failed for\} \{\set_style "BLK_ITAL" acbname\}\{\set_style "MSG_TEXT" : RTNCD=\} \{\set_style "BLK_ITAL" rtn-code\} \{\set_style "MSG_TEXT" FDB2=\} \{\set_style "BLK_ITAL" reason-code\}\p
+\p
+The VTAM SETLOGON macro issued for \{\set_style "BLK_BLD_ITAL" acbname\} completed with an error.  The \{\set_style "BLK_BLD_ITAL" rtn-code\} and \{\set_style "BLK_BLD_ITAL" reason-code\} are documented in the IBM VTAM Programming manual.  SETLOGON is normally used to tell VTAM to activate or deactivate logon processing for \{\set_style "BLK_BLD_ITAL" acbname\}.  Refer to the IBM documentation and correct the reason for the error.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM012I"
+\0 \0 \{\set_style "MSG" INTVTM012I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM driver token\} \{\set_style "BLK_ITAL" user-token - session-token\} \{\set_style "MSG_TEXT" task\} t\{\set_style "BLK_ITAL" ask-addr\} \{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-addr\} \{\set_style "MSG_TEXT" for workstation starting\p
+\}\p
+This diagnostic message is issued when a new session proc is starting the session driver routine.  This message will be logged if the message class Vtamtrace is activated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM013E"
+\0 \0 \{\set_style "MSG" INTVTM013E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM CLOSE ACB failed for\} \{\set_style "BLK_ITAL" acbname\}\{\set_style "MSG_TEXT" : R15=\} \{\set_style "BLK_ITAL" return-code\}  \{\set_style "MSG_TEXT" ACBERFLG=\} \{\set_style "BLK_ITAL" acberflg\}\p
+\p
+The CLOSE macro issued for \{\set_style "BLK_BLD_ITAL" acbname\} completed with an error.  The \{\set_style "BLK_BLD_ITAL" return-code\} and \{\set_style "BLK_BLD_ITAL" acberflg\} are documented in the IBM VTAM Programming manual.  Refer to the IBM documentation and correct the reason for the error.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM014I"
+\0 \0 \{\set_style "MSG" INTVTM014I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM OPEN ACB complete for\} \{\set_style "BLK_ITAL" acbname\}\p
+\p
+The OPEN macro issued for \{\set_style "BLK_BLD_ITAL" acbname\} completed successfully.  The main ACB is open during system initialization.  Virtual terminal ACBs are opened during system operation as they are needed.  The TPSTART operator command can be used to open an ACB during normal system operation.  This is useful, for example, if a VTAM operator accidentally deactivates an APPL that is used by the system.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM015I"
+\0 \0 \{\set_style "MSG" INTVTM015I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM CLOSE ACB complete for\} \{\set_style "BLK_ITAL" acbname\}\p
+\p
+The CLOSE macro issued for \{\set_style "BLK_BLD_ITAL" acbname\} completed successfully.  The main ACB and virtual terminal ACBs are closed during system termination.  The TPEND operator command can be used to close an ACB during normal system operation.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM016I"
+\0 \0 \{\set_style "MSG" INTVTM016I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM RPL display for RPL/IRPL at\} \{\set_style "BLK_ITAL" rpl-address\}\p
+\p
+This message provides an unformatted dump of a VTAM RPL.  It is a five line unformatted hexadecimal display of the RPL that is useful in diagnosing exceptional conditions that can occur during normal system operation.  This type of RPL display is automatically generated by the system when an exceptional condition is detected.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM017I"
+\0 \0 \{\set_style "MSG" INTVTM017I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM isses\} \{\set_style "BLK_ITAL" isess-addr\} \{\set_style "MSG_TEXT" token\} \{\set_style "BLK_ITAL" user-token - session-token\} \p
+           \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-addr\} \{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-addr \}\{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" partner-name\} \{\set_style "MSG_TEXT" started\}\p
+           \{\set_style "MSG_TEXT" cid\} \{\set_style "BLK_ITAL" vtam-cid\} \{\set_style "MSG_TEXT" plu\} \{\set_style "BLK_ITAL" plu-name\} \{\set_style "MSG_TEXT" slu\} \{\set_style "BLK_ITAL" slu-name\} \{\set_style "MSG_TEXT" driver\} \{\set_style "BLK_ITAL" driver-name\}\p
+\p
+This message is issued when InfoSession establishes a communications session.  When this message is issued the SNA BIND has been successfully processed.\p
+\p
+\{\set_style "BLK_BLD_ITAL" isess-addr\}  Session control block address.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-token - session-token\}  InfoSession's unique session identifier.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-addr\}  Task control block address.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-addr\}  Process control block address.\p
+\p
+\{\set_style "BLK_BLD_ITAL" partner-name\}  Name of the remote LU that is now in session with the InfoSession.  This name is used as the InfoSession task name.\p
+\p
+\{\set_style "BLK_BLD_ITAL" vtam-cid\}  VTAM communications identifier which is provided by VTAM and serves as a unique identification of the session within VTAM.\p
+\p
+\{\set_style "BLK_BLD_ITAL" plu-name\}  Name of the LU that is acting as the SNA Primary Logical Unit for the session (the PLU sends the SNA BIND request).\p
+\p
+\{\set_style "BLK_BLD_ITAL" slu-name\}  Name of the LU that is acting as the SNA Secondary Logical Unit for the session (the SLU receives the SNA BIND request)\p
+\p
+\{\set_style "BLK_BLD_ITAL" driver-name\}  Name of the session driver process that is communicating with the partner LU.\p
+\p
+  \{\set_style "BLK_BLD" HLLAPI\} - Session driver for workstation 3270 LU0/LU2 sessions.\p
+\p
+  \{\set_style "BLK_BLD" ISLUDRV\} - Session driver for 3270 LU2 virtual sessions.\p
+\p
+  \{\set_style "BLK_BLD" IL62DRVR\} - Session driver for LU6.2 sessions.\p
+\p
+  \{\set_style "BLK_BLD" ISYSDRVR\} - Session driver for InfoSession-to-InfoSession LU0 sessions.\p
+\p
+  \{\set_style "BLK_BLD" TESTLU2\} - Session driver reserved for testing.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM018I"
+\0 \0 \{\set_style "MSG" INTVTM018I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM system connection established for\} \{\set_style "BLK_ITAL" remoteint\}\p
+\p
+This message is issued when a communications session is established with a remote InfoSession.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remoteInt\} - Name of the remote InfoSession's main ACB.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM019I"
+\0 \0 \{\set_style "MSG" INTVTM019I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM system connection terminated for\} \{\set_style "BLK_ITAL" remoteint\}\p
+\p
+This message is issued when a communications session is ended with a remote InfoSession.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remoteInt\}  Name of the remote InfoSession's main ACB.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM020E"
+\0 \0 \{\set_style "MSG" INTVTM020E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM transaction program load failed for\} \{\set_style "BLK_ITAL" remoteInt\}\{\set_style "MSG_TEXT" :\} \{\set_style "BLK_ITAL" tpname\}\p
+\p
+This message is issued when a LOAD fails to locate a transaction program load module.  This error can occur on either side of the systems connection.  The associated transaction request is aborted.  Verify that the program name is correct and that the requested program load module is in the InfoSession's load library.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remoteInt\}  Name of the remote InfoSession's main ACB.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tpname\}  Name of the transaction program load module that could not be loaded.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM022I"
+\0 \0 \{\set_style "MSG" INTVTM022I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM transaction\} \{\set_style "BLK_ITAL" n1\} \{\set_style "MSG_TEXT" program\} \{\set_style "BLK_ITAL" tpname status\}\p
+\{\set_style "MSG_TEXT" remote applid\} \{\set_style "BLK_ITAL" remoteint\} \{\set_style "MSG_TEXT" smfid\} \{\set_style "BLK_ITAL" remoteID\} \{\set_style "MSG_TEXT" program\} \{\set_style "BLK_ITAL" remotetp\}\p
+\{\set_style "MSG_TEXT" sent:\} \{\set_style "BLK_ITAL" n2\} \{\set_style "MSG_TEXT" msgs\} \{\set_style "BLK_ITAL" n3\} \{\set_style "MSG_TEXT" chars, received:\} \{\set_style "BLK_ITAL" n4\} \{\set_style "MSG_TEXT" msgs\} \{\set_style "BLK_ITAL" n5\} \{\set_style "MSG_TEXT" chars\}\p
+\{\set_style "MSG_TEXT" queued:\} \{\set_style "BLK_ITAL" time1 date1\}\{\set_style "MSG_TEXT" , started:\} \{\set_style "BLK_ITAL" time2 date2\}\{\set_style "MSG_TEXT" , ended:\} \{\set_style "BLK_ITAL" time3 date3\}\p
+\p
+This message is issued when a transaction program ends.  It is also issued as part of the SYSTEMS DISPLAY command when there are active or queued transactions for the connection being displayed.\p
+\p
+\{\set_style "BLK_BLD_ITAL" n1\}  Transaction number.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tpname\}  Transaction program name on this system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" status\}  Indicates whether the transaction completed successfully (ENDED) or unsuccessfully (ABORTED).  When this message is issued as part of a SYSTEMS DISPLAY the status indicates if the transaction is currently executing (ACTIVE) or waiting to be executed (QUEUED).\p
+\p
+\{\set_style "BLK_BLD_ITAL" remoteInt\}  Name of the remote InfoSession's main ACB.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remoteID\}  MVS SMFID of the remote InfoSession's system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remotetp\}  Transaction program name on the remote system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" n2\}  Number of messages sent to the remote system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" n3\}  Number of characters sent to the remote system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" n4\}  Number of messages received from the remote system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" n5\}  Number of characters sent to the remote system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" time1\}  Time (hh:mm:ss.th) when the transaction was queued.  This time will be all zero if the transaction was initiated by a remote system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" date1\}  Date (mm/dd/yyyy) when the transaction was queued.  This date will be all zero if the transaction was initiated by a remote system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" time2\}  Time (hh:mm:ss.th) when the transaction started executing.\p
+\p
+\{\set_style "BLK_BLD_ITAL" date2\}  Date (mm/dd/yyyy) when the transaction started executing.\p
+\p
+\{\set_style "BLK_BLD_ITAL" time3\}  Time (hh:mm:ss.th) when the transaction ended.\p
+\p
+\{\set_style "BLK_BLD_ITAL" date3\}  Date (mm/dd/yyyy) when the transaction ended.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM023E"
+\0 \0 \{\set_style "MSG" INTVTM023E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM system connection protocol error for\} \{\set_style "BLK_ITAL" remote\}\p
+\{\set_style "MSG_TEXT" error code:\} \{\set_style "BLK_ITAL" number\}  \{\set_style "MSG_TEXT" explanation:\} \{\set_style "BLK_ITAL" explain\}\p
+\p
+This message is issued when a remote transaction program sends improper control information during the execution of a transaction.  Report the error to PLATINUM Technical Support.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remote\}  Name of the remote InfoSession's main ACB.\p
+\p
+\{\set_style "BLK_BLD_ITAL" number\}  Error code number.\p
+\p
+\{\set_style "BLK_BLD_ITAL" explain\}  Provides an explanation of the error code number.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM024E"
+\0 \0 \{\set_style "MSG" INTVTM024E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM system connection refused by remote system: sense\} \{\set_style "BLK_ITAL" sensedata\}\p
+\p
+This message is issued by the local InfoSession when a remote InfoSession rejects a system connection request.  The communications session between the two systems will be ended.  Check the logfile and console of the remote InfoSession for a more detailed explanation of why the remote system refused the connection.  Typically, the system connection is refused or rejected because the connection has not been properly defined using the Workbench \{\set_style "BLK_BLD" Configure Systems\} option.  Both InfoSessions that participate in a connection must be configured with information about the remote InfoSession.  Correct the configuration and restart the connection.\p
+\p
+\{\set_style "BLK_BLD_ITAL" sensedata\}  8 bytes of diagnostic information.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM025E"
+\0 \0 \{\set_style "MSG" INTVTM025E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM system connection refused: APPLID\} \{\set_style "BLK_ITAL" remote\} \{\set_style "MSG_TEXT" is not defined\}\p
+\p
+This message is issued by the local InfoSession when a remote InfoSession attempts to start a connection and the remote InfoSession has not been properly configured for this system.  The communications session between the two systems will be ended.  Typically, the system connection is refused because the connection has not been properly defined from the Workbench \{\set_style "BLK_BLD" Configure Systems\} option.  Both InfoSessions that participate in a connection must be configured with information about the remote InfoSession.  Correct the configuration and restart the connection.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remote\}  Name of the remote InfoSession's main ACB.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM026E"
+\0 \0 \{\set_style "MSG" INTVTM026E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM system connection refused: SMFID\} \{\set_style "BLK_ITAL" remoteid\} \{\set_style "MSG_TEXT" is not defined for APPLID\} \{\set_style "BLK_ITAL" remote\} \p
+\p
+This message is issued by the local InfoSession when a remote InfoSession attempts to start a connection and the remote InfoSession has not been properly configured for this system.  The communications session between the two systems will be ended.  Typically, the system connection is refused because the connection has not been properly defined from the Workbench \{\set_style "BLK_BLD" Configure Systems\} option.  Both InfoSessions that participate in a connection must be configured with information about the remote InfoSession.  Correct the configuration and restart the connection.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remoteid\}  MVS SMFID of the remote InfoSession's system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remote\}  Name of the remote InfoSession's main ACB.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM027E"
+\0 \0 \{\set_style "MSG" INTVTM027E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM transaction program tpname request deleted\p
+queued:\} \{\set_style "BLK_ITAL" time date\} \{\set_style "MSG_TEXT" for remote\} \{\set_style "MSG_TEXT" APPLID\} \{\set_style "BLK_ITAL" remote\} \{\set_style "MSG_TEXT" smfid\} \{\set_style "BLK_ITAL" rmtid\}\p
+\p
+This message is issued when a queued transaction program request is discarded during the processing of a SYSTEMS DELETE request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tpname\}  Transaction program name on this system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" time\}  Time (hh:mm:ss.th) when the transaction was queued.\p
+\p
+\{\set_style "BLK_BLD_ITAL" date\}  Date (mm/dd/yyyy) when the transaction was queued.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remote\}  Name of the remote InfoSession's main ACB.\p
+\p
+\{\set_style "BLK_BLD_ITAL" rmtid\}  MVS SMFID of the remote InfoSession's system.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM028E"
+\0 \0 \{\set_style "MSG" INTVTM028E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM system connection refused: APPLID\} \{\set_style "BLK_ITAL" remoteid\} \{\set_style "MSG_TEXT" race condition\}\p
+\p
+This message is issued when the local InfoSession and a remote Infosession have simultaneously attempted to initiate a connection with each other and one of the InfoSessions must deny a session request.  The systems connection feature supports a single session between two InfoSessions.  One of the InfoSessions will recognize that the partners are each racing to establish a session.  That InfoSession will deny one of the session requests and issue this message.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remoteid\}   Name of the remote Infosession's main ACB.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM100E"
+\0 \0 \{\set_style "MSG" INTVTM100E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to complete\} \{\set_style "BLK_ITAL" reqtype\} \{\set_style "MSG_TEXT" request - RC:\} \{\set_style "BLK_ITAL" retcode\}\p
+\p
+A error condition was encountered that is not associated with a specific diagnostic message.  The \{\set_style "BLK_BLD_ITAL" reqtype\} and \{\set_style "BLK_BLD_ITAL" retcode\} describe the problem origin.\p
+\p
+Contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM101E"
+\0 \0 \{\set_style "MSG" INTVTM101E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" function\} \{\set_style "MSG_TEXT" error encountered, RC:\} \{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+A $SESS error condition was encountered that is not associated with a specific diagnostic message.  The \{\set_style "BLK_BLD_ITAL" retcode\} and \{\set_style "BLK_BLD_ITAL" rsncode\} describe the problem origin.\p
+\p
+Contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM112E"
+\0 \0 \{\set_style "MSG" INTVTM112E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" function\} \{\set_style "MSG_TEXT" - data length exceeds capacity of buffer\}\p
+\p
+The data area provided by the caller for an extract function was too small.  This is probably caused by a programming error within the InfoSession.\p
+\p
+Contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM116E"
+\0 \0 \{\set_style "MSG" INTVTM116E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" function\} \{\set_style "MSG_TEXT" - SEND or RECEIVE already active\}\p
+\p
+InfoSession attempted to start a $SESS request while a previous request was still active.  This is probably caused by a programming error within InfoSession.\p
+\p
+Contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM120E"
+\0 \0 \{\set_style "MSG" INTVTM120E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" function\} -\{\set_style "MSG_TEXT"  request was cancelled\}\p
+\p
+This error most commonly occurs when a session ends unexpectedly.  Check the InfoSession logfile dataset for additional messages that further explain the reason for the error.\p
+\p
+Contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM124E"
+\0 \0 \{\set_style "MSG" INTVTM124E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" function\} -\{\set_style "MSG_TEXT"  VTAM RPLRTNCD field non zero\p
+\}\p
+An error was reported by VTAM.  Check the InfoSession logfile dataset for additional messages that further explain the reason for the error.  Consult the log file/audit trail maintained by your application for more information, if applicable.\p
+\p
+Contact PLATINUM Technical Support if assistance is required.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM132E"
+\0 \0 \{\set_style "MSG" INTVTM132E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" function\} \{\set_style "MSG_TEXT" - notify received - procedure error\}\p
+\p
+InfoSession was attempting to establish a session with an application, but the application rejected the VTAM bind request.  This usually indicates that the virtual terminal presented to the application was not acceptable to the application, often because its identity has not been conveyed to the application.  Check the InfoSession logfile dataset for additional messages that further explain the reason for the error.  Consult the log file/audit trail maintained by your application for more information, if applicable.\p
+\p
+Contact PLATINUM Technical Support if assistance is required.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM150E"
+\0 \0 \{\set_style "MSG" INTVTM150E\}\p
+\p
+\{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" $SESS request - invalid function\}\p
+\p
+A communication service request has failed due to an internal system error.  This is probably caused by a programming error within InfoSession.\p
+\p
+Contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM151E"
+\0 \0 \{\set_style "MSG" INTVTM151E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid $SESS\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" -\}\{\set_style "MSG_TEXT"  required parameter omitted\}\p
+\p
+A communication service request has failed due to an internal system error.  This is probably caused by a programming error within InfoSession.\p
+\p
+Contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM152E"
+\0 \0 \{\set_style "MSG" INTVTM152E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid $SESS\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" - invalid EXTRACT field ID\}\p
+\p
+A communication service request has failed due to an internal system error.  This is probably caused by a programming error within InfoSession.\p
+\p
+Contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM153E"
+\0 \0 \{\set_style "MSG" INTVTM153E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid $SESS\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" -inappropriate keyword used\}\p
+\p
+A communication service request has failed due to an internal system error.  This is probably caused by a programming error within the InfoSession.\p
+\p
+Contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM161E"
+\0 \0 \{\set_style "MSG" INTVTM161E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" environment error - invalid IVUSER block\}\p
+\p
+A communication service request has failed due to an internal system error.  This is probably caused by a programming error within InfoSession.\p
+\p
+Contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM162E"
+\0 \0 \{\set_style "MSG" INTVTM162E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" environment error - invalid token\}\p
+\p
+A communication service request has failed due to an internal system error.  This is probably caused by a programming error within InfoSession.\p
+\p
+Contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM163E"
+\0 \0 \{\set_style "MSG" INTVTM163E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" environment error - invalid ISESS block\}\p
+\p
+A communication service request has failed due to an internal system error.  This is probably caused by a programming error within InfoSession.\p
+\p
+Contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM164E"
+\0 \0 \{\set_style "MSG" INTVTM164E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" environment error - token already exists\}\p
+\p
+A communication service request has failed due to an internal system error.  This is probably caused by a programming error within InfoSession.\p
+\p
+Contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM165E"
+\0 \0 \{\set_style "MSG" INTVTM165E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" environment error - pool not available\}\p
+\p
+The virtual terminal pool name specified for a session request could not be found.  This is most likely a configuration problem.  Check that the pool name specified in the application configuration is correct.  If it is necessary to change the virtual terminal pool name, from the InfoSession Workbench select the \{\set_style "BLK_BLD" Configure\}, \{\set_style "BLK_BLD" Applications\} option.  If it is necessary to define the pool, from the InfoSession Workbench, select the \{\set_style "BLK_BLD" Configure\}, \{\set_style "BLK_BLD" Virtual Terminal Pools\} option.\p
+\p
+Contact PLATINUM Technical Support if assistance is required.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM166E"
+\0 \0 \{\set_style "MSG" INTVTM166E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" environment error - ACB not available\}\p
+\p
+An available ACB could not be found in the virtual terminal pool specified for a session request.\p
+\p
+This error might be caused by an increase in the number of users logged on to InfoSession or by an increase in the number of applications being accessed concurrently by the existing users.  Determine the pool name being used and issue the TPPOOLS POOL(poolname) ACBs command to display the status of the ACBs in the pool.  If all the ACBs are open and have one or more active sessions then this error is most likely caused by normal growth in the use of InfoSession.  This error can be corrected by increasing the size of the virtual terminal pool.  Increasing the size of a virtual terminal pool might require two or three coordinated changes in your host system(s):\p
+\p
+  \{\set_style "BLK_BLD" o\}	Additional APPL definitions for new ACBs will have to be added to the VTAMLST member used by the InfoSession.\p
+\p
+  \{\set_style "BLK_BLD" o\}	InfoSession's pool configuration will have to be updated to include these new ACBs in the pool.\p
+\p
+  \{\set_style "BLK_BLD" o\}	Application subsystem definitions might have to be updated to recognize the new ACB names as authorized terminals (for example, the CICS terminal gen might have to be updated).\p
+\p
+If the TPPOOLS display showed that one or more ACBs in the pool are stopped you will need to investigate the reason for this status.  Some of the possibilities include:\p
+\p
+  \{\set_style "BLK_BLD" o\}	The network operator has deactivated some or all of the VTAM APPL definitions used by the InfoSession.\p
+\p
+  \{\set_style "BLK_BLD" o\}	Some or all of the ACBs have been taken out of service within the InfoSession by the TPEND command.\p
+\p
+  \{\set_style "BLK_BLD" o\}	The VTAM APPL definitions for some or all of the ACBs are incorrect or have never been activated.\p
+\p
+The reason that is determined to have caused the Stopped status will dictate the appropriate corrective action.\p
+\p
+Contact PLATINUM Technical Support if assistance is required.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM171E"
+\0 \0 \{\set_style "MSG" INTVTM171E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" protocol vio - data traffic state error\}\p
+\p
+A communication service request has failed due to a communications protocol error.  The affected session will be ended.  If this error occurs frequently it will probably be necessary to obtain diagnostic traces to determine the cause of the failure.\p
+\p
+If normal workstation operation cannot be resumed, contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM172E"
+\0 \0 \{\set_style "MSG" INTVTM172E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" protocol vio - session quiesced\}\p
+\p
+A communication service request has failed due to a communications protocol error.  The affected session will be ended.  If this error occurs frequently it will probably be necessary to obtain diagnostic traces to determine the cause of the failure.\p
+\p
+If normal workstation operation cannot be resumed, contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM173E"
+\0 \0 \{\set_style "MSG" INTVTM173E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" protocol vio - session shutdown\}\p
+\p
+A communication service request has failed due to a communications protocol error.  The affected session will be ended.  If this error occurs frequently it will probably be necessary to obtain diagnostic traces to determine the cause of the failure.\p
+\p
+If normal workstation operation cannot be resumed, contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM174E"
+\0 \0 \{\set_style "MSG" INTVTM174E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" protocol vio - bracket error\}\p
+\p
+A communication service request has failed due to a communications protocol error.  The affected session will be ended.  If this error occurs frequently it will probably be necessary to obtain diagnostic traces to determine the cause of the failure.\p
+\p
+If normal workstation operation cannot be resumed, contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM175E"
+\0 \0 \{\set_style "MSG" INTVTM175E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" protocol vio - direction error\}\p
+\p
+A communication service request has failed due to a communications protocol error.  The affected session will be ended.  If this error occurs frequently it will probably be necessary to obtain diagnostic traces to determine the cause of the failure.\p
+\p
+If normal workstation operation cannot be resumed, contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM176E"
+\0 \0 \{\set_style "MSG" INTVTM176E\}\p
+\p
+\{\set_style "MSG_TEXT" $SESS\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" protocol vio - RU type not supported\}\p
+\p
+A communication service request has failed due to a communications protocol error.  The affected session will be ended.  If this error occurs frequently it will probably be necessary to obtain diagnostic traces to determine the cause of the failure.\p
+\p
+If normal workstation operation cannot be resumed, contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM900I"
+\0 \0 \{\set_style "MSG" INTVTM900I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM SPLIST\} \{\set_style "BLK_ITAL" splist-addr\} \{\set_style "MSG_TEXT" TRACE:\} \{\set_style "BLK_ITAL" trace-ID\}\p
+\{\set_style "MSG_TEXT" ISESS\} \{\set_style "BLK_ITAL" isess-addr user-token session-token\} \{\set_style "MSG_TEXT" PLU \}\{\set_style "BLK_ITAL" pluname\}  \{\set_style "MSG_TEXT" SLU\} \{\set_style "BLK_ITAL" sluname\}\p
+\{\set_style "MSG_TEXT" SNS\} \{\set_style "BLK_ITAL" sense\} \{\set_style "MSG_TEXT" FLG\} \{\set_style "BLK_ITAL" splist-flags\} \{\set_style "MSG_TEXT" STATE\} \{\set_style "BLK_ITAL" isess-state\} \{\set_style "MSG_TEXT" AR\} \{\set_style "BLK_ITAL" address\}  \{\set_style "MSG_TEXT" ARL\} \{\set_style "BLK_ITAL" length\}\p
+\{\set_style "MSG_TEXT" CTL\} \{\set_style "BLK_ITAL" rplcntrl\} \{\set_style "MSG_TEXT" RH\} \{\set_style "BLK_ITAL" SNA-\}\{\set_style "BLK_ITAL" rh\} \{\set_style "MSG_TEXT" SQ#\} \{\set_style "BLK_ITAL" SNA-\}\{\set_style "BLK_ITAL" seq#\} \{\set_style "MSG_TEXT" RET\} \{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT" RSN\} \{\set_style "BLK_ITAL" reason\}  \{\set_style "MSG_TEXT" FUN\} \{\set_style "BLK_ITAL" function\}\p
+\p
+This diagnostic message is issued to log VTAM session activity when message class VTAMDATA has been activated for gathering problem determination data.  This message may be followed by messages \{\goto "<intmsgvx>INTVTM901I" INTVTM901I\} and \{\goto "<intmsgvx>INTVTM902I" INTVTM902I\} when there is additional data to be logged.  The VTAMDATA message class provides a simple way to trace InfoSession's VTAM API activity without resorting to the traditional IBM VTAM buffer trace that requires GTF to record the trace data and IPCS to format the trace data.\p
+\p
+\{\set_style "BLK_BLD_ITAL" splist-addr\}  Storage address of the $SESS parameter list (the splist) associated with the completed session request that is being logged by this message. \p
+\p
+\{\set_style "BLK_BLD_ITAL" trace-ID\}  Type of session request that is being logged.  This is a text translation of the $SESS function code numeric.\p
+\p
+  \{\set_style "BLK_BLD" 0001\} - SEND_DATA\p
+\p
+  \{\set_style "BLK_BLD" 0002\} - SEND_POSRESP\p
+\p
+  \{\set_style "BLK_BLD" 0003\} - SEND_NEGRESP\p
+\p
+  \{\set_style "BLK_BLD" 0004\} - SEND_SIGNAL\p
+\p
+  \{\set_style "BLK_BLD" 0005\} - SEND_BID\p
+\p
+  \{\set_style "BLK_BLD" 0006\} - SEND_LUSTAT\p
+\p
+  \{\set_style "BLK_BLD" 0007\} - SEND_CANCEL\p
+\p
+  \{\set_style "BLK_BLD" 0008\} - SEND_RTR\p
+\p
+  \{\set_style "BLK_BLD" 0009\} - SEND_CHASE\p
+\p
+  \{\set_style "BLK_BLD" 000A\} - SEND_RELQ\p
+\p
+  \{\set_style "BLK_BLD" 000B\} - SEND_QEC\p
+\p
+  \{\set_style "BLK_BLD" 000C\} - SEND_QC\p
+\p
+  \{\set_style "BLK_BLD" 000D\} - SEND_SBI\p
+\p
+  \{\set_style "BLK_BLD" 000E\} - SEND_BIS\p
+\p
+  \{\set_style "BLK_BLD" 000F\} - SEND_ SDT\p
+\p
+  \{\set_style "BLK_BLD" 0010\} - SEND_CLEAR\p
+\p
+  \{\set_style "BLK_BLD" 0011\} - SEND_STSN\p
+\p
+  \{\set_style "BLK_BLD" 0012\} - SEND_RQR\p
+\p
+  \{\set_style "BLK_BLD" 0013\} - SEND_SHUTD\p
+\p
+  \{\set_style "BLK_BLD" 0014\} - SEND_SHUTC\p
+\p
+  \{\set_style "BLK_BLD" 0015\} - SEND_RSHUTD\p
+\p
+  \{\set_style "BLK_BLD" 0016\} - RECEIVE\p
+\p
+  \{\set_style "BLK_BLD" 0017\} - EXTRACT\p
+\p
+  \{\set_style "BLK_BLD" 0018\} - START_SESSION\p
+\p
+  \{\set_style "BLK_BLD" 0019\} - END_SESSION\p
+\p
+  \{\set_style "BLK_BLD" 001A\} - ADD_SESSION\p
+\p
+  \{\set_style "BLK_BLD" 001B\} - DELETE_SESSION\p
+\p
+  \{\set_style "BLK_BLD" 001C\} - FIND_SESSION\p
+\p
+  \{\set_style "BLK_BLD" other\} - *UNKNOWN*\p
+\p
+\{\set_style "BLK_BLD_ITAL" isess addr\}  InfoSession session control block address.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-token/session-token\}  InfoSession-defined session identifier.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pluname\}  SNA LU name of the primary session partner.\p
+\p
+\{\set_style "BLK_BLD_ITAL" sluname\}  SNA LU name of the secondary session partner.\p
+\p
+\{\set_style "BLK_BLD_ITAL" sense\}  SNA-defined sense information associated with the request.  Refer to the appropriate IBM SNA documentation for an explanation of a particular sense code value.\p
+\p
+\{\set_style "BLK_BLD_ITAL" splist-flags\}  InfoSession-defined indicator flags associated with the $SESS request parameter list (the splist).\p
+\p
+  \{\set_style "BLK_BLD" 80xxxxxx\} = omitted AREA=\p
+\p
+  \{\set_style "BLK_BLD" 40xxxxxx\} = omitted AREALEN=\p
+\p
+  \{\set_style "BLK_BLD" 20xxxxxx\} = omitted EPB=\p
+\p
+  \{\set_style "BLK_BLD" 10xxxxxx\} = omitted CNTRL=\p
+\p
+  \{\set_style "BLK_BLD" 08xxxxxx\} = omitted RH=\p
+\p
+  \{\set_style "BLK_BLD" 04xxxxxx\} = omitted SEQNO=\p
+\p
+  \{\set_style "BLK_BLD" 02xxxxxx\} = omitted SENSE=\p
+\p
+  \{\set_style "BLK_BLD" 01xxxxxx\} = omitted FIELDS=\p
+\p
+  \{\set_style "BLK_BLD" xx80xxxx\} = send/ask for DR1\p
+\p
+  \{\set_style "BLK_BLD" xx40xxxx\} = send/ask for DR2\p
+\p
+  \{\set_style "BLK_BLD" xx20xxxx\} = send/ask for ER1\p
+\p
+  \{\set_style "BLK_BLD" xx10xxxx\} = send/ask for ER2\p
+\p
+  \{\set_style "BLK_BLD" xx08xxxx\} = send Begin Bracket\p
+\p
+  \{\set_style "BLK_BLD" xx04xxxx\} = send End Bracket\p
+\p
+  \{\set_style "BLK_BLD" xx02xxxx\} = send Begin Chain\p
+\p
+  \{\set_style "BLK_BLD" xx01xxxx\} = send End Chain\p
+\p
+  \{\set_style "BLK_BLD" xxxx80xx\} = send Change Direction\p
+\p
+  \{\set_style "BLK_BLD" xxxx40xx\} = API makes protocol decisions\p
+\p
+  \{\set_style "BLK_BLD" xxxx20xx\} = InfoSession will be PLU partner\p
+\p
+  \{\set_style "BLK_BLD" xxxx10xx\} = dedicated ACB is required\p
+\p
+  \{\set_style "BLK_BLD" xxxx08xx\} = application does a CLSDST PASS\p
+\p
+  \{\set_style "BLK_BLD" xxxx04xx\} = omitted POOL=\p
+\p
+  \{\set_style "BLK_BLD" xxxx02xx\} = omitted MASK=\p
+\p
+  \{\set_style "BLK_BLD" xxxx01xx\} = omitted LUNAME=\p
+\p
+  \{\set_style "BLK_BLD" xxxx80xx\} = send Change Direction\p
+\p
+  \{\set_style "BLK_BLD" xxxx40xx\} = API makes protocol decisions\p
+\p
+  \{\set_style "BLK_BLD" xxxx20xx\} = InfoSession will be PLU partner\p
+\p
+  \{\set_style "BLK_BLD" xxxx10xx\} = dedicated ACB is required\p
+\p
+  \{\set_style "BLK_BLD" xxxx08xx\} = application does a CLSDST PASS\p
+\p
+  \{\set_style "BLK_BLD" xxxx04xx\} = omitted POOL=\p
+\p
+  \{\set_style "BLK_BLD" xxxx02xx\} = omitted MASK=\p
+\p
+  \{\set_style "BLK_BLD" xxxx01xx\} = omitted LUNAME=\p
+\p
+  \{\set_style "BLK_BLD" xxxxxx80\} = omitted LOGMODE=\p
+\p
+  \{\set_style "BLK_BLD" xxxxxx40\} = omitted SESSION=\p
+\p
+  \{\set_style "BLK_BLD" xxxxxx20\} = omitted DRIVER=\p
+\p
+  \{\set_style "BLK_BLD" xxxxxx10\} = omitted PARM=\p
+\p
+  \{\set_style "BLK_BLD" xxxxxx08\} = application supports parallel session\p
+\p
+  \{\set_style "BLK_BLD" xxxxxx04\} = application does multiple CLSDST PASSes\p
+\p
+  \{\set_style "BLK_BLD" xxxxxx02\} = first-speaker session is requested\p
+\p
+  \{\set_style "BLK_BLD" xxxxxx01\} = contention-loser Begin Bracket\p
+\p
+\{\set_style "BLK_BLD_ITAL" isess-state\}  InfoSession-defined state conditions associated with the session.\p
+\p
+  \{\set_style "BLK_BLD" 80xxxxxx\} = data traffic reset\p
+\p
+  \{\set_style "BLK_BLD" 40xxxxxx\} = in-brackets\p
+\p
+  \{\set_style "BLK_BLD" 20xxxxxx\} = direction\p
+\p
+  \{\set_style "BLK_BLD" 10xxxxxx\} = bid accepted\p
+\p
+  \{\set_style "BLK_BLD" 08xxxxxx\} = begin bracket pending\p
+\p
+  \{\set_style "BLK_BLD" 04xxxxxx\} = in chain\p
+\p
+  \{\set_style "BLK_BLD" xx80xxxx\} = QEC sent\p
+\p
+  \{\set_style "BLK_BLD" xx40xxxx\} = QEC received\p
+\p
+  \{\set_style "BLK_BLD" xx20xxxx\} = session quiesced\p
+\p
+  \{\set_style "BLK_BLD" xx10xxxx\} = SHUTD sent\p
+\p
+  \{\set_style "BLK_BLD" xx08xxxx\} = SHUTD received\p
+\p
+  \{\set_style "BLK_BLD" xx04xxxx\} = RSHUTD sent\p
+\p
+  \{\set_style "BLK_BLD" xx02xxxx\} = RSHUTD received\p
+\p
+  \{\set_style "BLK_BLD" xx01xxxx\} = session is shutdown\p
+\p
+  \{\set_style "BLK_BLD" xxxx80xx\} = SBI sent\p
+\p
+  \{\set_style "BLK_BLD" xxxx40xx\} = SBI received\p
+\p
+  \{\set_style "BLK_BLD" xxxx20xx\} = bracket initiation is stopped\p
+\p
+\{\set_style "BLK_BLD_ITAL" address\}  Argument address associated with the request.  Typically this is the address of a data buffer.\p
+\p
+\{\set_style "BLK_BLD_ITAL" length\}  Argument length associated with the request.  Typically this is the length of data in a send or receive data buffer.\p
+\p
+\{\set_style "BLK_BLD_ITAL" rplcntrl\}  VTAM RPL (Request Parameter List) flags associated with the request.  For a send or receive request these flags identify the type of information that is being sent or received.\p
+\p
+  \{\set_style "BLK_BLD" 80xxxx\} = CONTROL=DATA\p
+\p
+  \{\set_style "BLK_BLD" 40xxxx\} = CONTROL=CANCEL\p
+\p
+  \{\set_style "BLK_BLD" 20xxxx\} = CONTROL=QC\p
+\p
+  \{\set_style "BLK_BLD" 10xxxx\} = CONTROL=QEC\p
+\p
+  \{\set_style "BLK_BLD" 08xxxx\} = CONTROL=CHASE\p
+\p
+  \{\set_style "BLK_BLD" 04xxxx\} = CONTROL=RELQ\p
+\p
+  \{\set_style "BLK_BLD" xx80xx\} = CONTROL=BID\p
+\p
+  \{\set_style "BLK_BLD" xx40xx\} = CONTROL=RTR\p
+\p
+  \{\set_style "BLK_BLD" xx20xx\} = CONTROL=LUS\p
+\p
+  \{\set_style "BLK_BLD" xx10xx\} = CONTROL=SIGNAL\p
+\p
+  \{\set_style "BLK_BLD" xx08xx\} = CONTROL=BIND\p
+\p
+  \{\set_style "BLK_BLD" xx04xx\} = CONTROL=UNBIND\p
+\p
+  \{\set_style "BLK_BLD" xx02xx\} = CONTROL=SBI\p
+\p
+  \{\set_style "BLK_BLD" xx01xx\} = CONTROL=BIS\p
+\p
+  \{\set_style "BLK_BLD" xxxx80\} = CONTROL=SDT\p
+\p
+  \{\set_style "BLK_BLD" xxxx40\} = CONTROL=CLEAR\p
+\p
+  \{\set_style "BLK_BLD" xxxx20\} = CONTROL=STSN\p
+\p
+  \{\set_style "BLK_BLD" xxxx10\} = CONTROL=SHUTD\p
+\p
+  \{\set_style "BLK_BLD" xxxx08\} = CONTROL=SHUTC\p
+\p
+  \{\set_style "BLK_BLD" xxxx04\} = CONTROL=RQR\p
+\p
+  \{\set_style "BLK_BLD" xxxx02\} = CONTROL=RSHUTD\p
+\p
+  \{\set_style "BLK_BLD" xxxx01\} = CONTROL=SWITCH\p
+\p
+\{\set_style "BLK_BLD_ITAL" SNA-rh\}  SNA RH (Request Header) flags associated with the request.  For a send or receive request these SNA-defined flags convey important protocol information.\p
+\p
+  \{\set_style "BLK_BLD" 80xxxx\}: 0=request\p
+\p
+             1=response\p
+\p
+  \{\set_style "BLK_BLD" 60xxxx\}: 00=FM data\p
+\p
+             01=network control\p
+\p
+             10=data flow control\p
+\p
+             11=session control\p
+\p
+  \{\set_style "BLK_BLD" 10xxxx\}: reserved\p
+\p
+  \{\set_style "BLK_BLD" 08xxxx\}: 0=no FMH or character-coded network services\p
+\p
+             1=FMH or field-formatted network services \p
+\p
+  \{\set_style "BLK_BLD" 04xxxx\}: 0=no sense data\p
+\p
+             1=sense data included\p
+\p
+  \{\set_style "BLK_BLD" 02xxxx\}: 0=no begin chain\p
+\p
+             1=begin chain\p
+\p
+  \{\set_style "BLK_BLD" 01xxxx\}: 0=no end chain\p
+\p
+             1=end chain\p
+\p
+  \{\set_style "BLK_BLD" xx80xx\}: 0=no DR1 indicator\p
+\p
+             1=DR1 indicator\p
+\p
+  \{\set_style "BLK_BLD" xx40xx\}: reserved\p
+\p
+  \{\set_style "BLK_BLD" xx20xx\}: 0=no DR2 indicator\p
+\p
+             1=DR2 indicator\p
+\p
+  \{\set_style "BLK_BLD" xx10xx\}: 0=no ER indicator\p
+\p
+             1=ER indicator\p
+\p
+  \{\set_style "BLK_BLD" xx0Cxx\}: reserved\p
+\p
+  \{\set_style "BLK_BLD" xx02xx\}: 0=no QRI\p
+\p
+             1=QRI\p
+\p
+  \{\set_style "BLK_BLD" xx01xx\}: pacing indicator reserved for VTAM use\p
+\p
+  \{\set_style "BLK_BLD" xxxx80\}: 0=no BB indicator\p
+\p
+             1=BB indicator\p
+\p
+  \{\set_style "BLK_BLD" xxxx40\}: 0=no EB indicator\p
+\p
+             1=EB indicator\p
+\p
+  \{\set_style "BLK_BLD" xxxx20\}: 0=no CD indicator\p
+\p
+             1=CD indicator\p
+\p
+  \{\set_style "BLK_BLD" xxxx10\}: reserved\p
+\p
+  \{\set_style "BLK_BLD" xxxx08\}: 0=code selection indicator 0\p
+\p
+             1=code selection indicator 1\p
+\p
+  \{\set_style "BLK_BLD" xxxx04\}: 0=data not enciphered\p
+\p
+             1=data enciphered\p
+\p
+  \{\set_style "BLK_BLD" xxxx02\}: padded data indicator reserved for VTAM use\p
+\p
+  \{\set_style "BLK_BLD" xxxx01\}: 0=no CEB indicator\p
+\p
+             1=CEB indicator \p
+\p
+\{\set_style "BLK_BLD_ITAL" SNA-seq#\}  SNA sequence number associated with the request.  For a send or receive request this sequence number identifies this particular message and the same sequence number is used when an SNA response is sent or received for this request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" retcode\}  InfoSession-defined return code for the $SESS service.\p
+\p
+  \{\set_style "BLK_BLD" 00000000\} = RC_SUCCESS - request successful\p
+\p
+  \{\set_style "BLK_BLD" 00000004\} = RC_FUNCTION - invalid $SESS call\p
+\p
+  \{\set_style "BLK_BLD" 00000008\} = RC_ENVIRONMENT - environment error\p
+\p
+  \{\set_style "BLK_BLD" 0000000C\} = RC_LENGTH - data too long for user area\p
+\p
+  \{\set_style "BLK_BLD" 00000010\} = RC_BUSY - previous request is active\p
+\p
+  \{\set_style "BLK_BLD" 00000014\} = RC_CANCELED - request was canceled\p
+\p
+  \{\set_style "BLK_BLD" 00000018\} = RC_VTAMRC - VTAM reported an error\p
+\p
+  \{\set_style "BLK_BLD" 0000001C\} = RC_PROTOCOL - request violates protocol \p
+\p
+  \{\set_style "BLK_BLD" 00000020\} = RC_NOTIFY - SNA NOTIFY received\p
+\p
+  \{\set_style "BLK_BLD" 00000024\} = RC_TOT_RECEIVE_DATA - read timeout\p
+\p
+  \{\set_style "BLK_BLD" 00000028\} = RC_CPIC_REQUEST - CPIC API request\p
+\p
+\{\set_style "BLK_BLD_ITAL" reason\}  InfoSession-defined reason code for the $SESS service.  If the return code indicates an error, the reason code provides additional explanation for the the error.  The reason code must be interpreted with respect to the return code (see above for return code values).\p
+\p
+  \{\set_style "BLK_BLD" For return code RC_FUNCTION\}\p
+\p
+     00000000 = RSN_FUNCTION \p
+\p
+     00000001 = RSN_MISSING_PARM \p
+\p
+     00000002 = RSN_FIELD_ERROR   \p
+\p
+     00000003 = RSN_EXTRANEOUS_PARM\p
+\p
+  \{\set_style "BLK_BLD" For return code RC_ENVIRONMENT\}\p
+\p
+     00000001 = RSN_IVUSER\p
+\p
+     00000002 = RSN_TOKEN\p
+\p
+     00000003 = RSN_ISESS\p
+\p
+     00000004 = RSN_DUPLICATE_TOKEN\p
+\p
+     00000005 = RSN_NOPOOL\p
+\p
+     00000006 = RSN_NOACB\p
+\p
+     00000007 = RSN_WUTOKEN\p
+\p
+  \{\set_style "BLK_BLD" For return code RC_PROTOCOL\}\p
+\p
+     00000001 = RSN_SDTSTATE\p
+\p
+     00000002 = RSN_QUIESCED\p
+\p
+     00000003 = RSN_SHUTDOWN\p
+\p
+     00000004 = RSN_BRACKET\p
+\p
+     00000005 = RSN_DIRECTION\p
+\p
+     00000006 = RSN_RUTYPE \p
+\p
+     00000007 = RSN_CHAINING\p
+\p
+  \{\set_style "BLK_BLD" For return code RC_CPIC_REQUEST\}\p
+\p
+     00000001 = RSN_CPIC_SHIP\p
+\p
+     00000002 = RSN_CPIC_SEND_CFMD\p
+\p
+     00000003 = RSN_CPIC_SEND_RTS\p
+\p
+     00000004 = RSN_CPIC_RECEIVE\p
+\p
+     00000005 = RSN_CPIC_SEND_ERROR\p
+\p
+     00000006 = RSN_CPIC_BID\p
+\p
+     00000007 = RSN_CPIC_YIELD\p
+\p
+     00000008 = RSN_CPIC_BID_SYNC\p
+\p
+     00000009 = RSN_CPIC_BID_RESPONSE\p
+\p
+     0000000A = RSN_CPIC_BID_REQUEST\p
+\p
+     0000000B = RSN_CPIC_CLEANUP\p
+\p
+\{\set_style "BLK_BLD_ITAL" function\}  InfoSession-defined function code for the $SESS service.  Refer to the preceding explanation of \{\set_style "BLK_BLD_ITAL" trace-ID\} for the meaning of specific function codes.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamdata                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM901I"
+\0 \0 \{\set_style "MSG" INTVTM901I\}\p
+\p
+\{\set_style "BLK_ITAL" address+offset: xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx cccccccccccccccc\}\p
+\p
+This diagnostic message is logged when message class VTAMDATA has been activated for gathering problem determination data.  It is used to record the contents of a data area (typically a send or receive buffer).\p
+\p
+\{\set_style "BLK_BLD_ITAL" address\}  Beginning address of the storage area being displayed.\p
+\p
+\{\set_style "BLK_BLD_ITAL" offset\}  Relative offset into the storage area of the beginning of the displayed data.\p
+\p
+\{\set_style "BLK_BLD_ITAL" xxxxxxxx\}  Four bytes of hexadecimal data.\p
+\p
+\{\set_style "BLK_BLD_ITAL" cccccccccccccccc\}  EBCDIC character representation of the preceding sixteen bytes of hexadecimal data.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamdata                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM902I"
+\0 \0 \{\set_style "MSG" INTVTM902I\}\p
+\p
+\{\set_style "BLK_ITAL" address\}\{\set_style "MSG_TEXT" +\}\{\set_style "BLK_ITAL" offset1\}\{\set_style "MSG_TEXT" -\}\{\set_style "BLK_ITAL" offset2\}\{\set_style "MSG_TEXT" : all zero\}\p
+\p
+This diagnostic message is logged when message class VTAMDATA has been activated for gathering problem determination data.  It is used to indicate that the data area being displayed contains all zeros.\p
+\p
+\{\set_style "BLK_BLD_ITAL" address\}  Beginning address of the storage area being displayed.\p
+\p
+\{\set_style "BLK_BLD_ITAL" offset1\}  Relative offset into the storage area of the beginning of the all zeros data.\p
+\p
+\{\set_style "BLK_BLD_ITAL" offset2\}  Relative offset into the storage area of the end of the all zeros data.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamdata                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM962E"
+\0 \0 \{\set_style "MSG" INTVTM962E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM bind rejected from\} \{\set_style "BLK_ITAL" plu-name\} \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" virtual-terminal-slu-name\}\{\set_style "MSG_TEXT" :\} \{\set_style "BLK_ITAL" reason\}\p
+\{\set_style "MSG_TEXT" isess\} \{\set_style "BLK_ITAL" isess-addr\} \{\set_style "BLK_ITAL" user-token - session-token\}\p
+\{\set_style "MSG_TEXT" CID=\} \{\set_style "BLK_ITAL" vtamcid\}\{\set_style "MSG_TEXT" , USR=\} \{\set_style "BLK_ITAL" rplusfld\}\{\set_style "MSG_TEXT" ,\} \{\set_style "MSG_TEXT" RPL= \}\{\set_style "BLK_ITAL" rpl-address\}\p
+\p
+This diagnostic message is issued when an SNA BIND is received for a session and the system must reject it for a specific reason.  If reason indicates session terminating, a bind was received for the session after session termination had started.  This would most likely be caused by incorrect configuration of an application.  If reason indicates excessive binds received, the InfoSession virtual terminal session has received too many clsdst pass or simlogon bind requests from the application.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM963E"
+\0 \0 \{\set_style "MSG" INTVTM963I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM non-zero $SESS return code\p
+ISESS\} \{\set_style "BLK_ITAL" isess-addr user-token session-token\} \{\set_style "MSG_TEXT" $SESS SPLIST\} \{\set_style "BLK_ITAL" splist-addr\}\p
+\{\set_style "MSG_TEXT" SNS\} \{\set_style "BLK_ITAL" sense\} \{\set_style "MSG_TEXT" FLG\} \{\set_style "BLK_ITAL" splist-flags\} \{\set_style "MSG_TEXT" STATE\} \{\set_style "BLK_ITAL" isess-state\} \{\set_style "MSG_TEXT" AR\} \{\set_style "BLK_ITAL" address\}  \{\set_style "MSG_TEXT" ARL\} \{\set_style "BLK_ITAL" length\p
+\}\{\set_style "MSG_TEXT" CTL\} \{\set_style "BLK_ITAL" rplcntrl \}\{\set_style "MSG_TEXT" RH\} \{\set_style "BLK_ITAL" SNA-rh\} \{\set_style "MSG_TEXT" SQ#\} \{\set_style "BLK_ITAL" SNA-seq#\} \{\set_style "MSG_TEXT" RET\} \{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT" RSN\} \{\set_style "BLK_ITAL" reason\} \{\set_style "MSG_TEXT" FUN\} \{\set_style "BLK_ITAL" function\} \p
+\p
+This diagnostic message is issued to log problem determination data when a communications request does not complete successfully. \p
+\p
+\{\set_style "BLK_BLD_ITAL" isess-addr\}  InfoSession session control block address.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-token/session-token\}  InfoSession-defined session identifier.\p
+\p
+\{\set_style "BLK_BLD_ITAL" splist-addr\}  Address of the $SESS request parameter list (splist).\p
+\p
+\{\set_style "BLK_BLD_ITAL" sense\}  SNA-defined sense information associated with the request.  Refer to the appropriate IBM SNA documentation for an explanation of a particular sense code value.\p
+\p
+\{\set_style "BLK_BLD_ITAL" splist-flags\}  InfoSession-defined indicator flags associated with the $SESS request parameter list (the splist).  See message \{\goto "<intmsgvx>INTVTM900I" INTVTM900I\} for an explanation of the flags.\p
+\p
+\{\set_style "BLK_BLD_ITAL" isess-state\}  InfoSession-defined state conditions associated with the session.  See message \{\goto "<intmsgvx>INTVTM900I" INTVTM900I\} for an explanation of the session state flags.\p
+\p
+\{\set_style "BLK_BLD_ITAL" address\}  Argument address associated with the request.  Typically this is the address of a data buffer\p
+\p
+\{\set_style "BLK_BLD_ITAL" length\}  Argument length associated with the request.  Typically this is the length of data in a send or receive data buffer.\p
+\p
+\{\set_style "BLK_BLD_ITAL" rplcntrl \} VTAM RPL (Request Parameter List) flags associated with the request.  For a send or receive request these flags identify the type of information that is being sent or received.  See message \{\goto "<intmsgvx>INTVTM900I" INTVTM900I\} for an explanation of the rplcntrl flags.\p
+\p
+\{\set_style "BLK_BLD_ITAL" SNA-rh\}  SNA RH (Request Header) flags associated with the request.  For a send or receive request these SNA-defined flags convey important protocol information.  See message \{\goto "<intmsgvx>INTVTM900I" INTVTM900I\} for an explanation of the SNA RH flags.\p
+\p
+\{\set_style "BLK_BLD_ITAL" SNA-seq#\}  SNA sequence number associated with the request.  For a send or receive request this sequence number identifies this particular message and the same sequence number is used when an SNA response is sent or received for this request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" retcode\}  InfoSession-defined return code for the $SESS service.  See message \{\goto "<intmsgvx>INTVTM900I" INTVTM900I\} for an explanation of the return code values.\p
+\p
+\{\set_style "BLK_BLD_ITAL" reason\}  InfoSession-defined reason code for the $SESS service.  If the return code indicates an error, the reason code provides additional explanation for the the error.  The reason code must be interpreted with respect to the return code (see above for return code values).  See message \{\goto "<intmsgvx>INTVTM900I" INTVTM900I\} for an explanation of the reason code values.\p
+\p
+\{\set_style "BLK_BLD_ITAL" function\}  InfoSession-defined function code for the $SESS service.  See message \{\goto "<intmsgvx>INTVTM900I" INTVTM900I\} for an explanation of the function code values.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM964E"
+\0 \0 \{\set_style "MSG" INTVTM964E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM isess\} \{\set_style "BLK_ITAL" isess-addr user-token - session-token\} \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-addr\} \p
+\{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-addr\} \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" workstation-name\}\p
+\{\set_style "MSG_TEXT" session initiation failed from\} \{\set_style "BLK_ITAL" local-lu\} \{\set_style "MSG_TEXT" to\} \{\set_style "BLK_ITAL" remote-lu\} \p
+\{\set_style "MSG_TEXT" using logmode\} \{\set_style "BLK_ITAL" logmode\} \{\set_style "MSG_TEXT" and pool\} \{\set_style "BLK_ITAL" pool\}\p
+\{\set_style "MSG_TEXT" return code\} \{\set_style "BLK_ITAL" return-code\} \{\set_style "MSG_TEXT" reason code\} \{\set_style "BLK_ITAL" reason-code\} \{\set_style "MSG_TEXT" sense\} \{\set_style "BLK_ITAL" sensedata\} \p
+\{\set_style "MSG_TEXT" explanation\} \{\set_style "BLK_ITAL" text\}\p
+\p
+This diagnostic message is issued when InfoSession cannot establish a session between the \{\set_style "BLK_BLD_ITAL" local-LU\} (an InfoSession ACB) and a \{\set_style "BLK_BLD_ITAL" remote-LU\}.\p
+\p
+\{\set_style "BLK_BLD_ITAL" isess-addr\}  Session control block address.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-token - session-token\}  InfoSession's unique session identifier.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-addr\}  Task control block address.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-addr\}  Process control block address.\p
+\p
+\{\set_style "BLK_BLD_ITAL" workstation-name\}  Name of workstation LU associated with the request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" local-lu\}  Name of  InfoSession ACB used for session request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remote-lu\}  Name of LU that was the requested session partner.\p
+\p
+\{\set_style "BLK_BLD_ITAL" logmode\}  Name of the logmode that was used in the session request.  A blank name indicates that the default logmode associated with the secondary LU by virtue of VTAM definitions was requested.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pool\}  Name of the virtual terminal pool used in the session request.  A blank name indicates a request for an ACB from the default pool.  Pools are kept in a list that is arranged in ascending order by pool name and the first pool in the list is also used as a default pool when no specific pool name is specified on a session request.  The reserved pool name MAIN indicates a request for a session using the InfoSession's main ACB.\p
+\p
+\{\set_style "BLK_BLD_ITAL" return-code\}  InfoSession $SESS service return code.  See the description of text.\p
+\p
+\{\set_style "BLK_BLD_ITAL" reason-code\}  InfoSession $SESS service reason code.  See the description of text.\p
+\p
+\{\set_style "BLK_BLD_ITAL" sensedata\}  VTAM-provided SNA sense data.  This sense information can be useful when the explanation indicates VTAM ERR.  Refer to IBM SNA Network Product Formats for an explanation of the SNA sense information.\p
+\p
+\{\set_style "BLK_BLD_ITAL" text\}  Text interpretation of the return code or reason code or both.  The following explanations are possible.\p
+\p
+  \{\set_style "BLK_BLD" NO POOL\}  Requested virtual terminal pool does not exist.\p
+\p
+  \{\set_style "BLK_BLD" NO ACB\}  Suitable ACB could not be found in the specified pool.\p
+\p
+  \{\set_style "BLK_BLD" CANCELED\}  Session termination was requested before the session setup was completed.\p
+\p
+  \{\set_style "BLK_BLD" VTAM ERR\}  Session request was issued and VTAM completed the request unsuccessfully.  The reason-code is 4 bytes of hexadecimal information and the VTAM return-code (RPLRTNCD) is stored in the third byte and the VTAM extended return-code (RPLFDB2) is stored in the fourth byte.  The RPLRTNCD and RPLFDB2 are documented in the IBM VTAM Programming manual.\p
+\p
+  \{\set_style "BLK_BLD" NOTIFY\}  In general, this means that the application partner has rejected the session request.  Often this is because of a mismatch between the application subsystem definitions (for example, the CICS terminal gen) and the virtual terminal ACBs defined in the pool for that application.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM965E"
+\0 \0 \{\set_style "MSG" INTVTM965E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM splist\} \{\set_style "BLK_ITAL" splist-addr user-token - session-token\} \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-addr\} \p
+\{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-addr\}  \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" workstation-name\}\p
+\{\set_style "MSG_TEXT" -rsp received: sense\} \{\set_style "BLK_ITAL" sna-sense\} \{\set_style "MSG_TEXT" cntrl\} \{\set_style "BLK_ITAL" rplcntrl\}  \{\set_style "MSG_TEXT" rh\} \{\set_style "BLK_ITAL" sna-request-header\} \p
+\{\set_style "MSG_TEXT" seqno\} \{\set_style "BLK_ITAL" sna-sequence-number\}\p
+\p
+This diagnostic message is issued when an SNA negative response is received.  A message sent by InfoSession has been rejected by the session partner or by some component of the network.  This information is useful in diagnosing the reason for an unexpected SNA session interruption or hang condition.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM966E"
+\0 \0 \{\set_style "MSG" INTVTM966E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM isess\} \{\set_style "BLK_ITAL" isess-addr user-token - session-token\} \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-addr\} \p
+\{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-addr\} \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" workstation-name\}\p
+\{\set_style "MSG_TEXT" -rsp sent: sense\} \{\set_style "BLK_ITAL" sna-sense\} \{\set_style "MSG_TEXT" cntrl\} \{\set_style "BLK_ITAL" rplcntrl\} \{\set_style "MSG_TEXT" rh\} \{\set_style "BLK_ITAL" sna-request-header\} \p
+\{\set_style "MSG_TEXT" seqno\} \{\set_style "BLK_ITAL" sna-sequence-number\}\p
+\p
+Diagnostic message issued when an SNA negative response is sent.  A message sent by the session partner is being rejected by InfoSession.  This information is useful in diagnosing the reason for an unexpected SNA session interruption or hang condition.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM967E"
+\0 \0 \{\set_style "MSG" INTVTM967E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM isess\} \{\set_style "BLK_ITAL" isess-addr user-token - session-token\} \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-addr\} \p
+\{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-addr\} \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" workstation-name\}\p
+\{\set_style "MSG_TEXT" -rsp received: sense\} \{\set_style "BLK_ITAL" sna-sense\} \{\set_style "MSG_TEXT" cntrl\} \{\set_style "BLK_ITAL" rplcntrl \}\{\set_style "MSG_TEXT" rh\} \{\set_style "BLK_ITAL" sna-request-header\} \p
+\{\set_style "MSG_TEXT" seqno\} \{\set_style "BLK_ITAL" sna-sequence-number\}\p
+\p
+This diagnostic message is issued when an SNA negative response is received.  A message sent by the system has been rejected by the session partner or by some component of the network.  This information is useful in diagnosing the reason for an unexpected SNA session interruption or hang condition.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM968E"
+\0 \0 \{\set_style "MSG" INTVTM968E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM isess\} \{\set_style "BLK_ITAL" isess-addr user-token - session-token\} \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-addr\} \p
+\{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-addr\} \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" workstation-name\}\p
+\{\set_style "MSG_TEXT" send truncated from\} \{\set_style "BLK_ITAL" requested-size\} \{\set_style "MSG_TEXT" to\} \{\set_style "BLK_ITAL" acceptable-size\}\{\set_style "MSG_TEXT" , increase the session RU size\}\p
+\p
+This diagnostic message is issued when an output message must be truncated before sending it to the session partner.  This will only occur if the SNA BIND used for the session specified that SNA chaining is not allowed.  This bind setting is normally used only for non-SNA LU0 3270 devices.  The \{\set_style "BLK_BLD_ITAL" acceptable-size\} is determined by the maximum RU size specified in the bind.  To correct the error, select a bind that specifies larger RU sizes for the session.  The bind to be used for a session is  normally selected by the user via the VTAM LOGMODE parameter.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM969E"
+\0 \0 \{\set_style "MSG" INTVTM969E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM isess\} \{\set_style "BLK_ITAL" isess-addr user-token - session-token\} \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-addr\} \p
+\{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-addr\} \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" workstation-name\}\p
+\{\set_style "MSG_TEXT" $timer set failed, rc\} \{\set_style "BLK_ITAL" return-code\}\p
+\p
+This diagnostic message is issued when a STIMERM macro call fails.  The \{\set_style "BLK_BLD_ITAL" return-code\} is documented in the IBM publication MVS/ESA Application Macro Reference.  This failure can cause errors in session handling and should be reported to PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM970E"
+\0 \0 \{\set_style "MSG" INTVTM970E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM driver token\} \{\set_style "BLK_ITAL" user-token - session-token\}  \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-add\}\p
+\{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-addr\} \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" workstation-name\} \{\set_style "MSG_TEXT" virtual 3270 lutype-0 not supported\}\p
+\p
+This diagnostic message is issued when a virtual session was rejected because the bind parameters were not acceptable.  To correct the error, select an LU2 bind (that is, a bind image that is appropriate for an SNA 3270 display session) for the virtual session.  The bind to be used for a session is normally selected by the user via the VTAM LOGMODE parameter.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM971E"
+\0 \0 \{\set_style "MSG" INTVTM971E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM 3270 query failed token\} \{\set_style "BLK_ITAL" user-token - session-token\} \p
+\{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-addr\}  \{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-addr\} \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" workstation-name\}\p
+\p
+This diagnostic message is issued when logon processing could not successfully query a workstation that logged on using a bind that specified query support.  If the error affects the usability of the system, contact PLATINUM Technical Support for assistance.  This error can be circumvented by selecting a bind that does not specify query support.  The bind to be used for a session is normally selected by the user via the VTAM Logmode parameter.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM972E"
+\0 \0 \{\set_style "MSG" INTVTM972E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM driver token\} \{\set_style "BLK_ITAL" user-token - session-token\}  \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-addr\} \p
+\{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-addr\}  \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" workstation-name\}\p
+\{\set_style "MSG_TEXT" $proc stop rc\} \{\set_style "BLK_ITAL" return-code\} \{\set_style "MSG_TEXT" rsn\} \{\set_style "BLK_ITAL" reason-code\}\p
+\p
+This diagnostic message is issued when a request to stop a driver routine receive an unexpected return code.  If the error affects the usability of the system, contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM973E"
+\0 \0 \{\set_style "MSG" INTVTM973E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM $SESS post failed for token\} \{\set_style "BLK_ITAL" user-token - session-token\} \p
+\{\set_style "MSG_TEXT" splist\} \{\set_style "BLK_ITAL" splist-address\} \{\set_style "MSG_TEXT" epb\} \{\set_style "BLK_ITAL" ebp-address\} \{\set_style "MSG_TEXT" rc\} \{\set_style "BLK_ITAL" return-code\} \{\set_style "MSG_TEXT" rsn\} \{\set_style "BLK_ITAL" reason-code\}\p
+\p
+This diagnostic message is issued when the posting of a $SESS request receives an unexpected return code.  If the error affects the usability of the system, contact PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM974E"
+\0 \0 \{\set_style "MSG" INTVTM974E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM unbind-hold not expected, task\} \{\set_style "BLK_ITAL" task-address\} \p
+\{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-address\} \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" workstation-name\}\p
+\{\set_style "MSG_TEXT" token\} \{\set_style "BLK_ITAL" user-token - session-token\}\p
+\p
+This diagnostic message is issued when an SNA unbind type(hold) is received for a session and the system is not configured to process it correctly.  This error will normally cause incorrect handling of virtual sessions with an application.  It can be corrected by changing the application configuration for the application.  Change the application configuration to specify that the application issues CLSDST/PASS, multiple CLSDST/PASS, or that the application requires exclusive use of an ACB.  Message \{\goto "<intmsgvx>INTVTM975E" INTVTM975E\} will normally be associated with this message.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM975E"
+\0 \0 \{\set_style "MSG" INTVTM975E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM unsolicited bind not expected from\} \{\set_style "BLK_ITAL" plu-name\} \{\set_style "MSG_TEXT" for\}\p
+\{\set_style "BLK_ITAL" virtual-terminal-slu-name\} \{\set_style "MSG_TEXT" CID=\} \{\set_style "BLK_ITAL" vtamcid\}\{\set_style "MSG_TEXT" , USR=\} \{\set_style "BLK_ITAL" rplusfld\}\{\set_style "MSG_TEXT" , RPL=\} \{\set_style "BLK_ITAL" rpl-address\}\p
+\p
+This diagnostic message is issued when an SNA BIND is received for a session and the system is not configured to process it correctly.  This error will normally cause incorrect handling of virtual sessions with an application.  It can be corrected by changing the application configuration for the application.  Change the application configuration to specify that the application issues CLSDST/PASS, multiple CLSDST/PASS, or that the application requires exclusive use of an ACB.  Message \{\goto "<intmsgvx>INTVTM974E" INTVTM974E\} will normally be associated with this message when the error is due to an incorrect application configuration.\p
+\p
+This message is also issued when an InfoSession workstation is configured for LU6.2 communications and the configuration file specifies an InfoSession APPLID other than the APPLID that has been specifically defined for LU6.2 communications.  Change the workstation configuration file to specify the correct InfoSession \p
+APPLID.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM976E"
+\0 \0 \{\set_style "MSG" INTVTM976E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM nsexit for\} \{\set_style "BLK_ITAL" taskname\}\{\set_style "MSG_TEXT" , CID=\} \{\set_style "BLK_ITAL" vtam-cid\}\{\set_style "MSG_TEXT" , USR= \}\{\set_style "BLK_ITAL" rplusfld\}\{\set_style "MSG_TEXT" ,\} \p
+\{\set_style "MSG_TEXT" RPL=\} \{\set_style "BLK_ITAL" rpl-address\}\{\set_style "MSG_TEXT" , RU=\} \{\set_style "BLK_ITAL" sna-ru-data\}\{\set_style "MSG_TEXT" :  No session found\}\p
+\p
+This diagnostic message is issued when an SNA network services RU is received and cannot be resolved to an active session.  Most likely the session has already been terminated and system operation will continue normally.  Contact PLATINUM Technical Support if this condition interrupts normal system operation.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM977E"
+\0 \0 \{\set_style "MSG" INTVTM977E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM scip exit for\} \{\set_style "BLK_ITAL" taskname\}\{\set_style "MSG_TEXT" , CID=\} \{\set_style "BLK_ITAL" vtam-cid\}\{\set_style "MSG_TEXT" , USR=\} \{\set_style "BLK_ITAL" rplusfld\}\{\set_style "MSG_TEXT" ,\}\p
+\{\set_style "MSG_TEXT" RPL=\} \{\set_style "BLK_ITAL" rpl-address\}\{\set_style "MSG_TEXT" , RPLCNTRL=\} \{\set_style "BLK_ITAL" rplcntrl\}\{\set_style "MSG_TEXT" :  No session found\}\p
+\p
+This diagnostic message is issued when an SNA session control RU is received and cannot be resolved to an active session.  Most likely the session has already been terminated and system operation will continue normally.  Contact PLATINUM Technical Support if this condition interrupts normal system operation.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM978I"
+\0 \0 \{\set_style "MSG" INTVTM978I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM driver token\} \{\set_style "BLK_ITAL" user-token - session-token\} \p
+\{\set_style "MSG_TEXT" $SESS splist\} \{\set_style "BLK_ITAL" splist-address\}\p
+\p
+This diagnostic message should not appear during normal system operation.  It is a multi-line message and the header line is followed by four lines of formatted splist information.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM979I"
+\0 \0 \{\set_style "MSG" INTVTM979I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM driver token\} \{\set_style "BLK_ITAL" user-token - session-token\} \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-address\} \p
+\{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-address\} \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" workstation\} \{\set_style "MSG_TEXT" cancel request\}\p
+\p
+This diagnostic message should not appear during normal system operation.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM980I"
+\0 \0 \{\set_style "MSG" INTVTM980I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM receive-any process for \}\{\set_style "MSG_TEXT" ACB\} \{\set_style "BLK_ITAL" acbname\} \{\set_style "MSG_TEXT" terminated\}\p
+\p
+This message indicates that VTAM receive operations for \{\set_style "BLK_BLD_ITAL" acbname\} have ended and session communication is no longer possible.  The message is normally issued when an ACB is being closed during normal system shutdown or in response to the TPEND operator command.  If the message appears at other times, it indicates a communications failure that might be preceded by messages \{\goto "<intmsgvx>INTVTM997E" INTVTM997I\} or \{\goto "<intmsgvx>INTVTM998E" INTVTM998I\} or both.  A possible external cause is that the VTAM operator has deactivated the application acbname.  The ACB acbname can be reactivated by ensuring that the APPL is active to VTAM and then issuing the TPSTART ACB(acbname) operator command.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM981E"
+\0 \0 \{\set_style "MSG" INTVTM981E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM unknown work element\} \{\set_style "BLK_ITAL" work-element-ID\} \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-address\} \p
+\{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-address\} \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" workstation-name\}\p
+\p
+This is the header of a multi-line message that documents a system failure that should be reported to PLATINUM Technical Support.  The workstation task identified by \{\set_style "BLK_BLD_ITAL" taskname\} might experience communications errors.  If necessary, the workstation task can be recovered by ending the current workstation session and establishing a new session.  Other system operations continue normally.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM982I"
+\0 \0 \{\set_style "MSG" INTVTM982I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM driver token\} \{\set_style "BLK_ITAL" user-token\} \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-address\} \{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-address\} \p
+\{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" workstation-name\} \{\set_style "MSG_TEXT" stop requested\}\p
+\p
+This diagnostic message should not appear during normal system operation.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM983I"
+\0 \0 \{\set_style "MSG" INTVTM983I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM isess\} \{\set_style "BLK_ITAL" isess-address\} \{\set_style "MSG_TEXT" token\} \{\set_style "BLK_ITAL" user-token - session-token\} \{\set_style "MSG_TEXT" ended,\} \p
+\{\set_style "MSG_TEXT" in:\} \{\set_style "BLK_ITAL" inbound-msg-count/inbound-char-count\} \p
+\{\set_style "MSG_TEXT" out:\} \{\set_style "BLK_ITAL" outbound-msg-count/outbound-char-count\}\p
+\p
+This diagnostic message is logged when a session ends.  The inbound message count and character count indicate the amount of data received from the remote session partner.  The outbound message count and character count indicate the amount of data sent to the remote session partner.  Only normal SNA Function Management Data RUs (FMD RUs) are reflected in these counts.  Other special SNA messages such as Data Flow Control RUs and Session Control RUs are not counted.  All SNA FMD RUs that comprise a complete SNA chain are counted as one message.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM984I"
+\0 \0 \{\set_style "MSG" INTVTM984I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM isses\} \{\set_style "BLK_ITAL" isess-address\} \{\set_style "MSG_TEXT" token\} \{\set_style "BLK_ITAL" user-token - session-token\} \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-address\} \{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-address\} \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" workstation\} \{\set_style "MSG_TEXT" cancel requested\}\p
+\p
+This diagnostic message indicates that a session process has been canceled.  This message will be logged if message class Vtamtrace has been activated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM985I"
+\0 \0 \{\set_style "MSG" INTVTM985I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM isses\} \{\set_style "BLK_ITAL" isess-address\} \{\set_style "MSG_TEXT" token\} \{\set_style "BLK_ITAL" user-token - session-token\} \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-address\} \{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-address\} \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" workstation-name\} \{\set_style "MSG_TEXT" stop\} \{\set_style "MSG_TEXT" requested\}\p
+\p
+This diagnostic message indicates a session proc is stopping normally.  This message will be logged if the message class Vtamtrace has been activated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM986I"
+\0 \0 \{\set_style "MSG" INTVTM986I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM ivuser\} \{\set_style "BLK_ITAL" ivuser-address\} \{\set_style "MSG_TEXT" token\} \{\set_style "BLK_ITAL" user-token\} \{\set_style "MSG_TEXT" has ended\}\p
+\p
+This diagnostic message indicates a workstation task has ended.  This message will be logged if message class Vtamtrace has been activated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM987I"
+\0 \0 \{\set_style "MSG" INTVTM987I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM ivuser\} \{\set_style "BLK_ITAL" ivuser-address\} \{\set_style "MSG_TEXT" token\} \{\set_style "BLK_ITAL" user-token\} \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-address\} \{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-address\} \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" workstation-name\} \{\set_style "MSG_TEXT" cancel requested\}\p
+\p
+This diagnostic message indicates a workstation task has been canceled.  This message will be logged if message class Vtamtrace has been activated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM988I"
+\0 \0 \{\set_style "MSG" INTVTM988I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM ivuser\} \{\set_style "BLK_ITAL" ivuser-address\} \{\set_style "MSG_TEXT" token\} \{\set_style "BLK_ITAL" user-token\} \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-address\} \{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-address\} \{\set_style "MSG_TEXT" for \}\{\set_style "BLK_ITAL" workstation-name\} \{\set_style "MSG_TEXT" stop requested\}\p
+\p
+This diagnostic message indicates a workstation task is stopping normally.  This message will be logged if the message class Vtamtrace has been activated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM989I"
+\0 \0 \{\set_style "MSG" INTVTM989I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM main task cancel requested\}\p
+\p
+The $VTMTASK is being canceled out of the system.  A cancel of the VTAM main task should only be requested under exceptional circumstances, usually at the direction of PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM990I"
+\0 \0 \{\set_style "MSG" INTVTM990I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM main task stop requested\}\p
+\p
+The $VTMTASK is being stopped normally.  A normal stop of the VTAM main task occurs during shutdown of the system.  The task will not end until all communications sessions are ended and all VTAM ACBs are closed.  If the stop of the VTAM main task fails to complete within a reasonable period of time, the TPUSER SESS operator command or the TPPOOLS MAIN SESS operator command or both can be used to identify session or ACB resources or both that are still active.  It might be necessary to use VTAM operator commands to terminate these resources (for example, V NET, TERM...to end sessions or V NET, INACT, ID=acbname, I/F to deactivate an APPL).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM991E"
+\0 \0 \{\set_style "MSG" INTVTM991E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM tpend exit failed to find an active ACB named\} \{\set_style "BLK_ITAL" acbname\}\p
+\p
+VTAM has signaled that ACB \{\set_style "BLK_BLD_ITAL" abcname\} should be closed, however, the indicated ACB was no longer active in the system.  Normal system operation continues.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM992I"
+\0 \0 \{\set_style "MSG" INTVTM992I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM tpend exit for\} \{\set_style "BLK_ITAL" acbname\}\{\set_style "MSG_TEXT" , reason code\} \{\set_style "BLK_ITAL" VTAM-tpend-reason-code\}\p
+\p
+VTAM has signaled that ACB \{\set_style "BLK_BLD_ITAL" acbname\} should be closed.  This normally occurs in response to an APPL deactivation request issued by the VTAM operator (for example, V NET,INACT,ID=acbname).  The \{\set_style "BLK_BLD_ITAL" VTAM-tpend-reason-code\} is documented in the IBM VTAM Programming manual.  The system will respond to all VTAM TPEND requests by ending all sessions using the specified ACB and closing the ACB.  The ACB can be reactivated by first ensuring that the APPL is active to VTAM and then issuing the TPSTART ACB(acbname) operator command.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM993E"
+\0 \0 \{\set_style "MSG" INTVTM993E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM resp exit for\} \{\set_style "BLK_ITAL" workstation-name\}\{\set_style "MSG_TEXT" , CID=\}\{\set_style "BLK_ITAL" vtam-cid\}\{\set_style "MSG_TEXT" ,\}\{\set_style "MSG_TEXT"  USR=\} \{\set_style "BLK_ITAL" rplusfld\}\{\set_style "MSG_TEXT" , CNTRL=\} \{\set_style "BLK_ITAL" rplcntrl\}\{\set_style "MSG_TEXT" , SEQNO=\} \{\set_style "BLK_ITAL" sna-sequence-number\}\{\set_style "MSG_TEXT" : No session found\}\p
+\p
+This diagnostic message is issued when an SNA response is received and cannot be resolved to an active session.  Most likely the session has already been terminated and system operation will continue normally.  Contact PLATINUM Technical Support if this condition interrupts normal system operation.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM994I"
+\0 \0 \{\set_style "MSG" INTVTM994I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM relreq exit for\} \{\set_style "BLK_ITAL" workstation-name\}\{\set_style "MSG_TEXT" , ACB=\}\{\set_style "BLK_ITAL" acbname\}\p
+\p
+This diagnostic message is issued when VTAM notifies the system that another application requesting a session with \{\set_style "BLK_BLD_ITAL" workstation-name\}.  Normal system operation continues and \{\set_style "BLK_BLD_ITAL" workstation-name\} is not released until it voluntarily ends the session with the system by logging off.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM995E"
+\0 \0 \{\set_style "MSG" INTVTM995E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM dfasy exit for\} \{\set_style "BLK_ITAL" workstation-name\}\{\set_style "MSG_TEXT" , CID=\} \{\set_style "BLK_ITAL" vtam-cid\}\{\set_style "MSG_TEXT" , USR=\} \{\set_style "BLK_ITAL" rplusfld\}\{\set_style "MSG_TEXT" , RPL=\} \{\set_style "BLK_ITAL" rpl-address\}\{\set_style "MSG_TEXT" : No session found\}\p
+\p
+This diagnostic message is issued when an SNA expedited data flow control request is received and cannot be resolved to an active session.  Most likely the session has already been terminated and system operation will continue normally.  Contact PLATINUM Technical Support if this condition interrupts normal system operation.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM996E"
+\0 \0 \{\set_style "MSG" INTVTM996E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM losterm exit for\} \{\set_style "BLK_ITAL" workstation-name\}\{\set_style "MSG_TEXT" , CID=\} \{\set_style "BLK_ITAL" vtam-cid\}\{\set_style "MSG_TEXT" ,\} \p
+\{\set_style "MSG_TEXT" USR=\} \{\set_style "BLK_ITAL" rplusfld\}\{\set_style "MSG_TEXT" , RC=\} \{\set_style "BLK_ITAL" losterm-reason-code\}\{\set_style "MSG_TEXT" : No session found\}\p
+\p
+This diagnostic message is issued when VTAM reports and SNA session outage to the system and the outage cannot be resolved to an active session.  Most likely the session has already been terminated and system operation will continue normally.  Contact PLATINUM Technical Support if this condition interrupts normal system operation.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo         
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM997E"
+\0 \0 \{\set_style "MSG" INTVTM997E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM lerad exit isess\} \{\set_style "BLK_ITAL" isess-address\} \{\set_style "MSG_TEXT" token\} \{\set_style "BLK_ITAL" user-token - session-token\} \p
+\{\set_style "MSG_TEXT" cid\} \{\set_style "BLK_ITAL" vtam-cid\} \{\set_style "MSG_TEXT" rpl=\} \{\set_style "BLK_ITAL" rpl-address\}\{\set_style "MSG_TEXT" , rplfdbk=\} \{\set_style "BLK_ITAL" rpl-feedback\}\{\set_style "MSG_TEXT" , action=\}\{\set_style "BLK_ITAL" vtam-major-return-code\}\p
+\p
+This diagnostic message is issued when VTAM reports a logical error related to an RPL-based request issued by the system.  Most likely the session has already been terminated and system operation will continue normally.  Contact PLATINUM Technical Support if this condition interrupts normal system operation.  Message \{\goto "<intmsgvx>INTVTM016I" INTVTM016I\} follows this message and provides a complete display of the RPL contents.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo          
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM998E"
+\0 \0 \{\set_style "MSG" INTVTM998E\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM synad exit isess\} \{\set_style "BLK_ITAL" isess-address\} \{\set_style "MSG_TEXT" token\} \{\set_style "BLK_ITAL" user-token - session-token\} \{\set_style "MSG_TEXT" cid\} \{\set_style "BLK_ITAL"  vtam-cid\} \{\set_style "MSG_TEXT" rpl=\} \{\set_style "BLK_ITAL" rpl-address\}\{\set_style "MSG_TEXT" , rplfdbk=\} \{\set_style "BLK_ITAL" rpl-feedback\}\{\set_style "MSG_TEXT" , action=\} \{\set_style "BLK_ITAL" vtam-major-return-code\}\p
+\p
+This diagnostic message is issued when VTAM reports a physical error related to an RPL-based request issued by the system.  Most likely the session has already been terminated and system operation will continue normally.  Contact PLATINUM Technical Support if this condition interrupts normal system operation.  Message \{\goto "<intmsgvx>INTVTM016I" INTVTM016I\} follows this message and provides a complete display of the RPL contents.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTVTM999I"
+\0 \0 \{\set_style "MSG" INTVTM999I\}\p
+\p
+\{\set_style "MSG_TEXT" VTAM logon exit for\} \{\set_style "BLK_ITAL" workstation-name\}\{\set_style "MSG_TEXT" , ACB=\} \{\set_style "BLK_ITAL" acbname\}\{\set_style "MSG_TEXT" , CID=\} \{\set_style "BLK_ITAL" vtam-cid\}\{\set_style "MSG_TEXT" , USER=\} \{\set_style "BLK_ITAL" rplusfld\}\p
+\p
+This diagnostic message is issued when VTAM reports a workstation logon request to the system.  Normal system operation continues.  This message is logged if message class Vtamtrace has been activated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Vtamtrace                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>XRU"
+\0 \0 \{\set_style "code" Transaction Scheduler (XRU) Messages\}\p
+\p
+These messages give diagnostic logging of the processing of transactions from the workstation.  An example of a transaction:  you issue a SQL statement, and the server delivers the results to you.  The terms RU (request unit) and transaction are used synonymously.\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgvx>INTXRU001E" INTXRU001E\}\p
+\{\subtopic "<intmsgvx>INTXRU002E" INTXRU002E\}\p
+\{\subtopic "<intmsgvx>INTXRU003E" INTXRU003E\}\p
+\{\subtopic "<intmsgvx>INTXRU004E" INTXRU004E\}\p
+\{\subtopic "<intmsgvx>INTXRU005E" INTXRU005E\}\p
+\{\subtopic "<intmsgvx>INTXRU006E" INTXRU006E\}\p
+\p
+\{\subtopic "<intmsgvx>INTXRU011E" INTXRU011E\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTXRU001E"
+\0 \0 \{\set_style "MSG" INTXRU001E\}\p
+\p
+\{\set_style "MSG_TEXT" RU entry not found for Func:\} \{\set_style "BLK_ITAL" func\} \{\set_style "MSG_TEXT" Subfunc:\} \{\set_style "BLK_ITAL" subfunc\}\p
+\p
+A request unit arrived from a cooperative process, but no such \{\set_style "BLK_BLD_ITAL" func\}/\{\set_style "BLK_BLD_ITAL" subfunc\} combination are defined.  Ensure that the remote process and the host are running the compatible versions of the product software.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTXRU002E"
+\0 \0 \{\set_style "MSG" INTXRU002E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid RU length for Func:\} \{\set_style "BLK_ITAL" func\} \{\set_style "MSG_TEXT" Subfunc:\} \{\set_style "BLK_ITAL" subfunc\}\p
+\p
+The size of the request unit exceeds the defined packet maximum size.  Ensure that the remote process and the host are running compatible versions of the product software.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTXRU003E"
+\0 \0 \{\set_style "MSG" INTXRU003E\}\p
+\p
+\{\set_style "MSG_TEXT" RU processing routine not available for Func:\} \{\set_style "BLK_ITAL" func\} \{\set_style "MSG_TEXT" Subfunc:\} \{\set_style "BLK_ITAL" subfunc\}\p
+\p
+The identity of the request unit processing routine is not properly defined.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTXRU004E"
+\0 \0 \{\set_style "MSG" INTXRU004E\}\p
+\p
+\{\set_style "MSG_TEXT" Processing failed for RU Func:\} \{\set_style "BLK_ITAL" func - subfunc\} \{\set_style "MSG_TEXT" RC:\} \{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+The request unit processing routine returned a non-zero return code.  The \{\set_style "BLK_BLD_ITAL" retcode\} and \{\set_style "BLK_BLD_ITAL" rsncode\} are recorded for diagnostic purposes.  The presence of this message is not necessarily an indication of a system error.  Usually it means only that a request made by a remote process has failed.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTXRU005E"
+\0 \0 \{\set_style "MSG" INTXRU005E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid RU stack for Func:\} \{\set_style "BLK_ITAL" func\} \{\set_style "MSG_TEXT" Subfunc:\} \{\set_style "BLK_ITAL" subfunc\}\p
+\p
+The request unit is not properly constructed.  Ensure that the remote process and the host are running compatible versions of the product software.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTXRU006E"
+\0 \0 \{\set_style "MSG" INTXRU006E\}\p
+\p
+\{\set_style "MSG_TEXT" RU rejected, user has not completed signon\p
+\}\p
+A request from a client component has been rejected.  The user has not successfully signed on the host InfoSession server and the requested service is not available until signon is complete.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgvx>INTXRU011E"
+\0 \0 \{\set_style "MSG" INTXRU011E\}\p
+\p
+\{\set_style "MSG_TEXT" Conversational transaction error:\} \{\set_style "BLK_ITAL" service\}  \{\set_style "MSG_TEXT" RC:\} \{\set_style "BLK_ITAL" returncode\}  \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" reasoncode\}  \{\set_style "MSG_TEXT" INFO:\} \{\set_style "BLK_ITAL" information\}\p
+\p
+An error occurred while processing a conversational RU transaction.  The \{\set_style "BLK_BLD_ITAL" returncode\}, \{\set_style "BLK_BLD_ITAL" reasoncode\}, and \{\set_style "BLK_BLD_ITAL" information\} describe the reason for the failure.\p
+\p
+\{\set_style "BLK_BLD_ITAL" Service\}  The failing component.\p
+\p
+   \{\set_style "BLK_BLD" CONV PARTNER LOCATE\}  Unable to locate the process associated with conversational RU request.\p
+\p
+   \{\set_style "BLK_BLD" CONV PARTNER TSEND\}  Unable to forward the message to the associated process.\p
+\p
+   \{\set_style "BLK_BLD" CONV PARTNER PREMATURE TERM\}  The associated conversational process terminated prematurely.\p
+\p
+Contact PLATINUM Technology technical support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                         

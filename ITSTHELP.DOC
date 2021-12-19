@@ -1,0 +1,2788 @@
+\["PLATINUM InfoSession Help Texts"\]
+\def_style 0 \font font.normal \fg color.black \bg color.white
+\def_style 1 \font font.bold \fg color.white \bg color.darkgreen \curs helpw.curstopic
+\def_style 2 \font font.bold \fg color.green \bg color.blue
+\def_style 3 \font font.bold \fg color.black \bg color.white
+\def_style 4 \font font.bold \fg color.darkgreen \bg color.white \curs helpw.curstopic
+\def_style 5 \font font.bold \fg color.maroon \bg color.white
+\def_style 6 \font font.bold \fg color.black \bg color.white
+\def_style 7 \font font.normal \fg color.red \bg color.white
+\def_style 8 \font font.normal \fg color.magenta \bg color.white
+\def_style 9 \font font.bold \fg color.magenta \bg color.white
+\def_style 10 \font font.bold \fg color.brown \bg color.white
+\def_style 11 \font font.italic \fg color.black \bg color.white
+\def_style 12 \font font.italic \fg color.magenta \bg color.white
+\def_style 13 \font font.italic \fg color.navy \bg color.white
+\def_style 14 \font font.italic \fg color.red \bg color.white
+\def_style 15 \font font.normal \fg color.navy \bg color.green \curs curs.info
+\def_style 16 \font font.bold \fg color.navy \bg color.white
+
+
+\topic "PLATINUM InfoSession Test Drive Help"
+\0\p\p
+\2 PLATINUM InfoSession Test Drive Help\0
+\p
+\p
+\{\1\subtopic Introduction
+General Information\}\p
+\{\1\subtopic SQLAllocConnect
+ \4 SQLAllocConnect\}\p
+\{\1\subtopic SQLAllocEnv
+ \4 SQLAllocEnv\}\p
+\{\1\subtopic SQLAllocStmt
+ \4 SQLAllocStmt\}\p
+\{\1\subtopic SQLBindCol
+ \4 SQLBindCol\}\p
+\{\1\subtopic SQLBindParam
+ \4 SQLBindParam\}\p
+\{\1\subtopic SQLColAttribute
+ \4 SQLColAttribute\}\p
+\{\1\subtopic SQLConnect
+ \4 SQLConnect\}\p
+\{\1\subtopic SQLDescribeCol
+ \4 SQLDescribeCol\}\p
+\{\1\subtopic SQLDisconnect
+ \4 SQLDisconnect\}\p
+\{\1\subtopic SQLError
+ \4 SQLError\}\p
+\{\1\subtopic SQLExecDirect
+ \4 SQLExecDirect\}\p
+\{\1\subtopic SQLExecute
+ \4 SQLExecute\}\p
+\{\1\subtopic SQLFetch
+ \4 SQLFetch\}\p
+\{\1\subtopic SQLFreeConnect
+ \4 SQLFreeConnect\}\p
+\{\1\subtopic SQLFreeEnv
+ \4 SQLFreeEnv\}\p
+\{\1\subtopic SQLFreeStmt
+ \4 SQLFreeStmt\}\p
+\{\1\subtopic SQLGetCol
+ \4 SQLGetCol\}\p
+\{\1\subtopic SQLGetCursorName
+ \4 SQLGetCursorName\}\p
+\{\1\subtopic SQLNumResultCols
+ \4 SQLNumResultCols\}\p
+\{\1\subtopic SQLPrepare
+ \4 SQLPrepare\}\p
+\{\1\subtopic SQLRowCount
+ \4 SQLRowCount\}\p
+\{\1\subtopic SQLSetCursorName
+ \4 SQLSetCursorName\}\p
+\{\1\subtopic SQLSetParamValue
+ \4 SQLSetParamValue\}\p
+\{\1\subtopic SQLPTIAddLogMsg
+ \4 SQLPTIAddLogMsg\}\p
+\{\1\subtopic SQLPTIClearLogMsg
+ \4 SQLPTIClearLogMsg\}\p
+\{\1\subtopic SQLPTIColumns
+ \4 SQLPTIColumns\}\p
+\{\1\subtopic SQLPTIGetTypeInfo
+ \4 SQLPTIGetTypeInfo\}\p
+\{\1\subtopic SQLPTISendLogMsg
+ \4 SQLPTISendLogMsg\}\p
+\{\1\subtopic SQLPTISpecialColumns
+ \4 SQLPTISpecialColumns\}\p
+\{\1\subtopic SQLPTIStatistics
+ \4 SQLPTIStatistics\}\p
+\{\1\subtopic SQLPTITables
+ \4 SQLPTITables\}\p
+
+\{\1\subtopic BindAllCol
+ \4 BindAllCol\}\p
+\{\1\subtopic FetchAll
+ \4 FetchAll\}\p
+\{\1\subtopic ShowBoundCol
+ \4 ShowBoundCol\}\p
+
+
+\{\1\subtopic FullConnect
+ \4 FullConnect\}\p
+
+
+\{\1\subtopic FullDisconnect
+ \4 FullDisconnect\}\p
+
+
+\{\1\subtopic AllErrors
+ \4 AllErrors\}\p
+
+
+\p\p
+Select any topic which you would like to receive more information.
+
+
+\p\p
+\topic Introduction
+\0\p\p
+           \2 Introduction
+\0\p\p\p
+The PLATINUM InfoSession Test Drive is designed to help you learn InfoSession SQL
+and the run-time API.  You can practice using the InfoSession SQL and run-time
+ API on any project catalog (read-only).  The InfoSession SQL and run-time API defined in
+the Test Drive are based on X/Open and PLATINUM (PTI) extensions.
+\p\p
+When you choose a function from the menu, Test Drive displays a window that will
+allow you to specify information for that function.  The window allows one
+control for each argument in the function.  The information is specified in one
+of the following manner:
+\p\p
+\{\6 *   Text Boxes\}  Used to specify a numeric value.
+\p\p
+\{\6 *   Drop-Down Boxes\}  Used to provide a number of selectable choices.
+\p\p
+\{\6 *   Check Boxes\}  Used to specify arguments that accept window, environment,
+ connection, or statement handles, and output arguments that accept pointer to
+handles or output buffers.
+\p\p
+\{\5 Overview of PLATINUM InfoSession Test Drive SQL\}
+\p\p
+The PLATINUM InfoSession Test Drive SQL is presented in the following format:
+\p\p
+\{\6 Description\}  Description of the function.
+\p\p
+\{\6 Argument(s)\}  Description of the arguments of the function.
+\p\p
+\{\6 Synopsis\}  Synopsis of the function and its arguments.
+\p\p
+\{\6 Return Values\}  Return values of the function.
+\p\p
+\{\6 Application Usage\}  (Optional) Provides information about how the function
+is used.
+\p\p
+\{\6 Diagostics\}  Errors and warnings that a call to the function can produce.
+\p\p
+\{\6 Notes\}  Information that should be noted.
+
+
+
+\p\p
+
+\topic SQLAllocConnect
+\0\p\p
+           \2 SQLAllocConnect
+\5\p\p\p
+Description
+\p\0
+The \{\11 AllocConnect( )\}  function allocates a connection.
+\5\p\p
+Argument(s)
+\6\p
+henv [input]
+\p\0 Environment handle.
+\p\6 hdbc [output]
+\p\0
+Connection handle.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION AllocConnect\p
+  henv INTEGER,\p
+  hdbc INTEGER\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], or [SQL_INVALID_HANDLE].  If
+\{\11 AllocConnect( )\}  returns [SQL_ERROR], \{\11 hdbc\}  contains
+SQL_NULL_HDBC.  Additional error information is associated with \{\11 henv\}.
+\p\p\5
+Application Usage
+\p\0
+This function allocates a new connection, associates it with \{\11 henv\}, and
+returns a handle to it in \{\11 hdbc\}.  The application passes \{\11 hdbc\}  to subsequent
+\{\11 AllocStmt( )\}  to associate one or more statements with that connection.  The
+connection handle refers to a data structure containing all information
+related to the connection, including general status information, transaction
+state, and error information.
+\p\p\5
+Diagnostics
+\p\0
+The function might fail because a memory cannot be allocated for the
+connection handle (\{\7'S1001'\}).
+
+
+
+
+\topic SQLAllocEnv
+\0\p\p
+           \2 SQLAllocEnv\0
+\p\p\p\5
+Description
+\0\p
+The \{\11 AllocEnv( )\}  function allocates a new environment and returns a handle to it in \{\11 henv\}.
+The application passes \{\11 henv\}  to \{\11 AllocConnect( )\}  to associate a connection
+with that environment.  The environment handle allows management of
+global information such as valid connections and the current connection.
+\5\p\p
+Argument(s)
+\6\p
+henv [input]
+\p\0 Environment handle.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION AllocEnv\p
+  (henv INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS] or [SQL_ERROR].
+\p\p\5
+Application Usage
+\p\0
+If \{\11 AllocEnv( )\}  returns [SQL_ERROR], the application should determine if
+\{\11 henv\}  contains SQL_NULL_HENV.  If so, InfoSession failed to allocate
+memory for the handle and there is no relevant handle anywhere to
+associate additional error information.  If InfoSession successfully allocated
+memory for the handle but failed at some subsequent task, \{\11 henv\}  is a valid
+handle that the application can pass to \{\11 Error( )\}  to obtain additional
+InfoSession status information.
+\p\p\5
+Diagnostics
+\p\0
+The function might fail because memory cannot be allocated for the
+environment handle (\{\7'S1001'\}).
+\p\p
+The function might fail because there is a syntax error in the InfoSession
+configuration file (\{\7'S1900'\}).
+
+
+
+\topic SQLAllocStmt
+\0\p\p
+           \2 SQLAllocStmt\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 AllocStmt( )\}  function allocates a new statement, associates it with \{\11 hdbc\}, and returns
+a handle to it in \{\11 hstmt\}.  The application passes \{\11 hstmt\}  to subsequent CLI
+functions that process SQL statements.  InfoSession associates with the
+statement handle all information relating to descriptors, result values, and
+status information.
+\5\p\p
+Argument(s)
+\6\p
+hdbc [input]
+\p\0
+Database connection handle.
+\p\6
+hstmt [output]
+\p\0
+Statement handle.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION AllocStmt\p
+  (hdbc INTEGER,\p
+   hstmt INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], or [SQL_INVALID_HANDLE].  If
+\{\11 AllocStmt( )\}  returns [SQL_ERROR], \{\11 hstmt\}  contains
+SQL_NULL_HSTMT.  Additional error information is associated with
+\{\11 hdbc\}.
+\p\p\5
+Diagnostics
+\p\0
+If \{\11 hstmt\}  is already allocated, \{\11 AllocStmt( )\}  overwrites the handle without
+regard to its previous contents.
+\p\p
+The function might fail because memory cannot be allocated for the
+statement handle (\{\7'S1001'\}).
+\p\p
+The connection specified by \{\11 hdbc\}  must be open (\{\7'08003'\}).
+
+
+
+
+\topic SQLBindCol
+\0\p\p
+           \2 SQLBindCol\0
+\5\p\p\p
+Description
+\0\p
+The \{\11 BindCol( )\}  function binds a column of a result set to an application variable,
+enabling implicit data transfer and options data conversion when a row of
+the result set is fetched.
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+Statement handle.
+\p\6
+icol [input]
+\p\0
+Column number.  Columns are numbered sequentially from left to right
+and the left-most number is 1.
+\p\6
+fBufType [input]
+\p\0
+The application data type of \{\11 rgbValue\}.  This must be one of
+\{\4\goto "SQLBUF Symbols" SQLBUF Symbols\}.
+
+\p\6
+rgbValue [deferred output]
+\p\0
+A variable that InfoSession will load with column data when the fetch
+occurs.
+\p\6
+cbValueMax [input]
+\p\0
+Maximum number of bytes to store in \{\11 rgbValue\}.
+\p\6
+cbValue [deferred output]
+\p\0
+When a fetch occurs, InfoSession sets the variable to the length of the
+string returned in \{\11 rgbValue\}, or to [SQL_NULL_DATA] if the data value for
+the columns is null.  The value output in \{\11 cbValue\}  is defined only when
+\{\11 fBufType\}  is SQLBUF_CHAR or SQLBUF_3270_ATTR (or \{\11 fBufType\} is
+SQLBUF_DEFAULT and the database column is of type CHAR).
+\p\p
+InfoSession assigns values to \{\11 rgbValue\}  and \{\11 cbValue\}  whenever a fetch occurs
+on \{\11 hstmt\}.  InfoSession performs any data conversion specified in the call to
+\{\11 BindCol( )\}.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION BindCol\p
+  (hstmt INTEGER,\p
+   icol SMALLINT,\p
+   fBufType SMALLINT,\p
+   rgbValue POINTER,\p
+   cbValueMax INTEGER,\p
+   cbValue INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], or [SQL_INVALID_HANDLE].
+\p\p\5
+Application Usage
+\p\0
+The application must call \{\11 BindCol( )\}  before calling \{\11 Fetch( )\}  for any
+columns to be bound on the first fetch.  The application can call \{\11 BindCol( )\}
+thereafter to change the binding of those columns for subsequent fetches, or
+to bind additional columns for subsequent fetches.  To unbind all columns,
+InfoSession calls \{\11 FreeStmt( )\}  with the SQL_UNBIND argument.
+\p\p
+The application must allocate enough storage for \{\11 rgbValue\}  to accommodate
+the longest data value InfoSession might store there, taking into account any
+specified data conversions, or truncation will occur at the time of the fetch,
+causing \{\11 Fetch( )\}  to return [SQL_SUCCESS_WITH_INFO].  The
+application can detect that a fetch truncated the value in a bound column by
+comparing the value InfoSession stored in that column's \{\11 cbValue\}  to the buffer
+length the application declared in the call to \{\11 BindCol( )\}.
+\p\p\5
+Diagnostics
+\p\0
+If a result set already exists on \{\11 hstmt\}, then \{\11 icol\}  must be in the range from 1
+to and including the number of columns in the result set (\{\7'S1002'\}).
+\p\p
+\{\11 FBufType\} must be one of the \{\4\goto "SQLBUF Symbols" SQLBUF Symbols\} (\{\7'S1003'\}).
+
+\topic "SQLBUF Symbols"
+\0\p\p
+\p
+           \2 SQLBUF Symbols\0
+\p\p
+
+\p\16 Symbolic Data Type:\0  SQLCHAR
+\p\16 Symbolic Name for Use in C Programs:\0  SQLBUF_CHAR
+\p\16 C Data Type:\0  unsigned char
+\p
+\p\16 Symbolic Data Type:\0  SQLINTEGER
+\p\16 Symbolic Name for Use in C Programs:\0  SQLBUF_INTERGER
+\p\16 C Data Type:\0  long
+\p
+\p\16 Symbolic Data Type:\0  SQLSMALLINT
+\p\16 Symbolic Name for Use in C Programs:\0  SQLBUF_SHORT
+\p\16 C Data Type:\0  short
+
+
+
+
+
+\topic SQLBindParam
+\0\p\p
+           \2 SQLBindParam\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 BindParam( )\}  function binds a parameter in an SQL statement to an
+application variable, enabling implicit data transfer and optional data
+conversion when the statement is executed.
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+Statement handle.
+\p\6
+ipar [input]
+\p\0
+Parameter number.  Parameters are numbered sequentially from left to
+right and the left-most number is 1.
+\p\6
+fBufType [input]
+\p\0
+The application data type of \{\11 rgbValue\}.  This must be one of the following
+SQLBUF symbols:  SQLBUF_CHAR, SQLBUF_LONG,
+SQLBUF_SHORT, or SQLBUF_3270_ATTR.
+\p\6
+fSQLType [input]
+\p\0
+The SQL data type of the parameter.  This must be one of the following
+symbols:  SQL_CHAR, SQL_INTEGER, or SQLBUF_3270_ATTR.
+\p\6
+cbParamDef [input]
+\p\0
+Maximum size of the parameter.  If \{\11 fSQLType\}  is SQL_CHAR, this is the
+maximum length of the parameter.  Otherwise, \{\11 cbParamDef\}  is undefined.
+\p\6
+ibScale [input]
+\p\0
+Scale of the parameter (the total number of digits to the right of the
+decimal point).  In InfoSession, this is undefined.
+\p\6
+rgbValue [deferred input]
+\p\0
+The value for the parameter in the storage format specified by \{\11 fBufType\}.
+\p\6
+cbValue [deferred input]
+\p\0
+A variable whose value is interpreted when \{\11 hstmt\}  is executed:
+\p\6
+   *   \{\0 If a null value is to be used as the parameter, \{\11 cbValue\}  must contain
+the value [SQL_NULL_DATA].\}
+\p\6
+   *   \{\0 If \{\11 fBufType\}  is SQLBUF_CHAR and the data in \{\11 rgbValue\}  contains a
+null-terminated string, \{\11 cbValue\}  must either contain the length of the
+data in \{\11 rgbValue\}  or contain the value SQL_NTS.\}
+\p\6
+   *   \{\0 If \{\11 fBufType\}  is SQLBUF_CHAR and the data in \{\11 rgbValue\}  is not null-
+terminated, \{\11 cbValue\}  must contain the length of the data in \{\11 rgbValue\}.\}
+\p\p\0
+Otherwise, \{\11 cbValue\}  is unused.
+\p\p\9
+NOTE:
+\p\8
+InfoSession evaluates \{\12 rgbValue\}  and \{\12 cbValue\}  when \{\12 hstmt\}  is executed.  At that
+time, \{\12 rgbValue\}  must contain the actual data to use in place of parameter
+\{\12 ipar\}, in the stored format specified by \{\12 fBufType\}.  The value of \{\12 cbValue\}  at
+this time indicates the length (or other characteristics listed above) of
+\{\12 rgbValue\}.
+\p\p
+InfoSession performs any data conversion implied by the combination of
+\{\12 fBufType\}  and \{\12 fSQLType\}  (without modifying \{\12 rgbValue\}) and sends the
+resulting value to the server in place of the parameter marker.
+\p\p
+Execution of the SQL statement might fail with data conversion errors
+based on the values specified in \{\12 BindParam( )\}.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION BindParam\p
+  (hstmt INTEGER,\p
+   ipar SMALLINT,\p
+   fBufType SMALLINT,\p
+   fSQLType SMALLINT,\p
+   cbParamDef INTEGER,\p
+   ibScale SMALLINT,\p
+   rgbValue POINTER,\p
+   cbValue INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], or [SQL_INVALID_HANDLE].
+\p\p\5
+Application Usage
+\p\0
+The application can call this function either before or after calling
+\{\11 Prepare( )\}.  The application can set parameters in any order by calling this
+function repeatedly.
+\p\p\5
+Diagnostics
+\p\0
+The data value that \{\11 fBufType\}  identifies must be convertible to the data value
+identified by \{\11 fSQLType\} (\{\7'07006'\}).
+\p\p
+\{\11 fBufType\}  must be one of the values listed (\{\7'S1003'\}).
+\p\p
+\{\11 fSQLType\}  must be one of the \{\4\goto "SQLBUF Symbols" SQLBUF Symbols\} (\{\7'S1004'\}).
+\p\p
+\{\11 ipar\}  must be 1 or greater (\{\7'S1009'\}).
+
+
+
+\topic SQLColAttribute
+\0\p\p
+           \2 SQLColAttribute\0
+\p\p\p\5
+Description
+\p\0
+The \{\11 ColAttribute( )\}  function returns one attribute of a specified column of a
+result set.  The function takes the following arguments:
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+The statement handle.
+\p\6
+icol [input]
+\p\0
+Column number.  Columns are numbered sequentially from left to right
+and the first column is number 1.
+\p\6
+fDescType [input]
+\p\0
+Indicates the desired column attribute.  It must contain one of the
+following values:
+\p\6
+   *   \{\0 SQL_COLUMN_COUNT - Ignore \{\11 icol\}.  Return in \{\11 fDesc\}  the number of
+columns in the result set.\}
+\p\6
+   *   \{\0 SQL_COLUMN_NAME - Return in \{\11 rgbDesc\}  the name of column \{\11 icol\}.\}
+\p\6
+   *   \{\0 SQL_COLUMN_TYPE - Return in \{\11 fDesc\}  the SQL type of non-numeric
+data type for column \{\11 icol\}.\}
+\p\6
+   *   \{\0 SQL_COLUMN_LENGTH - If column \{\11 icol\}  is CHAR, return in \{\11 fDesc\}  its
+length or maximum length.  For non-fixed length data type '\{\7 32767\}' is
+returned.\}
+\p\6
+   *   \{\0 SQL_COLUMN_PRECISION - If column \{\11 icol\}  is numeric data type,
+return in \{\11 fDesc\}  its precision in digits.\}
+\p\6
+fDescType [input]
+\p\0
+Indicates the desired column attribute.  It must contain one of the
+following values:
+\p\6
+   *   \{\0 SQL_COLUMN_SCALE - InfoSession always returns 0 in \{\11 fDes\}.\}
+\p\6
+   *   \{\0 SQL_COLUMN_NULLABLE - Return in \{\11 fDesc\}  the value 1 if column
+\{\11 icol\}  can contain nulls, or 0 if the column is constrained to not contain
+nulls.\}
+\p\6
+   *   \{\0 SQL_COLUMN_UNNAMED - InfoSession always returns 0 in \{\11 fDesc\}.\p
+A call to \{\11 ColAttribute( )\}  does not change \{\11 rgbDesc\}  or \{\11 fDesc\}  unless
+explicitly specified above for the value used as \{\11 fDescType\}.\}
+\p\6
+rgbDesc [output]
+\p\0
+Buffer for string column attributes.
+\p\6
+cbDescMax [input]
+\p\0
+Length of \{\11 rgbDesc\}.
+\p\6
+cbDesc [output]
+\p\0
+Number of bytes in \{\11 rgbDesc\}.
+\p\6
+fDesc [output]
+\p\0
+Integer for numeric column attributes.
+\p\p\9
+NOTE:
+\p\8
+Calling \{\12 ColAttribute( )\}  returns one column attribute for the column \{\12 icol\}  (or
+if \{\12 fDescType\}  is SQL_COLUMN_COUNT, returns the number of columns
+in the result set).  If the desired information is a string, the function returns
+it in \{\12 rgbDesc\}.  If the desired information is a number, the function that
+returns it is \{\12 fDesc\}.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION ColAttribute\p
+  (hstmt INTEGER,\p
+   picol SMALLINT,\p
+   fDescType SMALLINIT,\p
+   rgbDesc CHAR,\p
+   cbDescMax SMALLINIT,\p
+   cbDesc SMALLINIT,\p
+   fDesc INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_SUCCESS_WITH_INFO],
+[SQL_INVALID_HANDLE], or [SQL_ERROR].
+\p\p\5
+Application Usage
+\p\0
+The application can obtain any attribute on any column, in any order, by
+repeated calls to \{\11 ColAttribute( )\}.
+\p\p\5
+Diagnostics
+\p\0
+The [SQL_SUCCESS_WITH_INFO] outcome occurs if the column name
+is truncated (\{\7'01004'\}).
+\p\p
+The application must prepare \{\11 hstmt\}  (by calling \{\11 Prepare( )\}  or \{\11 ExecDirect( )\})
+before calling \{\11 ColAttribute( )\}  (\{\7'S1010'\}).
+\p\p
+\{\11 icol\}  must be in the range from 1 to and including the number of columns in
+the result set (\{\7'S1002'\}).
+\p\p
+\{\11 fDescType\}  must be one of the values listed above (\{\7'S1009'\}).
+
+
+\topic SQLConnect
+\0\p\p
+           \2 SQLConnect\0
+\p\p\p\5
+Description
+\p\0
+Calling \{\11 Connect( )\} connects the application to a server.
+\5\p\p
+Argument(s)
+\6\p
+hdbc [input]
+\p\0
+Connection handle.
+\p\6
+vcServer [input]
+\p\0
+Buffer containing server name.  This is not used by InfoSession.
+\p\6
+cbServer [input]
+\p\0
+Length of \{\11 vcServer\}.
+\p\6
+vcUID [input]
+\p\0
+Buffer containing user identifier.  The length of this string can be 0.
+\p\6
+cbUID [input]
+\p\0
+Length of \{\11 vcUID\}.
+\p\6
+vcAuthStr [input]
+\p\0
+Buffer containing authentication string.  The length of this string can be 0.
+\p\6
+cbAuthStr [input]
+\p\0
+Length of \{\11 vcAuthStr\}.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION Connect\p
+  (hstmt INTEGER,\p
+   vcServer CHAR,\p
+   cbServer SMALLINT,\p
+   vcUID CHAR,\p
+   cbUID SMALLINT,\p
+   vcAuthStr CHAR,\p
+   cbAuthStr SMALLINT)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], or [SQL_INVALID_HANDLE].
+\p\p\5
+Diagnostics
+\p\0
+\{\11 hdbc\}  must not already identify a current or dormant connection (\{\7'08002'\}).
+\p\p
+The value of \{\11 vcUID\}  with leading and trailing spaces removed must be a
+valid user name and must not violate any InfoSession-defined restrictions
+(\{\7'28000'\}).
+\p\p
+The function might fail because the server rejects the connection for
+InfoSession-defined reasons (\{\7'08001'\}) or because the client cannot establish a
+connection (\{\7'08004'\}).
+
+
+
+\topic SQLDescribeCol
+\0\p\p
+           \2 SQLDescribeCol\0
+\p\p\p\5
+Description
+\p\0
+The \{\11 DescribeCol( )\} function describes a selected column from a result set.
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+The statement handle.
+\p\6
+icol [input]
+\p\0
+Column number. Columns are numbered sequentially from left to right
+and the left-most number is 1.
+\p\6
+vcColName [output]
+\p\0
+Column name.
+\p\6
+cbColNameMax [input]
+\p\0
+Length of \{\11 vcColName\}.
+\p\6
+cbColName [output]
+\p\0
+Number of bytes in \{\11 vcColName\}.
+\p\6
+fSQLType [output]
+\p\0
+The SQL data type of the column.  Applications should test the returned
+value using the symbol values (for example, SQL_CHAR or
+SQL_INTEGER).
+\p\6
+cbColDef [output]
+\p\0
+Length or precision for the column's data type in the database.  If
+\{\11 fSQLType\}  is non-numeric, the \{\11 cbColDef\}  is the maximum length of the
+column.  For non-fixed length data type '\{\7 32767\}' is returned.  For numeric
+data type, \{\11 cbColDef\}  is the precision in digits.
+\p\6
+ibScale [output]
+\p\0
+Scale of the column (the total number of digits to the right of the decimal
+point) if \{\11 fSQLType\}  is SQL_INTEGER.  This value is always set to 0.
+\p\6
+fNullable [output]
+\p\0
+The function sets this argument to one of the following:
+\p\6
+   *   \{\0 SQL_NO_NULLS - The column's definition does not allow null values.\}
+\p\6
+   *   \{\0 SQL_NULLABLE - The column's definition allows null values.\}
+\p\p\9
+NOTE:
+\p\8
+Calling \{\12 DescribeCol( )\}  returns the result descriptor (describing the column's
+name, type, and length) for column number \{\12 icol\}  of the result set.  The
+function sets \{\12 vcColName\}  to the column's name.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION DescribeCol\p
+  (hstmt INTEGER,\p
+   icol SMALLINT,\p
+   vcColName CHAR,\p
+   cbColNameMax SMALLINT,\p
+   cbColName SMALLINT,\p
+   fSQLType SMALLINT,\p
+   cbColDef INTEGER,\p
+   ibScale SMALLINT,\p
+   fNullable SMALLINT)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], [SQL_INVALID_HANDLE], or
+[SQL_SUCCESS_WITH_INFO].
+\p\p\5
+Application Usage
+\p\0
+The application can retrieve column descriptions in any order by repeated
+calls to \{\11 DescribeCol( )\}.
+\p\p\5
+Diagnostics
+\p\0
+The [SQL_SUCCESS_WITH_INFO] outcome occurs if the column name
+is truncated (\{\7'01004'\}).
+\p\p
+The application must prepare \{\11 hstmt\}  (by calling \{\11 Prepare( )\}  or \{\11 ExecDirect( )\})
+before calling \{\11 DescribeCol( )\}  (\{\7'S1010'\}).
+\p\p
+\{\11 icol\}  must be in the range from 1 to and including the number of columns in
+the result set (\{\7'S1002'\}).
+
+
+
+\topic SQLDisconnect
+\0\p\p
+           \2 SQLDisconnect\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 Disconnect( )\}  function closes the connection associated with \{\11 hdbc\}.  Disconnecting a
+connection that is not the current connection makes no change to the
+context of the current connection.  \{\11 Disconnect( )\}  also frees all the statement
+handles associated with the input connection handle.
+\5\p\p
+Argument(s)
+\6\p
+hdbc [input]
+\p\0
+Database connection handle.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION Disconnect\p
+  (hdbc INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_SUCCESS_WITH_INFO], [SQL_ERROR], or
+[SQL_INVALID_HANDLE].
+\p\p\5
+Diagnostics
+\p\0
+\{\11 hdbc\}  must refer to the current connection or to a dormant connection
+(\{\7'08003'\}).
+\p\p
+[SQL_SUCCESS_WITH_INFO] can occur if errors occur performing the
+disconnection (\{\7'01002'\}).
+
+
+
+\topic SQLError
+\0\p\p
+           \2 SQLError\0
+\5\p\p\p
+Description
+\p\0
+An application calls \{\11 Error( )\}  to obtain error or warning status from a
+previous call to a CLI function, especially one that returned [SQL_ERROR]
+or [SQL_SUCCESS_WITH_INFO].
+\p\p
+Error and warning status is associated with each handle for an environment,
+connection, and statement.  The first three arguments to specify a
+single handle for which the application seeks status:
+\5\p\p
+Argument(s)
+\6\p
+henv [input]
+\p\0
+Environment handle.
+\p\6
+hdbc [input]
+\p\0
+Connection handle.
+\p\6
+hstmt [input]
+\p\0
+Statement handle.
+\p\p\9
+NOTE:
+\p\8
+To obtain status on a SQL statement, pass a valid statement handle as
+\{\12 hstmt\}.  To obtain status on a connection, set \{\12 hstmt\}  to SQL_NULL_HSTMT
+and pass a valid connection handle as \{\12 hdbc\}.  To obtain status on an
+environment, set \{\12 hstmt\}  to SQL_NULL_HSTMT, set \{\12 hdbc\}  to
+SQL_NULL_HDBC, and pass a valid environment handle as \{\12 henv\}.
+\p\p
+The remaining arguments convey the status information to the application:
+\p\p\6
+vcSqlState [output]
+\p\0
+A string of 5 characters.  The first 2 characters indicate error class, and
+the next 3 characters indicate subclass.
+\p\6
+fNativeError [output]
+\p\0
+An InfoSession-defined error code.  Portable applications should not base
+their behavior on the value of \{\11 fNativeError\}.
+\p\6
+vcErrorMsg [output]
+\p\0
+InfoSession-defined message text.  Its length never exceeds
+[SQL_MAX_MESSAGE_LENGTH].
+\p\6
+cbErrorMsgMax [input]
+\p\0
+Length of \{\11 vcErrorMsg\}.
+\p\6
+cbErrorMsg [output]
+\p\0
+Length of complete message text.
+\p\p\9
+NOTE:
+\p\8
+A call to \{\12 Error( )\}  returns the status of the CLI function most recently called
+with the specified handle.
+\p\p
+A CLI function call can produce zero or more status records.  A status
+record is a set of \{\12 vcSQLState\}, \{\12 fNativeError\}, and \{\12 vcErrorMsg/cbErrorMsg\}.
+Any CLI function call that returns [SQL_ERROR] or
+[SQL_SUCCESS_WITH_INFO] produces at least one status record.  The
+application obtains one status record at a time by each successive call to
+\{\12 Error( )\}.  Each such call returns [SQL_SUCCESS], returns the status
+record, and removes that record from the list of records available using the
+specified handle.
+\p\p
+If no error messages are available, either because previous calls to \{\12 Error( )\}  obtained
+them all or because the last CLI function to use the specified handle
+returned success, then \{\12 Error( )\}  returns [SQL_NO_DATA]; \{\12 vcSqlState\}  is
+'\{\7 00000\}', \{\12 fNativeError\}, \{\12 cbErrorMsg\}, and \{\12 vcErrorMsg\}  are undefined.
+\p\p
+The \{\12 Error( )\}  function retrieves only status information pertaining to the
+most recent CLI function that used the specified handle.  If an application
+calls a second CLI function before retrieving status information from a first
+call, any information from the first call is lost, even if the second call
+produces no such information.  However, no call to \{\12 Error( )\}  produces such
+status information; calls to \{\12 Error( )\}  are not included in the determination of
+the most recent CLI function to use a handle.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION Error\p
+  (henv INTEGER,\p
+   hdbc INTEGER,\p
+   hstmt INTEGER,\p
+   vcSqlState CHAR,\p
+   fNativeError INTEGER,\p
+   vcErrorMsg CHAR,\p
+   cbErrorMsgMax SMALLINT,\p
+   cbErrorMsg SMALLINT)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_SUCCESS_WITH_INFO], [SQL_ERROR], or
+[SQL_INVALID_HANDLE].
+\p\p
+\{\11 Error( )\}  never provides output argument
+values pertaining to its own execution.  If \{\11 Error( )\}  is unable to retrieve any
+further error information, it returns [SQL_ERROR].
+[SQL_SUCCESS_WITH_INFO] outcome occurs if the error message is
+truncated, and no additional error information is supplied for this specific
+warning.
+
+
+
+
+\topic SQLExecDirect
+\0\p\p
+           \2 SQLExecDirect\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 ExecDirect( )\}  function effects a one-time execution of an SQL
+statement.
+\p\p\5
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+Statement handle.
+\p\6
+vcSqlStr [input]
+\p\0
+SQL text string, using the question mark (?) characters as parameter
+markers.
+\p\6
+cbSqlStr [input]
+\p\0
+Length of \{\11 vcSqlStr\}.
+\p\p\9
+NOTE:
+\p\8
+Calling the function executes the SQL statement in \{\12 vcSqlStr\}, using any
+parameter values set you \{\12 SetParamValue( )\}  and the current values of any
+bound parameter variables specified by \{\12 BindParam( )\}.  This might be any
+statement that can be prepared in dynamic SQL:  searched DELETE,
+INSERT, SELECT, and searched UPDATE.
+\p\p
+For the SELECT statement, if the application has used \{\12 SetCursorName( )\}  to
+associate a cursor name with \{\12 hstmt\}, InfoSession uses that cursor name;
+otherwise, InfoSession generates a cursor name.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION ExecDirect\p
+  (hstmt INTEGER,\p
+   vcSqlStr CHAR,\p
+   cbSqlStr INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], [SQL_INVALID_HANDLE], or
+[SQL_NO_DATA].
+\p\p\5
+Diagnostics
+\p\0
+\{\11 cbSqlStr\}  must be 1 or more, or SQL_NTS (\{\7'S1009'\}).
+\p\p
+The \{\11 ExecDirect( )\}  function might fail in the following ways based on the
+value of \{\11 vcSqlStr\}:
+\p
+\{\6   *\}   The statement text must have the syntax of a legally preparable SQL
+statement (\{\7'37000'\}).
+\p
+\{\6   *\}   The current user must have an privileges required to execute the
+SQL statement (\{\7'37000'\}).
+\p
+\{\6   *\}   Results from a previous SELECT statement must not still be
+pending on \{\11 hstmt\}; the application must call \{\11 FreeStmt( )\}  with the
+SQL_CLOSE parameter (\{\7'24000'\}).
+\p\p
+The number of parameters set by calls to \{\11 BindParam( )\}  and
+\{\11 SetParamValue( )\}  must match the number of parameters in the SQL
+statement (\{\7'07001'\}).
+\p\p
+A syntactically correct SQL statement can cause \{\11 ExecDirect( )\}  to fail for the
+following reasons:
+\p
+\{\6   *\}   No character parameter or literal in the SQL statement can exceed
+the maximum length of the associated table column (\{\7'22001'\}).
+\p
+\{\6   *\}   The SQL statement must not contain a parameter or literal whose
+value is incompatible with the data type of the associated table
+column (\{\7'22005'\}).
+\p
+\{\6   *\}   For an INSERT statement, the number of values to be inserted must
+match the degree of the derived table (\{\7'21S01'\}).
+\p
+\{\6   *\}   The SQL statement must not:
+\p
+\{\10        *\}  contain a null parameter value or the literal NULL where the
+associated table column is defined as NOT NULL.
+\p
+\{\10        *\}  contain a duplicate value for a table column constrained to
+contain only unique values.
+
+
+
+
+\topic SQLExecute
+\0\p\p
+           \2 SQLExecute\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 Execute( )\}  function executes a prepared SQL statement.
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+Statement handle.
+\p\p\9
+NOTE:
+\p\8
+Calling \{\12 Execute( )\}  executes \{\12 hstmt\}  as prepared by a previous call to
+\{\12 Prepare( )\}  and using any parameter values set by \{\12 SetParamValue( )\}  and the
+current values of any bound parameter variables specified by \{\12 BindParam( )\}.
+\p\p
+For the SELECT statement, if the application has used \{\12 SetCursorName( )\}  to
+associate a cursor name with \{\12 hstmt\}, InfoSession uses that cursor name;
+otherwise, InfoSession generates a cursor name.  However, a new cursor
+name is not generated on subsequent calls to \{\12 Execute( )\}.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION Execute\p
+  (hstmt INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], [SQL_INVALID_HANDLE], or
+[SQL_NO_DATA].
+\p\p\5
+Application Usage
+\p\0
+After the application processes (or discards) all results, it can call
+\{\11 Execute( )\}  again, with the same or different parameter values.
+\p\p\5
+Diagnostics
+\p\0
+The application must have prepared \{\11 hstmt\}  (by calling \{\11 Prepare( )\}) before the
+call to \{\11 Execute( )\}  (\{\7'S1010'\}).
+\p\p
+Results from a previous SELECT statement must not still be pending on
+\{\11 hstmt\}; the application must call \{\11 FreeStmt( )\}  with the SQL_CLOSE
+parameter (\{\7'24000'\}).
+\p\p
+The number of parameters set by calls to \{\11 BindParam( )\}  and
+\{\11 SetParamValue( )\}  must match the number of parameters in the SQL
+statement (\{\7'07001'\}).
+\p\p
+A syntactically correct SQL statement can cause \{\11 ExecDirect( )\}  to fail for the
+following reasons:
+\p
+\{\6   *\}   No character parameter or literal in the SQL statement can exceed
+the maximum length of the associated table column (\{\7'22001'\}).
+\p
+\{\6   *\}   The SQL statement must not contain a parameter or literal whose
+values is incompatible with the date type of the associated table
+column (\{\7'22005'\}).
+\p
+\{\6   *\}   The SQL statement must not:
+\p
+\{\10        *\}  contain a null parameter value or the literal NULL where the
+associated table column is defined as NOT NULL.
+\p
+\{\10        *\}  contain a duplicate value for a table column constrained to
+contain only unique values.
+
+
+
+
+\topic SQLFetch
+\0\p\p
+           \2 SQLFetch\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 Fetch( )\}  function gets the next row of a result set.
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+Statement handle.
+\p\p\9
+NOTE:
+\p\8
+When a SELECT statement has been executed on \{\12 hstmt\}, the application can
+call \{\12 Fetch( )\}  to fetch the next row from the result set.  This modifies any
+bound variables that a previous call to \{\12 BindCol( )\}  specified to reflect the
+values in the new row.  If the row contains more columns than have been
+bound, fetching the row also makes unbound columns available for retrieval
+using \{\12 GetCol( )\}.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION Fetch\p
+  (hstmt INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_INVALID_HANDLE], [SQL_ERROR],
+[SQL_NO_DATA], or [SQL_SUCCESS_WITH_INFO].  In the case of
+[SQL_ERROR], the resulting values of any bound variables are undefined.
+\p\p\5
+Diagnostics
+\p\0
+The [SQL_SUCCESS_WITH_INFO] outcome occurs if a returned string
+value is truncated (\{\7'01004'\}).
+\p\p
+The last SQL statement executed on \{\11 hstmt\}  must be a SELECT statement
+(\{\7'24000'\}).
+\p\p
+The number of columns bound by \{\11 BindCol( )\}  must not exceed the number
+of columns in the result set (\{\7'07008'\}).
+\p\p
+The data type of each column must be convertible to the type that a call to
+\{\11 BindCol( )\}  specified for that column (\{\7'07006'\}).
+
+
+
+
+\topic SQLFreeConnect
+\0\p\p
+           \2 SQLFreeConnect\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 FreeConnect( )\}  function frees a connection handle.
+\5\p\p
+Argument(s)
+\6\p
+hdbc [input]
+\p\0
+Database connection handle.
+\p\p\9
+NOTE:
+\p\8
+The function frees \{\12 hdbc\}, deallocating all memory associated with \{\12 hdbc\}.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION FreeConnect\p
+  (hdbc INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], or [SQL_INVALID_HANDLE].  If
+the function returns [SQL_ERROR], \{\11 hdbc\}  is still valid.
+\p\p\5
+Diagnostics
+\p\0
+The application must call \{\11 Disconnect( )\}  for \{\11 hdbc\}  before it calls
+\{\11 FreeConnect( )\}  (\{\7'S1010'\}).
+
+
+
+\topic SQLFreeEnv
+\0\p\p
+           \2 SQLFreeEnv\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 FreeEnv( )\}  function frees an environment handle.
+\5\p\p
+Argument(s)
+\6\p
+henv [input]
+\p\0
+Environment handle.
+\p\p\9
+NOTE:
+\p\8
+The function frees \{\12 henv\}, deallocating all memory associated with \{\12 henv\}.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION FreeEnv\p
+  (henv INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], or [SQL_INVALID_HANDLE].  If
+the function returns [SQL_ERROR], \{\11 henv\}  is still valid.
+\p\p\5
+Diagnostics
+\p\0
+The application must call \{\11 FreeConnect( )\}  for all connection handles
+allocated under \{\11 henv\}  before it calls \{\11 FreeEnv( )\}  (\{\7'S1010'\}).
+
+
+
+
+\topic SQLFreeStmt
+\0\p\p
+           \2 SQLFreeStmt\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 FreeStmt( )\}  function resets a statement handle in various ways.
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+Statement handle.
+\p\6
+fOption [input]
+\p\0
+An option argument that specifies the manner of freeing \{\11 hstmt\}.  This must
+be one of the following:
+\p
+\{\6   *\}   SQL_CLOSE - Any cursor associated with \{\11 hstmt\}  is closed and all
+pending results are discarded.  The application can reopen the cursor
+with the same or different parameter values.  If no cursor is
+associated with \{\11 hstmt\}, \{\11 FreeStmt( )\}  with this option has no effect.
+\p
+\{\6   *\}   SQL_DROP - The \{\11 hstmt\}  is freed and all memory and other resources
+associated with it are deallocated.  Any associated cursor is closed,
+as with SQL_CLOSE above.
+\p
+\{\6   *\}   SQL_UNBIND - All column buffers that were bound to \{\11 hstmt\}  using
+\{\11 BindCol( )\}  are released.
+\p
+\{\6   *\}   SQL_RESET_PARAMS - All parameters that were set for \{\11 hstmt\}  using
+\{\11 BindParam( )\}  and \{\11 SetParamValue( )\}  are released.
+\p\p\9
+NOTE:
+\p\8
+A single call to \{\12 FreeStmt( )\}  can achieve only one of the above effects.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION FreeStmt\p
+  (hstmt INTEGER,\p
+   fOption SMALLINT)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], [SQL_SUCCESS_WITH_INFO], or
+[SQL_INVALID_HANDLE].
+\p\p\5
+Diagnostics
+\p\0
+\{\11 fOption\}  must be one of the defined options (\{\7'S1009'\}).
+\p\p
+[SQL_SUCCESS_WITH_INFO] occurs if any communication failure is
+detected during \{\11 FreeStmt(SQL_DROP)\}.  The statement handle is freed and
+the error information can be retrieved from the associated \{\11 hdbc\}.
+
+
+
+\topic SQLGetCol
+\0\p\p
+           \2 SQLGetCol\0
+\5\p\p\p
+Description
+\p\0
+After fetching a new row of a result set, the application can call \{\11 GetCol( )\}  to
+obtain result data for part or all of a single unbound column.
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+Statement handle.
+\p\6
+icol [input]
+\p\0
+Column number.
+\p\6
+fBufType [input]
+\p\0
+The application data type of \{\11 rgbValue\}.  This must be one of \{\4\goto "SQLBUF Symbols" SQLBUF Symbols\}.
+\p\6
+rgbValue [output]
+\p\0
+Destination for the output data.
+\p\6
+cbValueMax [input]
+\p\0
+Maximum number of bytes to store in \{\11 rgbValue\}.
+\p\6
+cbValue [output]
+\p\0
+The length of the string returned in \{\11 rgbValue\}, or [SQL_NULL_DATA] if the
+data value for the column is null.  The value output in \{\11 cbValue\}  is defined
+only when \{\11 fBufType\}  is SQLBUF_CHAR (or \{\11 fBufType\}  is
+SQLBUF_DEFAULT and the database column is of type CHAR).
+\p\p\9
+NOTE:
+\p\8
+Unlike \{\12 BindCol( )\}, this function lets the application retrieve data one
+column at a time.  The application can also call \{\12 GetCol( )\}  to retrieve large
+data values in pieces.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION GetCol\p
+  (hstmt INTEGER,\p
+   icol SMALLINT,\p
+   fBufType SMALLINT,\p
+   rgbValue POINTER,\p
+   cbValueMax INTEGER,\p
+   cbValue INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_INVALID_HANDLE],
+[SQL_SUCCESS_WITH_INFO], or [SQL_ERROR].  In the case of
+[SQL_ERROR], the resulting values of the output argument are undefined.
+\p\p\5
+Application Usage
+\p\0
+If a SQL_CHAR column is truncated, the application can call \{\11 GetCol( )\}
+again, with the same \{\11 icol\}, to get subsequent data from the same unbound
+column, starting at the point of truncation.  To obtain the entire column, the
+application repeats such calls until the function returns [SQL_SUCCESS].
+Alternatively, the application can call \{\11 GetCol( )\}  with an incremented value
+of \{\11 icol\}.  This effectively discards the rest of the truncated column.
+\p\p\5
+Diagnostics
+\p\0
+The [SQL_SUCCESS_WITH_INFO] outcome occurs if the column data is
+truncated (\{\7'01004'\}).
+\p\p
+The application must fetch a row using \{\11 Fetch( )\}  before it can obtain
+columns by calling \{\11 GetCol( )\}  (\{\7'S1010'\}).
+\p\p
+The argument \{\11 icol\}  must be in the range from 1 to and including the number
+of columns in the result set, and must not specify a bound column or a lower
+number than the column last retrieved on a previous call to \{\11 GetCol( )\}  for the
+same row (\{\7'S1002'\}).
+\p\p
+\{\11 fBufType\}  must be one of the \{\4\goto "SQLBUF Symbols" SQLBUF Symbols\} (\{\7'S1003'\}).
+\p\p
+The data type of each column must be convertible to the type specified by
+\{\11 fBufType\}  (\{\7'07006'\}).
+
+
+
+\topic SQLGetCursorName
+\0\p\p
+           \2 SQLGetCursorName\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 GetCursorName( )\}  function returns a cursor name associated with a
+statement handle.
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+Statement handle.
+\p\6
+vcCursor [output]
+\p\0
+Cursor name.
+\p\6
+cbCursorMax [input]
+\p\0
+Length of \{\11 vcCursor\}.
+\p\6
+cbCursor [output]
+\p\0
+Number of bytes of cursor name.
+\p\p\9
+NOTE:
+\p\8
+Calling \{\12 GetCursorName( )\}  sets \{\12 vcCursor\}  to the cursor name associated with
+\{\12 hstmt\}.  The application can specify a cursor name explicitly by calling
+\{\12 SetCursorName( )\}; otherwise the cursor name is the one InfoSession created
+when the application executed a SELECT statement on \{\12 hstmt\}.  Implicit
+cursor names always start with SQLCUR.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION GetCursorName\p
+  (hstmt INTEGER,\p
+   vcCursor CHAR,\p
+   cbCursorMax SMALLINT,\p
+   cbCursor SMALLINT)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_SUCCESS_WITH_INFO],
+[SQL_INVALID_HANDLE], or [SQL_ERROR].
+\p\p\5
+\p\p\5
+Diagnostics
+\p\0
+The [SQL_SUCCESS_WITH_INFO] result occurs if InfoSession truncated
+the cursor name (\{\7'01004'\}).
+\p\p
+There must be a cursor name on \{\11 hstmt\}  (\{\7'S1015'\}).  With InfoSession, a name is
+not assigned until there is an open cursor or the application has called
+\{\11 SetCursorName( )\}.
+
+
+
+
+\topic SQLNumResultCols
+\0\p\p
+           \2 SQLNumResultCols\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 NumResultCols( )\}  function gets the number of columns in a result set.
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+Statement handle.
+\p\6
+ccol [output]
+\p\0
+Number of columns in the result set.
+\p\p\9
+NOTE:
+\p\8
+Calling \{\12 NumResultCols( )\}  sets the value of \{\12 ccol\}  to the number of columns in
+the result set associated with \{\12 hstmt\}, or to zero if the statement cannot return
+columns.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION NumResultCols\p
+  (hstmt INTEGER,\p
+   ccol  SMALLINT)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], or [SQL_INVALID_HANDLE].
+\p\p\5
+Diagnostics
+\p\0
+The application must have prepared \{\11 hstmt\}  (by calling \{\11 Prepare( )\}  or
+\{\11 ExecDirect( )\}) before the call to \{\11 NumResultCols( )\}  (\{\7'S1010'\}).
+
+
+
+
+\topic SQLPrepare
+\0\p\p
+           \2 SQLPrepare\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 Prepare( )\}  function prepares a statement for later execution.
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+Statement handle.
+\p\6
+vcSqlStr [input]
+\p\0
+SQL text string, using question marks (?) as parameter markers.
+\p\6
+cbSqlStr [input]
+\p\0
+Length of \{\11 vcSqlStr\}.
+\p\p\9
+NOTE:
+\p\8
+Calling \{\12 Prepare( )\}  prepares the SQL statement text in \{\12 vcSqlStr\}  for
+execution.  This might be any statement that can be prepared in dynamic
+SQL:  searched DELETE, INSERT, SELECT, and searched UPDATE.  The
+application can subsequently refer to the SQL statement using \{\12 hstmt\}.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION Prepare\p
+  (hstmt INTEGER,\p
+   vcSqlStr CHAR,\p
+   cbSqlStr INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], or [SQL_INVALID_HANDLE].
+\p\p\5
+Diagnostics
+\p\0
+\{\11 cbSqlStr\}  must be 1 or more, or SQL_NTS (\{\7'S1009'\}).
+\p\p
+The \{\11 Prepare( )\}  function can fail in the following ways based on the value of
+\{\11 vcSqlStr\}:
+\p
+\{\6   *\}   The statement text must have the syntax of a legally preparable SQL
+statement (\{\7'37000'\}).
+\p
+\{\6   *\}   If InfoSession checks access at the time of the call to \{\11 Prepare( )\}, the
+current user must have any privileges required to execute the SQL
+statement (\{\7'37000'\}).
+\p
+\{\6   *\}   There must not be an open cursor on \{\11 hstmt\}  (\{\7'24000'\}).
+\p
+\{\6   *\}   For an INSERT statement, the number of values to be inserted must
+match the degree of the derived table (\{\7'21S01'\}).
+\p
+\{\6   *\}   No character parameter or literal in the SQL statement can exceed
+the maximum length of the associated table column (\{\7'22001'\}).
+\p
+\{\6   *\}   The SQL statement must not contain a parameter or literal whose
+value is incompatible with the data type of the associated table
+column (\{\7'22005'\}).
+
+
+
+\topic SQLRowCount
+\0\p\p
+           \2 SQLRowCount\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 RowCount( )\}  function gets the number of rows affected by a SQL statement.
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+Statement handle.
+\p\6
+cRow [output]
+\p\0
+The count of rows affected.
+\p\p\9
+NOTE:
+\p\8
+Calling \{\12 RowCount( )\}  sets \{\12 cRow\}  to the number of rows that were affected by
+a DELETE, INSERT, or UPDATE statement executed most recently in
+\{\12 hstmt\}.  Since PLATINUM InfoSession creates a virtual database, this function
+always returns 0 in \{\12 cRow\}.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION RowCount\p
+  (hstmt INTEGER,\p
+   cRow  INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], or [SQL_INVALID_HANDLE].
+\p\p\5
+Diagnostics
+\p\0
+The application must execute \{\11 hstmt\}  (by calling \{\11 Execute( )\}  or \{\11 ExecDirect( )\})
+before the call to \{\11 RowCount( )\}  (\{\7'S1010'\}).
+
+
+
+\topic SQLSetCursorName
+\0\p\p
+           \2 SQLSetCursorName\0
+\5\p\p\p
+Description
+\p\0
+The application can call \{\11 SetCursorName( )\}  to assign a name to a cursor.
+This is an options step.  InfoSession implicitly gives each cursor a name
+(starting with 'SQLCUR') when it creates the cursor.
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+Statement handle.
+\p\6
+vcCursor [output]
+\p\0
+Cursor name.
+\p\6
+cbCursor [input]
+\p\0
+Length of \{\11 vcCursor\}.
+\p\p\9
+NOTE:
+\p\8
+Calling \{\12 SetCursorName( )\}  associates the name \{\12 vcCursor\}  with \{\12 hstmt\}.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION SetCursorName\p
+  (hstmt INTEGER,\p
+   vcCursor CHAR,\p
+   cbCursor SMALLINT)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], or [SQL_INVALID_HANDLE].
+\p\p\5
+Diagnostics
+\p\0
+There must not be a prepared statement on \{\11 hstmt\}  (\{\7'S1010'\}).
+\p\p
+The cursor name specified by \{\11 vcCursor\}  must be valid (\{\7'34000'\}).
+\p\p
+\{\11 vcCursor\}  must not start with 'SQLCUR' in order to avoid inadvertent
+duplication of names generated by InfoSession (\{\7'34000'\}).
+\p\p
+The cursor name specified by \{\11 vcCursor\}  must not already be defined within
+the connection associated with \{\11 hstmt\}  (\{\7'34000'\}).
+
+
+
+\topic SQLSetParamValue
+\0\p\p
+           \2 SQLSetParamValue\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 SetParamValue( )\}  function sets a parameter value.
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+Statement handle.
+\p\6
+ipar [input]
+\p\0
+Parameter number.  Parameters are numbered sequentially from left to
+right and the left-most number is 1.
+\p\6
+fBufTyupe [input]
+\p\0
+The application data type of \{\11 rgbValue\}.  This must one of the following
+SQLBUF symbols:  SQLBUF_CHAR, SQLBUF_LONG, or
+SQLBUF_SHORT.
+\p\6
+fSQLType [input]
+\p\0
+The SQL data type of the parameter.  This must be one of the following
+symbols:  SQL_CHAR or SQL_INTEGER.
+\p\6
+cbParDef [input]
+\p\0
+Maximum size of the parameter.  If \{\11 fSQLType\}  is SQL_CHAR, this is the
+maximum length of the parameter.  Otherwise \{\11 cbParDef\}  is undefined.
+\p\6
+ibScale [input]
+\p\0
+Scale of the parameter (the total number of digits to the right of the
+decimal point).  In InfoSession, this is undefined.
+\p\6
+rgbValue [input]
+\p\0
+The value for the parameter, in the storage format specified by \{\11 fBufType\}.
+\p\6
+cbValue [input]
+\p\0
+One of the following values:
+\p
+\{\6   *\}   If a null value is to be used as the parameter, \{\11 cbValue\}  must have the
+value [SQL_NULL_DATA].
+\p
+\{\6   *\}   If \{\11 fBufType\}  is SQLBUF_CHAR and the data in \{\11 rgbValue\}  contains a
+null-terminated string, \{\11 cbValue\}  must either have the length of the data
+in \{\11 rgbValue\}, not counting the null terminator, or the value SQL_NTS.
+\p
+\{\6   *\}   If \{\11 fBufType\}  is SQLBUF_CHAR and the data in \{\11 rgbValue\}  is not null-
+terminated, \{\11 cbValue\}  must be the length of the data in \{\11 rgbValue\}.
+Otherwise, \{\11 cbValue\}  is unused.
+\p\p\9
+NOTE:
+\p\8
+Calling \{\12 SetParamValue( )\}  specifies an immediate value for parameter
+number \{\12 ipar\}  in \{\12 hstmt\}.
+\p\p
+InfoSession validates the arguments during the call to \{\12 SetParamValue( )\}  (see
+the Diagnostics section below).  It applies any implicit data conversion
+from \{\12 fBufType\}  to \{\12 fSQLType\}  and substitutes the resulting value for the
+parameter marker.
+\p\p
+Execution of the SQL statement might fail with data conversion errors
+based on the values specified in \{\12 SetParamValue( )\}.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION SetParamValue\p
+  (hstmt INTEGER,\p
+   ipar  SMALLINT,\p
+   fBufType SMALLINT,\p
+   fSQLType SMALLINT,\p
+   cbParDef INTEGER,\p
+   ibScale SMALLINT,\p
+   rgbValue POINTER,\p
+   cbValue INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], or [SQL_INVALID_HANDLE].
+\p\p\5
+Application Usage
+\p\0
+The application can call this function either before or after calling
+\{\11 Prepare( )\}.  The application can set parameters in any order by calling this
+function repeatedly.
+\p\p\5
+Diagnostics
+\p\0
+The data value that \{\11 fBufType\}  identifies must be convertible to the data value
+identified by \{\11 fSQLType\}  (\{\7'07006'\}).
+\p\p
+\{\11 fBufType\}  must be one of the \{\4\goto "SQLBUF Symbols" SQLBUF Symbols\} (\{\7'S1003'\}).
+\p\p
+\{\11 fSQLType\}  must be one of \{\4\goto "SQL DATA TYPE Symbols" SQL DATA TYPE Symbols\} (\{\7'S1004'\}).
+\p\p
+\{\11 ipar\}  must be 1 or greater (\{\7'S1009'\}).
+
+\topic "SQL DATA TYPE Symbols"
+\0\p\p
+\p
+           \2 SQL DATA TYPE Symbols\0
+\p\p				     
+				     
+\p\16 SQL Data Type:\0  CHAR(n)      
+\p\16 Symbolic Name:\0  SQL_CHAR     
+\p				     
+\p\16 SQL Data Type:\0  CHAR(variable length)
+\p\16 Symbolic Name:\0  SQL_VARCHAR 	     
+\p					     
+\p\16 SQL Data Type:\0  CHAR(variable length)
+\p\16 Symbolic Name:\0  SQL_LONGVARCHAR      
+\p					     
+\p\16 SQL Data Type:\0  non-displayable (n)  
+\p\16 Symbolic Name:\0  SQL_BINARY  	     
+\p					     
+\p\16 SQL Data Type:\0  non-displayable (variable length)
+\p\16 Symbolic Name:\0  SQL_VARBINARY            	 
+\p							 
+\p\16 SQL Data Type:\0  non-displayable (variable length)
+\p\16 Symbolic Name:\0  SQL_LONGVARBINARY		 
+\p							 
+\p\16 SQL Data Type:\0  non-displayable (1)		 
+\p\16 Symbolic Name:\0  SQL_PTI_BOOLEAN 		 
+\p							 
+\p\16 SQL Data Type:\0  non-displayable (8)		 
+\p\16 Symbolic Name:\0  SQL_PTI_TIMESTAMP		 
+\p							 
+\p\16 SQL Data Type:\0  CHAR(8)
+\p\16 Symbolic Name:\0  SQL_PTI_3270_ATTR 		 
+\p							 
+\p\16 SQL Data Type:\0  INTEGER
+\p\16 Symbolic Name:\0  SQL_INTEGER
+\p							 
+\p\16 SQL Data Type:\0  SMALLINT
+\p\16 Symbolic Name:\0  SQL_SMALLINT
+\p							 
+\p\16 SQL Data Type:\0  CHAR(1)
+\p\16 Symbolic Name:\0  SQL_TINYINT
+
+
+\topic SQLPTIAddLogMsg
+\0\p\p
+           \2 SQLPTIAddLogMsg\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 PTIAddLogMsg( )\}  function is a PLATINUM extension that allows for line by
+line collection of message text generated by the calling application.  The
+\{\11 PTISendLogMsg( )\}  function can be then used to transmit all messages
+added to the queue to a log facility or help desk application on the host.
+
+\5\p\p
+Argument(s)
+\6\p
+hdbc [input]
+\p\0
+Database connection handle.
+\p\6
+fOptions [input]
+\p\0
+Indicates message presentation options.  It must contain one of the
+following values:
+\p
+\{\6   *\}   SQL_LOG_OPTION_MSGID - each message line will be framed with
+a product-defined message identifier.
+\p
+\{\6   *\}   Zero - no product-defined message identifier.
+\p\6
+fLevel [input]
+\p\0
+Indicates a blank, null, or a single character message level code
+appended to the product-defined message identifier designating the type
+of message.  If the \{\11 fOptions\}  function is zero, this argument is ignored.
+\p\p
+Predefined standard product level codes are:
+\p
+\{\6   *\}   SQLPTI_LOG_LEVEL_INFO
+\p
+\{\6   *\}   SQLPTI_LOG_LEVEL_WARNING
+\p
+\{\6   *\}   SQLPTI_LOG_LEVEL_ERROR
+\p
+\{\6   *\}   SQLPTI_LOG_LEVEL_SEVERE
+\p
+\{\6   *\}   Any alphanumeric character
+\p\6
+vcMsgStr [input]
+\p\0
+Address of a message buffer possibly containing one or more newline
+characters.
+\p\6
+cbMsgStr [input]
+\p\0
+Length of the message buffer (up to 256 characters) or SQL_NTS
+indicating that the message buffer is null terminated.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION PTIAddLogMsg\p
+  (hdbc INTEGER,\p
+   fOptions SMALLINT,\p
+   fLevel SMALLINT,\p
+   vcMsgStr CHAR,\p
+   cbMsgStr INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_INVALID_HANDLE],
+[SQL_SUCCESS_WITH_INFO], or [SQL_ERROR].
+\p\p\5
+Application Usage
+\p\0
+The message string is scanned for newline characters.  Each newline
+character marks the end of a "message line".  Null message lines are
+ignored and each non-null message line is added to the queue separately,
+facilitating message presentation on the host.
+\p\p
+LOG MESSAGEs are queued to the designated connection handle.  As each
+\{\11 PTIAddLogMsg( )\}  is accepted, a new message line is added to the queue on
+the connection handle in FIFO sequence.
+\p\p
+Messages continue to accumulate until either \{\11 PTIClearLogMsg( )\}  or
+\{\11 PTISendLogMsg( )\}  is issued.  At that time all queued messages are deleted.
+\p\p\5
+Diagnostics
+\p\0
+The connection specified by \{\11 hdbc\}  must be open (\{\7'08003'\}).
+\p\p
+The [SQL_SUCCESS_WITH_INFO] outcome occurs if the message is
+truncated (\{\7'01004'\}).
+\p\p
+\{\11 fOptions\}  and \{\11 fLevel\}  must have values listed above (\{\7'S1009'\}).
+
+
+
+\topic SQLPTIGetTypeInfo
+\0\p\p
+           \2 SQLPTIGetTypeInfo\0
+\p\p\0
+The \{\11 PTIGetTypeInfo( )\}  function is provided to extend ODBC functionality to X/Open users .  Thus, X/Open users should use this PTI extension and ODBC users should use the ODBC \{\11 SQLGetTypeInfo( )\}.
+\5\p\p
+Description
+\p\0
+The \{\11 PTIGetTypeInfo( )\}  function returns information about data types supported by the data source (in the form of a SQL result set).
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+Statement handle.
+\p\6
+fSqlType [input]
+\p\0
+\{\4\goto "SQL DATA TYPE Symbols" SQL DATA TYPE Symbols\}
+\5\p\p
+Column Names
+\p\6
+TYPE_NAME
+\p\0
+Data source-dependent data type name.  For example, "CHAR", "VARCHAR".
+\p\6
+DATA_TYPE
+\p\0
+SQL data type.
+\p\6
+PRECISION
+\p\0
+Precision of the column on the data source.  The precision of a numeric column or parameter refers to the maximum number of digits used by the data type of the column or parameter.  The precision of a non-numeric column or parameter refers to the maximum length or the defined length of the column or parameter.
+NULL is never returned for this column.
+\p\6
+LITERAL_PREFIX
+\p\0
+Character or characters used to prefix a literal.
+\p\6
+LITERAL_SUFFIX
+\p\0
+Character or characters used to terminate a literal.
+\p\6
+CREATE_PARAMS
+\p\0
+Parameters for a data type definition.  This column is nulled.
+\p\6
+NULLABLE
+\p\0
+Determines whether the data type accepts a NULL value.  Must be one of the following:\p
+\{\6   *\}   SQL_NO_NULLS - Data type does not accept a NULL value.\p
+\{\6   *\}   SQL_NULLABLE - Data type accepts a NULL value.\p
+\{\6   *\}   SQL_NULLABLE_UNKNOWN - Unknown if the column accepts a NULL value.
+\p\6
+CASE_SENSITIVE
+\p\0
+Determines whether a character data type is case sensitive in collations and comparisons.\p
+\{\6   *\}   TRUE - The data type is a character data type and is case sensitive (All STDENV character fields are case sensitive).\p
+\{\6   *\}   FALSE - The data type is not a character data type or is not case sensitive.
+\p\6
+SEARCHABLE
+\p\0
+How the data type is used in a WHERE clause:\p
+\{\6   *\}   SQL_UNSEARCHABLE - The data type cannot be used in a WHERE clause.\p
+\{\6   *\}   SQL_LIKE_ONLY - The data type can be used in a WHERE clause only with the LIKE predicate.\p
+\{\6   *\}   SQL_ALL_EXCEPT_LIKE - The data type can be used in a WHERE clause with all comparison operators except LIKE.\p
+\{\6   *\}   SQL_SEARCHABLE - The data type can be used in a WHERE clause with any comparison operator.
+\p\6
+UNSIGNED_ATTRIBUTE (UNSIGNED_ATTRIB)
+\p\0
+Determines whether the data type is unsigned:\p
+\{\6   *\}   TRUE - The data type is unsigned.\p
+\{\6   *\}   FALSE - The data type is signed.\p
+\{\6   *\}   NULL - The attribute is not appropriate for the data type or the data type is not numeric.\p
+\{\9 NOTE:\}  All STDENV integers can be signed or unsigned.  The name of this column exceeds the table services capacity and has been abbreviated to UNSIGNED_ATTRIB.
+\p\6
+MONEY
+\p\0
+This column always returns a FALSE value.
+\p\6
+AUTO_INCREMENT
+\p\0
+This column always returns a NULL value.
+\p\6
+LOCAL_TYPE_NAME
+\p\0
+This column always returns a NULL value.
+\p\6
+MINIMUM_SCALE
+\p\0
+The minimum scale of the data type on the data source.  MINIMUM_SCALE  and MAXIMUM_SCALE columns both contain this value if the data type has a fixed scale.  NULL is returned when the scale is not applicable.
+\p\6
+MAXIMUM_SCALE
+\p\0
+The maximum scale of the data type on the data source.  NULL is returned when the scale is not applicable.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION PTIGetTypeInfo\p
+ (hstmt INTEGER,\p
+   fSqlType SMALLINT,)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], [SQL_SUCCESS_WITH_INFO], or [SQL_INVALID_HANDLE].
+\p\p\5
+Diagnostics
+\p\0
+\{\11 fSqlType\}  must be one of the values listed above (\{\7 'S1009'\}).
+\p\6
+
+\popup sql
+
+SQL_BIGINT                          SQL_FLOAT\p
+SQL_TIME                             SQL_BINARY\p
+SQL_INTEGER                    SQL_TIMESTAMP\p
+SQL_BIT                                 SQL_LONGVARBINARY\p
+SQL_TINYINT                       SQL_CHAR\p
+SQL_LONGVARCHAR      SQL_VARBINARY\p
+SQL_DATE                            SQL_NUMERIC\p
+SQL_VARCHAR                   SQL_DECIMAL\p
+SQL_REAL                             SQL_DOUBLE\p
+SQL_SMALLINT\p
+SQL_ALL_TYPES-returns information on all supported types\p
+
+
+
+
+
+\topic SQLPTISendLogMsg
+\0\p\p
+           \2 SQLPTISendLogMsg\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 PTISendLogMsg( )\}  function is a PLATINUM extension that allows the
+application to transmit all of the messages collected by prior
+\{\11 PTIAddLogMsg( )\}  requests to each of the destinations indicated.  Upon
+completion, the message queue is deleted.
+\5\p\p
+Argument(s)
+\6\p
+hdbc [input]
+\p\0
+Database connection handle.
+\p\6
+fRouteFlags [input]
+\p\0
+Zero or more destinations indicated by a combination of the following
+destination mask bits:
+\p
+\{\6   *\}   SQLPTI_LOG_ROUTE_LOGFILE
+\p
+\{\6   *\}   SQLPTI_LOG_ROUTE_PRIVATE
+\p
+\{\6   *\}   SQLPTI_LOG_ROUTE_PUBLIC
+\p\6
+vcSource [input]
+\p\0
+Address of source identification string or NULL.
+\p\6
+cbSource [input]
+\p\0
+Length of a source identification string (up to 64 characters) or SQL_NTS
+indicating that the message buffer is null terminated.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION PTISendLogMsg\p
+  (hdbc INTEGER,\p
+   fRouteFlags SMALLINT,\p
+   vcSource CHAR,\p
+   cbSource INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], or [SQL_INVALID_HANDLE].
+\p\p\5
+Application Usage
+\p\0
+The entire message queue may be delivered to any or all of three
+destinations as determined by the \{\11 fRouteFlags\}  argument:
+\p
+\{\6   1.\}   The product LOGFILE, a system-wide journal of all informational,
+warning, and error messages useful for analyzing system
+performance, troubleshooting, etc.
+\p
+\{\6   2.\}   A public help desk, usually established by the system administrator
+to provide application problem tracking, user assistance, etc.
+\p
+\{\6   3.\}   A private help desk, running on the same workstation as the
+application, intended for use as an application development and
+debugging tool.
+\p\p
+Optionally, the application may provide a "message source" identifier in the
+form of a 1-64 character string.  For example, the user's UserID can be used
+as the source identification.
+\p\p\5
+Diagnostics
+\p\0
+The connection specified by \{\11 hdbc\}  must be open (\{\7'08003'\}).
+\p\p
+The [SQL_SUCCESS_WITH_INFO] outcome occurs if the source
+identification is truncated (\{\7'01004'\}).
+\p\p
+\{\11 fRouteFlags\}  must have a value listed above (\{\7'S1009'\}).
+
+
+
+\topic SQLPTIClearLogMsg
+\0\p\p
+           \2 SQLPTIClearLogMsg\0
+\5\p\p\p
+Description
+\p\0
+The \{\11 PTIClearLogMsg( )\}  function is a PLATINUM extension that is used to delete all
+LOG MESSAGEs added to the queue since the last \{\11 PTIClearLogMsg( )\}  or
+\{\11 PTISendLogMsg( )\}  request.
+\5\p\p
+Argument(s)
+\6\p
+hdbc [input]
+\p\0
+Database connection handle.
+\p\p\9
+NOTE:
+\p\8
+This function is automatically invoked at the end of \{\12 PTISendLogMsg( )\}.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION PTIClearLogMsg\p
+  (hdbc INTEGER)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS] or [SQL_INVALID_HANDLE].
+\p\p\5
+Diagnostics
+\p\0
+The connection specified by \{\11 hdbc\}  must be open (\{\7'08003'\}).
+
+
+
+
+\topic SQLPTIColumns
+\0\p\p
+           \2 SQLPTIColumns\0
+\p\p
+The \{\11 PTIColumns( )\}  function is provided to extend ODBC
+functionality to  X/Open users .  Thus, X/Open users should use this PTI
+extension and ODBC users should use the ODBC \{\11 SQLColumns( )\}.
+\5\p\p
+Description
+\p\0
+The \{\11 PTIColumns( )\}  function returns a list of column names in the specified tables and returns the information as a standard result set on the specified \{\11 hstmt\}.
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+Statement handle.
+\p\6
+vcTableQualifier [input]
+\p\0
+Qualifier name.  This column is always a NULL value.
+\p\6
+cbTableQualifier [input]
+\p\0
+Length of \{\11 vcTableQualifier\}.  This column always has a value of zero.
+\p\6
+vcTableOwner [input]
+\p\0
+Owner name.  This column is always a NULL value.
+\p\6
+cbTableOwner [input]
+\p\0
+Length of \{\11 vcTableOwner\}.  This column always has a value of zero.
+\p\6
+vcTableName [input]
+\p\0
+Table name.
+\p\6
+cbTableName [input]
+\p\0
+Length of \{\11 vcTableName\}.
+\p\6
+vcColumnName [input]
+\p\0
+String search pattern for column names.
+\p\6
+cbColumnName [input]
+\p\0
+Length of \{\11 vcColumnName\}.
+\p\p\5
+Column Names
+\p\6
+TABLE_QUALIFIER
+\p\0
+This column always returns a NULL value.
+\p\6
+TABLE_OWNER
+\p\0
+This column always returns a NULL value.
+\p\6
+TABLE_NAME
+\p\0
+Table identifier of the table to which the statistic or index applies.
+\p\6
+COLUMN_NAME
+\p\0
+Column identifier.
+\p\6
+DATA_TYPE
+\p\0
+SQL data type.
+\p\6
+TYPE_NAME
+\p\0
+SQL data type name.  For example, "CHAR", "VARCHAR", or "SMALLINT".
+\p\6
+PRECISION
+\p\0
+Precision of the column on the data source.  The precision of a numeric column or parameter refers to the maximum number of digits used by the data type of the column or parameter.  The precision of a non-numeric column or parameter refers to the maximum length or the defined length of the column or parameter.
+NULL is never returned for this column.
+\p\6
+LENGTH
+\p\0
+The length of a column is the maximum number of bytes returned to the application when data is transferred to it s default C data type.
+\p\6
+SCALE
+\p\0
+Scale of the column on the data source.  This column is nulled if the data type is non-numeric and returns zero (0) if the data type is an integer.
+\p\6
+RADIX
+\p\0
+Either 10, 2, or NULL for numeric data types.\p
+\{\6   *\}   If the RADIX is 10, the values in PRECISION and SCALE would give the number of decimal digits allowed for the column.  For example, a COLUMN-NAME(11,6) column would give RADIX of 10, PRECISION 11, and SCALE 6.  A FLOAT could return RADIX 10, PRECISION 15, and a SCALE OF NULL.
+\p
+\{\6   *\}   If the RADIX is 2, the values in PRECISION and SCALE would give the number of bits allowed in the column.  For example, a FLOAT could return RADIX 2, PRECISION 53, and a SCALE of NULL.
+\p
+\{\9 NOTE:\}  This column is nulled when radix is not applicable for the data type.
+\p\6
+NULLABLE
+\p\0
+\{\6   *\}   SQL_NO_NULLS - The column does not accept NULL values.
+\p
+\{\6   *\}   SQL_NULLABLE - The column accepts NULL values.
+\p
+\{\6   *\}   SQL_NULLABLE_UNKNOWN - It is not known if the column accepts NULL values.
+\p\6
+REMARKS
+\p\0
+This column always returns a NULL value.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION PTIColumns\p
+ (hstmt INTEGER,\p
+   vcTableQualifier CHAR,\p
+   cbTableQualifier SMALLINT,\p
+   vcTableOwner  CHAR,\p
+   cbTableOwner  SMALLINT,\p
+   vcTableName CHAR,\p
+   cbTableName SMALLINT,\p
+   vcColumnName CHAR,\p
+   cbColumnName SMALLINT,)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], [SQL_SUCCESS_WITH_INFO], or [SQL_INVALID_HANDLE].
+
+
+
+
+\topic SQLPTISpecialColumns
+\0\p\p
+           \2 SQLPTISpecialColumns\0
+\p\p
+The \{\11 PTISpecialColumns( )\}  function is provided to extend ODBC
+functionality to X/Open users.  Thus, X/Open users should use this PTI
+extension and ODBC users should use the ODBC \{\11 SQLSpecialColumns( )\} function.
+
+
+
+
+
+
+
+
+
+\p\p\5
+Description
+\p\0
+The \{\11 PTISpecialColumns( )\}  function retrieves information about
+
+columns within a specified table.  \{\11 PTISpecialColumns( )\}  can
+
+retrieve information about the optimal set of columns that uniquely
+identifies a row in the table or columns that are automatically updated when
+
+any value in the row is changed by a transaction and returns the
+
+information as a standard result set on the specified \{\11 hstmt\}.
+\5\p\p
+Argument(s)
+\6\p
+hstmt [input]
+\p\0
+Statement handle.
+\p\6
+fColType [input]
+\p\0
+Specifies the type of column that is returned.
+\p
+\{\6   *\}   SQL_BEST_ROWID - Returns the best column or set of columns that would allow any row in a specified table to be uniquely qualified for tables in the InfoSession project catalog.  However, when this command is issued against a virtual database table (VDB), it always returns an empty set.
+\p
+\{\6   *\}   SQL_ROWVER - Normally this would return a list of columns in a specified table that has been changed by a transaction.  However, InfoSession does not have a facility to do this, so an empty result set is always returned.
+\p\6
+vcTableQualifier [input]
+\p\0
+Qualifier name.  This column is always a NULL value.
+\p\6
+cbTableQualifier [input]
+\p\0
+Length of \{\11 vcTableQualifier\}.  This column always returns a value of zero.
+\p\6
+vcTableOwner [input]
+\p\0
+Owner name.  This column is always a NULL value.
+\p\6
+cbTableOwner [input]
+\p\0
+Length of \{\11 vcTableOwner\}.  This column is always a NULL value.
+\p\6
+vcTableName [input]
+\p\0
+Table name.
+\p\6
+cbTableName [input]
+\p\0
+Length of \{\11 vcTableName\}.
+\p\6
+fScope
+\p\0
+Specifies the minimum required scope of the rowid.  This argument must be one of the following:
+\p
+\{\6   *\}   SQL_SCOPE_CURROW - Guarantees that the rowid will be valid only while positioned on a row.  If the row is changed due to a transaction, the rowid will not return the row if a reselect is issued.
+\p
+\{\6   *\}   SQL_SCOPE_TRANSACTION - Guarantees that the rowid will be valid for the duration of the current transaction.
+\p
+\{\6   *\}   SQL_SCOPE_SESSION - Guarantees that the rowid is valid for the duration of the session (across transaction boundaries).
+\p\6
+fNullable
+\p\0
+Determines whether to return special columns that have or do not have a NULL value.  Must be one of the following:
+\p
+\{\6   *\}   SQL_NO_NULLS - Does not return special columns that can have a NULL value.
+\p
+\{\6   *\}   SQL_NULLABLE - Returns special columns even if they can have a NULL value.
+\p\p\5
+Column Names
+\p\6
+SCOPE
+\p\0
+The index/key definitions persist for the life of the table.  SQL_SCOPE_SESSION is always returned.
+\p\6
+COLUMN_NAME
+\p\0
+Column identifier.
+\p\6
+DATA_TYPE
+\p\0
+SQL data type.
+\p\6
+TYPE_NAME
+\p\0
+SQL data type name.  For example, "CHAR", "VARCHAR".
+\p\6
+PRECISION
+\p\0
+Precision of the column on the data source.  The precision of a numeric column or parameter refers to the maximum number of digits used by the data type of the column or parameter.  The precision of a non-numeric column or parameter refers to the maximum length or the defined length of the column or parameter.  NULL is never returned for this column.
+\p\6
+LENGTH
+\p\0
+The length of a column is the maximum number of bytes returned to the application when data is transferred to it s default C data type.
+\p\6
+SCALE
+\p\0
+Scale of the column on the data source.  This column is nulled if the data type is non-numeric and returns zero (0) if the data type is an integer.
+\p\6
+PSEUDO_COLUMN
+\p\0
+SQL_PC_NOT_PSEUDO is always returned.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION PTISpecialColumns\p
+  (hstmt INTEGER,\p
+   fColType SMALLINT,\p
+   vcTableQualifier CHAR,\p
+   cbTableQualifier SMALLINT,\p
+   vcTableOwner  CHAR,\p
+   cbTableOwner  SMALLINT,\p
+   vcTableName CHAR,\p
+   cbTableName SMALLINT,\p
+   fScope SMALLINT,\p
+   fNullable SMALLINT,)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], [SQL_SUCCESS_WITH_INFO], or [SQL_INVALID_HANDLE].
+\p\p\5
+Diagnostics
+\p\0
+\{\11 fColType, fScope\}, and \{\11 fNullable\}  must be one of the values listed above (\{\7 'S1009'\}).
+
+
+
+
+
+
+
+\topic SQLPTIStatistics
+\0\p\p
+           \2 SQLPTIStatistics\0
+\p\p
+The \{\11 PTIStatistics( )\}  function is provided to extend ODBC functionality to  X/Open users.  Thus, X/Open users should use the PTI extension and ODBC users should use the ODBC \{\11 SQLStatistics( )\}.
+\5\p\p
+Description
+\p\0
+The \{\11 PTIStatistics( )\}  function retrieves the indexes of and a list of statistics about a single table and returns the information as a standard result set on the specified \{\11 hstmt\}.
+\5\p\p
+Argument(s)
+\p\6
+hstmt [input]
+\p\0
+Statement handle.
+\p\6
+vcTableQualifier [input]
+\p\0
+Qualifier name.  This column is always a NULL value.
+\p\6
+cbTableQualifier [input]
+\p\0
+Length of \{\11 vcTableQualifier\}.  This column is always a NULL value.
+\p\6
+vcTableOwner [input]
+\p\0
+Owner name.  This column is always a NULL value.
+\p\6
+cbTableOwner [input]
+\p\0
+Length of \{\11 vcTableOwner\}.  This column is always a NULL value.
+\p\6
+vcTableName [input]
+\p\0
+Table name.
+\p\6
+cbTableName [input]
+\p\0
+Length of \{\11 vcTableName\}.
+\p\6
+FUnique [input]
+\p\0
+Type of index: SQL_INDEX_UNIQUE or SQL_INDEX_ALL.
+\p\6
+fAccuracy [input]
+\p\0
+The significance of the CARDINALITY and PAGES columns in the result set:
+\p
+\{\6   *\}   SQL_ENSURE - Requests that the driver unconditionally retrieve the statistics.
+\p
+\{\6   *\}   SQL_QUICK - Requests that the driver retrieve results only if they are readily available from the server.  However, the driver does not ensure that the values are correct.
+\p
+This column is always a NULL value.
+\5\p\p
+Column Names
+\p\6
+TABLE_QUALIFIER
+\p\0
+This column is always nulled.
+\p\6
+TABLE_OWNER
+\p\0
+This column is always nulled.
+\p\6
+TABLE_NAME
+\p\0
+Table identifier of the table to which the statistic or index applies.
+\p\6
+NON_UNIQUE
+\p\0
+Indicates whether the index prohibits duplicate values.
+\p
+\{\6   *\}   TRUE - Index values can be non-unique.
+\p
+\{\6   *\}   FALSE - Index values must be unique.
+\p\6
+INDEX_QUALIFIER
+\p\0
+Index qualifiers are not implemented.  This column is nulled.
+\p\6
+INDEX_NAME
+\p\0
+Index identifier.  If  TYPE  is SQL_TABLE_STAT, this column is nulled.
+\p\6
+TYPE
+\p\0
+Type of information that is returned:
+\p
+\{\6   *\}   SQL_TABLE_STAT - Indicates a statistic for the table.
+\p
+\{\6   *\}   SQL_INDEX_OTHER - Another type of index.  All indexes are classified SQL_INDEX_OTHER, avoiding any confusion that could arise when comparing STDENV table services to a true DBMS product.
+\p\6
+SEQ_IN_INDEX
+\p\0
+Column sequence number in index.  The sequence starts at one.  If  TYPE  is SQL_TABLE_STAT, this column is nulled.
+\p\6
+COLUMN_NAME
+\p\0
+Column identifier.  If  TYPE  is SQL_TABLE_STAT, this column is nulled.
+\p\6
+COLLATION
+\p\0
+Sort sequence for the column.
+\p
+\{\6   *\}   A   Ascending
+\p
+\{\6   *\}   D   Descending
+\p
+If the column sort sequence is supported by the datasource or if TYPE  is SQL_TABLE_STAT, this column is nulled.
+\p\6
+CARDINALITY
+\p\0
+Cardinality of a table or index. Number of rows in a table if TYPE is SQL_TABLE_STAT.  Number of unique values in the index if TYPE is not SQL_TABLE_STAT.  If the value is not available from the data, this column is nulled.
+\p
+\{\9 NOTE:\}  Table indexes created prior to the InfoSession 2.0 release do not maintain entry counts and force a null return.  The information is provided for InfoSession 2.0 and later indexes.
+\p\6
+PAGES
+\p\0
+Number of pages used to store the index or table.  Returns the page size for a table if TYPE is SQL_TABLE_STAT.  Returns the page size for the index if TYPE is not SQL_TABLE_STAT.  For both tables and indexes, one page is defined as 4K.
+\p\6
+FILTER_CONDITION
+\p\0
+Filtered indexes are not implemented.  This column is nulled.
+\p\p\5
+Synopsis
+\p\0
+FUNCTION PTIStatistics\p
+  (hstmt INTEGER,\p
+   vcTableQualifier CHAR,\p
+   cbTableQualifier SMALLINT,\p
+   vcTableOwner  CHAR,\p
+   cbTableOwner  SMALLINT,\p
+   vcTableName CHAR,\p
+   cbTableName SMALLINT,\p
+   fUnique SMALLINT,\p
+   fAccuracy SMALLINT,)\p
+RETURNS (SMALLINT)
+\p\p\5
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], [SQL_SUCCESS_WITH_INFO], or [SQL_INVALID_HANDLE].
+\p\p\5
+Diagnostics
+\p\0
+\{\11 fUnique\}  and \{\11 fAccuracy\}  must be one of the values listed above (\{\7 'S1009'\}).
+
+
+
+
+
+\topic SQLPTITables
+\0\p\p
+           \2 SQLPTITables\0
+\p\p
+The \{\11 PTITables( )\}  function is provided to extend ODBC functionality to X/Open users.  Thus, X/Open users should use the PTI extension and ODBC users should use the ODBC \{\11 SQLTables( )\}.
+\5\p\p
+Description
+\p\0
+The \{\11 PTITables( )\}  function returns a list of table names stored in a specific datasource and returns the information as a standard result set on the specified \{\11 hstmt\}.
+\5\p\p
+Argument(s)
+\p\6
+hstmt [input]
+\p\0
+Statement handle.
+\p\6
+vcTableQualifier [input]
+\p\0
+Qualifier name.  This column is always a NULL value.
+\p\6
+cbTableQualifier [input]
+\p\0
+Length of \{\11 vcTableQualifier\}. This column is always a NULL value.
+\p\6
+vcTableOwner [input]
+\p\0
+Owner name.  This column is always a NULL value.
+\p\6
+cbTableOwner [input]
+\p\0
+Length of \{\11 vcTableOwner\}.  This column is always a NULL value.
+\p\6
+vcTableName [input]
+\p\0
+Table name.
+\p\6
+cbTableName [input]
+\p\0
+Length of \{\11 vcTableName\}.
+\p\6
+vcTableType [input]
+\p\0
+List of the table types to match.
+\p\6
+cbTableType [input]
+\p\0
+Length of \{\11 vcTableType\}.
+\5\p\p
+Column Names
+\p\6
+TABLE_QUALIFIER
+\p\0
+This column is always nulled.
+\p\6
+TABLE_OWNER
+\p\0
+This column is always nulled.
+\p\6
+TABLE_NAME
+\p\0
+Table identifier of the table to which the statistic or index applies.
+\p\6
+TABLE_TYPE
+\p\0
+Identifies the table type.  Can only be one of the following:
+\p
+\{\6   *\}   TABLE
+\p
+\{\6   *\}   SYSTEM TABLE
+\5\p\p
+Synopsis
+\p\0
+FUNCTION PTIStatistics\p
+  (hstmt INTEGER,\p
+   vcTableQualifier CHAR,\p
+   cbTableQualifier SMALLINT,\p
+   vcTableOwner  CHAR,\p
+   cbTableOwner  SMALLINT,\p
+   vcTableName CHAR,\p
+   cbTableName SMALLINT,\p
+   vcTableType CHAR,\p
+   cbTableType SMALLINT,\p
+RETURNS (SMALLINT)
+\5\p\p
+Return Value
+\p\0
+[SQL_SUCCESS], [SQL_ERROR], [SQL_SUCCESS_WITH_INFO], or [SQL_INVALID_HANDLE].
+\5\p\p
+Application Usage
+\p\0
+\{\6   *\}   If \{\11 szTableQualifier\}  is a single percent character (%) and \{\11 szTableOwner\}  and \{\11 szTableName\}  are empty strings, then no result set is returned.
+\p
+\{\6   *\}   If \{\11 szTableOwner\}  is a single percent character (%) and \{\11 szTableQualifier\}  and \{\11 szTableName\}  are empty strings, then no result set is returned.
+\p
+\{\6   *\}   If \{\11 szTableType\}  is a single percent character (%) and \{\11 szTableQualifier, szTableOwner\}, and \{\11 szTableName\}  are empty strings, the result set contains a list of valid table types for the data source. (All columns except the TABLE_TYPE column are nulled.)
+
+
+
+
+
+\topic BindAllCol
+\0\p\p
+           \2 Bind All Col\0
+\p\p\p
+The \{\11 Bind All Col\}  function tool binds all the columns in a result set:
+\0\p\p
+\{\3 1.\}  Calls \{\13 FreeStmt( )\}  with \{\11 fOption\}  set to SQL_UNBIND to
+unbind any previously bound columns.
+\p\p
+\{\3 2.\}  Calls \{\13 NumResultCol( )\}  to determine the number of columns in the result set.
+\p\p
+\{\3 3.\}  Calls \{\13 DescribeCol( )\}  for each column in the result set to determine
+the data type and precision of the column.
+\p\p
+\{\3 4.\}  Calls \{\13 BindCol( )\}  for each column in the result set to bind the column to
+a SQLBUF_CHAR buffer.
+
+
+
+
+\topic FetchAll
+\0\p\p
+           \2 Fetch All\0
+\p\p\p
+The \{\11 Fetch All\}  function tool fetches all remaining rows in all pending result sets on
+the current \{\11 hstmt\}.  If any columns were bound, after \{\11 Fetch All\}
+has completed these will contain the values from the last row of the last
+result set.  The \{\11 Fetch All\}  function tool:
+\0\p\p
+\p\p
+\{\3 1.\}  Calls \{\13 Fetch( )\}  until it returns SQL_NO_DATA.
+\p\p
+
+
+
+\topic ShowBoundCol
+\0\p\p
+           \2 Show Bound Col\0
+\p\p\p
+The \{\11 Show Bound Col\}  function tool displays the binding information
+and the value of each buffer bound to a column with the \{\13 BindCol( )\}.
+  The \{\11 Show Bound Col\}  function tool does not call any X/Open functions.
+
+
+
+
+\topic FullConnect
+\0\p\p
+           \2 Full Connect\0
+\p\p\p
+The \{\11 Full Connect\} function tool completely connects to a data source.
+  It:
+\0\p\p
+\{\3 1.\}  Calls \{\13 AllocEnv( )\}  (if necessary).
+\p\p
+\{\3 2.\}  Calls \{\13 AllocConnect( )\}.
+\p\p
+\{\3 3.\}  Calls \{\13 Connect( )\}.
+\p\p
+\{\3 4.\}  Calls \{\13 AllocStmt( )\}.
+
+
+\topic FullDisconnect\0
+\0\p\p
+           \2 Full Disconnect\0
+\p\p\p
+The \{\11 Full Disconnect\}  function tool completely disconnects from the
+data source on the current \{\11 hdbc\}.  It:
+\0\p\p
+\{\3 1.\}  Calls \{\13 Disconnect( )\}.
+\p\p
+\{\3 2.\}  Calls \{\13 FreeConnect( )\}.
+\p\p
+\{\3 3.\}  Calls \{\13 FreeEnv( )\}  (if there is no connection).
+
+\topic AllErrors\0
+\p\p
+	\2 All Errors\0
+\p\p\p
+The \{\11 All Errors\}  function tool displays all pending errors.  It:
+\0\p\p
+\{\3 1.\}  Calls \{\13 Error( )\} with the current \{\11 hstmt\}  until 
+\{\13 Error( )\}  returns SQL_NO_DATA.
+\p\p
+\{\3 2.\}  Calls \{\13 Error( )\} with the current \{\11 hdbc\}  until 
+\{\13 Error( )\}  returns SQL_NO_DATA.
+\p\p
+\{\3 3.\}  Calls \{\13 Error( )\} with the current \{\11 henv\}  until 
+\{\13 Error( )\}  returns SQL_NO_DATA.
+
+

@@ -1,0 +1,2655 @@
+\[----------------------------------------------------------------------\]
+\[This file includes the following files...\]
+\[Open Interface Hypertext files:\]
+\file "styles.doc"
+\[...End of included files\]
+
+
+\[----------------------------------------------------------------------\]
+\[--Styles Unique to this file--\]
+
+\def_style "MSG" \fg "Color.Green" \bg "Color.Blue" \font "Fonts.Bold10" 
+\[def_style_key "MSG" <Alt>-Q\]
+\def_style "BLK_ITAL" \fg "Color.Magenta" \font "Fonts.Normal11" 
+\[def_style_key "BLK_ITAL" <Alt>-V\]
+\def_style "BLK_BLD_ITAL" \fg "Color.Magenta" \font "Fonts.Bold08" 
+\[def_style_key "BLK_BLD_ITAL" <Alt>-P\]
+\def_style "TEXT" \font "Fonts.Normal10" 
+\def_style "MSG_TEXT" \fg "Color.Blue" \font "Fonts.Bold10" 
+\[def_style_key "MSG_TEXT" <Alt>-M\]
+\def_style "LINK" \fg "Color.ForestGreen" \font "Fonts.Bold10" 
+\[def_style_key "LINK" <Alt>-G\]
+\def_style "BLK_BLD" \font "Fonts.Bold10" 
+\[def_style_key "BLK_BLD" <Alt>-Z\]
+\def_style "New Style - 8" 
+\[----------------------------------------------------------------------\]
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>CMD"
+\0 \0 \{\set_style "code" Command Task (CMD) Messages\}\p
+\p
+CMD component messages are produced by InfoSession command processing routines.  The message descriptions identify the command that produced the message.\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgad>INTCMD000I" INTCMD000I\}\p
+\{\subtopic "<intmsgad>INTCMD001I" INTCMD001I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD010E" INTCMD010E\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD018E" INTCMD018E\}\p
+\{\subtopic "<intmsgad>INTCDM019E" INTCMD019E\}\p
+\{\subtopic "<intmsgad>INTCMD020E" INTCMD020E\}\p
+\{\subtopic "<intmsgad>INTCMD021E" INTCMD021E\}\p
+\{\subtopic "<intmsgad>INTCMD022E" INTCMD022E\}\p
+\{\subtopic "<intmsgad>INTCMD023E" INTCMD023E\}\p
+\{\subtopic "<intmsgad>INTCMD024E" INTCMD024E\}\p
+\{\subtopic "<intmsgad>INTCMD025E" INTCMD025E\}\p
+\{\subtopic "<intmsgad>INTCMD026E" INTCMD026E\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD051I" INTCMD051I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD060E" INTCMD060E\}\p
+\{\subtopic "<intmsgad>INTCMD061E" INTCMD061E\}\p
+\{\subtopic "<intmsgad>INTCMD062E" INTCMD062E\}\p
+\{\subtopic "<intmsgad>INTCMD063E" INTCMD063E\}\p
+\{\subtopic "<intmsgad>INTCMD064E" INTCMD064E\}\p
+\{\subtopic "<intmsgad>INTCMD065E" INTCMD065E\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD070E" INTCMD070E\}\p
+\{\subtopic "<intmsgad>INTCMD071E" INTCMD071E\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD075E" INTCMD075E\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD090E" INTCMD090E\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD099I" INTCMD099I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD101I" INTCMD101I\}\p
+\{\subtopic "<intmsgad>INTCMD102I" INTCMD102I\}\p
+\{\subtopic "<intmsgad>INTCMD103I" INTCMD103I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD110E" INTCMD110E\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD201I" INTCMD201I\}\p
+\{\subtopic "<intmsgad>INTCMD202I" INTCMD202I\}\p
+\{\subtopic "<intmsgad>INTCMD203I" INTCMD203I\}\p
+\{\subtopic "<intmsgad>INTCMD204I" INTCMD204I\}\p
+\{\subtopic "<intmsgad>INTCMD205I" INTCMD205I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD210E" INTCMD210E\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD213I" INTCMD213I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD215I" INTCMD215I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD219W" INTCMD219W\}\p
+\{\subtopic "<intmsgad>INTCMD220I" INTCMD220I\}\p
+\{\subtopic "<intmsgad>INTCMD221I" INTCMD221I\}\p
+\{\subtopic "<intmsgad>INTCMD222W" INTCMD222W\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD224I" INTCMD224I\}\p
+\{\subtopic "<intmsgad>INTCMD225I" INTCMD225I\}\p
+\{\subtopic "<intmsgad>INTCMD226I" INTCMD226I\}\p
+\{\subtopic "<intmsgad>INTCMD227I" INTCMD227I\}\p
+\{\subtopic "<intmsgad>INTCMD228I" INTCMD228I\}\p
+\{\subtopic "<intmsgad>INTCMD229I" INTCMD229I\}\p
+\{\subtopic "<intmsgad>INTCMD230I" INTCMD230I\}\p
+\{\subtopic "<intmsgad>INTCMD231I" INTCMD231I\}\p
+\{\subtopic "<intmsgad>INTCMD232I" INTCMD232I\}\p
+\{\subtopic "<intmsgad>INTCMD233I" INTCMD233I\}\p
+\{\subtopic "<intmsgad>INTCMD234I" INTCMD234I\}\p
+\{\subtopic "<intmsgad>INTCMD235I" INTCMD235I\}\p
+\{\subtopic "<intmsgad>INTCMD236I" INTCMD236I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD240E" INTCMD240E\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD250I" INTCMD250I\}\p
+\{\subtopic "<intmsgad>INTCMD251I" INTCMD251I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD260E" INTCMD260E\}\p
+\{\subtopic "<intmsgad>INTCMD261E" INTCMD261E\}\p
+\{\subtopic "<intmsgad>INTCMD262I" INTCMD262I\}\p
+\{\subtopic "<intmsgad>INTCMD263E" INTCMD263E\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD285I" INTCMD285I\}\p
+\{\subtopic "<intmsgad>INTCMD286I" INTCMD286I\}\p
+\{\subtopic "<intmsgad>INTCMD287I" INTCMD287I\}\p
+\{\subtopic "<intmsgad>INTCMD288I" INTCMD288I\}\p
+\{\subtopic "<intmsgad>INTCMD289E" INTCMD289E\}\p
+\{\subtopic "<intmsgad>INTCMD290I" INTCMD290I\}\p
+\{\subtopic "<intmsgad>INTCMD291I" INTCMD291I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD301I" INTCMD301I\}\p
+\{\subtopic "<intmsgad>INTCMD302E" INTCMD302E\}\p
+\{\subtopic "<intmsgad>INTCMD303I" INTCMD303I\}\p
+\{\subtopic "<intmsgad>INTCMD304E" INTCMD304E\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD311E" INTCMD311E\}\p
+\{\subtopic "<intmsgad>INTCMD312E" INTCMD312E\}\p
+\{\subtopic "<intmsgad>INTCMD313E" INTCMD313E\}\p
+\{\subtopic "<intmsgad>INTCMD314E" INTCMD314E\}\p
+\{\subtopic "<intmsgad>INTCMD315I" INTCMD315I\}\p
+\{\subtopic "<intmsgad>INTCMD316I" INTCMD316I\}\p
+\{\subtopic "<intmsgad>INTCMD317I" INTCMD317I\}\p
+\{\subtopic "<intmsgad>INTCMD318I" INTCMD318I\}\p
+\{\subtopic "<intmsgad>INTCMD319I" INTCMD319I\}\p
+\{\subtopic "<intmsgad>INTCMD320I" INTCMD320I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD325I" INTCMD325I\}\p
+\{\subtopic "<intmsgad>INTCMD326E" INTCMD326E\}\p
+\{\subtopic "<intmsgad>INTCMD327I" INTCMD327I\}\p
+\{\subtopic "<intmsgad>INTCMD328I" INTCMD328I\}\p
+\{\subtopic "<intmsgad>INTCMD329I" INTCMD329I\}\p
+\{\subtopic "<intmsgad>INTCMD330I" INTCMD330I\}\p
+\{\subtopic "<intmsgad>INTCMD331I" INTCMD331I\}\p
+\{\subtopic "<intmsgad>INTCMD332E" INTCMD332E\}\p
+\{\subtopic "<intmsgad>INTCMD333I" INTCMD333I\}\p
+\{\subtopic "<intmsgad>INTCMD334I" INTCMD334I\}\p
+\{\subtopic "<intmsgad>INTCMD335I" INTCMD335I\}\p
+\{\subtopic "<intmsgad>INTCMD336I" INTCMD336I\}\p
+\{\subtopic "<intmsgad>INTCMD337I" INTCMD337I\}\p
+\{\subtopic "<intmsgad>INTCMD338I" INTCMD338I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD340I" INTCMD340I\}\p
+\{\subtopic "<intmsgad>INTCMD341I" INTCMD341I\}\p
+\{\subtopic "<intmsgad>INTCMD342I" INTCMD342I\}\p
+\{\subtopic "<intmsgad>INTCMD343I" INTCMD343I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD351I" INTCMD351I\}\p
+\{\subtopic "<intmsgad>INTCMD352I" INTCMD352I\}\p
+\{\subtopic "<intmsgad>INTCMD353I" INTCMD353I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD360I" INTCMD360I\}\p
+\{\subtopic "<intmsgad>INTCMD361I" INTCMD361I\}\p
+\{\subtopic "<intmsgad>INTCMD362I" INTCMD362I\}\p
+\{\subtopic "<intmsgad>INTCMD363I" INTCMD363I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD375I" INTCMD375I\}\p
+\{\subtopic "<intmsgad>INTCMD376I" INTCMD376I\}\p
+\{\subtopic "<intmsgad>INTCMD377I" INTCMD377I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD380W" INTCMD380W\}\p
+\{\subtopic "<intmsgad>INTCMD381W" INTCMD381W\}\p
+\{\subtopic "<intmsgad>INTCMD382E" INTCMD382E\}\p
+\{\subtopic "<intmsgad>INTCMD383E" INTCMD383E\}\p
+\{\subtopic "<intmsgad>INTCMD384E" INTCMD384E\}\p
+\{\subtopic "<intmsgad>INTCMD385E" INTCMD385E\}\p
+\{\subtopic "<intmsgad>INTCMD386E" INTCMD386E\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD388E" INTCMD388E\}\p
+\{\subtopic "<intmsgad>INTCMD389E" INTCMD389E\}\p
+\{\subtopic "<intmsgad>INTCMD390I" INTCMD390I\}\p
+\{\subtopic "<intmsgad>INTCMD391E" INTCMD391I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD400I" INTCMD400I\}\p
+\{\subtopic "<intmsgad>INTCMD401I" INTCMD401I\}\p
+\{\subtopic "<intmsgad>INTCMD402I" INTCMD402I\}\p
+\{\subtopic "<intmsgad>INTCMD403I" INTCMD403I\}\p
+\{\subtopic "<intmsgad>INTCMD404I" INTCMD404I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD410I" INTCMD410I\}\p
+\{\subtopic "<intmsgad>INTCMD411I" INTCMD411I\}\p
+\{\subtopic "<intmsgad>INTCMD412I" INTCMD412I\}\p
+\{\subtopic "<intmsgad>INTCMD413I" INTCMD413I\}\p
+\{\subtopic "<intmsgad>INTCMD414I" INTCMD414I\}\p
+\{\subtopic "<intmsgad>INTCMD415I" INTCMD415I\}\p
+\{\subtopic "<intmsgad>INTCMD416I" INTCMD416I\}\p
+\{\subtopic "<intmsgad>INTCMD417I" INTCMD417I\}\p
+\{\subtopic "<intmsgad>INTCMD418I" INTCMD418I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD515I" INTCMD515I\}\p
+\{\subtopic "<intmsgad>INTCMD516I" INTCMD516I\}\p
+\{\subtopic "<intmsgad>INTCMD517I" INTCMD517I\}\p
+\{\subtopic "<intmsgad>INTCMD518I" INTCMD518I\}\p
+\{\subtopic "<intmsgad>INTCMD519I" INTCMD519I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD526I" INTCMD526I\}\p
+\{\subtopic "<intmsgad>INTCMD527I" INTCMD527I\}\p
+\{\subtopic "<intmsgad>INTCMD528I" INTCMD528I\}\p
+\{\subtopic "<intmsgad>INTCMD529I" INTCMD529I\}\p
+\{\subtopic "<intmsgad>INTCMD530I" INTCMD330I\}\p
+\p
+\{\subtopic "<intmsgad>INTCMD537I" INTCMD537I\}\p
+\{\subtopic "<intmsgad>INTCMD538I" INTCMD538I\}\p
+\{\subtopic "<intmsgad>INTCMD539I" INTCMD539I\}\p
+\{\subtopic "<intmsgad>INTCMD540I" INTCMD540I\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD000I"
+\0 \0 \{\set_style "MSG" INTCMD000I\}\p
+\p
+\{\set_style "BLK_ITAL" <command text>\}\p
+\p
+This message is used to log all operator commands received by InfoSession.  The message contains the complete text of the command line entered.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp   
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD001I"
+\0 \0 \{\set_style "MSG" INTCMD001I\}\p
+\p
+\{\set_style "MSG_TEXT" (\}\{\set_style "BLK_ITAL" Taskname:userid\}\{\set_style "MSG_TEXT" )\{\set_style "MSG_TEXT"  \}\}\{\set_style "BLK_ITAL" <command text>\}\p
+\p
+This message is used to log all operator commands received from internal requests and from external InfoSession operator applications.  The message contains the complete text of the command line entered.  \{\set_style "BLK_BLD_ITAL" taskname\} is either the name of an InfoSession system task or the VTAM logical unit (LU) name from which the command was issued.  When the request originates externally, userid is the user identification provided during the InfoSession signon dialog.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD010E"
+\0 \0 \{\set_style "MSG" INTCMD010E\}\p
+\p
+\{\set_style "BLK_ITAL" command-name\} \{\set_style "MSG_TEXT" command rejected\} \{\set_style "MSG_TEXT" -\} \{\set_style "BLK_ITAL" reason-for-rejection\}\p
+\p
+An operator command of the designated name was rejected by the command recognition and parsing component.  \{\set_style "BLK_BLD_ITAL" reason-for-rejection\} can be any of the following:\p
+\p
+  \{\set_style "BLK_BLD" Keyword not defined\}  Command string contains a keyword that is not recognized.  Ensure that literal strings are enclosed in quotes where necessary.\p
+\p
+  \{\set_style "BLK_BLD" Improper use of operand\}   Value list associated with the keyword does not contain an appropriate number of value entries, or has been omitted entirely.  Ensure that value lists are coded only with keywords that support values, and that the number of values specified for each keyword coded is correct.\p
+\p
+  \{\set_style "BLK_BLD" Duplicate keyword improper\}  A keyword appears more than once in the command string.  Remove the offending operand.  Note that many commands can accept multiple values for a single operand.\p
+\p
+  \{\set_style "BLK_BLD" Syntax error in string\}  Command string does not conform to the basic command line syntax outlined in the Operator Commands chapter of the \{\set_style "italic" PLATINUM InfoSession Operator Commands, System Messages, and Helpdesk Reference Guide\}.\p
+\p
+  \{\set_style "BLK_BLD" Invalid value data type error\}  A value entry contained in the value list for one of the command line operands does not conform to requirements.  Ensure that all value list entries are correctly constructed.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD018E"
+\0 \0 \{\set_style "MSG" INTCMD018E\} \p
+\p
+\{\set_style "MSG_TEXT" Improper access authority for command operand(s)\}\p
+\p
+The Helpdesk user issued a command containing operands that requires SYSTEM operator access authority.  The command request is denied.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCDM019E"
+\0 \0 \{\set_style "MSG" INTCMD019E\} \p
+\p
+\{\set_style "MSG_TEXT" Improper access authority for command\}\p
+\p
+The Helpdesk user issued a command that requires SYSTEM operator access authority.  The command request is denied.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD020E"
+\0 \0 \{\set_style "MSG" INTCMD020E\}\p
+\p
+\{\set_style "MSG_TEXT" Missing or invalid command verb\}\p
+\p
+The command verb (or name) is the first token appearing on a command line.  This message indicates that the command provided is either improperly coded or not defined to the system.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD021E"
+\0 \0 \{\set_style "MSG" INTCMD021E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid command destination name\}\p
+\p
+When command task routing is used, this message indicates that the task name was improperly coded or not defined.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD022E"
+\0 \0 \{\set_style "MSG" INTCMD022E\}\p
+\p
+\{\set_style "MSG_TEXT" Improper use or omission of command destination\}\p
+\p
+This message is issued when command destination (task) routing is used in a manner inconsistent with the definition of the command syntax.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD023E"
+\0 \0 \{\set_style "MSG" INTCMD023E\}\p
+\p
+\{\set_style "MSG_TEXT" Command destination\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" not found\}\p
+\p
+The task, named in an explicit command destination routing request, that is not currently active.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD024E"
+\0 \0 \{\set_style "MSG" INTCMD024E\}\p
+\p
+\{\set_style "MSG_TEXT" Command ITASK\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" processing error - RSN:\} \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+The command scheduler sent a command request to an associated command processing task named \{\set_style "BLK_BLD_ITAL" taskname\}, but that task responded with a negative acknowledgment.  \{\set_style "BLK_BLD_ITAL" rsncode\} describes the source of error.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD025E"
+\0 \0 \{\set_style "MSG" INTCMD025E\}\p
+\p
+\{\set_style "MSG_TEXT" Command ITASK\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" communication error\p
+$COMSEND RC:\} \{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+The command scheduler was not able to send a command request to its associated command task \{\set_style "BLK_BLD_ITAL" taskname\}.  The \{\set_style "BLK_BLD_ITAL" retcode\} and \{\set_style "BLK_BLD_ITAL" rsncode\} describe the source of error.  Contact PLATINUM Technical Support. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD026E"
+\0 \0 \{\set_style "MSG" INTCMD026E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to acquire CMDTASK response from\} \{\set_style "BLK_ITAL" taskname\}\p
+\{\set_style "MSG_TEXT" $COMACK RC:\} \{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+A command task \{\set_style "BLK_BLD_ITAL" taskname\} completed the processing of a command previously presented to it by the command scheduler.  However, the command scheduler was unable to acquire the response from the command task.  The \{\set_style "BLK_BLD_ITAL" retcode\} and \{\set_style "BLK_BLD_ITAL" rsncode\} describe the source of error.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD051I"
+\0 \0 \{\set_style "MSG" INTCMD051I\}\p
+\p
+\{\set_style "BLK_ITAL" command-name\} \{\set_style "MSG_TEXT" command complete\}\p
+\p
+The command was processed without error.  This is a generic successful completion message which can be preceded by other messages further documenting the impact of the command.  \{\set_style "BLK_BLD_ITAL" Command-name\} identifies the source command line.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD060E"
+\0 \0 \{\set_style "MSG" INTCMD060E\}\p
+\p
+\{\set_style "BLK_ITAL" command-name\} \{\set_style "MSG_TEXT" command failed\}\p
+\p
+The command was not properly performed or completed due to an error. This is a generic command did not complete message which can be preceded by other messages further documenting the impact of the command.  \{\set_style "BLK_BLD_ITAL" Command-name\} identifies the source command line.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD061E"
+\0 \0 \{\set_style "MSG" INTCMD061E\}\p
+\p
+\{\set_style "BLK_ITAL" command-name\} \{\set_style "MSG_TEXT" invalid or incomplete request.\}\p
+\p
+The command processor rejected the request.  This message indicates that the command line contains incompatible operands or is not properly formed.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD062E"
+\0 \0 \{\set_style "MSG" INTCMD062E\}\p
+\p
+\{\set_style "BLK_ITAL" command-name\} \{\set_style "MSG_TEXT" ambiguous request\}\p
+\p
+The command processor rejected the request.  This message indicates that additional operands are needed to more fully specify the requester's intent.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD063E"
+\0 \0 \{\set_style "MSG" INTCMD063E\}\p
+\p
+\{\set_style "BLK_ITAL" command-name\} \{\set_style "MSG_TEXT" command rejected\}\p
+\p
+The command processor rejected the request.  This message indicates that the system is not in a state that would allow it to perform the designated action.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD064E"
+\0 \0 \{\set_style "MSG" INTCMD064E\}\p
+\p
+\{\set_style "BLK_ITAL" command-name\} \{\set_style "MSG_TEXT" timeout awaiting command completion\}\p
+\p
+The command processor could not complete the command.  This error can occur when command processing involves multiple processes, especially when one or more of those processes is remote.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD065E"
+\0 \0 \{\set_style "MSG" INTCMD065E\}\p
+\p
+\{\set_style "BLK_ITAL" command-name\} \{\set_style "MSG_TEXT" command contains conflicting operands\}\p
+\p
+The command processor rejected the request.  Although the command is syntactically valid, its operands are contradictory.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD070E"
+\0 \0 \{\set_style "MSG" INTCMD070E\}\p
+\p
+\{\set_style "MSG_TEXT" Workunit referenced is not uniquely identified\}\p
+\p
+The command processor rejected the request.  A workunit named in the command line (usually via the TASK( ) operand) is not unique.  This means there are multiple workunits having the same name within the scope of the operation attempted.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD071E"
+\0 \0 \{\set_style "MSG" INTCMD071E\}\p
+\p
+\{\set_style "MSG_TEXT" Task\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" not found\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} KILL\p
+\p
+The KILL command was issued against a task named taskname, but that task is not active.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD075E"
+\0 \0 \{\set_style "MSG" INTCMD075E\}\p
+\p
+\{\set_style "MSG_TEXT" Command not available, APF authorization required\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} KILL\p
+\p
+The KILL command is available only when InfoSession is running in APF authorized mode.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD090E"
+\0 \0 \{\set_style "MSG" INTCMD090E\}\p
+\p
+\{\set_style "MSG_TEXT" Abend occurred in command processor\} \{\set_style "BLK_ITAL" command-name\}\p
+\p
+The command processor abended while attempting to perform the given request.  An indicative dump and other useful diagnostics have been written to the log file and storage dumps might have been generated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD099I"
+\0 \0 \{\set_style "MSG" INTCMD099I\}\p
+\p
+\{\set_style "MSG_TEXT" Console commands cannot be accepted\}\p
+\p
+InfoSession is running in a non-standard execution environment (under TSO, for example or in certain multi-step job environments) and is unable to provide MCS console command support. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD101I"
+\0 \0 \{\set_style "MSG" INTCMD101I\}\p
+\p
+\{\set_style "MSG_TEXT" {\}\{\set_style "BLK_ITAL" STOP\} | \{\set_style "BLK_ITAL" CANCEL\}\{\set_style "MSG_TEXT" } command accepted\}\p
+\p
+A system STOP or CANCEL command was issued and no conditions were detected that prohibit orderly system shutdown.  System shutdown begins.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD102I"
+\0 \0 \{\set_style "MSG" INTCMD102I\}\p
+\p
+\{\set_style "MSG_TEXT" {\}\{\set_style "BLK_ITAL" STOP\} | \{\set_style "BLK_ITAL" FSTOP\} | \{\set_style "BLK_ITAL" CANCEL\}\{\set_style "MSG_TEXT" } command accepted for task\} \{\set_style "BLK_ITAL" taskname\}\p
+\p
+A STOP, FSTOP, or CANCEL request was issued with the TASK( ) operand.  Termination begins for the named task and all of its processes, and all of its subtasks, etc.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD103I"
+\0 \0 \{\set_style "MSG" INTCMD103I\}\p
+\p
+\{\set_style "MSG_TEXT" Stop refused, projects currently active\}\p
+\p
+A system STOP or CANCEL was requested, but projects are open.  This means there are still active users.  The request is ignored.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD110E"
+\0 \0 \{\set_style "MSG" INTCMD110E\}\p
+\p
+\{\set_style "MSG_TEXT" Task\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" not found\}\p
+\p
+A STOP, FSTOP, or CANCEL request provided \{\set_style "BLK_BLD_ITAL" taskname\}, but that task is not currently active.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD201I"
+\0 \0 \{\set_style "MSG" INTCMD201I\}\p
+\p
+\{\set_style "MSG_TEXT" Running\} \{\set_style "BLK_ITAL" number\} \{\set_style "MSG_TEXT" processes /\} \{\set_style "BLK_ITAL" number\} \{\set_style "MSG_TEXT" tasks\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TASKLIST\p
+\p
+This message is the TASKLIST command summary line.  It gives the total number of processes and tasks running in the system.  Because processes are owned by tasks, the number of processes is never less than the number of tasks.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD202I"
+\0 \0 \{\set_style "MSG" INTCMD202I\}\p
+\p
+\{\set_style "MSG_TEXT" TASKLIST active tasks:\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TASKLIST\p
+\p
+A TASKLIST command was issued with the NAMES operand.  This message is followed by one or more instances of  message \{\goto "<intmsgad>INTCMD203I" INTCMD203I\}, each containing a condensed list of active task names.  Active tasks (TSKPCBC ^= 0) are flagged with an asterisk.  For problem determination, a task that continually exhibits the asterisk might be looping.  Note that during command processor execution, the $CONTASK and $LOGTASK are active.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD203I"
+\0 \0 \{\set_style "MSG" INTCMD203I\}\p
+\p
+\{\set_style "BLK_ITAL" taskname1  taskname2  taskname3 ...\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TASKLIST\p
+\p
+A TASKLIST command was issued with the NAMES operand.  This message contains a group of active \{\set_style "BLK_BLD_ITAL" tasknames\}.  Multiple INTCMD203I messages might be produced depending on system load, etc. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD204I"
+\0 \0 \{\set_style "MSG" INTCMD204I\}\p
+\p
+\{\set_style "MSG_TEXT" TASKLIST active tasks and processes:\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TASKLIST\p
+\p
+A TASKLIST command was issued with the PROCS or ALL operands or both.  This message is followed by one or more instances of  message \{\goto "<intmsgad>INTCMD205I" INTCMD205I\}, each containing a condensed list of active task and process names.  Active tasks (TSKPCBC ^= 0) and their current process are both flagged with an asterisk.  For problem determination, a task and process pair that continually exhibits asterisks might be looping.  Note that during command processor execution, the $CONTASK and $LOGTASK are active.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD205I"
+\0 \0 \{\set_style "MSG" INTCMD205I\}\p
+\p
+\{\set_style "BLK_ITAL" taskname1, ... / procname1 procname2 ...\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TASKLIST\p
+\p
+A TASKLIST command was issued with the PROCS or ALL operands or both.  This message contains either a single \{\set_style "BLK_BLD_ITAL" taskname\}, or a list of process names associated with the last task name displayed.  Multiple INTCMD205I messages are common, depending on system load, etc.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD210E"
+\0 \0 \{\set_style "MSG" INTCMD210E\}\p
+\p
+\{\set_style "MSG_TEXT" TASK\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" not found\}\p
+\p
+A command identified a task workunit by name, usually with the TASK( ) operand, and the \{\set_style "BLK_BLD_ITAL" taskname\} was not active.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD213I"
+\0 \0 \{\set_style "MSG" INTCMD213I\}\p
+\p
+\{\set_style "BLK_ITAL" taskname1, taskname2,....\}\p
+\p
+When a TASKLIST command is submitted with the NAMES and ADDRS operands, the addresses of the \{\set_style "BLK_BLD_ITAL" tasknames\} control blocks are provided.  The addresses correspond to the \{\set_style "BLK_BLD_ITAL" tasknames\} displayed in the immediately prior \{\goto "<intmsgad>INTCMD203I" INTCMD203I\} message.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD215I"
+\0 \0 \{\set_style "MSG" INTCMD215I\}\p
+\p
+\{\set_style "BLK_ITAL" addrs1, addrs2,......\}\p
+\p
+When a TASKLIST command is submitted with the ALL and ADDRS operands, the addresses of the selected taskname and process control blocks are provided.  The addresses correspond to the workunit names displayed in the immediately prior \{\goto "<intmsgad>INTCMD205I" INTCMD205I\} message.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD219W"
+\0 \0 \{\set_style "MSG" INTCMD219W\}\p
+\p
+\{\set_style "MSG_TEXT" Storage manager not yet initialized\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} STORAGE\p
+\p
+An attempt was made to use InfoSession's cell storage areas, which are not yet initialized.  Reissue the command after system initialization is complete.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD220I"
+\0 \0 \{\set_style "MSG" INTCMD220I\}\p
+\p
+\{\set_style "MSG_TEXT" Storage utilization statistics\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} STORAGE\p
+\p
+A STORAGE command was issued to acquire storage utilization statistics.  The detail display to follow might include any of the messages in the range \{\goto "<intmsgad>INTCMD221I" INTCMD221I\} through \{\goto "<intmsgad>INTCMD229I" INTCMD229I\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD221I"
+\0 \0 \{\set_style "MSG" INTCMD221I\}\p
+\p
+\{\set_style "MSG_TEXT" Total amount of storage allocated:\} \{\set_style "BLK_ITAL" number\}\p
+\{\set_style "MSG_TEXT" Amount of this storage used for cell pools:\} \{\set_style "BLK_ITAL" number\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} STORAGE\p
+\p
+A STORAGE command was issued, with either the DISPLAY operand expressed or implied, to acquire storage utilization statistics.\p
+\p
+The first message line provides the total amount of storage allocated.  This figure includes the storage managed by MVS, which is dynamically allocated and released, as well as the cell pool storage managed by InfoSession.\p
+\p
+The second line indicates the amount of cell pool storage used.  Cell pools are reserved, specifically sized, storage blocks that are managed by InfoSession.\p
+\p
+For additional information, refer to the STORAGE command and the Storage Management startup parameters in the \{\set_style "italic" PLATINUM InfoSession MVS Installation and Configuation Guide\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD222W"
+\0 \0 \{\set_style "MSG" INTCMD222W\}\p
+\p
+\{\set_style "MSG_TEXT" Cell pool storage exhausted\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} STORAGE\p
+\p
+No more storage space is available for cell pools.  The storage size requested by the STGINITIAL and STGEXPAND startup parameters is not available in the InfoSession address space.  Refer to the Storage Management startup parameters in the \{\set_style "italic" PLATINUM InfoSession MVS Installation and Configuration Guide\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD224I"
+\0 \0 \{\set_style "MSG" INTCMD224I\}\p
+\p
+\{\set_style "MSG_TEXT" Storage statistics reset\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} STORAGE\p
+\p
+A STORAGE command that included the RESET operand was issued.  The total number of requests maintained for each storage subpool and partition is reset to zero, and the high-water-mark is reset to the total size, which establishes a clean measurement interval for performance evaluation, etc. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD225I"
+\0 \0 \{\set_style "MSG" INTCMD225I\}\p
+\p
+\{\set_style "MSG_TEXT" Size  requests  in use  cells  -16m  mvs  total  hwm\p
+-----  -------------  --------  -------  ------- ------- ------  -------\p
+\}\p
+\{\set_style "BLK_BLD" Command:\} STORAGE\p
+\p
+This heading message line is followed by one or more \{\goto "<intmsgad>INTCMD227I" INTCMD227I\} or \{\goto "<intmsgad>INTCMD226I" INTCMD226I\} messages describing the use of storage subpools or storage partitions, respectively.\p
+\p
+The requests and total columns are a coarse measurement of system activity.  All other metrics are highly environment and application dependent and are usually meaningful only when a product performance history has been established.  Each column in the message table is described below:\p
+\p
+   \{\set_style "BLK_BLD_ITAL" size\}  Upper limit of the size of a storage block request described by this STORAGE analysis entry.  The subpools or partitions are presented in ascending order by size.\p
+\p
+   \{\set_style "BLK_BLD_ITAL" requests\}  Total number of requests for storage from this subpool or partition since the last RESET request.\p
+\p
+   \{\set_style "BLK_BLD_ITAL" in use\}  Total number of storage extents currently allocated from this subpool or partition.  This counter increments each time a storage area is allocated from the subpool or partition and decrements when the storage block is returned.\p
+\p
+   \{\set_style "BLK_BLD_ITAL" cells\}  Storage manager retains blocks of storage of the indicated size for specific storage size ranges.  cells is the number of blocks available for satisfying requests for storage areas of the given size.\p
+\p
+   \{\set_style "BLK_BLD_ITAL" -16M\}   When a request is made for storage below the 16 megabyte line, the storage manager does not use storage residing in a cell pool.  Instead, the request is satisfied using standard MVS storage services.  The number in this column is the number of such requests outstanding.\p
+\p
+   \{\set_style "BLK_BLD_ITAL" MVS\}  Total amount of storage allocated for storage blocks of the given size that were satisfied using standard MVS storage services.  Cell pool storage is not used for certain types of storage requests including those requiring space below the 16M line and those larger than 4K in size.\p
+\p
+   \{\set_style "BLK_BLD_ITAL" total\}   Total amount of storage allocated from the given subpool or partition.  This value fluctuates depending upon a large number of factors.  The most important factor includes the number of Workbench and run-time users, and the number of SLU sessions maintained by those users.\p
+\p
+   \{\set_style "BLK_BLD_ITAL" hwm\}   High water mark, meaning the highest value that total ever attained for the given subpool or partition.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp             
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD226I"
+\0 \0 \{\set_style "MSG" INTCMD226I\}\p
+\p
+\{\set_style "BLK_ITAL" size  requests  in use  cells  -16M  MVS  total  hwm\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} STORAGE\p
+\p
+Each INTCMD226I message line contains storage allocation statistics for the partition identified in the SIZE column.  Refer to message \{\goto "<intmsgad>INTCMD225I" INTCMD225I\} for a description of the message line content.  For each 64K, 128K, 256K, etc. range, message \{\goto "<intmsgad>INTCMD228I" INTCMD228I\} displays a summary line with the totals for those size ranges.  Refer to message \{\goto "<intmsgad>INTCMD225I" INTCMD225I\} for a description of the message line content.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD227I"
+\0 \0 \{\set_style "MSG" INTCMD227I\}\p
+\p
+\{\set_style "BLK_ITAL" size  requests  blocks  total-size  max-size\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} STORAGE\p
+\p
+This line summarizes storage usage for all size values not explicitly depicted in a prior \{\goto "<intmsgad>INTCMD226I" INTCMD226I\} message line.  Refer to message \{\goto "<intmsgad>INTCMD225I" INTCMD225I\} for a description of the message line content.\p
+\{\set_style "MSG_TEXT" \p
+Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD228I"
+\0 \0 \{\set_style "MSG" INTCMD228I\}\p
+\p
+\{\set_style "MSG_TEXT" Totals:\}  \{\set_style "BLK_ITAL" requests-max  blocks-max  total-size-max  max-size-max\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} STORAGE\p
+\p
+This message line contains the total for all of the detail line (\{\goto "<intmsgad>INTCMD226I" INTCMD226I\}) counters and summarizes the overall storage demand.  Refer to message \{\goto "<intmsgad>INTCMD225I" INTCMD225I\} for a description of the message line content.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD229I"
+\0 \0 \{\set_style "MSG" INTCMD229I\}\p
+\p
+\{\set_style "MSG_TEXT" Total:\}   \{\set_style "BLK_ITAL" requests  in use  cells  -16M  MVS  total  hwm\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} STORAGE\p
+\p
+This message line contains the total for all of the detail line (\{\goto "<intmsgad>INTCMD226I" INTCMD226I\} and \{\goto "<intmsgad>INTCMD227I" INTCMD227I\}) counters and summarizes the overall storage demand.  Refer to message \{\goto "<intmsgad>INTCMD225I" INTCMD225I\} for a description of the message line content.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD230I"
+\0 \0 \{\set_style "MSG" INTCMD230I\}\p
+\p
+\{\set_style "MSG_TEXT" USERLIST\} \{\set_style "BLK_ITAL" number\} \{\set_style "MSG_TEXT" active users\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} USERLIST\p
+\p
+This message is the USERLIST command summary line.  It gives the total number of users logged on to the system.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD231I"
+\0 \0 \{\set_style "MSG" INTCMD231I\}\p
+\p
+\{\set_style "MSG_TEXT" USERLIST active users:\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} USERLIST\p
+\p
+A USERLIST command was issued with the NAMES operand or the ALL operand.  When the NAMES operand is specified, one or more instances of the \{\goto "<intmsgad>INTCMD232I" INTCMD232I\} message will follow, displaying a condensed list of users currently logged on.  If a detailed summary is requested via the ALL operand or assumed by default when other operands are specified, this message will be followed by message \{\goto "<intmsgad>INTCMD233I" INTCMD233I\} and one or more instances of \{\goto "<intmsgad>INTCMD234I" INTCMD234I\} describing the users currently logged on with additional detail information.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD232I"
+\0 \0 \{\set_style "MSG" INTCMD232I\}\p
+\p
+\{\set_style "BLK_ITAL" username1  username2  username3  ...\} \p
+\p
+\{\set_style "BLK_BLD" Command:\} USERLIST\p
+\p
+A USERLIST command was issued with the NAMES operand.  This message contains the next group of active \{\set_style "BLK_BLD_ITAL" usernames\}.  Multiple INTCMD232I messages might be produced depending on current number of user logged on.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD233I"
+\0 \0 \{\set_style "MSG" INTCMD233I\}\p
+\p
+\{\set_style "MSG_TEXT" User Task  Process  Type  Version\p
+-------  ------  -----------  --------  ----------\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} USERLIST\p
+\p
+This message is followed by one or more \{\goto "<intmsgad>INTCMD234I" INTCMD234I\} messages displaying a list of selected users currently logged on to InfoSession.  The list of users selected is controlled by the USER, MUSER, TASK, and MTASK operands.  If these operands are omitted, the entire list of users currently logged on is displayed.\p
+\p
+Each column in the message table is described below:\p
+\p
+   \{\set_style "BLK_BLD_ITAL" User\}  User-ID of a user currently logged on to InfoSession.\p
+\p
+   \{\set_style "BLK_BLD_ITAL" Task\}  Task name of the InfoSession task associated with a user.  The USERLIST command can be used to look up the task name associated with a user for input on other operator commands requiring the task operand.\p
+\p
+   \{\set_style "BLK_BLD_ITAL" Process\}  Process name within the specified task representing the user session.  If a user was logged on multiple times for multiple run-time applications on the same workstation, each instance of a user is represented by its own user process.\p
+\p
+   \{\set_style "BLK_BLD_ITAL" Type\}  Access type specifies whether the user is logged on to the InfoSession Workbench (WB) or a run-time application (RT).\p
+\p
+   \{\set_style "BLK_BLD_ITAL" Version\}  InfoSession client product version.  This is useful for verifying whether users are running the correct version of the workstation components of the InfoSession product.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD234I"
+\0 \0 \{\set_style "MSG" INTCMD234I\}\p
+\p
+\{\set_style "BLK_ITAL" User  Task  Process  Type  Version\}   \p
+\p
+\{\set_style "BLK_BLD" Command:\} USERLIST\p
+\p
+Each INTCMD234I message describes a user currently logged on to InfoSession.  Refer to message \{\goto "<intmsgad>INTCMD233I" INTCMD233I\} for a description of the message line content.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD235I"
+\0 \0 \{\set_style "MSG" INTCMD235I\}\p
+\p
+\{\set_style "MSG_TEXT" No active users\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} USERLIST\p
+\p
+No logged on Workbench or run-time users.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD236I"
+\0 \0 \{\set_style "MSG" INTCMD236I\}\p
+\p
+\{\set_style "MSG_TEXT" No user selected for user: usermask Task:\} \{\set_style "BLK_ITAL" taskmask\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} USERLIST\p
+\p
+No users were selected matching the selection criteria specified by the USER, MUSER, TASK or MTASK operands of the USERLIST command. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD240E"
+\0 \0 \{\set_style "MSG" INTCMD240E\}\p
+\p
+\{\set_style "MSG_TEXT" $ASYEXIT failed in service servicename RC:\} \{\set_style "BLK_ITAL" retcode\} \p
+\p
+\{\set_style "BLK_BLD" Command:\} KILL\p
+\p
+An MVS/ESA service invoked during the execution of a KILL command presented an unexpected return code.\p
+\p
+Contact PLATINUM Technical Support. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD250I"
+\0 \0 \{\set_style "MSG" INTCMD250I\}\p
+\p
+\{\set_style "MSG_TEXT" Lock:\}  \{\set_style "BLK_ITAL" lockname\}  \{\set_style "MSG_TEXT" Pct Wait:\}  \{\set_style "BLK_ITAL" nn%\}  \{\set_style "MSG_TEXT" MaxQ:\}  \{\set_style "BLK_ITAL" nn\}  \{\set_style "MSG_TEXT" Total Requests:\}  \{\set_style "BLK_ITAL" nnnnnn\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} LOCK\p
+\p
+A LOCK command that included the DISPLAY operand was issued.  This message is generated for each global lock defined in the system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" lockname\}  Name of the lock.\p
+\p
+\{\set_style "BLK_BLD_ITAL" nn%\}  Percentage of the Total Requests for lockname that the lock was not immediately available since the last LOCK RESET request was accepted.  When a lock is not immediately available, the requesting workunit is suspended until it becomes available.\p
+\p
+\{\set_style "BLK_BLD_ITAL" nn\}  Largest number of workunits that were ever concurrently suspended for lockname since the last LOCK RESET request was accepted.\p
+\p
+\{\set_style "BLK_BLD_ITAL" nnnnnn\}  Total number of times the lock has been obtained since the last LOCK RESET request was accepted.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD251I"
+\0 \0 \{\set_style "MSG" INTCMD251I\}\p
+\p
+\{\set_style "MSG_TEXT" Lock statistics reset\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} LOCK\p
+\p
+A LOCK command with the RESET operand was issued. All lock activity statistics including the Pct Wait, MaxQ, and Total Requests values are zeroed, establishing a clean measurement interval for performance evaluation, etc.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD260E"
+\0 \0 \{\set_style "MSG" INTCMD260E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid module\} \{\set_style "BLK_ITAL" name-module\}\p
+\p
+\{\set_style "BLK_BLD" Commands:\} LOAD, RELOAD\p
+\p
+A LOAD or RELOAD command was issued, but one of the module names provided in the MODULES operand is invalid.  The invalid entry is ignored.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD261E"
+\0 \0 \{\set_style "MSG" INTCMD261E\}\p
+\p
+\{\set_style "MSG_TEXT" Unknown or ineligible module -\} \{\set_style "BLK_ITAL" module\}\p
+\p
+\{\set_style "BLK_BLD" Commands:\} LOAD, RELOAD\p
+\p
+A LOAD or RELOAD command was issued, but one of the module names provided in the MODULES operand is not known to InfoSession or is not eligible for dynamic load or reload.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD262I"
+\0 \0 \{\set_style "MSG" INTCMD262I\}\p
+\p
+\{\set_style "MSG_TEXT" Reload for module\} \{\set_style "BLK_ITAL" module\} \{\set_style "MSG_TEXT" completed - EPA:\} \{\set_style "BLK_ITAL" entrypoint\}\p
+\p
+\{\set_style "BLK_BLD" Commands:\} LOAD, RELOAD\p
+\p
+A LOAD or RELOAD command was issued and the processing of the designated \{\set_style "BLK_BLD_ITAL" module\} completed without error.  The \{\set_style "BLK_BLD_ITAL" entrypoint\} address of the newly loaded \{\set_style "BLK_BLD_ITAL" module\} is provided in entrypoint for diagnostic purposes.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD263E"
+\0 \0 \{\set_style "MSG" INTCMD263E\}\p
+\p
+\{\set_style "MSG_TEXT" Reload failed for module\} \{\set_style "BLK_ITAL" module\} \{\set_style "MSG_TEXT" - Service:\} \{\set_style "BLK_ITAL" service-name\}\p
+\{\set_style "MSG_TEXT" Reason:\} \{\set_style "BLK_ITAL" rsncode-retcode\}\p
+\p
+\{\set_style "BLK_BLD" Commands:\} LOAD, RELOAD\p
+\p
+A LOAD or RELOAD command was issued, but the function was not completed for the \{\set_style "BLK_BLD_ITAL" module\} identified.  \{\set_style "BLK_BLD_ITAL" Service-name\} identifies the failing MVS system service.  The \{\set_style "BLK_BLD_ITAL" rsncode\} and \{\set_style "BLK_BLD_ITAL" retcode\} are the reason and return codes presented by the system service.  If the LOAD or RELOAD is required to apply corrective service, stop the InfoSession address space and restart it.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD285I"
+\0 \0 \{\set_style "MSG" INTCMD285I\}\p
+\p
+\{\set_style "MSG_TEXT" Tracing is {\}\{\set_style "BLK_ITAL" enabled\} | \{\set_style "BLK_ITAL" disabled\}\{\set_style "MSG_TEXT" }\p
+\}\p
+\{\set_style "BLK_BLD" Command:\} TRACE\p
+\p
+This message is produced by all forms of the TRACE command.  It describes the current state of the system trace.\p
+\p
+\{\set_style "BLK_BLD" NOTE:\}  The system trace should be left in the enabled state.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD286I"
+\0 \0 \{\set_style "MSG" INTCMD286I\}\p
+\p
+\{\set_style "MSG_TEXT" Enabled trace event classes for {\}\{\set_style "BLK_ITAL" system\} | \{\set_style "BLK_ITAL" taskname\}\{\set_style "MSG_TEXT" }\p
+\}\p
+\{\set_style "BLK_BLD" Command:\} TRACE\p
+\p
+When the DISPLAY operand of the TRACE command is specified, this message precedes one or more \{\goto "<intmsgad>INTCMD287I" INTCMD287I\} messages that list the trace event classes enabled for all workunits by default (SYSTEM), or for the specific workunit named using the TASK(taskname) operand.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD287I"
+\0 \0 \{\set_style "MSG" INTCMD287I\}\p
+\p
+\{\set_style "BLK_ITAL" active-trace-event-class-name\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TRACE\p
+\p
+When the DISPLAY operand of the TRACE command is specified, this message is issued for each active system wide or workunit-specific active trace event class.  Refer to the TRACE command description in the Operator Commands chapter of the \{\set_style "italic" PLATINUM InfoSession Operator Commands, System Messages, and Helpdesk Reference Guide\} for a discussion of trace event classes.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD288I"
+\0 \0 \{\set_style "MSG" INTCMD288I\}\p
+\p
+\{\set_style "MSG_TEXT" No enabled trace event classes for {\}\{\set_style "BLK_ITAL" system\} | \{\set_style "BLK_ITAL" taskname\}\{\set_style "MSG_TEXT" }\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TRACE\p
+\p
+When the DISPLAY operand of the TRACE command is specified, this message is issued if there are no active trace event classes for all workunits by default (SYSTEM) or for the workunit named using the TASK(taskname) operand.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD289E"
+\0 \0 \{\set_style "MSG" INTCMD289E\}\p
+\p
+\{\set_style "BLK_ITAL" trace-event-class-name\} \{\set_style "MSG_TEXT" is not a valid trace event class\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TRACE\p
+\p
+The TRACE command was issued with the ON or OFF operand and a CLASS( ) class name list.  \{\set_style "BLK_BLD_ITAL" trace-event-class-name\} contained in this message is not defined.  Processing continues with the remainder of the class list.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD290I"
+\0 \0 \{\set_style "MSG" INTCMD290I\}\p
+\p
+\{\set_style "MSG_TEXT" {\}\{\set_style "BLK_ITAL" system\} | \{\set_style "BLK_ITAL" workunit\}\{\set_style "MSG_TEXT" } trace {\}\{\set_style "BLK_ITAL" enabled\} | \{\set_style "BLK_ITAL" disabled\}\{\set_style "MSG_TEXT" } for event class\} \{\set_style "BLK_ITAL" trace-event-class-name\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TRACE\p
+\p
+The TRACE command was issued with the ON or OFF operands and a CLASS( ) class name list.  This message documents the affect of the command upon each of the designated trace event classes given.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD291I"
+\0 \0 \{\set_style "MSG" INTCMD291I\}\p
+\p
+\{\set_style "MSG_TEXT" Workunit\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" is not currently active\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TRACE\p
+\p
+The TRACE command designating a workunit via the TASK( ) operand was issued.  Trace options have been set accordingly but the named workunit is not currently active.  However, the trace options set will be in affect when the workunit starts.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD301I"
+\0 \0 \{\set_style "MSG" INTCMD301I\}\p
+\p
+\{\set_style "MSG_TEXT" TPEND scheduled for ACB:\} \{\set_style "BLK_ITAL" acb-name\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TPEND\p
+\p
+This message is issued in response to a TPEND operator command.  The command has been accepted.  If the ACB was already closed when the command was issued, command processing is complete.  Otherwise, in order to complete the TPEND operation InfoSession terminates all sessions that are using the specified ACB and then closes the ACB.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD302E"
+\0 \0 \{\set_style "MSG" INTCMD302E\}\p
+\p
+\{\set_style "MSG_TEXT" TPEND failed for ACB:\} \{\set_style "BLK_ITAL" acb-name\}  \{\set_style "MSG_TEXT" RC:\} \{\set_style "BLK_ITAL" nn\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TPEND\p
+\p
+This message is issued in response to a TPEND operator command.  The command has failed and the return code (RC) indicates the reason for the failure:\p
+\p
+\{\set_style "BLK_BLD_ITAL" RC:\}\{\set_style "BLK_ITAL"  4 \}= Specified ACB could not be found.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD303I"
+\0 \0 \{\set_style "MSG" INTCMD303I\}\p
+\p
+\{\set_style "MSG_TEXT" TPSTART scheduled for ACB:\} \{\set_style "BLK_ITAL" acb-name\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TPSTART\p
+\p
+This message is issued in response to a TPSTART operator command.  The command has been accepted.  If the ACB was already open when this command was issued, command processing is complete.  Otherwise, in order to complete the command InfoSession must open the specified ACB.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD304E"
+\0 \0 \{\set_style "MSG" INTCMD304E\}\p
+\p
+\{\set_style "MSG_TEXT" TPSTART failed for ACB:\} \{\set_style "BLK_ITAL" acb-name\}  \{\set_style "MSG_TEXT" RC:\} \{\set_style "BLK_ITAL" nn\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TPSTART\p
+\p
+This message is issued in response to a TPSTART operator command.  The command has failed and the return code (RC) indicates the reason for the failure:\p
+\p
+\{\set_style "BLK_BLD_ITAL" RC: 4\} = Open call failed (this return code should not occur).\p
+\p
+\{\set_style "BLK_BLD_ITAL" RC: 8\} = Open call failed (message INTVTM005E provides additional information).\p
+\p
+\{\set_style "BLK_BLD_ITAL" RC: 12\} = Open call failed (message INTVTM005E provides additional information).\p
+\p
+\{\set_style "BLK_BLD_ITAL" RC: 16\} = Specified ACB could not be found.\p
+\p
+\{\set_style "BLK_BLD_ITAL" RC: 20\} = Specified ACB is in the process of stopping (e.g. a TPEND command was previously issued and has not yet completed).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD311E"
+\0 \0 \{\set_style "MSG" INTCMD311E\}\p
+\p
+\{\set_style "BLK_ITAL" dest-name\} \{\set_style "MSG_TEXT" is not a valid message destination\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} MESSAGE\p
+\p
+A MESSAGE command includes the DEST(\{\set_style "BLK_BLD_ITAL" dest-name\},...) operand but one of the dest-names specified is not defined.  The invalid destination is ignored and processing continues with the remainder of the \{\set_style "BLK_BLD_ITAL" dest-name\} list.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD312E"
+\0 \0 \{\set_style "MSG" INTCMD312E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid DEST designation\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} MESSAGE\p
+\p
+A MESSAGE command includes the DEST(dest-name,...) operand but the dest-name list is syntactically invalid.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD313E"
+\0 \0 \{\set_style "MSG" INTCMD313E\}\p
+\p
+\{\set_style "BLK_ITAL" msg-class-name\} \{\set_style "MSG_TEXT" is not a valid message class or code\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} MESSAGE\p
+\p
+A MESSAGE command includes the CLASS(\{\set_style "BLK_BLD_ITAL" msg-class-name\},...) operand but one of the \{\set_style "BLK_BLD_ITAL" msg-class-names\} is neither a valid msg class name string nor \{\set_style "BLK_BLD_ITAL" msg-class-code\} character.  The invalid \{\set_style "BLK_BLD_ITAL" msg-class-name\} is ignored and processing continues with the remainder of the \{\set_style "BLK_BLD_ITAL" msg-class-name\} list.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD314E"
+\0 \0 \{\set_style "MSG" INTCMD314E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid CLASS designation\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} MESSAGE\p
+\p
+A MESSAGE command includes the CLASS(msg-class-name,...) operand but the msg-class-name list is syntactically invalid.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD315I"
+\0 \0 \{\set_style "MSG" INTCMD315I\}\p
+\p
+\{\set_style "MSG_TEXT" Message class status for {\}\{\set_style "BLK_ITAL" system\} | \{\set_style "BLK_ITAL" workunit\}\{\set_style "MSG_TEXT" }:\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} MESSAGE\p
+\p
+A MESSAGE command includes the DISPLAY operand.  This message precedes one or more instances of \{\goto "<intmsgad>INTCMD316I" INTCMD316I\} describing the status of each defined message class for either all workunits by default (SYSTEM), or when the TASK( ) operand is specified, the named workunit.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD316I"
+\0 \0 \{\set_style "MSG" INTCMD316I\}\p
+\p
+\{\set_style "BLK_ITAL" msg-class-code - msg-class-name\} \{\set_style "MSG_TEXT" is {\}\{\set_style "BLK_ITAL" active\} | \{\set_style "BLK_ITAL" inactive\}\{\set_style "MSG_TEXT" } - Dests:\} \{\set_style "BLK_ITAL" dest-name1, ..., dest-name#\} \p
+\p
+\{\set_style "BLK_BLD" Command:\} MESSAGE\p
+\p
+A MESSAGE command includes the DISPLAY operand.  This message is issued for each message class defined to the system for either the all workunits by default (SYSTEM), or for the named workunit when the TASK( ) operand is also specified. \{\set_style "BLK_BLD_ITAL" Msg-class-code\} and \{\set_style "BLK_BLD_ITAL" msg-class-name\} both describe the particular message class.  Active messages are routed to each of the associated \{\set_style "BLK_BLD_ITAL" dest-name#\} destinations.  Inactive messages are suppressed.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD317I"
+\0 \0 \{\set_style "MSG" INTCMD317I\}\p
+\p
+\{\set_style "MSG_TEXT" Message updates completed\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} MESSAGE\p
+\p
+This message indicates that message activation or routing changes or both, have been completed.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD318I"
+\0 \0 \{\set_style "MSG" INTCMD318I\}\p
+\p
+\{\set_style "MSG_TEXT" Workunit\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" is not currently active\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} MESSAGE\p
+\p
+The MESSAGE command designating a workunit via the TASK( ) operand was issued.  Message activation and routing options have been set accordingly but the named workunit is not currently active.  However, the designated options set will be in affect when the workunit starts.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD319I"
+\0 \0 \{\set_style "MSG" INTCMD319I\}\p
+\p
+\{\set_style "MSG_TEXT" No message table defined for\} \{\set_style "BLK_ITAL" workunit\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} MESSAGE\p
+\p
+A MESSAGE command includes both the DISPLAY and TASK(taskname) operands but there is no message class override table defined for the named \{\set_style "BLK_BLD_ITAL" workunit\}.  Any (task) workunit instance having the taskname specified inherits the SYSTEM workunit default message attributes.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD320I"
+\0 \0 \{\set_style "MSG" INTCMD320I\}\p
+\p
+\{\set_style "MSG_TEXT" Workunit\} \{\set_style "BLK_ITAL" workunit\} \{\set_style "MSG_TEXT" uses system messaging defaults\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} MESSAGE\p
+\p
+A MESSAGE command includes both the DEFAULTS and TASK(taskname) operands.  Any message class override table defined for the named \{\set_style "BLK_BLD_ITAL" workunit\}.  This causes all workunits (tasks) having the specified taskname to inherit the SYSTEM workunit default message attributes.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD325I"
+\0 \0 \{\set_style "MSG" INTCMD325I\}\p
+\p
+\{\set_style "MSG_TEXT" TPUSER active logged on user list:\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TPUSER\p
+\p
+This message is issued as part of the response to the TPUSER command when the NAMES or SESSIONS option is specified.  This message serves as a header to the \{\goto "<intmsgad>INTCMD327I" INTCMD327I\}, \{\goto "<intmsgad>INTCMD328I" INTCMD328I\}, \{\goto "<intmsgad>INTCMD329I" INTCMD329I\}, or \{\goto "<intmsgad>INTCMD330I" INTCMD330I\} messages that follow.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD326E"
+\0 \0 \{\set_style "MSG" INTCMD326E\}\p
+\p
+\{\set_style "MSG_TEXT" Task\} \{\set_style "BLK_ITAL" task\} \{\set_style "MSG_TEXT" not found\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TPUSER\p
+\p
+This message is issued in response to the TPUSER command when the TASK(taskname) or LU(luname) parameter is specified and the specified taskname/luname could not be found.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD327I"
+\0 \0 \{\set_style "MSG" INTCMD327I\}\p
+\p
+\{\set_style "MSG_TEXT" LUname:\} \{\set_style "BLK_ITAL" luname\} \{\set_style "MSG_TEXT" Token:\} \{\set_style "BLK_ITAL" token\}   \{\set_style "MSG_TEXT" Flags:\} \{\set_style "BLK_ITAL" flags\} \{\set_style "MSG_TEXT" Sessions:\} \{\set_style "BLK_ITAL" n\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TPUSER\p
+\p
+This message is issued as part of the response to the TPUSER command when the NAMES or SESSIONS option is specified.  It provides information about a single logged on user.\p
+\p
+\{\set_style "BLK_BLD_ITAL" luname\}  Taskname/luname of the user.\p
+\p
+\{\set_style "BLK_BLD_ITAL" token\}  A unique hexadecimal identifier for this user. This user token is always 8 digits.  It is also used as the first 8 digits of the session token for all communications sessions associated with this user.\p
+\p
+\{\set_style "BLK_BLD_ITAL" flags\}  Diagnostic information for PLATINUM Technical Support.\p
+\p
+\{\set_style "BLK_BLD_ITAL" n\}  Current number of communications sessions associated with this user.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD328I"
+\0 \0 \{\set_style "MSG" INTCMD328I\}\p
+\p
+\{\set_style "MSG_TEXT" -Partners: \}\{\set_style "BLK_ITAL" remote local \} \{\set_style "MSG_TEXT" CID:\}   \{\set_style "BLK_ITAL" cid\} \p
+ \{\set_style "MSG_TEXT" Token:\} \{\set_style "BLK_ITAL" user-sess\} \{\set_style "MSG_TEXT" Logmode:\} \{\set_style "BLK_ITAL" mode\}  \{\set_style "MSG_TEXT" Driver:\}  \{\set_style "BLK_ITAL" driver\}\p
+ \{\set_style "MSG_TEXT" Msg-in:\} \{\set_style "BLK_ITAL" msgnumberin\}  \{\set_style "MSG_TEXT" Chr-in:\} \{\set_style "BLK_ITAL" chrnumberin\}  \{\set_style "MSG_TEXT" Msgout:\} \{\set_style "BLK_ITAL" msgnumberout\}\p
+ \{\set_style "MSG_TEXT" Char-out:\} \{\set_style "BLK_ITAL" chrnumberout\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TPUSER\p
+\p
+This message is issued as part of the response to the TPUSER command when the SESSIONS option is specified.  Each occurrence of the INTCMD328I and \{\goto "<intmsgad>INTCMD329I" INTCMD329I\} message pair following the \{\goto "<intmsgad>INTCMD327I" INTCMD327I\} message documents a single communications session associated with the user.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remote\}  Name of a remote LU that is in session with an InfoSession ACB.  For workstation sessions, this will be the name of the 3270 emulator LU that is being used by InfoSession's workstation component.  For virtual terminal sessions this will  be the name of an application LU.\p
+\p
+\{\set_style "BLK_BLD_ITAL" local\}  Name of the InfoSession ACB.  For workstation sessions, this will be the name of InfoSession's main ACB.  For virtual terminal session this will be the name of a virtual terminal ACB.\p
+\p
+\{\set_style "BLK_BLD_ITAL" cid \} 8 hexadecimal digits that are the VTAM communications identifier (CID) for this session.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-sess\}  16 hexadecimal digits that are InfoSession's unique identifier for this session.  This first 8 digits are the user token and the last 8 digits are the session token.\p
+\p
+\{\set_style "BLK_BLD_ITAL" mode\}  VTAM logmode name that provided the session parameters.\p
+\p
+\{\set_style "BLK_BLD_ITAL" driver\}  Name of the driver process that is controlling this session.  For workstations sessions this will be the HLLAPI driver.  For virtual terminal sessions this will be the ISLUDRV process.\p
+\p
+\{\set_style "BLK_BLD_ITAL" msgnumberin\}  Number of input messages received from the session partner.\p
+\p
+\{\set_style "BLK_BLD_ITAL" chrnumberin\}  Number of input characters received from the session partner.\p
+\p
+\{\set_style "BLK_BLD_ITAL" msgnumberout\}  Number of output messages sent to the session partner.\p
+\p
+\{\set_style "BLK_BLD_ITAL" chrnumberout\}  Number of output characters sent to the session partner.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD329I"
+\0 \0 \{\set_style "MSG" INTCMD329I\}\p
+\p
+\{\set_style "MSG_TEXT" State:\}  \{\set_style "BLK_ITAL" flags\}   \{\set_style "MSG_TEXT" Flags:\}  \{\set_style "BLK_ITAL" flags\}  \{\set_style "MSG_TEXT" Sendru:\}  \{\set_style "BLK_ITAL" flags\}  \{\set_style "MSG_TEXT" Rcvru:\} \{\set_style "BLK_ITAL" flags\}  \{\set_style "MSG_TEXT" Bind:\} \{\set_style "BLK_ITAL" bind-image\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TPUSER\p
+\p
+This message is issued as part of the response to the TPUSER command when the SESSIONS option is specified.  Each occurrence of the \{\goto "<intmsgad>INTCMD328I" INTCMD328I\} and INTCMD329I message pair following the \{\goto "<intmsgad>INTCMD327I" INTCMD327I\} message documents a single communications session associated with the user.\p
+\p
+\{\set_style "BLK_BLD_ITAL" flag\}  Diagnostic information for PLATINUM Technical Support.\p
+\p
+\{\set_style "BLK_BLD_ITAL" bind-image\}  A copy of the SNA bind image that was used to establish the session.  Only bytes 1-25 (from the Format indicator to the end of the Presentation Services field) are displayed.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD330I"
+\0 \0 \{\set_style "MSG" INTCMD330I\}\p
+\p
+\{\set_style "MSG_TEXT" Total number of logged on users:\} \{\set_style "BLK_ITAL" number\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TPUSER\p
+\p
+This message is issued as part of the response to the TPUSER command.  This message indicates the end of the TPUSER command output and provides a summary count of communications sessions that are active.  This count will include all workstation sessions and all InfoSession-to-InfoSession sessions.  The count does not include the number of virtual sessions that might be active.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD331I"
+\0 \0 \{\set_style "MSG" INTCMD331I\}\p
+\p
+\{\set_style "MSG_TEXT" TPPOOLS virtual terminal pool display:\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TPPOOLS\p
+\p
+This message is issued as part of the response to the TPPOOLS command.  This message serves as a header to the \{\goto "<intmsgad>INTCMD333I" INTCMD333I\}, \{\goto "<intmsgad>INTCMD334I" INTCMD334I\}, \{\goto "<intmsgad>INTCMD335I" INTCMD335I\}, \{\goto "<intmsgad>INTCMD336I" INTCMD336I\}, or \{\goto "<intmsgad>INTCMD337I" INTCMD337I\} messages that follow.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD332E"
+\0 \0 \{\set_style "MSG" INTCMD332E\}\p
+\p
+\{\set_style "MSG_TEXT" Pool:\} \{\set_style "BLK_ITAL" poolid\} \{\set_style "MSG_TEXT" not found\}\p
+\p
+Command: TPPOOLS\p
+\p
+This message is issued in response to the TPPOOLS command when the POOL(\{\set_style "BLK_BLD_ITAL" poolid\}) parameter is specified and the specified \{\set_style "BLK_BLD_ITAL" poolid\} could not be found.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD333I"
+\0 \0 \{\set_style "MSG" INTCMD333I\}\p
+\p
+\{\set_style "MSG_TEXT" Pool:\}  \{\set_style "BLK_ITAL" poolid\}    \{\set_style "MSG_TEXT" Ipoflags:\}  \{\set_style "BLK_ITAL" flags\}     \{\set_style "MSG_TEXT" # of ACBs:\} \{\set_style "BLK_ITAL" n\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TPPOOLS\p
+\p
+This message is issued as part of the response to the TPPOOLS command.  It provides information about a single virtual terminal pool.\p
+\p
+\{\set_style "BLK_BLD_ITAL" poolid\}  Name of virtual terminal pool.\p
+\p
+\{\set_style "BLK_BLD_ITAL" flags\}  Diagnostic information for PLATINUM Technical Support.\p
+\p
+\{\set_style "BLK_BLD_ITAL" n\}  Current number of virtual terminal ACBs that are defined in the pool.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD334I"
+\0 \0 \{\set_style "MSG" INTCMD334I\}\p
+\p
+\{\set_style "MSG_TEXT" ACB:\}  \{\set_style "BLK_ITAL" name addr\}  \{\set_style "MSG_TEXT" Iacflags:\}  \{\set_style "BLK_ITAL" flags\}  \{\set_style "MSG_TEXT" Iacrecsz:\}  \{\set_style "BLK_ITAL" size\}  \{\set_style "MSG_TEXT" Iac#sess:\} \{\set_style "BLK_ITAL" number status\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TPPOOLS\p
+\p
+This message is issued as part of the response to the TPPOOLS command when the ACBs or SESSIONS parameter is specified.  It provides information about a single virtual terminal ACB or InfoSession's main ACB.\p
+\p
+\{\set_style "BLK_BLD_ITAL" name\}  Name of ACB.\p
+\p
+\{\set_style "BLK_BLD_ITAL" addr\}  Storage address of the ACB.\p
+\p
+\{\set_style "BLK_BLD_ITAL" flags\}  Diagnostic information for PLATINUM Technical Support.\p
+\p
+\{\set_style "BLK_BLD_ITAL" size\}  Current size of the receive any buffer(s) for this ACB.\p
+\p
+\{\set_style "BLK_BLD_ITAL" number\}  Current number of communications sessions associated with this ACB.\p
+\p
+\{\set_style "BLK_BLD_ITAL" status\}  One or more keyword values that indicate conditions associated with the ACB.\p
+\p
+   \{\set_style "BLK_BLD"   OPEN\}  The ACB is open.\p
+\p
+     \{\set_style "BLK_BLD" NOT-OPEN\}  The ACB is closed.\p
+\p
+   \{\set_style "BLK_BLD"   STOPPED\}  The ACB is closed due to an error or an explicit request to close the ACB.  A TPSTART command must be issued to put the ACB back in service.\p
+\p
+   \{\set_style "BLK_BLD"   SKIP\}  The ACB is open but it will be skipped over during session initiation processing because a session setup error has previously occurred using this ACB.  The session setup error might be due to a mismatch between application subsystem definition (for example, a CICS terminal gen) and virtual terminal pool definition.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD335I"
+\0 \0 \{\set_style "MSG" INTCMD335I\}\p
+\p
+\{\set_style "MSG_TEXT" Session:\} \{\set_style "BLK_ITAL" remote local addr\}  \{\set_style "MSG_TEXT" Token:\}  \{\set_style "BLK_ITAL" user-sess\}   \{\set_style "MSG_TEXT" Task:\}  \{\set_style "BLK_ITAL" taskname\}   \{\set_style "MSG_TEXT" Proc:\} \{\set_style "BLK_ITAL" procname   status\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TPPOOLS\p
+\p
+This message is issued as part of the response to the TPPOOLS command when the SESSIONS parameter is specified.  It provides information about a single communications session associated with the ACB identified in the previous \{\goto "<intmsgad>INTCMD334I" INTCMD334I\} message.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remote\}  Name of a remote LU that is in session with the ACB.\p
+\p
+\{\set_style "BLK_BLD_ITAL" local\}  Name of the InfoSession ACB.\p
+\p
+\{\set_style "BLK_BLD_ITAL" addr\}  Storage address of the InfoSession's session control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-sess\}  16 hexadecimal digits that are the InfoSession's unique identifier for this session.  This first 8 digits are the user token and the last 8 digits are the session token.\p
+\p
+\{\set_style "BLK_BLD_ITAL" taskname\}  Name of the InfoSession task that owns the session.\p
+\p
+\{\set_style "BLK_BLD_ITAL" procname\}  Name of the InfoSession process that owns the session.\p
+\p
+\{\set_style "BLK_BLD_ITAL" status\}  One or more keyword values that indicate special conditions associated with this session's usage of the virtual terminal ACB.\p
+\p
+   \{\set_style "BLK_BLD"   EXCL\}  The session has exclusive use of the ACB.  No other sessions can share this ACB.  Normally this status is used for diagnostic purposes to limit the amount of trace data collected by limiting the number of sessions to one.\p
+\p
+   \{\set_style "BLK_BLD"   MULTI\}  The session is using the ACB with an application that is expected to perform multiple CLSDST PASS operations.  Other existing sessions can continue but no new sessions be allowed to start on this ACB until the current multi session is ended.\p
+\p
+   \{\set_style "BLK_BLD"   PASS\}  The session is using the ACB with an application that is expected to perform a single CLSDST PASS operation.  Other existing sessions can continue but no new sessions will be allowed to start on this ACB until the expected  pass operation has been completed.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD336I"
+\0 \0 \{\set_style "MSG" INTCMD336I\}\p
+\p
+\{\set_style "MSG_TEXT" Total number of virtual terminal pools:\} \{\set_style "BLK_ITAL" n\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TPPOOLS\p
+\p
+This message is issued as part of the response to the TPPOOLS command.  This message indicates the end of the TPPOOLS command output and provides a summary count of the number of virtual terminal pools that are defined to InfoSession.\p
+\p
+\{\set_style "BLK_BLD_ITAL" n\}  Total number of virtual terminal pools defined to InfoSession.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD337I"
+\0 \0 \{\set_style "MSG" INTCMD337I\}\p
+\p
+\{\set_style "MSG_TEXT" Main ACB:\} \{\set_style "BLK_ITAL" acbname\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} TPPOOLS\p
+\p
+This message is issued as part of the response to the TPPOOLS command when the MAIN parameter is specified.  It provides information about InfoSession's main ACB (that is, the ACB that accepts workstation logons).\p
+\p
+\{\set_style "BLK_BLD_ITAL" acbname\}  Name of InfoSession's main ACB.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD338I"
+\0 \0 \{\set_style "MSG" INTCMD338I\}\p
+\p
+\{\set_style "MSG_TEXT" Main ACB (LU6.2):\} \{\set_style "BLK_ITAL" acbname\}\p
+\p
+This message is issued as part of the response to the TPPOOLS command when the MAIN parameter is specified.  It provides information about InfoSession's main ACB (that is, the ACB that accepts workstation logons).\p
+\p
+\{\set_style "BLK_BLD_ITAL" acbname\}  Name of InfoSession's main ACB.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD340I"
+\0 \0 \{\set_style "MSG" INTCMD340I\}\p
+\p
+\{\set_style "MSG_TEXT" SYSTEMS  request-name:\}  \{\set_style "BLK_ITAL" request status\} \{\set_style "MSG_TEXT" [-\} \{\set_style "BLK_ITAL" reason\}\{\set_style "MSG_TEXT" ]\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} SYSTEMS\p
+\p
+This message is issued in response to the SYSTEMS command.  It provides information about the results of command processing.\p
+\p
+\{\set_style "BLK_BLD_ITAL" request-name\}  Requested SYSTEMS function (for example, START, STOP, IMPORT, EXPORT, etc.).\p
+\p
+\{\set_style "BLK_BLD_ITAL" status\}  Indicates COMPLETE if command processing was successful or FAILED if an error occurred.\p
+\p
+\{\set_style "BLK_BLD_ITAL" reason\}  If the request FAILED, reason provides an explanation for the failure (for example, START was issued and the connection was already active).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD341I"
+\0 \0 \{\set_style "MSG" INTCMD341I\}\p
+\p
+\{\set_style "MSG_TEXT" SYSTEMS\}  \{\set_style "BLK_ITAL" request-name\}\{\set_style "MSG_TEXT" :\}  \{\set_style "MSG_TEXT" applid:\}  \{\set_style "BLK_ITAL" remoteInt\}   \{\set_style "MSG_TEXT" smfid:\}  \{\set_style "BLK_ITAL" remoteID\} \p
+\{\set_style "MSG_TEXT" token:\} \{\set_style "BLK_ITAL" user-sess\}   \{\set_style "MSG_TEXT" flags:\} \{\set_style "BLK_ITAL" flags\}  \{\set_style "MSG_TEXT" description:\} \{\set_style "BLK_ITAL" description\} \p
+\{\set_style "MSG_TEXT" itask:\} \{\set_style "BLK_ITAL" addr1\}  \{\set_style "MSG_TEXT" task name:\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" ipcb:\} \{\set_style "BLK_ITAL" addr2\}  \{\set_style "MSG_TEXT" process name:\} \{\set_style "BLK_ITAL" procname\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} SYSTEMS\p
+\p
+This message is issued as part of the response to the Systems Display.  Messages INTCMD341I, \{\goto "<intmsgad>INTCMD342I" INTCMD342I\}, and INTVTM022I provide information about a single communications connection defined to a remote InfoSession.  If there are any active or queued transactions for the connection, message INTVTM022I is issued for each such transaction as part of the system display.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remoteInt\}  Name of the remote InfoSession's main ACB.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remoteID\}  MVS SMFID of the remote InfoSession's system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-sess\}  16 hexadecimal digits that are InfoSession's unique identifier for this session.  This first 8 digits are the user token and the last 8 digits are the session token.  If there is no active session this session token will be all zero.\p
+\p
+\{\set_style "BLK_BLD_ITAL" flags\}  Diagnostic information for PLATINUM Technical Support.\p
+\p
+\{\set_style "BLK_BLD_ITAL" description\}  Description that was optionally specified by the administrator when this systems connection was defined.\p
+\p
+\{\set_style "BLK_BLD_ITAL" addr1\}  Storage address of the InfoSession task control block that owns the session.\p
+\p
+\{\set_style "BLK_BLD_ITAL" taskname\}  Name of the InfoSession task that owns the session.\p
+\p
+\{\set_style "BLK_BLD_ITAL" addr2\}  Storage address of the InfoSession process control block that owns the session.\p
+\p
+\{\set_style "BLK_BLD_ITAL" procname\}  Name of the InfoSession process that owns the session.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD342I"
+\0 \0 \{\set_style "MSG" INTCMD342I\}\p
+\p
+\{\set_style "MSG_TEXT" Sent:\}  \{\set_style "BLK_ITAL" n1\} \{\set_style "MSG_TEXT" msgs\} \{\set_style "BLK_ITAL" n2\} \{\set_style "MSG_TEXT" chars, received:\} \{\set_style "BLK_ITAL" n3\} \{\set_style "MSG_TEXT" msgs\} \{\set_style "BLK_ITAL" n4\} \{\set_style "MSG_TEXT" chars\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} SYSTEMS\p
+\p
+This message is issued as part of the response to the Systems Display.  Messages \{\goto "<intmsgad>INTCMD341I" INTCMD341I\}, INTCMD342I, and INTVTM022I provide information about a single communications connection defined to a remote InfoSession.  If there are any active or queued transactions for the connection,  message INTVTM022I is issued for each such transaction as part of the system display.\p
+\p
+\{\set_style "BLK_BLD_ITAL" n1\}  Total number of messages sent to the remote system.  This count is reset when the connection is ended.\p
+\p
+\{\set_style "BLK_BLD_ITAL" n2\}  Total number of characters sent to the remote system.  This count is reset when the connection is ended.\p
+\p
+\{\set_style "BLK_BLD_ITAL" n3\}  Total number of messages received from the remote system.  This count is reset when the connection is ended.\p
+\p
+\{\set_style "BLK_BLD_ITAL" n4\}  Total number of characters received from the remote system.  This count is reset when the connection is ended.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD343I"
+\0 \0 \{\set_style "MSG" INTCMD343I\}\p
+\p
+\{\set_style "MSG_TEXT" SYSTEMS\} \{\set_style "BLK_ITAL" request-name:  n\}  \{\set_style "MSG_TEXT" systems selected for display\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} SYSTEMS\p
+\p
+This message is issued as part of the response to the SYSTEMS command when the DISPLAY function is specified.  This message indicates the end of the SYSTEMS command output and provides a summary count of the number of systems connections that were displayed.\p
+\p
+\{\set_style "BLK_BLD_ITAL" n\}  Total number of systems connections displayed.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD351I"
+\0 \0 \{\set_style "MSG" INTCMD351I\}\p
+\p
+\{\set_style "MSG_TEXT" Display of event counts and rates\p
+  Event             Event                                    Event Statistics\p
+-- -Id -- ---------Description -------------Interval  TotalSys  Events/Sec\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} EVENTS\p
+\p
+This header line is followed by one or more \{\goto "<intmsgad>INTCMD352I" INTCMD352I\} messages listing event counts and rates for the event(s) selected using the EVENTS command.  This message provides the heading format for the subsequent \{\goto "<intmsgad>INTCMD352I" INTCMD352I\} messages.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD352I"
+\0 \0 \{\set_style "MSG" INTCMD352I\}\p
+\p
+\{\set_style "BLK_ITAL" Event Id   Event Description   Interval  TotalSys   Events/Sec\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} EVENTS\p
+\p
+This message line is generated after \{\goto "<intmsgad>INTCMD351I" INTCMD351I\} and contains event count and rate statistics for the selected event(s).  The lines contain the following information:\p
+\p
+\{\set_style "BLK_BLD_ITAL" Event-Id\}  ID of the event.\p
+\p
+\{\set_style "BLK_BLD_ITAL" Event-Description\}  Brief description of the event being counted.\p
+\p
+\{\set_style "BLK_BLD_ITAL" Interval\}  Number of times the event occurred from the start of the interval until the EVENTS command was issued.\p
+\p
+\{\set_style "BLK_BLD_ITAL" TotalSys\}  Number of times the event occurred from InfoSession initialization until the EVENTS command was issued.\p
+\p
+\{\set_style "BLK_BLD_ITAL" Events/Sec\}  Number of times the event occurred per second from the start of the interval until the EVENTS command was issued.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD353I"
+\0 \0 \{\set_style "MSG" INTCMD353I\}\p
+\p
+\{\set_style "MSG_TEXT" Internal event counts reset\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} EVENTS\p
+\p
+An EVENTS command with the RESET operand was issued.  This message indicates that the interval-count value was cleared and a new interval for all (or selected) events is established.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD360I"
+\0 \0 \{\set_style "MSG" INTCMD360I\}\p
+\p
+\{\set_style "MSG_TEXT" SVC Dump\} \{\set_style "BLK_ITAL" result-text\}\{\set_style "MSG_TEXT" .\}  \{\set_style "MSG_TEXT" RC:\}  \{\set_style "BLK_ITAL" retcode\}  \{\set_style "MSG_TEXT" RSN:\}  \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} DUMP\p
+\p
+This message is issued in response to a DUMP command.  \{\set_style "BLK_BLD_ITAL" result-text\}  Indicates whether the dump was successful or failed.  The \{\set_style "BLK_BLD_ITAL" retcode\} and \{\set_style "BLK_BLD_ITAL" rsncode\} are the reason and return codes associated with this SVC DUMP.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD361I"
+\0 \0 \{\set_style "MSG" INTCMD361I\}\p
+\p
+\{\set_style "MSG_TEXT" DUMP command failed.\}   \{\set_style "BLK_ITAL" failure-text\}\{\set_style "MSG_TEXT" .  RC:\}  \{\set_style "BLK_ITAL" retcode\}  \{\set_style "MSG_TEXT" RSN:\}  \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} DUMP\p
+\p
+This message is issued in response to a failed DUMP command.\p
+\p
+\{\set_style "BLK_BLD_ITAL" failure-text\} is one of the following:\p
+\p
+   \{\set_style "BLK_BLD" Not running APF-authorized\}  InfoSession must be running APF-authorized to use the DUMP command.\p
+\p
+   \{\set_style "BLK_BLD" No selected dataspace(s) found\}  A DUMP command has been issued that uses the DSPNAME operand.  However, none of the dataspace-names in the dataspace-name-list operand could be found.  This error might be due to an incorrectly spelled dataspace-name or the named dataspace might no longer be active.\p
+\p
+   \{\set_style "BLK_BLD" Too many dataspaces specified\}  A DUMP command has been issued that uses the DSPNAME operand.  However, the number of dataspace-names in the dataspace-name-list exceeds the limit of 8.\p
+\p
+   \{\set_style "BLK_BLD" Invalid dataspace name\}  A DUMP command has been issued that uses the DSPNAME operand.  However, a dataspace-name in the dataspace-name-list exceeds 8 characters.\p
+\p
+   \{\set_style "BLK_BLD" Unable to obtain project lock\}  A DUMP command has been issued that uses the DSPNAME operand.  However, the project lock could not be obtained.  The lock is used to retrieve the dataspace's STOKEN, which is needed for dumping.\p
+\p
+The \{\set_style "BLK_BLD_ITAL" retcode\} and \{\set_style "BLK_BLD_ITAL" rsncode\} are the reason and return codes associated with this DUMP.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD362I"
+\0 \0 \{\set_style "MSG" INTCMD362I\}\p
+\p
+\{\set_style "MSG_TEXT" Dataspaces not found:\}  \{\set_style "BLK_ITAL" dataspace-name-list\}  \{\set_style "MSG_TEXT" Not dumped.\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} DUMP\p
+\p
+This message is issued in response to a DUMP command that is specified with the DSPNAME (\{\set_style "BLK_BLD_ITAL" dataspace-name-list\}) operand.\p
+\p
+\{\set_style "BLK_BLD_ITAL" dataspace-name-list\}  List of dataspace-names that were requested but not found and could not be dumped.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD363I"
+\0 \0 \{\set_style "MSG" INTCMD363I\}\p
+\p
+\{\set_style "MSG_TEXT" Current SDUMP count:\} \{\set_style "BLK_ITAL" number\}\{\set_style "MSG_TEXT" .  Maximum allowed:\} \{\set_style "BLK_ITAL" max-value\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} DUMP\p
+\p
+This message is issued in response to a DUMP command specified without additional operands or with the DISPLAY, MAX(\{\set_style "BLK_BLD_ITAL" max-value\}), or RESET operands.\p
+\p
+\{\set_style "BLK_BLD_ITAL" number\}  Indicates the current number of SVC dumps taken.\p
+\p
+\{\set_style "BLK_BLD_ITAL" max-value\}  Indicates the maximum number of SVC dumps allowed.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD375I"
+\0 \0 \{\set_style "MSG" INTCMD375I\}\p
+\p
+\{\set_style "MSG_TEXT" ----------  ---------Requester-------- -----   -----Operator---------      Time\p
+Req id  Userid  LU/Itask  Procname   Consname  Consid   Interval\p
+----------  --------- -----------   ---------------   ---------------   ----------   -----------\}\p
+\p
+This multiline message contains the column headers for the body of the information presented by the ISSUE DISPLAY.  It is followed by one or more \{\goto "<intmsgad>INTCMD376I" INTCMD376I\} / \{\goto "<intmsgad>INTCMD377I" INTCMD377I\} message entries.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp   
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD376I"
+\0 \0 \{\set_style "MSG" INTCMD376I\}\p
+\p
+\{\set_style "BLK_ITAL" Reqid  Userid  LU/Itask  Procname Consname  Consid  TimeIntvl\}\p
+\p
+This message summarizes a command scheduling  request introduced by an ISSUE command.   It identifies the ISSUE requester, the command submission identifier, and the command submission interval, as follows:\p
+\p
+\{\set_style "BLK_BLD_ITAL" Reqid\}  The command submission identifier.  All active ISSUE commands belong to a command submission group named ISSDFT by default.\p
+\p
+\{\set_style "BLK_BLD_ITAL" Userid\}  If the ISSUE command was issued by an InfoSession Helpdesk, this field contains the user id provided during Helpdesk logon.  For other command sources, it is blank.\p
+\p
+\{\set_style "BLK_BLD_ITAL" LU/Itask\}  Identifies the name of the task workunit from which the ISSUE command was received.  If the ISSUE command originated from an MVS MCS console, the value is blank.  If the ISSUE command was contained in the INITPARM dataset, the value is $INTMAIN.\p
+\p
+\{\set_style "BLK_BLD_ITAL" Procname\}  Identifies the name of the process associated with the task (LU/Itask) from which the ISSUE command was received.  If the command originated from an MVS MCS console both the LU/Itask and Procname values are blank.  If the ISSUE command was contained in the INITPARM dataset, the value is $MAIN$. \p
+\p
+\{\set_style "BLK_BLD_ITAL" Consname\}  Identifies the name of the MVS MCS console from which an ISSUE command was received.  If the command source is a TSO user (via SDSF, etc.) consname is usually the requesters userid.\p
+\p
+\{\set_style "BLK_BLD_ITAL" Consid\}  Identifies the MVS MCS console from which an ISSUE command was received.\p
+\p
+\{\set_style "BLK_BLD_ITAL" Timeintvl\}  Specifies the command submission frequency in HH:MM:SS format.   For example, if  an ISSUE CMD(cmd1, cmd2,...) EVERY(5) MINUTES command is active, the submission frequency appears as 00:05:00.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD377I"
+\0 \0 \{\set_style "MSG" INTCMD377I\}\p
+\p
+\{\set_style "MSG_TEXT" CMD:\} \{\set_style "BLK_ITAL" command line\}\p
+\p
+This message contains the text of an ISSUEd command.  One INTCMD377I message appears for each command specified in the ISSUE CMD(cmd1, cmd2, ...) operand.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD380W"
+\0 \0 \{\set_style "MSG" INTCMD380W\}\p
+\p
+\{\set_style "MSG_TEXT" No auto ISSUE processes are active\}\p
+\p
+This message is the response to an ISSUE DISPLAY command if automatic command submission is not active. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD381W"
+\0 \0 \{\set_style "MSG" INTCMD381W\}\p
+\p
+\{\set_style "MSG_TEXT" No auto ISSUE processes match the given ID\}\p
+\p
+An ISSUE DISPLAY ID(reqid) command was issued, but there is no corresponding active command submission workunit running.   The request is ignored.  Omit the ID(reqid) operand to acquire a list of all active command submission reqids.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD382E"
+\0 \0 \{\set_style "MSG" INTCMD382E\}\p
+\p
+\{\set_style "MSG_TEXT" EVERY( ) or FOR( ) value exceeds 24 hours\}\p
+\p
+An ISSUE command includes the FOR(intvl1) and / or EVERY(intvl2) operands and the time intervals requested exceed 24 hours.  The request is ignored.  Consider using FOREVER in place of a large FOR(intvl1) value.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD383E"
+\0 \0 \{\set_style "MSG" INTCMD383E\}\p
+\p
+\{\set_style "MSG_TEXT" EVERY( ) or FOR( ) value exceeds max digits\}\p
+\p
+The FOR and EVERY operands are intended to represent time periods of less than 24 hours (86400 seconds) in duration.  The request is ignored.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD384E"
+\0 \0 \{\set_style "MSG" INTCMD384E\}\p
+\p
+\{\set_style "MSG_TEXT" ISSUE command cannot be recursively submitted\}\p
+\p
+An ISSUE command contains another ISSUE command in the CMD(cmd1,...) operand.  The request is ignored.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD385E"
+\0 \0 \{\set_style "MSG" INTCMD385E\}\p
+\p
+\{\set_style "MSG_TEXT" ISSUE\} \{\set_style "BLK_ITAL" reqid\} \{\set_style "MSG_TEXT" cancelled due to error submitted command\}\p
+\p
+At the time a command is submitted on behalf of an ISSUE request for an active \{\set_style "BLK_BLD_ITAL" reqid\}, the command line was found in error by either the command scheduler or the command processor.  The automatic command submission process identified by reqid is stopped.  Refer also to \{\goto "<intmsgad>INTCMD390I" INTCMD390I\} and \{\goto "<intmsgad>INTCMD391E" INTCMD391I\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD386E"
+\0 \0 \{\set_style "MSG" INTCMD386E\}\p
+\p
+\{\set_style "MSG_TEXT" ISSUE cancelled because command output is not deliverable\}\p
+\p
+The output of the commands automatically submitted on behalf of an ISSUE request is routed back to the ISSUE requester.  If the command output is not deliverable, perhaps because the requester has signed off  InfoSession, this message is issued and the associated automatic command submission workunit is stopped.  Refer also to \{\goto "<intmsgad>INTCMD390I" INTCMD390I\} and \{\goto "<intmsgad>INTCMD391E" INTCMD391I\}. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD388E"
+\0 \0 \{\set_style "MSG" INTCMD388E\}\p
+\p
+\{\set_style "MSG_TEXT" ISSUE failed in $TIMER service RC:\} \{\set_style "BLK_ITAL" returncode\}\p
+\p
+The timing service used by the ISSUE command to schedule the submission of command lines has failed.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD389E"
+\0 \0 \{\set_style "MSG" INTCMD389E\}\p
+\p
+\{\set_style "MSG_TEXT" ISSUE failed in $COMMAND service RC:\} \{\set_style "BLK_ITAL" returncode\}\p
+\p
+The command submission service used by the ISSUE command to schedule the submission of command lines has failed.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD390I"
+\0 \0 \{\set_style "MSG" INTCMD390I\}\p
+\p
+\{\set_style "MSG_TEXT" ISSUE ID:\} \{\set_style "BLK_ITAL" reqid\} \{\set_style "MSG_TEXT" stopped\}\p
+\p
+This message is issued when the automatic command submission workunit identified by \{\set_style "BLK_BLD_ITAL" reqid\} has been requested to stop.  Generally, this occurs when an ISSUEND command is received but stop requests also originate internally in response to certain errors (refer to messages \{\goto "<intmsgad>INTCMD385E" INTCMD385E\} and \{\goto "<intmsgad>INTCMD386E" INTCMD386E\}).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD391E"
+\0 \0 \{\set_style "MSG" INTCMD391I\}\p
+\p
+\{\set_style "MSG_TEXT" ISSUE ID:\} \{\set_style "BLK_ITAL" reqid\} \{\set_style "MSG_TEXT" ended\}\p
+\p
+This message is issued by an automatic command submission workunit when it terminates.  The \{\set_style "BLK_BLD_ITAL" reqid\} and all associated command submission requests are deleted.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD400I"
+\0 \0 \{\set_style "MSG" INTCMD400I\}\p
+\p
+\{\set_style "MSG_TEXT" TPLIMITS\} \{\set_style "BLK_ITAL" request-name\}: \{\set_style "MSG_TEXT" request\} \{\set_style "BLK_ITAL" status\}\{\set_style "MSG_TEXT" [-\}\{\set_style "BLK_ITAL" reason\}\{\set_style "MSG_TEXT" ]\}\p
+\p
+This message is issued in response to the TPLIMITS command.  It provides information about the results of command processing.\p
+\p
+\{\set_style "BLK_BLD_ITAL" request-name\}  Requested TPLIMITS function (for example, DISPLAY, SET, RESET, etc.).\p
+\p
+\{\set_style "BLK_BLD_ITAL" status\}  Indicates COMPLETE if command processing was successful or FAILED if an error occurred.\p
+\p
+\{\set_style "BLK_BLD_ITAL" reason\}  If the request FAILED, reason provides an explanation for the failure.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD401I"
+\0 \0 \{\set_style "MSG" INTCMD401I\}\p
+\p
+\{\set_style "MSG_TEXT" TPLIMITS Local LU:\}  \{\set_style "BLK_ITAL" acbname/qualified-name\} \{\set_style "MSG_TEXT" Partner:\} \{\set_style "BLK_ITAL" local-name/qualified-name\}\p
+\{\set_style "MSG_TEXT" Token:\} \{\set_style "BLK_ITAL" user-token\} \{\set_style "MSG_TEXT" Ivuflags:\} \{\set_style "BLK_ITAL" user-flags\}\p
+\p
+This message is issued in response to a TPLIMITS DISPLAY command.\p
+\p
+\{\set_style "BLK_BLD_ITAL" acbname\}  Name of the InfoSession LU that is in session with the specified partner LU.\p
+\p
+\{\set_style "BLK_BLD_ITAL" qualified-name\}  Fully-qualified InfoSession or partner LU name.\p
+\p
+\{\set_style "BLK_BLD_ITAL" local-name\}  Partner LU name.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-token\}  InfoSession's unique identifier for this partner LU.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-flags\}  Hexadecimal information about the partner LU's status that might be useful to PLATINUM personnel in diagnosing problem situations.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD402I"
+\0 \0 \{\set_style "MSG" INTCMD402I\}\p
+\p
+\{\set_style "MSG_TEXT" Mode:\}  \{\set_style "BLK_ITAL" mode-name\}  \{\set_style "MSG_TEXT" flags:\} \{\set_style "BLK_ITAL" mode-flags\}  \{\set_style "MSG_TEXT" auto:\} \{\set_style "BLK_ITAL" auto-cnt\}\p
+\{\set_style "MSG_TEXT" limit:\} \{\set_style "BLK_ITAL" session-limit\} \{\set_style "MSG_TEXT" min_winners:\} \{\set_style "BLK_ITAL" min-winners\}  \{\set_style "MSG_TEXT" min_losers:\} \{\set_style "BLK_ITAL" min_losers\}\p
+\p
+This message is issued in response to a TPLIMTS DISPLAY command.\p
+\p
+\{\set_style "BLK_BLD_ITAL" mode-name\}  Name of the session parameters mode to which the following information applies.\p
+\p
+\{\set_style "BLK_BLD_ITAL" mode-flags\}  Hexadecimal information about the mode's status that might be useful to PLATINUM personnel in diagnosing problem situations.\p
+\p
+\{\set_style "BLK_BLD_ITAL" auto-cnt\}  Number of sessions that can be automatically activated for this mode when it becomes active.\p
+\p
+\{\set_style "BLK_BLD_ITAL" session-limit\}  Maximum number of sessions that can be concurrently active between the specified partners using this mode-name.\p
+\p
+\{\set_style "BLK_BLD_ITAL" min-winners\}  Minimum number of sessions that are reserved to be contention winner sessions for the InfoSession.\p
+\p
+\{\set_style "BLK_BLD_ITAL" min-losers\}  Minimum number of sessions that are reserved to be contention winner sessions for the partner.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD403I"
+\0 \0 \{\set_style "MSG" INTCMD403I\}\p
+\p
+\{\set_style "MSG_TEXT" Active:\} \{\set_style "BLK_ITAL" active-cnt\} \{\set_style "MSG_TEXT" act_winners:\} \{\set_style "BLK_ITAL" act-winners\} \{\set_style "MSG_TEXT" act_losers:\}   \{\set_style "BLK_ITAL" act-losers\}\p
+\{\set_style "MSG_TEXT" pending:\} \{\set_style "BLK_ITAL" pending-cnt\} \{\set_style "MSG_TEXT" pnd_winners:\} \{\set_style "BLK_ITAL" pnd-winners\}   \{\set_style "MSG_TEXT" pnd_losers:\} \{\set_style "BLK_ITAL" pnd-losers\}\p
+\{\set_style "MSG_TEXT" termcnt:\} \{\set_style "BLK_ITAL" term-cnt\} \{\set_style "MSG_TEXT" trm_winners:\} \{\set_style "BLK_ITAL" trm-winners\}   \{\set_style "MSG_TEXT" trm_losers:\} \{\set_style "BLK_ITAL" trm-losers\}\p
+\p
+This message is issued in response to a TPLIMTS DISPLAY command.\p
+\p
+\{\set_style "BLK_BLD_ITAL" active-cnt\}  Number of sessions that are currently active between the specified partners using this mode-name.\p
+\p
+\{\set_style "BLK_BLD_ITAL" act-winners\}  Number of active sessions that are contention winner sessions for the InfoSession.\p
+\p
+\{\set_style "BLK_BLD_ITAL" act-losers\}  Number of active sessions that are contention winner sessions for the partner.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pending-cnt\}  Number of sessions that are in the process of activation between the specified partners using this mode-name.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pnd-winners\}  Number of pending active sessions that are contention winner sessions for the InfoSession.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pnd-losers\}  Number of pending active sessions that are contention winner sessions for the partner.\p
+\p
+\{\set_style "BLK_BLD_ITAL" term-cnt\}  Number of sessions that must be selected for deactivation to satisfy a change or reset of the session limits for this mode-name.\p
+\p
+\{\set_style "BLK_BLD_ITAL" trm-winners\}  Number of sessions pending termination that are contention winner sessions for the InfoSession.\p
+\p
+\{\set_style "BLK_BLD_ITAL" trm-losers\}  Number of sessions pending termination that are contention winner sessions for the partner.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD404I"
+\0 \0 \{\set_style "MSG" INTCMD404I\}\p
+\p
+\{\set_style "MSG_TEXT" TPLIMITS\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" issued for Partner:\} \{\set_style "BLK_ITAL" local-name\} \{\set_style "MSG_TEXT" Mode:\} \{\set_style "BLK_ITAL" mode-name\} \{\set_style "MSG_TEXT" return code:\} \{\set_style "BLK_ITAL" return-code-string\}\p
+\p
+This message is issued in response to a TPLIMITS SET or RESET command to provide information about the results of command processing.\p
+\p
+\{\set_style "BLK_BLD_ITAL" request-name\}  Requested Tplimits function (for example, SET, RESET, etc.).\p
+\p
+\{\set_style "BLK_BLD_ITAL" local-name\}  Name of the specific partner LU that was the target of the command.  ALL indicates that all active partners were the target of the command.\p
+\p
+\{\set_style "BLK_BLD_ITAL" mode-name\}  Name of the session parameters mode that was the target of the command.  ALL indicates that all mode-names for the specified partner(s) were the target of the command.\p
+\p
+\{\set_style "BLK_BLD_ITAL" return-code\}  A value of LU62_OK indicates the requested function was successfully completed.  Any other value indicates the function was not successfully completed for the stated reason.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD410I"
+\0 \0 \{\set_style "MSG" INTCMD410I\}\p
+\p
+\{\set_style "MSG_TEXT" TCP\} \{\set_style "BLK_ITAL" request-name\} \{\set_style "MSG_TEXT" request\} \{\set_style "BLK_ITAL" status\} \{\set_style "MSG_TEXT" [\} \{\set_style "BLK_ITAL" reason\} \{\set_style "MSG_TEXT" ]\}\p
+\p
+This message is issued in response to the TCP command.  It provides information about the results of command processing.\p
+\p
+\{\set_style "BLK_BLD_ITAL" request-name\}  Requested TCP command function: DISPLAY, START, or STOP.\p
+\p
+\{\set_style "BLK_BLD_ITAL" status\}  Indicates  COMPLETE if command processing was successful or FAILED if an error occurred.\p
+\p
+\{\set_style "BLK_BLD_ITAL" reason\}  If the request FAILED, reason provides an explanation for the failure.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ICMDTCP  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD411I"
+\0 \0 \{\set_style "MSG" INTCMD411I\}\p
+\p
+\{\set_style "MSG_TEXT" socket-descriptor  pathid:\} \{\set_style "BLK_ITAL" pathid\}  \{\set_style "MSG_TEXT" socket:\} \{\set_style "BLK_ITAL" path-socket-descriptor\}\p
+\{\set_style "MSG_TEXT" entity:\}  \{\set_style "BLK_ITAL" token\}  \{\set_style "MSG_TEXT" task/proc:\}  \{\set_style "BLK_ITAL" taskname/procname\}\p
+\{\set_style "MSG_TEXT" address-family:\}  \{\set_style "BLK_ITAL" family\}  \{\set_style "MSG_TEXT" port:\} \{\set_style "BLK_ITAL" port\}  \{\set_style "MSG_TEXT" host:\} \{\set_style "BLK_ITAL" host-address\}\p
+\{\set_style "MSG_TEXT" flags:\} \{\set_style "BLK_ITAL" flags   flag-description\}\p
+\p
+This message is issued in response to the TCP DISPLAY SOCKET command.  Message \{\goto "<intmsgad>INTCMD412I" INTCMD412I\} logically follows this message and completes the display.\p
+\p
+\{\set_style "BLK_BLD_ITAL" socket-descriptor\}  System-wide socket descriptor.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pathid\}  Unique ID number of the IUCV path assigned to this socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" path-socket-descriptor\}  Socket descriptor used to identify the socket to TCP/IP for MVS.\p
+\p
+\{\set_style "BLK_BLD_ITAL" token\}  Work unit entity token of the process that owns the socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" taskname\}  Name of the task that owns the process\p
+\p
+\{\set_style "BLK_BLD_ITAL" procname\}  Name of the process that owns the socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" family\}  Addressing family associated with the connection.  Currently, the only valid value is 2 (the Internet addressing family).\p
+\p
+\{\set_style "BLK_BLD_ITAL" port\}  TCP/IP port associated with this connection.\p
+\p
+\{\set_style "BLK_BLD_ITAL" host-address\}  TCP/IP address of the host associated with this connection.\p
+\p
+\{\set_style "BLK_BLD_ITAL" flags\}  Socket status flags.\p
+\p
+\{\set_style "BLK_BLD_ITAL" flag-description\}  Textual descriptions for the socket status conditions indicated by the flags:\p
+       \{\set_style "BLK_BLD" ALLOCATED\}\p
+       \{\set_style "BLK_BLD" GIVEN\}\p
+       \{\set_style "BLK_BLD" LISTENING\}\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ICMDTCP  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD412I"
+\0 \0 \{\set_style "MSG" INTCMD412I\}\p
+\p
+\{\set_style "MSG_TEXT" msgs in..........\}\{\set_style "BLK_ITAL" inbound-msg-count\}\p
+\{\set_style "MSG_TEXT" bytes in.........\}\{\set_style "BLK_ITAL" inbound-char-count\}\p
+\{\set_style "MSG_TEXT" msgs out......\}\{\set_style "BLK_ITAL" outbound-msg-count\}\p
+\{\set_style "MSG_TEXT" bytes out.....\}\{\set_style "BLK_ITAL" outbound-char-count\} \p
+\p
+This message is issued in response to the TCP DISPLAY SOCKET command and follows message \{\goto "<intmsgad>INTCMD411I" INTCMD411I\}.\p
+\p
+\{\set_style "BLK_BLD_ITAL" inbound-msg-count\}  Number of messages received over this socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" inbound-char-count\}  Number of characters received over this socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" outbound-msg-count\}  Number of messages sent over this socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" outbound-char-count\}  Number of characters sent over this socket.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ICMDTCP  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD413I"
+\0 \0 \{\set_style "MSG" INTCMD413I\}\p
+\p
+\{\set_style "MSG_TEXT" pathid  iucv_userid:\}  \{\set_style "BLK_ITAL" userid\}  \{\set_style "MSG_TEXT" iucv_subtaskid:\} \{\set_style "BLK_ITAL" subtaskid\}\p
+\{\set_style "MSG_TEXT" maxreqs:\} \{\set_style "BLK_ITAL" max-requests\}  \{\set_style "MSG_TEXT" actreqs:\} \{\set_style "BLK_ITAL" active-requests\}\p
+\{\set_style "MSG_TEXT" maxsock:\} \{\set_style "BLK_ITAL" max-sockets\}  \{\set_style "MSG_TEXT" actsock:\} \{\set_style "BLK_ITAL" active-sockets\}\p
+\{\set_style "MSG_TEXT" airhead:\} \{\set_style "BLK_ITAL" air-head\}  \{\set_style "MSG_TEXT" airtail:\} \{\set_style "BLK_ITAL" air-tail\}\p
+\{\set_style "MSG_TEXT" airpdhd:\} \{\set_style "BLK_ITAL" air-pending-head\}  \{\set_style "MSG_TEXT" airpdtl:\} \{\set_style "BLK_ITAL" air-pending-tail\}\p
+\{\set_style "MSG_TEXT" flags:\} \{\set_style "BLK_ITAL" flags flag-description\}\p
+\p
+This message is issued in response to the TCP DISPLAY PATH command.  Message \{\goto "<intmsgad>INTCMD414I" INTCMD414I\} logically follows this message and completes the display.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pathid\}  Unique ID number of the IUCV path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" userid\}  Jobname or started task name of the InfoSession address space that is used as a unique identifier for the InfoSession when connecting to the VMCF address space for IUCV communications.\p
+\p
+\{\set_style "BLK_BLD_ITAL" subtaskid\}  Unique name that identifies this path to TCP/IP for MVS.\p
+\p
+\{\set_style "BLK_BLD_ITAL" max-requests\}  Maximum number of active IUCV requests that will be permitted on this IUCV path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" active-requests\}  Number of IUCV requests that are currently active on this path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" max-sockets\}  Maximum number of sockets that will be permitted on this IUCV path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" active-sockets\}  Number of sockets that are currently active on this path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" air-head\}  Storage address of the first Active IUCV Request (AIR) on the active request queue.\p
+\p
+\{\set_style "BLK_BLD_ITAL" air-tail\}  Storage address of the last Active IUCV Request (AIR) on the active request queue.\p
+\p
+\{\set_style "BLK_BLD_ITAL" air-pending-head\}  Storage address of the first Active IUCV Request (AIR) on the pending request queue.\p
+\p
+\{\set_style "BLK_BLD_ITAL" air-pending-tail\}  Storage address of the last Active IUCV Request (AIR) on the pending request queue.\p
+\p
+\{\set_style "BLK_BLD_ITAL" flags\}  Path status flags.\p
+\p
+\{\set_style "BLK_BLD_ITAL" flag-description\}  Textual descriptions for the path status conditions indicated by the flags:\p
+     \{\set_style "BLK_BLD" PRIMARY\}\p
+     \{\set_style "BLK_BLD" PENDING\}\p
+     \{\set_style "BLK_BLD" SEVERED\}\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ICMDTCP   
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD414I"
+\0 \0 \{\set_style "MSG" INTCMD414I\}\p
+\p
+\{\set_style "MSG_TEXT" iucv sends....\}\{\set_style "BLK_ITAL" sent-count\}\p
+\{\set_style "MSG_TEXT" tot queued..........\}\{\set_style "BLK_ITAL" total-queued\}\p
+\{\set_style "MSG_TEXT" cur queued........\}\{\set_style "BLK_ITAL" cur-queued\}\p
+\{\set_style "MSG_TEXT" max queued......\}\{\set_style "BLK_ITAL" max-queued\}\p
+\p
+This message is issued in response to the TCP DISPLAY PATH command and follows message \{\goto "<intmsgad>INTCMD413I" INTCMD413I\}.\p
+\p
+\{\set_style "BLK_BLD_ITAL" sent-count\}  Total number of IUCV sends that have been processed on this IUCV path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" total-queued\}  Total number of IUCV send requests that could not be satisfied immediately. \p
+\p
+\{\set_style "BLK_BLD_ITAL" cur-queued\}   Total number of IUCV send requests that are currently queued.\p
+\p
+\{\set_style "BLK_BLD_ITAL" max-queued\}   Maximum number of IUCV send requests that have been queued at one time.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ICMDTCP  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD415I"
+\0 \0 \{\set_style "MSG" INTCMD415I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP status - name:\} \{\set_style "BLK_ITAL" jobname\}\p
+\{\set_style "MSG_TEXT" itcaddr:\} \{\set_style "BLK_ITAL" itc-addr\}  \{\set_style "MSG_TEXT" maxsend:\} \{\set_style "BLK_ITAL" max-message-size\}  \{\set_style "MSG_TEXT" eibsize:\} \{\set_style "BLK_ITAL" eib-size\}\p
+\{\set_style "MSG_TEXT" maxreqs:\} \{\set_style "BLK_ITAL" max-requests\}  \{\set_style "MSG_TEXT" pabhash:\} \{\set_style "BLK_ITAL" path-table-size\} \{\set_style "MSG_TEXT" tubhash:\} \{\set_style "BLK_ITAL" user-table-size\}\p
+\{\set_style "MSG_TEXT" maxpath:\} \{\set_style "BLK_ITAL" max-paths\}  \{\set_style "MSG_TEXT" actpath:\} \{\set_style "BLK_ITAL" active-paths\}\p
+\{\set_style "MSG_TEXT" maxsock:\} \{\set_style "BLK_ITAL" max-sockets\}  \{\set_style "MSG_TEXT" actsock:\} \{\set_style "BLK_ITAL" active-sockets\}  \{\set_style "MSG_TEXT" maxskpth:\} \{\set_style "BLK_ITAL" sockets-per-path\}\p
+\{\set_style "MSG_TEXT" flags:\} \{\set_style "BLK_ITAL" f\}\{\set_style "BLK_ITAL" lags flag-description\}\p
+\p
+This message is issued in response to the TCP DISPLAY command and provides system-wide TCP/IP component information.\p
+\p
+\{\set_style "BLK_BLD_ITAL" jobname\}  Jobname or started task name of the TCP/IP for MVS address space (InfoSession TCPNAME parameter).\p
+\p
+\{\set_style "BLK_BLD_ITAL" itc-addr\}  Storage address of the InfoSession TCP/IP CVT block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" max-message-size\}   Maximum amount of data that an InfoSession application can send with a single sockets API call. \p
+\p
+\{\set_style "BLK_BLD_ITAL" eib-size\}  Amount of storage reserved for an MVS IUCV External Interrupt Block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" max-requests\}  Maximum number of active IUCV requests that will be permitted on a single IUCV path (InfoSession MSGLIM parameter).\p
+\p
+\{\set_style "BLK_BLD_ITAL" path-table-size\}  Number of entries in the InfoSession system-wide path look-up table.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-table-size\}  Number of entries in the InfoSession process socket table.\p
+\p
+\{\set_style "BLK_BLD_ITAL" max-paths\}  Maximum number of active IUCV paths that will be permitted in the system (InfoSession PATHS parameter).\p
+\p
+\{\set_style "BLK_BLD_ITAL" active-paths\}  Current number of active IUCV paths in the system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" max-sockets\}  Maximum number of sockets that will be permitted in the system (product of max-paths and sockets-per-path).\p
+\p
+\{\set_style "BLK_BLD_ITAL" active-sockets\}  Number of sockets that are currently active in the system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" sockets-per-path\}  Maximum number of sockets that will be permitted on a single IUCV path (InfoSession SOCKETS parameter).\p
+\p
+\{\set_style "BLK_BLD_ITAL" flags\}  System-wide InfoSession TCP/IP component status flags.\p
+\p
+\{\set_style "BLK_BLD_ITAL" flag-description\}  Textual descriptions for system-wide status conditions indicated by the flags: STOPPED, CANCELED, TERMINATING, CONNECTED(IUCV).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ICMDTCP  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD416I"
+\0 \0 \{\set_style "MSG" INTCMD416I\} \p
+\p
+\{\set_style "BLK_ITAL" statistic-name........................value\}\p
+\p
+This message is issued in response to the TCP DISPLAY PATH command and follows message \{\goto "<intmsgad>INTCMD413I" INTCMD413I\}.\p
+\p
+\{\set_style "BLK_BLD_ITAL" statistic-name\}  Descriptive label for a statistic (for example, "msgs out" labels the total number of messages sent from the InfoSession and "send" labels the total number of socket API send calls processed in the system).\p
+\p
+\{\set_style "BLK_BLD_ITAL" value\}  Decimal value.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ICMDTCP  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD417I"
+\0 \0 \{\set_style "MSG" INTCMD417I\} \p
+\p
+\{\set_style "MSG_TEXT" Stop issued for user_socket:\} \{\set_style "BLK_ITAL" socket-descriptor\}\p
+\{\set_style "MSG_TEXT" pathid:\} \{\set_style "BLK_ITAL" pathid\}  \{\set_style "MSG_TEXT" socket:\}  \{\set_style "BLK_ITAL" path-socket-descriptor\}\p
+\p
+This message is issued in response to the TCP STOP SOCKET command. \p
+\p
+\{\set_style "BLK_BLD_ITAL" socket-descriptor\}  System-wide socket descriptor used with the InfoSession to identify this socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pathid\}  Unique ID number of the IUCV path assigned to this socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" path-socket-descriptor\}  Socket descriptor used to identify the socket to TCP/IP for MVS.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ICMDTCP  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD418I"
+\0 \0 \{\set_style "MSG" INTCMD418I\} \p
+\p
+\{\set_style "MSG_TEXT" Stop issued for pathid:\}  \{\set_style "BLK_ITAL" pathid\}\p
+\p
+This message is issued in response to the TCP STOP PATH command.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pathid\}  Unique ID number of the IUCV path assigned to this socket.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp\p
+ \p
+\{\set_style "MSG_TEXT" Module\}  ICMDTCP  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD515I"
+\0 \0 \{\set_style "MSG" INTCMD515I\}\p
+\p
+\{\set_style "MSG_TEXT" Project  Dataspace  Type  Users  Owner  Task   Tables  Plans \p
+----------  ---------------  -------  ---------  ---------  -------   ---------  --------\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} PROJLIST\p
+\p
+This header line is displayed when a PROJIST command is issued with a request for a project list display as specified by either of the WORKBENCH, RUN-TIME or ALL operands.  Project display detail lines (\{\goto "<intmsgad>INTCMD516I" INTCMD516I\}) follow describing each of the open Workbench or run-time projects or both:\p
+\p
+\{\set_style "BLK_BLD_ITAL" project\}  Name of the project.\p
+\p
+\{\set_style "BLK_BLD_ITAL" dataspace\}  Name of the MVS/ESA dataspace containing the project.  Often this name is the same as that of the project.\p
+\p
+\{\set_style "BLK_BLD_ITAL" type\} - \{\set_style "BLK_BLD" Workbench\} or \{\set_style "BLK_BLD" run-time\}  Projects open on a Workbench have an owner and are not shared.  Projects open for run-time access are sharable and have no owner.\p
+\p
+\{\set_style "BLK_BLD_ITAL" users\}  Number of users concurrently accessing or referencing the project.  The use count is always one (1) for projects open on the Workbench.\p
+\p
+\{\set_style "BLK_BLD_ITAL" owner\}  For projects open on the Workbench only, contains the user ID of the Workbench user.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task\}  For projects open on a workbench only, contains the task name of the project owner's workunit.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tables\}  Number of VDB tables that have been referenced since the project was opened.  Use the TABLESTAT operand to acquire further detail about VDB table usage.\p
+\p
+\{\set_style "BLK_BLD_ITAL" plans\}  Number of unique plans created and/or maintained to provide access to VDB tables of behalf of SQL statements submitted by users of the project.  Use the PLANSTAT operand to acquire further detail about plan usage.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD516I"
+\0 \0 \{\set_style "MSG" INTCMD516I\}\p
+\p
+\{\set_style "BLK_ITAL" project  dataspace  type  use  owner  task  table  plans\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} PROJIST\p
+\p
+This message line is generated for each open project of the proj-type (Workbench, run-time, or both) designated in the PROJIST DISPLAY command.  Refer to \{\goto "<intmsgad>INTCMD515I" INTCMD515I\} for details.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD517I"
+\0 \0 \{\set_style "MSG" INTCMD517I\}\p
+\p
+\{\set_style "MSG_TEXT" No matching projects found\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} PROJIST\p
+\p
+No projects of the requested proj-type (Workbench or Run-time) are currently open.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp   
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD518I"
+\0 \0 \{\set_style "MSG" INTCMD518I\}\p
+\p
+\{\set_style "MSG_TEXT" Total active projects - Runtime:\} \{\set_style "BLK_ITAL" nn\}  \{\set_style "MSG_TEXT" Workbench:\}  \{\set_style "BLK_ITAL" nn\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} PROJIST\p
+\p
+This summary line contains the total number of projects open by both run-time and Workbench users.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD519I"
+\0 \0 \{\set_style "MSG" INTCMD519I\}\p
+\p
+\{\set_style "MSG_TEXT" Project updates have been applied\}\p
+\p
+The PROJLIST command included the SET operand and the PLANCACHE( ) and/or VDBCACHE( ) operands.  The designed project cache sizes have been changed accordingly.  Use the PROJLIST DISPLAY operand with the PLANSTAT and/or TABSTAT at any time to display the new cache values.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD526I"
+\0 \0 \{\set_style "MSG" INTCMD526I\}\p
+\p
+\{\set_style "MSG_TEXT" Table\} \{\set_style "BLK_ITAL" table-name\}  \{\set_style "MSG_TEXT" Reqs:\} \{\set_style "BLK_ITAL" request-count\}  \{\set_style "MSG_TEXT" Loads:\} \{\set_style "BLK_ITAL" load-count\}  \{\set_style "MSG_TEXT" Status:\} \{\set_style "BLK_ITAL" status\}\p
+\p
+This message is issued in response to a PROJLIST command with the TABSTAT operand.  Each VDB table that has been referenced since the project was opened is identified in these messages in alphabetical order.  \p
+\p
+\{\set_style "BLK_BLD_ITAL" request-count\}   The total number of requests for the VDB table named. \p
+\p
+\{\set_style "BLK_BLD_ITAL" load-count\}   The total number of times that the VDB table definition needed to be retrieved from the project catalog.  \p
+\p
+\{\set_style "BLK_BLD_ITAL" request-count minus load-count\}   The number of times a request for the named table was satisified by an active or cached copy of the VDB table definition.  \p
+\p
+\{\set_style "BLK_BLD_ITAL" status\}  \{\set_style "BLK_BLD" IN\} if the VDB table definition is active or cached, and \{\set_style "BLK_BLD" OUT\} otherwise. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD527I"
+\0 \0 \{\set_style "MSG" INTCMD527I\}\p
+\p
+\{\set_style "MSG_TEXT" VDB Reqs:\} \{\set_style "BLK_ITAL" request-count\}  \{\set_style "MSG_TEXT" Loads:\} \{\set_style "BLK_ITAL" load-count\}  \{\set_style "MSG_TEXT" Using:\} \{\set_style "BLK_ITAL" size\}\p
+\p
+This message is issued in response to a PROJLIST command with the TABSTAT operand.  It summarizes all of the VDB table information provided in the \{\goto "<intmsgad>INTCMD526I" INTCMD526I\} detail messages that precede it.\p
+\p
+\{\set_style "BLK_BLD_ITAL" request-count\}   The total number of VDB table references made against the project.  \p
+\p
+\{\set_style "BLK_BLD_ITAL" load-count\}   The total number of times that VDB table references needed to be resolved using the project catalog.  \p
+\p
+\{\set_style "BLK_BLD_ITAL" request-count minus load-count\}   The number of times a table request was satisfied by an active or cached copy of a VDB table definition.  \p
+\p
+\{\set_style "BLK_BLD_ITAL" size\}  The total storage occupied by active and cached VDB table definitions.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD528I"
+\0 \0 \{\set_style "MSG" INTCMD528I\}\p
+\p
+\{\set_style "MSG_TEXT" The current VDBCACHE threshold is:\} \{\set_style "BLK_ITAL" size\}\p
+\p
+This message is issued in response to a PROJLIST command with the TABSTAT operand.  \p
+\p
+\{\set_style "BLK_BLD_ITAL" size\}   The amount of storage available for caching VDB table definitions.  If that amount is exceeded, the least recently used table definitions are discarded until the total storage used is less than the threshold value. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD529I"
+\0 \0 \{\set_style "MSG" INTCMD529I\}\p
+\p
+\{\set_style "MSG_TEXT" All-tables-resident VDBCACHE requirement:\} \{\set_style "BLK_ITAL" size\}\p
+\p
+This message is issued in response to a PROJLIST command with the TABSTAT operand.\p
+\p
+\{\set_style "BLK_BLD_ITAL" size\}  The amount of VDB table cache storage that is required to keep all VDB table definitions resident.  If the size given is less than or equal to that given in \{\goto "<intmsgad>INTCMD528I" INTCMD528I\}, all VDB table definitions are resident.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD530I"
+\0 \0 \{\set_style "MSG" INTCMD530I\}\p
+\p
+\{\set_style "MSG_TEXT" VDBCACHE table definition reuse percentages:\} \{\set_style "BLK_ITAL" reuse\}\p
+\p
+This message is issued in response to a PROJLIST command with the TABSTAT operand.  \p
+\p
+\{\set_style "BLK_BLD_ITAL" reuse\}  The ratio, expressed as a percent, of the total number of VDB table definition loads divided by the total number of VDB table requests.  Large percentages indicate that the VDB cache is effectively managing high-usage VDB table definitions.  Low percentages may indicate that the VDB cache is too small.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD537I"
+\0 \0 \{\set_style "MSG" INTCMD537I\}\p
+\p
+\{\set_style "MSG_TEXT" PLAN Reqs:\} \{\set_style "BLK_ITAL" request-count\}  \{\set_style "MSG_TEXT" Loads:\} \{\set_style "BLK_ITAL" load-count\}  \{\set_style "MSG_TEXT" Using:\} \{\set_style "BLK_ITAL" size\}\p
+\p
+This message is issued in response to a PROJLIST command with the PLANSTAT operand.  It summarizes all of the application access plan generation and fetch activity occuring in the project. \p
+\p
+\{\set_style "BLK_BLD_ITAL" request-count\}   The total number requests for plans.  \p
+\p
+\{\set_style "BLK_BLD_ITAL" load-count\}   The number of these requests that required a full plan generation process.  \p
+\p
+\{\set_style "BLK_BLD_ITAL" request-count minus load-count\}   The number of times a plan request was satisfied by an active or cached copy.  \p
+\p
+\{\set_style "BLK_BLD_ITAL" size\}   The total storage occupied by active and cached plans.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD538I"
+\0 \0 \{\set_style "MSG" INTCMD538I\}\p
+\p
+\{\set_style "MSG_TEXT" The current PLANCACHE threshold is:\}  \{\set_style "BLK_ITAL" size\}\p
+\p
+This message is issued in response to a PROJLIST command with the PLANSTAT operand.  \p
+\p
+\{\set_style "BLK_BLD_ITAL" size\}   The amount of storage available for caching application access plans.  If that amount is exceeded, the least recently used plans are discarded until the total storage used is less than the threshold value. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD539I"
+\0 \0 \{\set_style "MSG" INTCMD539I\}\p
+\p
+\{\set_style "MSG_TEXT" All-plans-resident PLANCACHE requirement:\} \{\set_style "BLK_ITAL" size\}\p
+\p
+This message is issued in response to a PROJLIST command with the PLANSTAT operand.  \p
+\p
+\{\set_style "BLK_BLD_ITAL" size\}   The amount of plan cache storage that is required to keep all application access plans resident.  If the size given is less than or equal to that given in \{\goto "<intmsgad>INTCMD538I" INTCMD538I\}, all VDB table definitions are resident.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCMD540I"
+\0 \0 \{\set_style "MSG" INTCMD540I\}\p
+\p
+\{\set_style "MSG_TEXT" PLANCACHE plan reuse percentage:\} \{\set_style "BLK_ITAL" reuse\}\p
+\p
+This message is issued in response to a PROJLIST command with the PLANSTAT operand.  \p
+\p
+\{\set_style "BLK_BLD_ITAL" reuse\}   The ratio, expressed as a percent, of the total number of application access plans generations (loads) divided by the total number of plan requests.  Large percentages indicate that the PLAN cache is effectively managing high-usage plans.  Low percentages may indicate that the plan cache is too small.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Cmdresp  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>CPI"
+\0 \0 \{\set_style "code" Common Programming Interface Communications (CPI) Messages\}\p
+\p
+CPI component messages are produced by InfoSession CPIC processing routines.\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgad>INTCPI001I" INTCPI001I\}\p
+\{\subtopic "<intmsgad>INTCPI002I" INTCPI002I\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCPI001I"
+\0 \0 \{\set_style "MSG" INTCPI001I\}\p
+\p
+\{\set_style "MSG_TEXT" CPIC conv cmallc - tkb:\}  \{\set_style "BLK_ITAL" tkb-addr\} \{\set_style "MSG_TEXT" rcb:\} \{\set_style "BLK_ITAL" rcb-addr\}  \{\set_style "MSG_TEXT" session:\} \{\set_style "BLK_ITAL" session-token\}  \{\set_style "MSG_TEXT" task:\} \{\set_style "BLK_ITAL" task-name/task-addr\} \{\set_style "MSG_TEXT" proc:\} \{\set_style "BLK_ITAL" proc-name/proc-addr\}  \{\set_style "MSG_TEXT" convid:\} \{\set_style "BLK_ITAL" convid\}  \{\set_style "MSG_TEXT" lu:\} \{\set_style "BLK_ITAL" acbname\} \{\set_style "MSG_TEXT" partner:\} \{\set_style "BLK_ITAL" partner-luname\} \{\set_style "MSG_TEXT" mode:\} \{\set_style "BLK_ITAL" modename\}  \{\set_style "MSG_TEXT" tpn:\} \{\set_style "BLK_ITAL" tpname\}\p
+\p
+This message is used to log a successful CMALLC request.  The CMALLC request is issued by a CPIC transaction program to initiate a conversation with a transaction program at a remote LU.  Success of the CMALLC request means that an LU6.2 session has been assigned to the conversation.  The session might have been started in response to the request or the request might have been assigned to an existing session.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tkb-addr\}  Address of the transaction program block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" rcb-addr\}  Address of the conversation control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" session-token\}  InfoSession's unique session identifier.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-name\}  Name of the task.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-addr\}  Address of the task control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-name\}  Name of the process.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-addr\}  Address of the process control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" convid\}  CPIC conversation-ID.\p
+\p
+\{\set_style "BLK_BLD_ITAL" acbname\}  Acbname of the InfoSession LU.\p
+\p
+\{\set_style "BLK_BLD_ITAL" partner-luname\}  Fully-qualified name of the remote LU.\p
+\p
+\{\set_style "BLK_BLD_ITAL" modename\}  Name of the session parameters mode.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tpname\}  Name of the transaction program executing at the InfoSession's LU.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTCPI002I"
+\0 \0 \{\set_style "MSG" INTCPI002I\}\p
+\p
+\{\set_style "MSG_TEXT" CPIC conv cmaccp - tkb:\}  \{\set_style "BLK_ITAL" tkb-addr\} \{\set_style "MSG_TEXT" rcb:\} \{\set_style "BLK_ITAL" rcb-addr\} \{\set_style "MSG_TEXT" session:\} \{\set_style "BLK_ITAL" session-token\} \{\set_style "MSG_TEXT" task:\} \{\set_style "BLK_ITAL" task-name/task-addr\} \{\set_style "MSG_TEXT" proc:\} \{\set_style "BLK_ITAL" proc-name/proc-addr\}   \{\set_style "MSG_TEXT" convid:\} \{\set_style "BLK_ITAL" convid\} \{\set_style "MSG_TEXT" lu:\} \{\set_style "BLK_ITAL" acbname\} \{\set_style "MSG_TEXT" partner:\} \{\set_style "BLK_ITAL" partner-luname\} \{\set_style "MSG_TEXT" mode:\} \{\set_style "BLK_ITAL" modename\} \{\set_style "MSG_TEXT" tpn:\} \{\set_style "BLK_ITAL" tpname\}\p
+\p
+This message is used to log a successful CMACCP request.  The CMACCP request is issued by a CPIC transaction program that has been started into execution in response to a CMALLC request issued by a transaction program at a remote LU.  Success of the CMACCP request means that an LU6.2 session has been assigned to the conversation and both transaction programs are executing.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tkb-addr\}  Address of the transaction program block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" rcb-addr\}  Address of the conversation control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" session-token\}  InfoSession's unique session identifier.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-name\}  Name of the task.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-addr\}  Address of the task control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-name\}  Name of the process.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-addr\}  Address of the process control block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" convid\}  CPIC conversation-ID.\p
+\p
+\{\set_style "BLK_BLD_ITAL" acbname\}  Acbname of the InfoSession LU.\p
+\p
+\{\set_style "BLK_BLD_ITAL" partner-luname\}  Fully-qualified name of the remote LU.\p
+\p
+\{\set_style "BLK_BLD_ITAL" modename\}  Name of the session parameters mode.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tpname\}  Name of the transaction program executing at the InfoSession's LU.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>DRV"
+\0 \0 \{\set_style "code" System Init/Term (DRV) Messages\}\p
+\p
+These are initialization and termination messages for InfoSession and its major components.\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgad>INTDRV001I" INTDRV001I\}\p
+\{\subtopic "<intmsgad>INTDRV002I" INTDRV002I\}\p
+\{\subtopic "<intmsgad>INTDRV003I" INTDRV003I\}\p
+\{\subtopic "<intmsgad>INTDRV004I" INTDRV004I\}\p
+\{\subtopic "<intmsgad>INTDRV005E" INTDRV005E\}\p
+\{\subtopic "<intmsgad>INTDRV006E" INTDRV006E\}\p
+\p
+\{\subtopic "<intmsgad>INTDRV009E" INTDRV009E\}\p
+\{\subtopic "<intmsgad>INTDRV010E" INTDRV010E\}\p
+\{\subtopic "<intmsgad>INTDRV011E" INTDRV011E\}\p
+\p
+\{\subtopic "<intmsgad>INTDRV015E" INTDRV015E\}\p
+\{\subtopic "<intmsgad>INTDRV016I" INTDRV016I\}\p
+\{\subtopic "<intmsgad>INTDRV017I" INTDRV017I\}\p
+\{\subtopic "<intmsgad>INTDRV018I" INTDRV018I\}\p
+\{\subtopic "<intmsgad>INTDRV019E" INTDRV019E\}\p
+\{\subtopic "<intmsgad>INTDRV020E" INTDRV020E\}\p
+\{\subtopic "<intmsgad>INTDRV021E" INTDRV021E\}\p
+\{\subtopic "<intmsgad>INTDRV022I" INTDRV022I\}\p
+\{\subtopic "<intmsgad>INTDRV023I" INTDRV023I\}\p
+\{\subtopic "<intmsgad>INTDRV024E" INTDRV024E\}\p
+\{\subtopic "<intmsgad>INTDRV025I" INTDRV025I\}\p
+\p
+\{\subtopic "<intmsgad>INTDRV040I" INTDRV040I\}\p
+\{\subtopic "<intmsgad>INTDRV041E" INTDRV041E\}\p
+\{\subtopic "<intmsgad>INTDRV042E" INTDRV042E\}\p
+\{\subtopic "<intmsgad>INTDRV043E" INTDRV043E\}\p
+\{\subtopic "<intmsgad>INTDRV044E" INTDRV044E\}\p
+\{\subtopic "<intmsgad>INTDRV045E" INTDRV045E\}\p
+\p
+\{\subtopic "<intmsgad>INTDRV050I" INTDRV050I\}\p
+\{\subtopic "<intmsgad>INTDRV051E" INTDRV051E\}\p
+\{\subtopic "<intmsgad>INTDRV052E" INTDRV052E\}\p
+\{\subtopic "<intmsgad>INTDRV053E" INTDRV053E\}\p
+\p
+\{\subtopic "<intmsgad>INTDRV071W" INTDRV071W\}\p
+\{\subtopic "<intmsgad>INTDRV072W" INTDRV072W\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV001I"
+\0 \0 \{\set_style "MSG" INTDRV001I\}\p
+\p
+\{\set_style "MSG_TEXT" PLATINUM InfoSession initialization in progress - Release\} \{\set_style "BLK_ITAL" n.nn\}\p
+\p
+This message is generated immediately upon receipt of an InfoSession START command.  It signals the beginning of InfoSession startup and initialization.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV002I"
+\0 \0 \{\set_style "MSG" INTDRV002I\}\p
+\p
+\{\set_style "MSG_TEXT" PLATINUM InfoSession initialization complete - Release\} \{\set_style "BLK_ITAL" n.nn\}\p
+\p
+This message is generated when initialization has completed and the system is ready to accept work.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV003I"
+\0 \0 \{\set_style "MSG" INTDRV003I\}\p
+\p
+\{\set_style "MSG_TEXT" PLATINUM InfoSession termination in progress\}\p
+\p
+This message is issued upon acceptance of a system STOP or FASTSTOP command.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV004I"
+\0 \0 \{\set_style "MSG" INTDRV004I\}\p
+\p
+\{\set_style "MSG_TEXT" PLATINUM InfoSession termination complete - Release\} \{\set_style "BLK_ITAL" n.nn\}\p
+\p
+This message is issued after all product termination and cleanup logic has completed and just prior to termination of the INTMAIN task.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV005E"
+\0 \0 \{\set_style "MSG" INTDRV005E\}\p
+\p
+\{\set_style "MSG_TEXT" PLATINUM InfoSession product password has expired\}\p
+\p
+The PLATINUM product password has expired.  Contact PLATINUM technical support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV006E"
+\0 \0 \{\set_style "MSG" INTDRV006E\}\p
+\p
+\{\set_style "MSG_TEXT" Shared Resource Manager initialization failure, RC:\} \{\set_style "BLK_ITAL" retcode\} \p
+\p
+InfoSession was unable to initialize the shared resource manager (SRM) system task.  The RC field contains the SRM initialization return code. InfoSession termination immediately follows.\p
+\p
+Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV009E"
+\0 \0 \{\set_style "MSG" INTDRV009E\}\p
+\p
+\{\set_style "MSG_TEXT" Server task initialization failed, RC:\} \{\set_style "BLK_ITAL" retcode\}  \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+This message indicates that the InfoSession server tasks failed to initialize properly.   The return and reason codes document the reason for the failure.  InfoSession will terminate immediately.  \p
+\p
+Contact PLATINUM Technology technical support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}   Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV010E"
+\0 \0 \{\set_style "MSG" INTDRV010E\}\p
+\p
+\{\set_style "MSG_TEXT" Task create failed for task: taskname RC:\} \{\set_style "BLK_ITAL" nn\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" nn\}\p
+\p
+InfoSession was unable to establish a task for one of its primary components.  The RC and RSN fields contain the task manager return and reason codes respectively.  InfoSession termination immediately follows.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV011E"
+\0 \0 \{\set_style "MSG" INTDRV011E\}\p
+\p
+\{\set_style "MSG_TEXT" PLATINUM InfoSession initialization failed,  RC:\} \{\set_style "BLK_ITAL" nn\}  \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" nn\}\p
+\p
+A terminating error was encountered during InfoSession initialization.  InfoSession termination immediately follows.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV015E"
+\0 \0 \{\set_style "MSG" INTDRV015E\}\p
+\p
+\{\set_style "BLK_ITAL" ERROR nn - reason-string\}  \{\set_style "MSG_TEXT" in default startup options - \}\{\set_style "BLK_ITAL" ENTRY nn\}\p
+\p
+A terminating error was encountered while processing the InfoSession default parameter value table.  The \{\set_style "BLK_BLD_ITAL" ERROR\} description includes an error number and a terse \{\set_style "BLK_BLD_ITAL" reason-string\}.  Refer to \{\goto "<intmsgad>INTDRV053E" INTDRV053E\} for a description of \{\set_style "BLK_BLD_ITAL" reason-string\}.  \{\set_style "BLK_BLD_ITAL" ENTRY\} identifies the default parameter value table entry in error.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV016I"
+\0 \0 \{\set_style "MSG" INTDRV016I\}\p
+\p
+\{\set_style "MSG_TEXT" Manager task\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" has terminated\p
+   Task will be restarted\}\p
+\p
+The InfoSession manager task identified by \{\set_style "BLK_BLD_ITAL" taskname\} is being restarted due to a previous abnormal termination of the task.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV017I"
+\0 \0 \{\set_style "MSG" INTDRV017I\}\p
+\p
+\{\set_style "MSG_TEXT" Manager task\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" has terminated\p
+   Restart will not be attempted\p
+   Task is not nonpersistent\}\p
+\p
+The InfoSession manager task, identified by \{\set_style "BLK_BLD_ITAL" taskname\}, has terminated abnormally and no restart will be attempted for this task.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV018I"
+\0 \0 \{\set_style "MSG" INTDRV018I\}\p
+\p
+\{\set_style "MSG_TEXT" Manager task\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" has terminated\p
+   Restart will not be attempted\p
+   Task has reached its restart threshold\}\p
+\p
+The InfoSession manager task, identified by \{\set_style "BLK_BLD_ITAL" taskname\}, has terminated abnormally and no restart will be attempted for this task.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV019E"
+\0 \0 \{\set_style "MSG" INTDRV019E\}\p
+\p
+\{\set_style "MSG_TEXT" PLATINUM InfoSession requires MVS/ESA level system\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} START\p
+\p
+This message is issued if InfoSession is started on a system running MVS/370 or MVS/XA.  InfoSession exploits MVS/ESA system services and does not operate on earlier versions of MVS.  InfoSession terminates. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV020E"
+\0 \0 \{\set_style "MSG" INTDRV020E\}\p
+\p
+\{\set_style "MSG_TEXT" Load failed for module:\} \{\set_style "BLK_ITAL" module-name\} \{\set_style "MSG_TEXT" Reason:\} \{\set_style "BLK_ITAL" nn\}\p
+\p
+A number of component modules are loaded into memory during initialization.  This message is issued for a load module that cannot be successfully loaded.  System initialization continues. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV021E"
+\0 \0 \{\set_style "MSG" INTDRV021E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to load debugging interface module:\} \{\set_style "BLK_ITAL" module-name\}\p
+\p
+The debugging interface named is not available.  System initialization continues.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV022I"
+\0 \0 \{\set_style "MSG" INTDRV022I\}\p
+\p
+\{\set_style "MSG_TEXT" PLATINUM InfoSession is running in privileged mode\}\p
+\p
+InfoSession is running in an APF authorized address space.  The product can provide interfaces to external SAF-based security packages and will exploit VTAM fast-path.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV023I"
+\0 \0 \{\set_style "MSG" INTDRV023I\}\p
+\p
+\{\set_style "MSG_TEXT" PLATINUM InfoSession is running in non-privileged mode\}\p
+\p
+InfoSession is running in a non-APF authorized address space.  External security is not available.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV024E"
+\0 \0 \{\set_style "MSG" INTDRV024E\}\p
+\p
+\{\set_style "MSG_TEXT" PLATINUM InfoSession requires APF authorization for this MVS/ESA Level\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} START\p
+\p
+APF authorization is required for the InfoSession address space in all MVS/ESA Version 3 environments.  Consult the Installation procedure for a more detailed treatment of APF authorization requirements.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV025I"
+\0 \0 \{\set_style "MSG" INTDRV025I\}\p
+\p
+\{\set_style "MSG_TEXT" Parameter overrides provided during startup:\}\p
+\p
+The PARM= operand of the EXEC JCL statement was used to provide system startup parameter overrides.  The following \{\goto "<intmsgad>INTDRV050I" INTDRV050I\} message line contains an image of the PARM field.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV040I"
+\0 \0 \{\set_style "MSG" INTDRV040I\}\p
+\p
+\{\set_style "MSG_TEXT" Processing parameter file initfile\}\p
+\p
+An INITFILE data definition (DD) statement was included in the startup procedure.  InfoSession attempts to acquire startup parameters from that dataset.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV041E"
+\0 \0 \{\set_style "MSG" INTDRV041E\}\p
+\p
+\{\set_style "MSG_TEXT" Parameter file\} \{\set_style "BLK_ITAL" initfile\} \{\set_style "MSG_TEXT" could not be opened\}\p
+\p
+The dataset designated in the INITFILE data definition (DD) statement could not be opened.  Initialization continues.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV042E"
+\0 \0 \{\set_style "MSG" INTDRV042E\}\p
+\p
+\{\set_style "MSG_TEXT" Parameter file\} \{\set_style "BLK_ITAL" initfile\} \{\set_style "MSG_TEXT" is not in proper format\}\p
+\p
+The DCB attributes of the dataset defined by the INITFILE data definition (DD) statement do not conform to product requirements.  Initialization continues.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV043E"
+\0 \0 \{\set_style "MSG" INTDRV043E\}\p
+\p
+\{\set_style "MSG_TEXT" SYNADAF -\} \{\set_style "BLK_ITAL" msg\}\p
+\p
+An I/O error was encountered while attempting to read the startup parameter file defined by the INITPARM data definition (DD) statement.  Parameter file processing is aborted.  Initialization continues.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV044E"
+\0 \0 \{\set_style "MSG" INTDRV044E\}\p
+\p
+\{\set_style "MSG_TEXT" Parameter file processing terminated\}\p
+\p
+This message is issued whenever processing of the startup parameter file was attempted but not completed.  Any parameters successfully read from this file are retained.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV045E"
+\0 \0 \{\set_style "MSG" INTDRV045E\}\p
+\p
+\{\set_style "MSG_TEXT" Parameter file processing bypassed\}\p
+\p
+This message is issued whenever processing of the startup parameter file is bypassed.  Parameter file processing does not occur.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV050I"
+\0 \0 \{\set_style "MSG" INTDRV050I\}\p
+\p
+\{\set_style "BLK_ITAL" parm1, ..., parm#\}\p
+\p
+This message contains an image of a startup parameter string acquired either from the PARM= field of the InfoSession procedure EXEC statement or from the INITPARM startup parameter file.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo   
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV051E"
+\0 \0 \{\set_style "MSG" INTDRV051E\}\p
+\p
+When a startup parameter string as presented in a prior \{\goto "<intmsgad>INTDRV050I" INTDRV050I\} message is found to be in error, this message is issued to highlight the particular parameter token found in error.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV052E"
+\0 \0 \{\set_style "MSG" INTDRV052E\}\p
+\p
+\{\set_style "MSG_TEXT" Parameter(s) rejected-\} \{\set_style "BLK_ITAL" reason-for-rejection\}\p
+\p
+A startup parameter string is found invalid.  Message \{\goto "<intmsgad>INTDRV051E" INTDRV051E\} is often issued prior to this message to highlight the parameter token in error.  Refer to message \{\goto "<intmsgad>INTCMD010E" INTCMD010E\} for a discussion of the various \{\set_style "BLK_BLD_ITAL" reason-for-rejection\} messages that might be presented.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV053E"
+\0 \0 \{\set_style "MSG" INTDRV053E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid value provided for keyword - Reason:\} \{\set_style "BLK_ITAL" reason-for-rejection\}\p
+\p
+A parameter value specified in a startup parameter is invalid.  The keyword identifies the portion of the entry in error.  The \p
+\{\set_style "BLK_BLD_ITAL" reason-for-rejection\} string gives a terse description of the reason for the error as follows:\p
+\p
+   \{\set_style "BLK_BLD" keyword ID\}  Keyword is not defined.\p
+\p
+   \{\set_style "BLK_BLD" value size\}  Size or length of a value string does not satisfy requirements.\p
+\p
+   \{\set_style "BLK_BLD" data type\}  A value string does not conform to the expected data type.  For example, alpha characters were found in a value which is expected to be numeric.\p
+\p
+   \{\set_style "BLK_BLD" definition\}  Improperly defined keyword or value.  Contact PLATINUM Technical Support.\p
+\p
+   \{\set_style "BLK_BLD" unknown\}  Error encountered does not fall under one of the reason-for-rejection previously described.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV071W"
+\0 \0 \{\set_style "MSG" INTDRV071W\}\p
+\p
+\{\set_style "MSG_TEXT" Storage cell pool functions disabled\}\p
+\p
+The Storage Management startup parameters are set to zero, and as a result, cell pools are not available to InfoSession.  Refer to the \{\set_style "italic" PLATINUM InfoSession MVS Installation and Configuration Guide\} for information on the STGINITIAL and STGEXPAND startup parameters.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo  
+\[----------------------------------------------------------------------\]
+\topic "<intmsgad>INTDRV072W"
+\0 \0 \{\set_style "MSG" INTDRV072W\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to acquire initial storage cell pool \p
+Amount requested\} \{\set_style "BLK_ITAL" req\}  \{\set_style "MSG_TEXT" STORAGE service retcode\} \{\set_style "BLK_ITAL" retcode\}\p
+\p
+The amount of cell pool storage requested by InfoSession is not available.  InfoSession continues; however, notify your InfoSession Administrator if problems occur.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo 

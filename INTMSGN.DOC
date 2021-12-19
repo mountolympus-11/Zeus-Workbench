@@ -1,0 +1,1481 @@
+\[----------------------------------------------------------------------\]
+\[This file includes the following files...\]
+\[Open Interface Hypertext files:\]
+\file "styles.doc"
+\[...End of included files\]
+
+
+\[----------------------------------------------------------------------\]
+\[--Styles Unique to this file--\]
+
+\def_style "MSG" \fg "Color.Green" \bg "Color.Blue" \font "Fonts.Bold10" 
+\[def_style_key "MSG" <Alt>-Q\]
+\def_style "BLK_ITAL" \fg "Color.Magenta" \font "Fonts.Normal11" 
+\[def_style_key "BLK_ITAL" <Alt>-V\]
+\def_style "BLK_BLD_ITAL" \fg "Color.Magenta" \font "Fonts.Bold08" 
+\[def_style_key "BLK_BLD_ITAL" <Alt>-P\]
+\def_style "TEXT" \font "Fonts.Normal10" 
+\def_style "MSG_TEXT" \fg "Color.Blue" \font "Fonts.Bold10" 
+\[def_style_key "MSG_TEXT" <Alt>-M\]
+\def_style "LINK" \fg "Color.ForestGreen" \font "Fonts.Bold10" 
+\[def_style_key "LINK" <Alt>-G\]
+\def_style "BLK_BLD" \font "Fonts.Bold10" 
+\[def_style_key "BLK_BLD" <Alt>-Z\]
+\def_style "New Style - 8" 
+\[----------------------------------------------------------------------\]
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>LOG"
+\0 \0 \{\set_style "code" Log Task (LOG) Messages\}\p
+\p
+These messages are issued by the log component and give status of the logging facility.\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgn>INTLOG001E" INTLOG001E\}\p
+\{\subtopic "<intmsgn>INTLOG002E" INTLOG002E\}\p
+\{\subtopic "<intmsgn>INTLOG003E" INTLOG003E\}\p
+\p
+\{\subtopic "<intmsgn>INTLOG005E" INTLOG005E\}\p
+\p
+\{\subtopic "<intmsgn>INTLOG009E" INTLOG009E\}\p
+\p
+\{\subtopic "<intmsgn>INTLOG026E" INTLOG026E\}\p
+\p
+\{\subtopic "<intmsgn>INTLOG050I" INTLOG050I\}\p
+\{\subtopic "<intmsgn>INTLOG051I" INTLOG051I\}\p
+\{\subtopic "<intmsgn>INTLOG052I" INTLOG052I\}\p
+\{\subtopic "<intmsgn>INTLOG053I" INTLOG053I\}\p
+\{\subtopic "<intmsgn>INTLOG054I" INTLOG054I\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTLOG001E"
+\0 \0 \{\set_style "MSG" INTLOG001E\}\p
+\p
+\{\set_style "MSG_TEXT" Log file\} \{\set_style "BLK_ITAL" file-name\} \{\set_style "MSG_TEXT" discarded because of conflicting or unsuitable attributes\}\p
+\p
+\{\set_style "BLK_BLD_ITAL" File-name\} is not suitably defined for use as a message log.  Log task operation continues.  \{\set_style "BLK_BLD_ITAL" File-name\} is discarded.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Log                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTLOG002E"
+\0 \0 \{\set_style "MSG" INTLOG002E\}\p
+\p
+\{\set_style "MSG_TEXT" ABEND\} \{\set_style "BLK_ITAL" abend-code - rsn\} \{\set_style "MSG_TEXT" processing log file:\} \{\set_style "BLK_ITAL" file-name\}\p
+\p
+An error occurred while processing an I/O or end-of-volume operation with the log dataset identified by \{\set_style "BLK_BLD_ITAL" file-name\}.  \{\set_style "BLK_BLD_ITAL" Abend-code - rsn\} describes the type of abend encountered.  Log task operation continues with the next eligible log file.  The log dataset identified by \{\set_style "BLK_BLD_ITAL" file-name\} is discarded.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Log                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTLOG003E"
+\0 \0 \{\set_style "MSG" INTLOG003E\}\p
+\p
+\{\set_style "MSG_TEXT" Log file attributes for\} \{\set_style "BLK_ITAL" file-name\} \{\set_style "MSG_TEXT" conflict with\} \{\set_style "BLK_ITAL" model-file-name\}\p
+\p
+The DCB attributes of the log dataset identified by \{\set_style "BLK_BLD_ITAL" file-name\} are not consistent with the DCB attributes of the first eligible log dataset found, which is identified by \{\set_style "BLK_BLD_ITAL" model-file-name\}.  Log task operation continues.  The candidate dataset is discarded.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Log                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTLOG005E"
+\0 \0 \{\set_style "MSG" INTLOG005E\}\p
+\p
+\{\set_style "MSG_TEXT" SYNADAF-\}\{\set_style "BLK_ITAL" msg\}\p
+\p
+This message presents the diagnostic information made available by the access method when an abend occurs processing a log dataset.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Log                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTLOG009E"
+\0 \0 \{\set_style "MSG" INTLOG009E\}\p
+\p
+\{\set_style "MSG_TEXT" Log file\} \{\set_style "BLK_ITAL" file-name\} \{\set_style "MSG_TEXT" removed from log file set\}\p
+\p
+The log dataset identified by \{\set_style "BLK_BLD_ITAL" file-name\} will not be used in any future logging operations.  This message is usually preceded by another message describing a log file failure or reason for ineligibility.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Log                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTLOG026E"
+\0 \0 \{\set_style "MSG" INTLOG026E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to acquire LOG command from\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" $COMACK RC:\} \{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+The LOG command task was requested to execute an operator command, but was unable to acquire the command from the requester.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Log                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTLOG050I"
+\0 \0 \{\set_style "MSG" INTLOG050I\}\p
+\p
+\{\set_style "MSG_TEXT" Log inactive - no eligible log files\}\p
+\p
+All log datasets and candidate log datasets have been discarded due to ineligibility or I/O failures.  Log task operation ends.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Log                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTLOG051I"
+\0 \0 \{\set_style "MSG" INTLOG051I\}\p
+\p
+\{\set_style "MSG_TEXT" Log recording on\} \{\set_style "BLK_ITAL" file-name - nnn\} \{\set_style "MSG_TEXT" records\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} LOG\p
+\p
+A LOG command that includes the DISPLAY operand requests information about the status of the log task.  The current log dataset is identified by \{\set_style "BLK_BLD_ITAL" file-name\}.  Its current record count is also given.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Log                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTLOG052I"
+\0 \0 \{\set_style "MSG" INTLOG052I\}\p
+\p
+\{\set_style "BLK_ITAL" file-name\} \{\set_style "MSG_TEXT" recording ended\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} LOG\p
+\p
+A LOG command that includes the SWITCH operand requests that the log task terminate the use of the current log dataset, close it, and resume logging on the next eligible log dataset.  \{\set_style "BLK_BLD_ITAL" File-name\} identifies the log dataset that was active at the time the LOG SWITCH command was processed.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Log                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTLOG053I"
+\0 \0 \{\set_style "MSG" INTLOG053I\}\p
+\p
+\{\set_style "MSG_TEXT" Log now recording on\} \{\set_style "BLK_ITAL" file-name\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} LOG\p
+\p
+A LOG command that includes the SWITCH operand has completed. The newly selected log dataset is identified by \{\set_style "BLK_BLD_ITAL" file-name\}.  The prior contents of the selected log dataset are overwritten.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Log                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTLOG054I"
+\0 \0 \{\set_style "MSG" INTLOG054I\}\p
+\p
+\{\set_style "MSG_TEXT" Log\} \{\set_style "BLK_ITAL" file-name\} \{\set_style "MSG_TEXT" flushed\}\p
+\p
+\{\set_style "BLK_BLD" Command:\} LOG\p
+\p
+A LOG command that includes the FLUSH operand has completed.  All messages received prior to the LOG FLUSH command are written to the active log dataset as identified by \{\set_style "BLK_BLD_ITAL" file-name\}.  A temporary close has been issued against that dataset allowing it to be browsed with conventional file utilities, etc.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Log                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>MSG"
+\0 \0 \{\set_style "code" Messaging Control (MSG) Messages\}\p
+\p
+These are messages about message class errors that can occur during InfoSession's system initialization process.\p
+\p
+The following messaes are available:\p
+\p
+\{\subtopic "<intmsgn>INTMSG001W" INTMSG001W\}\p
+\{\subtopic "<intmsgn>INTMSG002W" INTMSG002W\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTMSG001W"
+\0 \0 \{\set_style "MSG" INTMSG001W\}\p
+\p
+\{\set_style "MSG_TEXT" Message class code invalid for:\} \{\set_style "BLK_ITAL" msg-class\} \{\set_style "MSG_TEXT" (\}\{\set_style "BLK_ITAL" msg-code\}\{\set_style "MSG_TEXT" ) \}\p
+\{\set_style "MSG_TEXT" Associated messages are assigned default properties\}\p
+\p
+A message definition error was encountered during system initialization.  Initialization continues.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTMSG002W"
+\0 \0 \{\set_style "MSG" INTMSG002W\}\p
+\p
+\{\set_style "MSG_TEXT" Message class conflicts with prior definition for:\} \{\set_style "BLK_ITAL" msg-class\} \{\set_style "MSG_TEXT" (\}\{\set_style "BLK_ITAL" msg-code\}\{\set_style "MSG_TEXT" )\}\p
+\{\set_style "MSG_TEXT" Associated messages are assigned default properties\}\p
+\p
+A message definition error was encountered during system initialization. Initialization continues.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>NAV"
+\0 \0 \{\set_style "code" Session Navigation Control (NAV) Messages\}\p
+\p
+These messages report diagnostic information and document abnormal processing that occurs when a SQL statement is executed against a VDB table definition.\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgn>INTNAV001I" INTNAV001I\}\p
+\{\subtopic "<intmsgn>INTNAV002W" INTNAV002W\}\p
+\{\subtopic "<intmsgn>INTNAV003E" INTNAV003E\}\p
+\{\subtopic "<intmsgn>INTNAV004E" INTNAV004E\}\p
+\{\subtopic "<intmsgn>INTNAV005E" INTNAV005E\}\p
+\{\subtopic "<intmsgn>INTNAV006E" INTNAV006E\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV009W" INTNAV009W\}\p
+\{\subtopic "<intmsgn>INTNAV010I" INTNAV010I\}\p
+\{\subtopic "<intmsgn>INTNAV011E" INTNAV011E\}\p
+\{\subtopic "<intmsgn>INTNAV012E" INTNAV012E\}\p
+\{\subtopic "<intmsgn>INTNAV013W" INTNAV013W\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV015E" INTNAV015E\}\p
+\{\subtopic "<intmsgn>INTNAV016E" INTNAV016E\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV020W" INTNAV020W\}\p
+\{\subtopic "<intmsgn>INTNAV021W" INTNAV021W\}\p
+\{\subtopic "<intmsgn>INTNAV022W" INTNAV022W\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV025E" INTNAV025E\}\p
+\{\subtopic "<intmsgn>INTNAV026E" INTNAV026E\}\p
+\{\subtopic "<intmsgn>INTNAV027W" INTNAV027W\}\p
+\{\subtopic "<intmsgn>INTNAV028E" INTNAV028E\}\p
+\{\subtopic "<intmsgn>INTNAV029E" INTNAV029E\}\p
+\{\subtopic "<intmsgn>INTNAV030W" INTNAV030W\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV035W" INTNAV035W\}\p
+\{\subtopic "<intmsgn>INTNAV036W" INTNAV036W\}\p
+\{\subtopic "<intmsgn>INTNAV037W" INTNAV037W\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV045E" INTNAV045E\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV050E" INTNAV050E\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV055I" INTNAV055I\}\p
+\{\subtopic "<intmsgn>INTNAV056I" INTNAV056I\}\p
+\{\subtopic "<intmsgn>INTNAV057E" INTNAV057E\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV065I" INTNAV065I\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV069E" INTNAV069E\}\p
+\{\subtopic "<intmsgn>INTNAV070I" INTNAV070I\}\p
+\{\subtopic "<intmsgn>INTNAV071E" INTNAV071E\}\p
+\{\subtopic "<intmsgn>INTNAV072E" INTNAV072E\}\p
+\{\subtopic "<intmsgn>INTNAV073E" INTNAV073E\}\p
+\{\subtopic "<intmsgn>INTNAV074E" INTNAV074E\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV076W" INTNAV076W\}\p
+\{\subtopic "<intmsgn>INTNAV077E" INTNAV077E\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV078E" INTNAV078E\}\p
+\{\subtopic "<intmsgn>INTNAV079E" INTNAV079E\}\p
+\{\subtopic "<intmsgn>INTNAV080W" INTNAV080W\}\p
+\{\subtopic "<intmsgn>INTNAV081E" INTNAV081E\}\p
+\{\subtopic "<intmsgn>INTNAV082E" INTNAV082E\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV090I" INTNAV090I\}\p
+\{\subtopic "<intmsgn>INTNAV091I" INTNAV091I\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV095I" INTNAV095I\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV099I" INTNAV099I\}\p
+\{\subtopic "<intmsgn>INTNAV100I" INTNAV100I\}\p
+\{\subtopic "<intmsgn>INTNAV101I" INTNAV101I\}\p
+\{\subtopic "<intmsgn>INTNAV102I" INTNAV102I\}\p
+\{\subtopic "<intmsgn>INTNAV103I" INTNAV103I\}\p
+\{\subtopic "<intmsgn>INTNAV104I" INTNAV104I\}\p
+\{\subtopic "<intmsgn>INTNAV105I" INTNAV105I\}\p
+\{\subtopic "<intmsgn>INTNAV106I" INTNAV106I\}\p
+\{\subtopic "<intmsgn>INTNAV107I" INTNAV107I\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV114I" INTNAV114I\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV120I" INTNAV120I\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV124I" INTNAV124I\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV130I" INTNAV130I\}\p
+\{\subtopic "<intmsgn>INTNAV131E" INTNAV131E\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV135I" INTNAV135I\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV140I" INTNAV140I\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV144W" INTNAV144W\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV147I" INTNAV147I\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV150E" INTNAV150E\}\p
+\{\subtopic "<intmsgn>INTNAV151E" INTNAV151E\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV160E" INTNAV160E\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV170E" INTNAV170E\}\p
+\{\subtopic "<intmsgn>INTNAV171E" INTNAV171E\}\p
+\{\subtopic "<intmsgn>INTNAV172E" INTNAV172E\}\p
+\{\subtopic "<intmsgn>INTNAV173E" INTNAV173E\}\p
+\{\subtopic "<intmsgn>INTNAV174E" INTNAV174E\}\p
+\p
+\{\subtopic "<intmsgn>INTNAV200E" INTNAV200E\}\p
+\{\subtopic "<intmsgn>INTNAV201E" INTNAV201E\}\p
+\{\subtopic "<intmsgn>INTNAV202E" INTNAV202E\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV001I"
+\0 \0 \{\set_style "MSG" INTNAV001I\}\p
+\p
+\{\set_style "MSG_TEXT" Project contains no recordings\}\p
+\p
+The current project does not contain any recordings either because recordings have never been made or because all recordings made previously have been deleted.  Only catalog oriented SQL queries can be made against this project.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Examine the SYSRECORDINGS and SYSNAVIGATION catalog tables\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV002W"
+\0 \0 \{\set_style "MSG" INTNAV002W\}\p
+\p
+\{\set_style "MSG_TEXT" No session start capability defined in project\}\p
+\p
+All recordings made in this project begin at a session state other than USS (Unformatted System Services), which is depicted by the *VTAM* state in the Recording Review window.  Because no logon sequences have been provided in the project, sessions with client applications cannot be established to satisfy VDB requests.  However, sessions established under the control of another associated project can be resumed under this project.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Examine the SYSRECORDINGS and SYSNAVIGATION catalog tables\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV003E"
+\0 \0 \{\set_style "MSG" INTNAV003E\}\p
+\p
+\{\set_style "MSG_TEXT" Repositioning plan cannot be generated because no session start capability is defined in project.\}\p
+\p
+Execution of the SQL statement requires establishment of a session with the application previously identified.  However, no recording found in the current project captures the transition from *VTAM* into that application.  Either record the appropriate session establishment sequence as defined in the \{\set_style "italic" PLATINUM InfoSession Administrator Guide\} or establish the session using the appropriate query in another associated project before switching to the current project.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV004E"
+\0 \0 \{\set_style "MSG" INTNAV004E\}\p
+\p
+\{\set_style "MSG_TEXT" Variable\} \{\set_style "BLK_ITAL" variable\} \{\set_style "MSG_TEXT" is defined in screen(set) \}\{\set_style "BLK_ITAL" statename\} \{\set_style "MSG_TEXT" but the screen(set) is not defined\}\p
+\p
+The variable named \{\set_style "BLK_BLD_ITAL" variable\} was defined against a screen or screen set named \{\set_style "BLK_BLD_ITAL" statename\}.  Some subsequent Workbench redefinition of that screen or screen set invalidated the relationship between the variable and its associated screen.  If the variable is no longer needed because the recording that contained the screen or screen set has been deleted, delete the variable as well.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Examine the SYSVARIABLES and SYSNAVIGATION catalog tables\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV005E"
+\0 \0 \{\set_style "MSG" INTNAV005E\}\p
+\p
+\{\set_style "MSG_TEXT" Variable\} \{\set_style "BLK_ITAL" variable\} \{\set_style "MSG_TEXT" is defined in screen(set)\} \{\set_style "BLK_ITAL" statename\} \{\set_style "MSG_TEXT" as a member of region\} \{\set_style "BLK_ITAL" regionname\}\{\set_style "MSG_TEXT" , but the screen(set) has no associated regions\}\p
+\p
+The variable named \{\set_style "BLK_BLD_ITAL" variable\} was defined against a screen or screen set named \{\set_style "BLK_BLD_ITAL" statename\} as a member of a region named \{\set_style "BLK_BLD_ITAL" regionname\}. However, subsequent Workbench redefinition of the screen or screen set, or the regions residing on the screen or screen set invalidated this relationship.  If the screen(set)'s region definitions were deleted or altered after variable definition was completed, delete or update the variable accordingly.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Examine the SYSVARIABLES and SYSREGIONS catalog tables\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV006E"
+\0 \0 \{\set_style "MSG" INTNAV006E\}\p
+\p
+\{\set_style "MSG_TEXT" Variable\} \{\set_style "BLK_ITAL" variable\} \{\set_style "MSG_TEXT" is defined in screen(set) \}\{\set_style "BLK_ITAL" statename\} \{\set_style "MSG_TEXT" as a member of region\} \{\set_style "BLK_ITAL" regionname\}\{\set_style "MSG_TEXT" , but that region is not defined\} \p
+\p
+The variable named \{\set_style "BLK_BLD_ITAL" variable\} was defined against a screen or screen set named \{\set_style "BLK_BLD_ITAL" statename\} as a member of a region named \{\set_style "BLK_BLD_ITAL" regionname\}.  However, subsequent Workbench redefinition of the screen or screen set, or the regions residing on the screen or screen set invalidated this relationship.  If the screen(set)'s region definitions were altered after the variable definition was completed, update the variable accordingly.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Examine the SYSVARIABLES and SYSREGIONS catalog tables\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV009W"
+\0 \0 \{\set_style "MSG" INTNAV009W\}\p
+\p
+\{\set_style "MSG_TEXT" No variables defined in project - VDB requests cannot be processed\}\p
+\p
+The current project does not contain any variables either because variable definitions were never made or because all variables defined previously have been deleted.  Only catalog oriented SQL queries can be made against this project.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Examine the SYSVARIABLES catalog table\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV010I"
+\0 \0 \{\set_style "MSG" INTNAV010I\}\p
+\p
+\{\set_style "MSG_TEXT" Recording\} \{\set_style "BLK_ITAL" recording\} \{\set_style "MSG_TEXT" is incomplete and may be deleted\}\p
+\p
+The specified recording was never completed and does not contain enough information to sustain a VDB definition.  This situation can occur if you save an intermediate copy of a project while a recording is running.  The recording does not become valid until it is stopped.  Use the \{\set_style "BLK_BLD" Delete Recordings\} to delete the incomplete recording. \p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Examine the SYSRECORDINGS and SYSNAVIGATION catalog tables\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV011E"
+\0 \0 \{\set_style "MSG" INTNAV011E\}\p
+\p
+\{\set_style "MSG_TEXT" Recording\} \{\set_style "BLK_ITAL" recordingname\} \{\set_style "MSG_TEXT" entry for screen set\} \{\set_style "BLK_ITAL" statename\}\{\set_style "MSG_TEXT" :\} \{\set_style "BLK_ITAL" state0\} \{\set_style "MSG_TEXT" ->\} \{\set_style "BLK_ITAL" state1\} \{\set_style "MSG_TEXT" is in error\}\p
+\p
+This message indicates that a catalog relationship relating the screen or screen set named \{\set_style "BLK_BLD_ITAL" statename\} to its recording \{\set_style "BLK_BLD_ITAL" recordingname\} is invalid.  The error was noted while processing the SYSNAVIGATION entry that denotes the transition from the screen \{\set_style "BLK_BLD_ITAL" state0\} to \{\set_style "BLK_BLD_ITAL" state1\}.  The actual cause of the error is described in subsequent messages.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Examine the SYSNAVIGATION catalog table\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV012E"
+\0 \0 \{\set_style "MSG" INTNAV012E\}\p
+\p
+\{\set_style "MSG_TEXT" The named recording is not defined\}\p
+\p
+This message accompanies \{\goto "<intmsgn>INTNAV011E" INTNAV011E\} if a SYSNAVIGATION record corresponds to an unknown recording.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Examine the SYSRECORDINGS catalog table\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV013W"
+\0 \0 \{\set_style "MSG" INTNAV013W\}\p
+\p
+\{\set_style "MSG_TEXT" Screen(set)\} \{\set_style "BLK_ITAL" screen(set)name\} \{\set_style "MSG_TEXT" contains ALL-GROUPS conditionals for AID key:\} \{\set_style "BLK_ITAL" aidkey\}\{\set_style "MSG_TEXT" , but no other conditional groups are defined for that AID key\}\p
+\p
+The <ALL-GROUPS> conditional is changed/replaced internally with a standard conditional group having the name "??".\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation\p
+\p
+\{\set_style "MSG_TEXT" Module\}  INAVBSTN                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV015E"
+\0 \0 \{\set_style "MSG" INTNAV015E\}\p
+\p
+\{\set_style "MSG_TEXT" Conflicting table select and scroll operations are defined in this entry.  The table select definition is ignored\}\p
+\p
+Two operations are defined for a transition, which should not occur.  For instance, Down and Select.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Make sure that each transition is defined to perform only one operation.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV016E"
+\0 \0 \{\set_style "MSG" INTNAV016E\}\p
+\p
+\{\set_style "MSG_TEXT" The table select operation defined in this entry does not terminate the screen set.  The table select definition is ignored\}\p
+\p
+When a tranistion is defined as a table select, it must move to a different screen set.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  A table select must move to a new screen set.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV020W"
+\0 \0 \{\set_style "MSG" INTNAV020W\}\p
+\p
+\{\set_style "MSG_TEXT" A scrolling operation may not be defined in a conditional transition group.  The scroll definition is ignored\}\p
+\p
+When the transition from one state (screen) to a next is marked conditional, that transition cannot be associated with a scrolling operation.  InfoSession requires that scrolling operations have a result state defined completely within the definition of the scrolling screen set.  Message \{\goto "<intmsgn>INTNAV011E" INTNAV011E\} precedes this message and identifies the invalid recording entry.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Examine the SYSNAVIGATION catalog table\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV021W"
+\0 \0 \{\set_style "MSG" INTNAV021W\}\p
+\p
+\{\set_style "MSG_TEXT" A scrolling operation is defined but the two screens are not members of the same screen set.  The scroll definition is ignored\}\p
+\p
+A scrolling definition made within a screen set must depict a linkage (transition) between two screens that reside within the screen set. Scrolling operations can only be defined in the context of a scrolling screen set.  This error will occur if you select the last line of the screen set as the scroll operation definition.  The last line of the screen set must depict the transition that will be used to terminate the scrolling operation.  Message \{\goto "<intmsgn>INTNAV011E" INTNAV011E\} precedes this message and identifies the invalid recording entry.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Examine the SYSNAVIGATION catalog table\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV022W"
+\0 \0 \{\set_style "MSG" INTNAV022W\}\p
+\p
+\{\set_style "MSG_TEXT" The scrolling operation shown above conflicts with a previously defined operation for the named screen set.  The scroll definition is ignored\}\p
+\p
+A screen set contains two or more incompatible scrolling sequence definitions.  The first scroll operation found is retained - all others result in this message.  Message \{\goto "<intmsgn>INTNAV011E" INTNAV011E\} precedes this message and identifies the invalid recording entry.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Examine the SYSNAVIGATION catalog table\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV025E"
+\0 \0 \{\set_style "MSG" INTNAV025E\} \p
+\p
+\{\set_style "MSG_TEXT" Image\} \{\set_style "BLK_ITAL" screenname\} \{\set_style "MSG_TEXT" of screen set\} \{\set_style "BLK_ITAL" setname\} \{\set_style "MSG_TEXT" does not contain an instance of REQUIRED region\} \{\set_style "BLK_ITAL" regionname\}\p
+\p
+A required region \{\set_style "BLK_BLD_ITAL" regionname\} has been defined on all screens that are members of the \{\set_style "BLK_BLD_ITAL" setname\} screen set.  However, that region cannot be drawn on member screen \{\set_style "BLK_BLD_ITAL" screename\}.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Attempt to draw the region identified against the named screen\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV026E"
+\0 \0 \{\set_style "MSG" INTNAV026E\}\p
+\p
+\{\set_style "MSG_TEXT" Image\} \{\set_style "BLK_ITAL" screenname\} \{\set_style "MSG_TEXT" of screen set\} \{\set_style "BLK_ITAL" setname\} \{\set_style "MSG_TEXT" does not contain any instances of its\} \{\set_style "BLK_ITAL" nn\} \{\set_style "MSG_TEXT" IDENTIFICATION region(s)\}\p
+\p
+None of the \{\set_style "BLK_BLD_ITAL" nn\} Identification region(s) defined against the \{\set_style "BLK_BLD_ITAL" setname\} screen set can be drawn on member screen \{\set_style "BLK_BLD_ITAL" screenname\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV027W"
+\0 \0 \{\set_style "MSG" INTNAV027W\}\p
+\p
+\{\set_style "MSG_TEXT" Screen (set)\} \{\set_style "BLK_ITAL" statename\} \{\set_style "MSG_TEXT" contains no instance of region\} \{\set_style "BLK_ITAL" regionname\}\p
+\p
+The region named \{\set_style "BLK_BLD_ITAL" regionname\} cannot be drawn against the model screen or against any of the member screens in the screen set \{\set_style "BLK_BLD_ITAL" statename\}.  This is not necessarily an error, but ensure that the region definition is appropriate for its intended use.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Attempt to draw the region identified against the screen or each member of the screen set identified\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV028E"
+\0 \0 \{\set_style "MSG" INTNAV028E\}\p
+\p
+\{\set_style "MSG_TEXT" Scrollable screen(set)\} \{\set_style "BLK_ITAL" statename\} \{\set_style "MSG_TEXT" contains no instance of an END-VERTICAL-SCROLL region\}\p
+\p
+Although end-vertical-scroll regions have been defined against the scrolling screen set \{\set_style "BLK_BLD_ITAL" statename\}, none of those regions can be drawn against the recorded model images.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Attempt to draw each of the end-vertical-scroll regions you have defined against a model screen in the designated screen set.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV029E"
+\0 \0 \{\set_style "MSG" INTNAV029E\}\p
+\p
+\{\set_style "MSG_TEXT" Scrollable screen(set)\} \{\set_style "BLK_ITAL" statename\} \{\set_style "MSG_TEXT" does not include an END-VERTICAL-SCROLL region definition\}\p
+\p
+The scrolling screen set \{\set_style "BLK_BLD_ITAL" statename\} does not include a navigation control region to end the reapplication of the scrolling sequence.  At least one end-vertical-scroll region is needed to complete the definition of the scroll operation.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV030W"
+\0 \0 \{\set_style "MSG" INTNAV030W\}\p
+\p
+\{\set_style "MSG_TEXT" Screen(set)\} \{\set_style "BLK_ITAL" statename\} \{\set_style "MSG_TEXT" contains an IDENTIFICATION region\} \{\set_style "BLK_ITAL" regionname\} \{\set_style "MSG_TEXT" that makes no reference to image content\}\p
+\p
+Identification regions are expected to use contextual references to strings or patterns on an image to identify current state.  The Identification region \{\set_style "BLK_BLD_ITAL" regionname\} defined on screen or screen set \{\set_style "BLK_BLD_ITAL" statename\} is suspiciously defined because it makes no reference to image content.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV035W"
+\0 \0 \{\set_style "MSG" INTNAV035W\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid state association entry in recording\}  \{\set_style "BLK_ITAL" recordname\} \{\set_style "MSG_TEXT" - requests\} \{\set_style "BLK_ITAL" state-end\} \{\set_style "MSG_TEXT" resumption at\} \{\set_style "BLK_ITAL" state-start\}\p
+\p
+An error was encountered when processing a resumption state entry contained in the recording \{\set_style "BLK_BLD_ITAL" recordname\}.  The entry asserts that two screen or screen set states are equivalent for the purpose of navigation within the application.  Subsequent messages describe the nature of the problem.  \{\set_style "BLK_BLD_ITAL" state-end\} identifies a plan termination state.  \{\set_style "BLK_BLD_ITAL" state-start\} names the equivalent resumption point.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Examine the SYSNAVIGATION catalog table\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV036W"
+\0 \0 \{\set_style "MSG" INTNAV036W\}\p
+\p
+\{\set_style "MSG_TEXT" Screen(set)\} \{\set_style "BLK_ITAL" statename\} \{\set_style "MSG_TEXT" is not defined\}\p
+\p
+This message is issued when a resumption state association is encountered but the resumption state \{\set_style "BLK_BLD_ITAL" statename\} is not defined.  It is accompanied by message \{\goto "<intmsgn>INTNAV035W" INTNAV035W\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV037W"
+\0 \0 \{\set_style "MSG" INTNAV037W\}\p
+\p
+\{\set_style "MSG_TEXT" Screen images do not match -\} \{\set_style "BLK_ITAL" reason\} \p
+\p
+This message is issued when a resumption state association is encountered but the resumption state model image does not match the plan termination state image, as identified in message \{\goto "<intmsgn>INTNAV035W" INTNAV035W\} issued previously.  \{\set_style "BLK_BLD_ITAL" reason\} identifies the discrepancies found between the two model images.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV045E"
+\0 \0 \{\set_style "MSG" INTNAV045E\}\p
+\p
+\{\set_style "MSG_TEXT" An ABEND occurred on the host system while processing this request.  Problem documentation has been collected.\}\p
+\p
+A SQL request resulted in an InfoSession ABEND in the host system.  The InfoSession Logfile contains problem documentation entries.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV050E"
+\0 \0 \{\set_style "MSG" INTNAV050E\}\p
+\p
+\{\set_style "MSG_TEXT" Interprocess communication error RC:\} \{\set_style "BLK_ITAL" return-code\}\p
+\p
+An internal communications error occurred between the SQL request executor and session control components of InfoSession.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV055I"
+\0 \0 \{\set_style "MSG" INTNAV055I\}\p
+\p
+\{\set_style "MSG_TEXT" Screen\} \{\set_style "BLK_ITAL" statename\} \{\set_style "MSG_TEXT" last accessed in project\} \{\set_style "BLK_ITAL" projectname\} \{\set_style "MSG_TEXT" is\} \{\set_style "MSG_TEXT" not defined in the current project\} \p
+\p
+A SQL request requires the use of the an application that is currently in session with InfoSession because of a SQL statement issued in project \{\set_style "BLK_BLD_ITAL" projectname\}.  The current state (screen) of that application is \{\set_style "BLK_BLD_ITAL" statename\} but that state is not defined in the current project.  The session will be terminated and a new session established if the SQL statement is executed.  \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV056I"
+\0 \0 \{\set_style "MSG" INTNAV056I\}\p
+\p
+\{\set_style "MSG_TEXT" Screen\} \{\set_style "BLK_ITAL" statename\} \{\set_style "MSG_TEXT" last accessed in project\} \{\set_style "BLK_ITAL" projectname\} \{\set_style "MSG_TEXT" is not matched in the current project\}\p
+\p
+A SQL request requires the use of the an application that is currently in session with InfoSession because of a SQL statement issued in project \{\set_style "BLK_BLD_ITAL" projectname\}.  The current state (screen) of that application is \{\set_style "BLK_BLD_ITAL" statename\}.  That state is defined in the current project but does not satisfy the screen identification criteria imposed by the current project.  The session will be terminated and a new session established if the SQL statement is executed.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV057E"
+\0 \0 \{\set_style "MSG" INTNAV057E\}\p
+\p
+\{\set_style "MSG_TEXT" Screen\} \{\set_style "BLK_ITAL" statename\} \{\set_style "MSG_TEXT" last accessed in project\} \{\set_style "BLK_ITAL" projectname\} \{\set_style "MSG_TEXT" not\} \{\set_style "MSG_TEXT" verified in the current project\} \{\set_style "BLK_ITAL" last-projectname\}\p
+\{\set_style "MSG_TEXT" Failure RC:\} \{\set_style "BLK_ITAL" return-code\} \{\set_style "MSG_TEXT" encountered in service\} \{\set_style "BLK_ITAL" servicename\} \p
+\p
+A SQL request requires the use of the an application that is currently in session with InfoSession because of a SQL statement issued in project \{\set_style "BLK_BLD_ITAL" projectname\}.  The current state (screen) of that application is \{\set_style "BLK_BLD_ITAL" statename\}.  That state is defined in the current project but a failure occurred when attempting to verify that the state satisfies the screen identification criteria imposed by the current project.\p
+\p
+Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV065I"
+\0 \0 \{\set_style "MSG" INTNAV065I\}\p
+\p
+\{\set_style "MSG_TEXT" The application\} \{\set_style "BLK_ITAL" applname\} \{\set_style "MSG_TEXT" session will be restarted\}\p
+\p
+InfoSession has previously established with application \{\set_style "BLK_BLD_ITAL" applname\}.  However, state (screen) conflicts described by previously issued INTNAV messages prevent resumption of the session at its current position.  If the SQL statement is executed the session will be terminated and reestablished.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV069E"
+\0 \0 \{\set_style "MSG" INTNAV069E\}\p
+\p
+\{\set_style "MSG_TEXT" Multi-application VDB plan cannot be constructed because linkage variable usage is circular\}\p
+\p
+A VDB table referenced in a SQL request contains references to multiple host applications, but the plan construction logic is unable to determine the order in which the applications must be run to satisfy the request.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV070I"
+\0 \0 \{\set_style "MSG" INTNAV070I\}\p
+\p
+\{\set_style "MSG_TEXT" Plan/exec info for application:\}  \{\set_style "BLK_ITAL" applname\}  \{\set_style "MSG_TEXT" logmode:\} \{\set_style "BLK_ITAL" logmode\}\p
+\p
+When an Execution or Detail plan display is requested from the dynamic SQL window, this message is issued for each application that will be run to satisfy the query.  \{\set_style "BLK_BLD_ITAL" applname\} is the InfoSession name for the client application as established during initial configuration.  \{\set_style "BLK_BLD_ITAL" logmode\} is the 3270 Logmode which will be used when the session with the application named is initially established.  All subsequent plan description message lines apply to this application.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV071E"
+\0 \0 \{\set_style "MSG" INTNAV071E\}\p
+\p
+\{\set_style "BLK_ITAL" plantype\} \{\set_style "MSG_TEXT" plan internal/environmental error encountered\}\p
+\p
+A severe error was encountered while formulating a VDB session access plan of the type denoted by \{\set_style "BLK_BLD_ITAL" plantype\}.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV072E"
+\0 \0 \{\set_style "MSG" INTNAV072E\}\p
+\p
+\{\set_style "BLK_ITAL" plantype\} \{\set_style "MSG_TEXT" plan storage management failure\}\p
+\p
+Insufficient storage was available to formulate a VDB session access plan of the type denoted by \{\set_style "BLK_BLD_ITAL" plantype\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV073E"
+\0 \0 \{\set_style "MSG" INTNAV073E\}\p
+\p
+\{\set_style "BLK_ITAL" plantype\} \{\set_style "MSG_TEXT" plan exceeds plan generation capacity\}\p
+\p
+The number of states (screens, screen sets and their members) or the number of connections between them caused internal capacity thresholds to be exceeded.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV074E"
+\0 \0 \{\set_style "MSG" INTNAV074E\}\p
+\p
+\{\set_style "BLK_ITAL" plantype\} \{\set_style "MSG_TEXT" plan navigational information incomplete\}\p
+\{\set_style "MSG_TEXT" The appropriate state-to-state transitions needed to satisfy the query cannot be determined\}\p
+\p
+The recording(s) upon which the \{\set_style "BLK_BLD_ITAL" plantype\} plan is based does not contain enough information to formulate a session access plan that can implement the VDB query posed.\p
+\p
+\{\set_style "MSG_TEXT" Diagnostics\}  Review your VDB definition and the recording(s) on which it based.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV076W"
+\0 \0 \{\set_style "MSG" INTNAV076W\}\p
+\p
+\{\set_style "BLK_ITAL" plantype\} \{\set_style "MSG_TEXT" plan navigational information incomplete\}\p
+\{\set_style "MSG_TEXT" Current state\} \{\set_style "BLK_ITAL" statename\} \{\set_style "MSG_TEXT" does not lie on a resumption path\}\p
+\p
+Previous SQL requests have left the session in the state identified by \{\set_style "BLK_BLD_ITAL" statename\} - a state defined in one or more recordings.  However, no transition entries from that state allow execution of the new query without first ending the current session, and then establishing a new session.\p
+\p
+This message is issued only in response to Execution and Detail plan display requests.  Although the situation it describes is not necessarily an error, it does call attention to a potentially expensive behavior of the VDB as currently defined.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV077E"
+\0 \0 \{\set_style "MSG" INTNAV077E\}\p
+\p
+\{\set_style "BLK_ITAL" plantype\} \{\set_style "MSG_TEXT" plan navigational information incomplete or ambiguous\}  \p
+\{\set_style "MSG_TEXT" The plan cannot be made to end at a non-input state\}\p
+\p
+A session access plan formulated on behalf of a particular VDB definition attempts to visit all states (screens, screen sets) that contain variables associated with columns of that VDB - first visiting input states (those containing input variables) and ending at some output state containing only output variables.  When no output state has been specifically identified by the explicit inclusion of output variables, as often occurs in VDB definitions with Insert, Update, and Delete statement orientations, the plan must be augmented with a final transition to some non-input state.\p
+\p
+InfoSession can select such a state if there is an unambiguous choice of a transition sequence, such as pressing Enter takes us to the Customer Information Menu state.  Otherwise, this error is raised.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV078E"
+\0 \0 \{\set_style "MSG" INTNAV078E\}\p
+\p
+\{\set_style "MSG_TEXT" {\}\{\set_style "BLK_ITAL" REPOSITION\} | \{\set_style "BLK_ITAL" RUN\}\{\set_style "MSG_TEXT" } plan navigational information is amiguous\}\p
+\{\set_style "MSG_TEXT" A plan cannot be generated because some state(s) cannot be reached\}\p
+\p
+The state transition network used to represent the structure and behavior of the application does not include enough information to form a navigation plan that visits all of the required states because no recording(s) demonstrates a method for traversing between all of the required states (screens).   Make additional recordings to depict the application session navigation required.  If it is not clear which connections are missing, try removing VDB table columns one at a time until a successful plan can be generated.  \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV079E"
+\0 \0 \{\set_style "MSG" INTNAV079E\}\p
+\p
+\{\set_style "MSG_TEXT" Execution terminated by STOP or CANCEL\}\p
+\p
+A query in progress (plan formulation or execution) was halted before completion by a STOP or CANCEL request.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV080W"
+\0 \0 \{\set_style "MSG" INTNAV080W\}\p
+\p
+\{\set_style "MSG_TEXT" No plan could be constructed to visit all states\}  \p
+\{\set_style "MSG_TEXT" The best plan visits\} \{\set_style "BLK_ITAL" number\} \{\set_style "MSG_TEXT" of the\} \{\set_style "BLK_ITAL" totalnumber\} \{\set_style "MSG_TEXT" states identified\}\p
+\p
+Conditional navigation has been used to identify alternative execution (either/or) paths in the client application.  Consequently, not all columns defined in a single VDB query can be recognized in any single VDB request.  This message is issued only for Execution or Detail plan display requests.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV081E"
+\0 \0 \{\set_style "MSG" INTNAV081E\}\p
+\p
+\{\set_style "MSG_TEXT" Postplan data normalization error\}\p
+\{\set_style "MSG_TEXT" Screen (set):\} \{\set_style "BLK_ITAL" screensetname\} \{\set_style "MSG_TEXT" contains repeating VDB variables but  is logically followed by screen (set):\} \{\set_style "BLK_ITAL" screensetname\} \{\set_style "MSG_TEXT" which contains unrecognizable VDB scalar variables\}\p
+\p
+The first screen(set) identified contains repeating variables.  The data normalization process, that is, converting hierarchically related data into a flat table,  can accept repeating data only in the terminal (last) state of the plan generated to satisfy a SQL DML statement. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV082E"
+\0 \0 \{\set_style "MSG" INTVAV082E\}\p
+\p
+\{\set_style "MSG_TEXT" Postplan data normalization error\}\p
+\{\set_style "MSG_TEXT" Screens (sets):\} \{\set_style "BLK_ITAL" screensetname\} \{\set_style "MSG_TEXT" and\} \{\set_style "BLK_ITAL" screensetname\} \{\set_style "MSG_TEXT" lie on the same plan path\}\p
+\{\set_style "MSG_TEXT" Both contain repeating VDB variables that cannot be reconciled\}\p
+\p
+The screen(sets) identified both contain repeating variables.  The data normalization process, that is, converting hierarchically related data into a flat table, cannot resolve the mutually independent repeating groups.  Generally, only a single repeating group can be processed in a single SQL DML statement. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV090I"
+\0 \0 \{\set_style "MSG" INTNAV090I\}\p
+\p
+\{\set_style "MSG_TEXT" ***\} \{\set_style "BLK_ITAL" plantype\} \{\set_style "MSG_TEXT" plan for application:\} \{\set_style "BLK_ITAL" applname\} \{\set_style "MSG_TEXT" logmode:\} \{\set_style "BLK_ITAL" logmode\} \{\set_style "MSG_TEXT" cost: (\}\{\set_style "BLK_ITAL" plancost\}\{\set_style "MSG_TEXT" ,\}\{\set_style "BLK_ITAL" totalcost\}\{\set_style "MSG_TEXT" )\}\p
+\p
+A display of the \{\set_style "BLK_BLD_ITAL" plantype\} component of the complete session access plan follows.  Catalog access requests are serviced without the use of a plan.  VDB queries are satisfied using a plan that describes the manner in which InfoSession will interact with the \{\set_style "BLK_BLD_ITAL" applname\} client application. The access plan is subdivided into two subplans referred to as the Run plan and the Reposition plan.\p
+\p
+The actual subplan follows as a series of \{\goto "<intmsgn>INTNAV095I" INTNAV095I\} messages.  Refer to that message for additional details.\p
+\p
+The amount of internal processing consumed by the plan generation process is reflected via two integer cost values.  \{\set_style "BLK_BLD_ITAL" plancost\} is a measure of the processing performed up to the point that the final plan was constructed and not further modified.  \{\set_style "BLK_BLD_ITAL" totalcost\} is a measure of the total expenditure attempting to derive an optimal plan.  Five digit cost values or higher indicate that a significant effort (CPU time) is required to construct a plan or to optimize it.  If you observe large values for either figure, consider the use of the BESTPLAN( ) InfoSession initialization option and/or the use of the PREPARE( ) function in your run-time applications to reduce or eliminate the expense of repeatedly formulating the plan. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV091I"
+\0 \0 \{\set_style "MSG" INTNAV091I\}\p
+\p
+\{\set_style "BLK_ITAL" plantype\} \{\set_style "MSG_TEXT" plan not generated for application:\} \{\set_style "BLK_ITAL" applname\} \{\set_style "MSG_TEXT" logmode:\} \{\set_style "BLK_ITAL" logmode\} \{\set_style "MSG_TEXT" cost:  (\}\{\set_style "BLK_ITAL" costvalue\}\{\set_style "MSG_TEXT" ,\}\{\set_style "BLK_ITAL" totalcost\}\{\set_style "MSG_TEXT" )\}\p
+\p
+A plan display request was made from the dynamic SQL window, but the \{\set_style "BLK_BLD_ITAL" plantype\} plan for the \{\set_style "BLK_BLD_ITAL" applname\} application could not be generated.  Other messages might describe a plan formulation error.\p
+\p
+Refer to message \{\goto "<intmsgn>INTNAV090I" INTNAV090I\} for a discussion of the \{\set_style "BLK_BLD_ITAL" costvalue\} and \{\set_style "BLK_BLD_ITAL" totalcost\} measurements.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV095I"
+\0 \0 \{\set_style "MSG" INTNAV095I\}\p
+\p
+\{\set_style "BLK_ITAL" nn\} \{\set_style "MSG_TEXT" [<] [IF]\} \{\set_style "BLK_ITAL" statename0\} \{\set_style "MSG_TEXT" ->\} \{\set_style "BLK_ITAL" statename1\} \{\set_style "MSG_TEXT" [>] [+*] [THEN]\}\p
+\p
+Each INTNAV095I message describes a step in the session access subplan identified by the \{\goto "<intmsgn>INTNAV090I" INTNAV090I\} message previously issued.  The plan entry contains two state names.  The arrow connecting the two names represents 3270 keyboard activities including AID keys (such as Enter, Clear, or a PFKey) that request the client application to move from the state shown on the left \{\set_style "BLK_BLD_ITAL" statename0\} to the state shown on the right \{\set_style "BLK_BLD_ITAL" statename1\}.  In both the Execution and Detail plan displays, this transition might actually include several interactions between the virtual terminal and the client application.  When the Detail plan display is selected, all individual state-to-state transitions are listed.  The detail lines are enclosed in angle brackets (<, >).\p
+\p
+When the state names and transition indicator are bracketed by IF and THEN keywords, the transition from \{\set_style "BLK_BLD_ITAL" statename0\} to \{\set_style "BLK_BLD_ITAL" statename1\} is conditional, meaning that \{\set_style "BLK_BLD_ITAL" statename1\} is one of several possible results when the transition is applied to \{\set_style "BLK_BLD_ITAL" statename0\}.\p
+\p
+\{\set_style "BLK_BLD_ITAL" nn\}   Represents the current nesting level of the conditional elements in a plan.  The nesting level is also represented graphically by indenting the body of the plan line appropriately.\p
+\p
+\{\set_style "BLK_BLD" o\} 	When \{\set_style "BLK_BLD_ITAL" statename1\} is followed by a plus sign (+), it indicates that scroll operations will be used to move through multiple occurrences of this state until all of the client application data has been presented.\p
+\p
+\{\set_style "BLK_BLD" o\} 	When \{\set_style "BLK_BLD_ITAL" statename1\} is followed by an asterisk (*), that state has been designated an exception state.  If this state is reached during the execution of the subplan, the entire plan is terminated.\p
+\p
+\{\set_style "BLK_BLD" o\}	 When \{\set_style "BLK_BLD_ITAL" statename1\} is followed by a double asterisk (**), the state has an associated exception region definition that, if materialized on the screen presented by the application, will cause termination of the plan.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV099I"
+\0 \0 \{\set_style "MSG" INTNAV099I\}\p
+\p
+\{\set_style "MSG_TEXT" IRUNXEQ exit slhstkn session-token task\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" for appl\} \{\set_style "BLK_ITAL" applname\} \{\set_style "MSG_TEXT" logmode\} \{\set_style "BLK_ITAL" logmode\} \{\set_style "MSG_TEXT" \p
+retcode\} \{\set_style "BLK_ITAL" retcode planstate detail-description\} \p
+\p
+This message group is displayed on the Workbench whenever a SQL request fails because of a navigational error encountered while running a host application on behalf of SQL statement.  It describes the state that InfoSession was attempting to reach in the host application and the reason that this goal was not achieved.  Additionally, when the NAVIGATION message class is activated for the system or workunit, this message is issued to the LOGFILE (by default) for every session event.\p
+\p
+The first line of the message identifies the particular session to which the trace information applies, as follows:\p
+\p
+\{\set_style "BLK_BLD_ITAL" session-token\}  Unique identifier for a given session.\p
+\p
+\{\set_style "BLK_BLD_ITAL" taskname\}  Name of the workstation logical unit that originated the request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" applname\}  Name of the host application.\p
+\p
+\{\set_style "BLK_BLD_ITAL" logmode\}  Name of the logmode used to establish the session with the host application.\p
+\p
+The second line of the message describes the current plan state.  It consists of a return code retcode, a brief explanation planstate of the current plan state, and description detail-description of the manner in which the plan is continuing or has terminated, as follows:\p
+\p
+\{\set_style "BLK_BLD_ITAL" retcode\}  \p
+\p
+     \{\set_style "BLK_BLD" 00000000\}   Indicates that a plan is active and continues to execute.  The detail-description describes any session activity performed by InfoSession to transition to the next expected state.\p
+\p
+     \{\set_style "BLK_BLD" FFFFFFFE\}   Indicates that a plan is terminating.  The detail-description describes the reason for termination.  When the plan ends at a recognized termination state, it is considered successful.  Otherwise, the plan has failed.\p
+\p
+     \{\set_style "BLK_BLD" 0000001C\}   Indicates that no plan is active.  This condition, usually observable in a NAVIGATION trace, indicates that some session event occurred outside of the scope of a plan.\p
+\p
+\{\set_style "BLK_BLD_ITAL" planstate\}  Text that contains a brief summary of the execution state of the application and its relationship to the current plan, if any, as follows:\p
+\p
+     \{\set_style "BLK_BLD" successful end\}  Plan has reached a predefined termination state.\p
+\p
+     \{\set_style "BLK_BLD" unexpected input received\}  This situation occurs often immediately after starting a host application.  It is unusual after session establishment and might indicate a session management error.\p
+\p
+     \{\set_style "BLK_BLD" session has ended\}  Session with the host application has ended.\p
+\p
+     \{\set_style "BLK_BLD" no response from application\}  Host application has not responded to the last data entry operation in the period of time designated by the APPLTOT parameter (reference the PLATINUM InfoSession Installation Guide).\p
+\p
+     \{\set_style "BLK_BLD" ... error\}  Error occurred in the session navigation or image processing components of InfoSession.  Notify PLATINUM Technical Support.\p
+\p
+     \{\set_style "BLK_BLD" LOST; position unknown\}  Usually, the host application has presented a state that cannot be matched to a state in a model recording.  This usually indicates that the recording is incomplete or that adequate screen recognition controls (navigational regions, etc.) are not defined.  The LOST state is recognized when the image compare function is unable to match the image delivered by the host to any of the candidate TO state images found in a recording.\p
+\p
+\{\set_style "BLK_BLD_ITAL" detail-description\}  Provided to identify the reason that the image could not be matched, as follows:\p
+\p
+     \{\set_style "BLK_BLD" image missing Required regions\}  Required regions are defined on the TO state, but at least one Required region could not be drawn on the image.\p
+\p
+     \{\set_style "BLK_BLD" image missing Identification region\}  Identification regions are defined on the TO state but none of those regions could be drawn on the image.\p
+\p
+     \{\set_style "BLK_BLD" cannot compare Line Mode image(s)\}  Image compare does not accept Line Mode images.  Remove the Line Mode attribute from the TO state(s) definitions in your recordings.\p
+\p
+     \{\set_style "BLK_BLD" protected 3270 fields do not match\}  In the absence of Identification and Exclude regions, the image compare function compares the content of all protected fields on the host application image to the candidate TO state image.  However, the content or format of these fields differ.\p
+\p
+     \{\set_style "BLK_BLD" image sizes are not identical\}  Host application image is a different size the candidate TO state image.\p
+\p
+     \{\set_style "BLK_BLD" ... other ...\}  An error was encountered in the image compare function.  Notify PLATINUM Technical Support. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Navigation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV100I"
+\0 \0 \{\set_style "MSG" INTNAV100I\}\p
+\p
+\{\set_style "MSG_TEXT" --- Diagnostic data follows ------------------------\}\p
+\p
+\{\set_style "MSG_TEXT" planret\} \{\set_style "BLK_ITAL" retcd\}  \{\set_style "MSG_TEXT" planrsn\} \{\set_style "BLK_ITAL" rsncd\}  \{\set_style "MSG_TEXT" planq1\} \{\set_style "BLK_ITAL" qual\}  \{\set_style "MSG_TEXT" planq2\} \{\set_style "BLK_ITAL" qual\}\p
+\p
+This message is part of the \{\goto "<intmsgn>INTNAV099I" INTNAV099I\} series of diagnostic messages that report a virtual session navigation failure. This message provides key return code and return value information from the routine that attempts to navigate the virtual session from one application screen to the next.\p
+\p
+\{\set_style "BLK_BLD_ITAL" retcd\}  Overall navigation return code.\p
+\p
+     \{\set_style "BLK_BLD" 0\} = Ok.\p
+\p
+     \{\set_style "BLK_BLD" 1\} = Lost, cannot determine current application screen.\p
+\p
+     \{\set_style "BLK_BLD" 2\} = Unexpected data received from application.\p
+\p
+     \{\set_style "BLK_BLD" 3\} = Session has ended.\p
+\p
+     \{\set_style "BLK_BLD" 4\} = Error occurred in image out processing (ISLUIMGO).\p
+\p
+     \{\set_style "BLK_BLD" 5\} = An internal environment error was detected.\p
+\p
+     \{\set_style "BLK_BLD" 6\} = Error occurred in image compare subroutine.\p
+\p
+     \{\set_style "BLK_BLD" 7\} = Error occurred while sending input to application.\p
+\p
+     \{\set_style "BLK_BLD" 8\} = Data acquisition from screen image (scrape) failed.\p
+\p
+     \{\set_style "BLK_BLD" 9\} = Error occurred in image load subroutine.\p
+\p
+     \{\set_style "BLK_BLD" A\} = Error occurred in image build(1) subroutine.\p
+\p
+     \{\set_style "BLK_BLD" B\} = Error occurred in image free subroutine.\p
+\p
+     \{\set_style "BLK_BLD" C\} = Error occurred in image prep subroutine.\p
+\p
+     \{\set_style "BLK_BLD" D\} = Error occurred in stored keystrokes load subroutine.\p
+\p
+     \{\set_style "BLK_BLD" E\} = Error occurred in stored keystrokes run subroutine.\p
+\p
+     \{\set_style "BLK_BLD" F\} = Error occurred in session timer service.\p
+\p
+     \{\set_style "BLK_BLD" 10\} = Program abend occurred.\p
+\p
+     \{\set_style "BLK_BLD" 11\} = No application response was received.\p
+\p
+\{\set_style "BLK_BLD_ITAL" rsncd\}  Extended return code information for an exceptional ending condition (see \{\set_style "BLK_BLD_ITAL" retcd\} above).\p
+\p
+\{\set_style "BLK_BLD_ITAL" qual\}  Extended return code information for an exceptional ending condition (see \{\set_style "BLK_BLD_ITAL" retcd\} above).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Navigation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV101I"
+\0 \0 \{\set_style "MSG" INTNAV101I\}\p
+\p
+\{\set_style "MSG_TEXT" aapxplan\} \{\set_style "BLK_ITAL" planvec\}  \{\set_style "MSG_TEXT" aapxsarc\} \{\set_style "BLK_ITAL" sarcvec\}  \{\set_style "MSG_TEXT" aapxnarc\} \{\set_style "BLK_ITAL" narcvec\}  \{\set_style "MSG_TEXT" sessimag\} \{\set_style "BLK_ITAL" vt-state\}\p
+\{\set_style "MSG_TEXT" seiaid\} \{\set_style "BLK_ITAL" aid\}  \{\set_style "MSG_TEXT" row/col\} \{\set_style "BLK_ITAL" scrsiz\}  \{\set_style "MSG_TEXT" seiscsr\} \{\set_style "BLK_ITAL" cursor\}  \{\set_style "MSG_TEXT" #fields\} \{\set_style "BLK_ITAL" count\}\p
+\{\set_style "MSG_TEXT" $slu2r15\} \{\set_style "BLK_ITAL" rc\}  \{\set_style "MSG_TEXT" $slu2r0\} \{\set_style "BLK_ITAL" rc\}  \{\set_style "MSG_TEXT" $slu2r1\} \{\set_style "BLK_ITAL" rc\}  \{\set_style "MSG_TEXT" splstate\} \{\set_style "BLK_ITAL" sess-state\}\p
+\p
+This message is part of the \{\goto "<intmsgn>INTNAV099I" INTNAV099I\} series of diagnostic messages that report a virtual session navigation failure. This message provides the following information:\p
+\p
+\{\set_style "BLK_BLD" o\} 	Plan vectors that indicate the current position in the plan.\p
+\p
+\{\set_style "BLK_BLD" o\} 	Virtual terminal information state information.\p
+\p
+\{\set_style "BLK_BLD" o\} 	Results of virtual terminal processing of host output data.\p
+\p
+\{\set_style "BLK_BLD" o\} 	virtual session state information.\p
+\p
+\{\set_style "BLK_BLD_ITAL" planvec\}  Vector indicating which of the navigation subplans is current.\p
+\p
+     \{\set_style "BLK_BLD" 1\} = repositioning plan.\p
+\p
+     \{\set_style "BLK_BLD" 2\} = data acquisition or entry plan.\p
+\p
+     \{\set_style "BLK_BLD" 3\} = termination plan.\p
+\p
+\{\set_style "BLK_BLD_ITAL" sarcvec\}  Vector indicating which superarc (a superarc is a collection of one or more application screen-to-screen transitions that typically consists of all transitions from an input screen where data is typed to an output screen where data is acquired) is current.\p
+\p
+\{\set_style "BLK_BLD_ITAL" narcvec\}  Vector indicating which navigation arc (a navigation arc is a single application screen-to-screen transition) is current.\p
+\p
+\{\set_style "BLK_BLD_ITAL" vt-state\}  Four bytes hexadecimal display indicating the current state of the virtual terminal.\p
+\p
+     \{\set_style "BLK_BLD" 80 xx xx xx\} - No response from application.\p
+\p
+     \{\set_style "BLK_BLD" 20 xx xx xx\} - Screen is clear.\p
+\p
+     \{\set_style "BLK_BLD" 10 xx xx xx\} - Screen is unformatted.\p
+\p
+     \{\set_style "BLK_BLD" xx 80 xx xx\} - Virtual keyboard is locked.\p
+\p
+     \{\set_style "BLK_BLD" xx 40 xx xx\} - Virtual terminal has the SNA direction.\p
+\p
+     \{\set_style "BLK_BLD" xx 10 xx xx\} - Session is terminating.\p
+\p
+     \{\set_style "BLK_BLD" xx xx 80 xx\} - Transitioning from VTAM/USS to application.\p
+\p
+     \{\set_style "BLK_BLD" xx xx 40 xx\} - Transitioning from application to VTAM/USS.\p
+\p
+     \{\set_style "BLK_BLD" xx xx 20 xx\} - Vdevice communication failure.\p
+\p
+     \{\set_style "BLK_BLD" xx xx 10 xx\} - Transition might go to VTAM/USS.\p
+\p
+     \{\set_style "BLK_BLD" xx xx 08 xx\} - Unsolicited host output received by virtual terminal.\p
+\p
+     \{\set_style "BLK_BLD" xx xx 04 xx\} - Virtual terminal state is complete for recording.\p
+\p
+     \{\set_style "BLK_BLD" xx xx 02 xx\} - Application has responded to virtual terminal input.\p
+\p
+     \{\set_style "BLK_BLD" xx xx 01 xx\} - Session is terminating due to error INTNAV101I.\p
+\p
+\{\set_style "BLK_BLD_ITAL" aid\}  Current 3270 attention identifier (aid) that has been presented to the host application.  The aid is a two hex digit numeric code that is sent to the host application with input data to indicate which attention-causing key was pressed.\p
+\p
+     60          =  No attention identifier (aid) is present\p
+     7D         =  ENTER\p
+     F1-F9    =  F1-PF9\p
+     7A-7C   =  PF10-PF12 \p
+     C1-C9   =  PF13-PF21\p
+     6B          =  PA3\p
+     6C          =  PA1\p
+     6D          =  CLEAR\p
+     6E          =  PA2\p
+\p
+\{\set_style "BLK_BLD_ITAL" scrsiz\}  Current size of the screen image expressed as 8 hex digits xxxxyyyy where xxxx =  number of rows and yyyy = number of columns (for example 002B0050 = 43 rows by 80 columns).\p
+\p
+\{\set_style "BLK_BLD_ITAL" cursor\}  Current position of the cursor in the screen image.  This is a hex number that gives the offset of the cursor from the upper left hand corner of the buffer.  The first character position of the buffer is offset 0.\p
+\p
+\{\set_style "BLK_BLD_ITAL" count\}  Current number of 3270 field attribute bytes in the screen image.\p
+\p
+\{\set_style "BLK_BLD_ITAL" rc\}  Return code of subroutine that receives host application data and maps it into the screen image buffer.\p
+\p
+     \{\set_style "BLK_BLD" 0\} = Ok.\p
+\p
+     \{\set_style "BLK_BLD" 4\} = Error was detected while processing data received from the host application.  A negative response will be sent to the application if possible and r0 contains the sense information that will accompany the negative response.\p
+\p
+     \{\set_style "BLK_BLD" 8\} = Error occurred while sending input data to the application.  R0 contains the SPLRETCD and R1 contains the SPLRSNCD that describe the error (see message \{\goto "<intmsgn>INTNAV102I" INTNAV102I\} for an explanation of these values).\p
+\p
+     \{\set_style "BLK_BLD" C\} = Error occurred while receiving output data from the application.  R0 contains the SPLRETCD and R1 contains the SPLRSNCD that describe the error (see message \{\goto "<intmsgn>INTNAV102I" INTNAV102I\} for an explanation of these values).\p
+\p
+\{\set_style "BLK_BLD_ITAL" sess-state\}  Flag bits that indicate the current state of the virtual session after all receive processing is complete.  Subsequent changes to these indicators (for example, by send processing that transmits virtual terminal data to the application) will not be reflected in these flag settings.  Useful flag indicators are documented below.\p
+\p
+     \{\set_style "BLK_BLD" 80 xx xx xx\} - Data traffic reset.\p
+\p
+     \{\set_style "BLK_BLD" 40 xx xx xx\} - Virtual terminal state is in-brackets.\p
+\p
+     \{\set_style "BLK_BLD" 20 xx xx xx\} - Virtual terminal owns the SNA direction.\p
+\p
+     \{\set_style "BLK_BLD" 10 xx xx xx\} - Bid has been accepted from the application.\p
+\p
+     \{\set_style "BLK_BLD" 08 xx xx xx\} - Begin bracket is pending.\p
+\p
+     \{\set_style "BLK_BLD" xx 80 xx xx\} - Quiesce at End of Chain (QEC) was sent.\p
+\p
+     \{\set_style "BLK_BLD" xx 40 xx xx\} - Quiesce at End of Chain (QEC) was received.\p
+\p
+     \{\set_style "BLK_BLD" xx 20 xx xx\} - Session is quiesced.\p
+\p
+     \{\set_style "BLK_BLD" xx 10 xx xx\} - SHUTDown was sent.\p
+\p
+     \{\set_style "BLK_BLD" xx 08 xx xx\} - SHUTDown was received.\p
+\p
+     \{\set_style "BLK_BLD" xx 04 xx xx\} - Request SHUTDown (RSHUTD) was sent.\p
+\p
+     \{\set_style "BLK_BLD" xx 02 xx xx\} - Request SHUTDown (RSHUTD) was received.\p
+\p
+     \{\set_style "BLK_BLD" xx 01 xx xx\} - Session is shutdown.\p
+\p
+     \{\set_style "BLK_BLD" xx xx 80 xx\} - Stop Bracket Initiation (SBI) was sent.\p
+\p
+     \{\set_style "BLK_BLD" xx xx 40 xx\} - Stop Bracket Initiation (SBI) was received.\p
+\p
+     \{\set_style "BLK_BLD" xx xx 20 xx\} - Bracket initiation is stopped.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Navigation        
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV102I"
+\0 \0 \{\set_style "MSG" INTNAV102I\}\p
+\p
+\{\set_style "MSG_TEXT" splretcd\} \{\set_style "BLK_ITAL" retcd\}  \{\set_style "MSG_TEXT" splrsncd\} \{\set_style "BLK_ITAL" rsncd\}  \{\set_style "MSG_TEXT" splcntrl\} \{\set_style "BLK_ITAL" cntrl\}  \{\set_style "MSG_TEXT" splrh\} \{\set_style "BLK_ITAL" rh\}\p
+\{\set_style "MSG_TEXT" splarea\} \{\set_style "BLK_ITAL" addr\} \{\set_style "MSG_TEXT" splareal\} \{\set_style "BLK_ITAL" len\}  \{\set_style "MSG_TEXT" splsense\} \{\set_style "BLK_ITAL" sense\}  \{\set_style "MSG_TEXT" splseqno\} \{\set_style "BLK_ITAL" seq\}\p
+\{\set_style "MSG_TEXT" ciretcd\} \{\set_style "BLK_ITAL" ciret\}  \{\set_style "MSG_TEXT" cirsncd\} \{\set_style "BLK_ITAL" cirsn\} \{\set_style "MSG_TEXT" ciprtfld\} \{\set_style "BLK_ITAL" prtfld\}  \{\set_style "MSG_TEXT" cibytes\} \{\set_style "BLK_ITAL" bytes\}\p
+\p
+This message is part of the \{\goto "<intmsgn>INTNAV099I" INTNAV099I\} series of diagnostic messages that report a virtual session navigation failure. This message provides the following information:\p
+\p
+\{\set_style "BLK_BLD" o\} 	Session parameter list data describing the data received from the application (if any was received).\p
+\p
+\{\set_style "BLK_BLD" o\} 	Return information from the routine that compares the current virtual session screen image against recorded screen images in the project database for the purpose of determining which screen image the session has transitioned to.\p
+\p
+\{\set_style "BLK_BLD_ITAL" retcd\}  Return code from routine that receives application output.\p
+\p
+     \{\set_style "BLK_BLD" 0\} = Ok.\p
+\p
+     \{\set_style "BLK_BLD" 4\} = Invalid function or field identifier.\p
+\p
+        rsncd 0 - Function code is invalid.\p
+\p
+        rsncd 1 - Required parameter is missing.\p
+\p
+        rsncd 2 - Field identifier for extract function is invalid.\p
+\p
+        rsncd 3 - Inappropriate keyword was specified.\p
+\p
+     \{\set_style "BLK_BLD" 8\} = Internal environment error was detected.\p
+\p
+        rsncd 1 - Invalid ivuser block.\p
+\p
+        rsncd 2 - Invalid session token.\p
+\p
+        rsncd 3 - Invalid isess block.\p
+\p
+        rsncd 4 - Session token already exists.\p
+\p
+        rsncd 5 - Invalid pool name specified.\p
+\p
+        rsncd 6 - An ACB was not available.\p
+\p
+     \{\set_style "BLK_BLD" C\} = Length error (input area is not large enough).\p
+\p
+     \{\set_style "BLK_BLD" 0\} = Busy (a request is already outstanding).\p
+\p
+     \{\set_style "BLK_BLD" 14\} = Canceled (request aborted because session is terminating).\p
+\p
+     \{\set_style "BLK_BLD" 18\} = VTAM completed the request with an error indication.\p
+\p
+        rsncd = 00 00 xx yy\p
+\p
+                    where xx = VTAM's RPLRTNCD\p
+\p
+                              yy = VTAM's RPLFDB2\p
+\p
+     \{\set_style "BLK_BLD" 1C\} = Protocol error detected in data received from application.\p
+\p
+        rsncd 1 - Data traffic state error.\p
+\p
+        rsncd 2 - Session is quiesced.\p
+\p
+        rsncd 3 - Session is shutdown.\p
+\p
+        rsncd 4 - Bracket state error.\p
+\p
+        rsncd 5 - Direction error.\p
+\p
+        rsncd 6 - Unsupported request unit type.\p
+\p
+     \{\set_style "BLK_BLD" 20\} = Notify request unit was received.\p
+\p
+     \{\set_style "BLK_BLD" 24\} = Receive data timeout occurred.\p
+\p
+\{\set_style "BLK_BLD_ITAL" rsncd\}  Extended return code from routine that receives application output.  See \{\set_style "BLK_BLD_ITAL" retcd\} above.\p
+\p
+\{\set_style "BLK_BLD_ITAL" cntrl\}  VTAM flags that indicate what type of data or control information was received.\p
+\p
+     \{\set_style "BLK_BLD" 80 xx xx\} - Application data\p
+\p
+     \{\set_style "BLK_BLD" 40 xx xx\} - CANCEL\p
+\p
+     \{\set_style "BLK_BLD" 20 xx xx\} - Quiesce Complete (QC)\p
+\p
+     \{\set_style "BLK_BLD" 10 xx xx\} - Quiesce at End of Chain (QEC)\p
+\p
+     \{\set_style "BLK_BLD" 08 xx xx\} - CHASE\p
+\p
+     \{\set_style "BLK_BLD" 04 xx xx\} - RELease reQuest (RELQ)\p
+\p
+     \{\set_style "BLK_BLD" xx 80 xx\} - BID\p
+\p
+     \{\set_style "BLK_BLD" xx 40 xx\} - Ready To Receive (RTR)\p
+\p
+     \{\set_style "BLK_BLD" xx 20 xx\} - Logical Unit STATus (LUSTAT)\p
+\p
+     \{\set_style "BLK_BLD" xx 10 xx\} - SIGNAL\p
+\p
+     \{\set_style "BLK_BLD" xx 08 xx\} - BIND\p
+\p
+     \{\set_style "BLK_BLD" xx 04 xx\} - UNBIND\p
+\p
+     \{\set_style "BLK_BLD" xx 02 xx\} - Stop Bracket Initiation (SBI)\p
+\p
+     \{\set_style "BLK_BLD" xx 01 xx\} - Bracket Initiation Stopped (BIS)\p
+\p
+     \{\set_style "BLK_BLD" xx xx 80\} - Start Data Traffic (SDT)\p
+\p
+     \{\set_style "BLK_BLD" xx xx 40\} - CLEAR\p
+\p
+     \{\set_style "BLK_BLD" xx xx 20\} - Set and Test Sequence Number (STSN)\p
+\p
+     \{\set_style "BLK_BLD" xx xx 10\} - SHUTDown (SHUTD)\p
+\p
+     \{\set_style "BLK_BLD" xx xx 08\} - SHUTdown Complete (SHUTC)\p
+\p
+     \{\set_style "BLK_BLD" xx xx 04\} -  ReQuest Recovery (RQR)\p
+\p
+     \{\set_style "BLK_BLD" xx xx 02\} - Request SHUTDown (RSHUTD)\p
+\p
+\{\set_style "BLK_BLD_ITAL" rh\}  SNA Request Header associated with the application output.  The rh is 3 hex bytes of flags.\p
+\p
+     \{\set_style "BLK_BLD" b000/0000 XX XX\} - 0 = Request, 1 = Response\p
+\p
+     \{\set_style "BLK_BLD" 0bb0/0000 XX XX\} - Request or response category\p
+\p
+                               00 = Application data\p
+\p
+                               01 = Data flow control\p
+\p
+                               10 = Network control\p
+\p
+                               11 = Session control\p
+\p
+     \{\set_style "BLK_BLD" 0000/b000 XX XX\} - Formatting indicator\p
+\p
+                               0 = no Function Management Header (FMH)\p
+\p
+                               1 = Formatted or FMH present\p
+\p
+     \{\set_style "BLK_BLD" 0000/00b0 XX XX\} - 0 = Not begin chain, 1 = Begin chain\p
+\p
+     \{\set_style "BLK_BLD" 0000/000b XX XX\} - 0 = Not end of chain, 1 = End of chain\p
+\p
+     \{\set_style "BLK_BLD" XX b000/0000 XX\} - 0 = Not DR1, 1 = DR1\p
+\p
+     \{\set_style "BLK_BLD" XX 00b0/0000 XX\} - 0 = Not DR2, 1 = DR2\p
+\p
+     \{\set_style "BLK_BLD" XX 000b/0000 XX\} - 0 = Positive response, 1 = Negative response\p
+\p
+     \{\set_style "BLK_BLD" XX 0000/00b0 XX\} - 0 = Response not queued, 1 = Response queued\p
+\p
+     \{\set_style "BLK_BLD" XX 0000/000b XX\} - VTAM pacing indicator\p
+\p
+     \{\set_style "BLK_BLD" XX XX b000/0000\} - 0 = Not begin bracket, 1 = Begin bracket\p
+\p
+     \{\set_style "BLK_BLD" XX XX 0b00/0000\} - 0 = Not end bracket, 1 = End bracket\p
+\p
+     \{\set_style "BLK_BLD" XX XX 00b0/0000\} - 0 = Not change direction, 1 = Change direction\p
+\p
+     \{\set_style "BLK_BLD" XX XX 0000/b000\} - 0 = Not alternate code, 1 = Alternate code\p
+\p
+     \{\set_style "BLK_BLD" XX XX 0000/0b00\} - 0 = Data not enciphered, 1 = Data enciphered\p
+\p
+     \{\set_style "BLK_BLD" XX XX 0000/00b0\} - VTAM padded data indicator\p
+\p
+     \{\set_style "BLK_BLD" XX XX 0000/000b\} - 0 = Not conditional EB, 1 = Conditional EB\p
+\p
+\{\set_style "BLK_BLD_ITAL" addr\}  Address of the application output receive buffer area.\p
+\p
+\{\set_style "BLK_BLD_ITAL" len\}  Number of bytes of application output data received.\p
+\p
+\{\set_style "BLK_BLD_ITAL" sense\}  SNA sense information provided with exception conditions.\p
+\p
+\{\set_style "BLK_BLD_ITAL" seq\}  Sequence number of the SNA request unit containing the application output data.\p
+\p
+\{\set_style "BLK_BLD_ITAL" ciret\}  Return code from image compare subroutine.\p
+\p
+\{\set_style "BLK_BLD_ITAL" cirsn\}  Extended return code from image compare subroutine.\p
+\p
+\{\set_style "BLK_BLD_ITAL" prtfld\}  Extended return information from image compare subroutine.\p
+\p
+\{\set_style "BLK_BLD_ITAL" bytes\}  Extended return information from image compare subroutine.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Navigation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV103I"
+\0 \0 \{\set_style "MSG" INTNAV103I\}\p
+\p
+\{\set_style "MSG_TEXT" --- Application output data follows ------------------------\}\p
+\{\set_style "BLK_ITAL" status xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxx...\}\p
+\p
+This message is part of the \{\goto "<intmsgn>INTNAV099I" INTNAV099I\} series of diagnostic messages that report a virtual session navigation failure. This message provides the following information:\p
+\p
+\{\set_style "BLK_BLD" o\} 	A status message indicating whether any data was received from the host application at this time.\p
+\p
+\{\set_style "BLK_BLD" o\} 	Up to 32 bytes of the host application datastream that was received and mapped into the virtual session image buffer.\p
+\p
+\{\set_style "BLK_BLD_ITAL" status\}  Text message that indicates if output data was received.\p
+\p
+\{\set_style "BLK_BLD_ITAL" xxxxxxxx\}  Host application output data displayed in hexadecimal.  Data is displayed from the beginning of the output datastream for a maximum of 32 bytes.  If output data is present, field len in the preceding \{\goto "<intmsgn>INTNAV102I" INTNAV102I\} message provides the actual length of data that was received.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Navigation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV104I"
+\0 \0 \{\set_style "MSG" INTNAV104I\}\p
+\p
+\{\set_style "MSG_TEXT" Image line\} \{\set_style "BLK_ITAL" nn\}\{\set_style "MSG_TEXT" :\}  \{\set_style "BLK_ITAL" image-buffer-line\}\p
+\p
+This message is part of the \{\goto "<intmsgn>INTNAV099I" INTNAV099I\} series of diagnostic messages that report a virtual session navigation failure.  This message shows a single line from the virtual session screen image buffer in a format similar to what an end-user at a real 3270 device would see.\p
+\p
+The text following the colon (:) contains a representation of the \{\set_style "BLK_BLD_ITAL" nn\}th line of the virtual terminal image.  Non-display (dark) fields appear as blanks; attribute bytes are represented by the @ symbol.  Only lines that contain text are displayed.  Blank, null, and lines containing only white space are omitted.  Omitted lines can be identified by observing gaps in the image line numbering.  Refer also to message \{\goto "<intmsgn>INTNAV105I" INTNAV105I\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Navigation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV105I"
+\0 \0 \{\set_style "MSG" INTNAV105I\}\p
+\p
+\{\set_style "MSG_TEXT" Image is all null/blank\}\p
+\p
+This message is part of the \{\goto "<intmsgn>INTNAV099I" INTNAV099I\} series of diagnostic messages that report a virtual session navigation failure.  When the virtual terminal image contains no displayable text, this message is issued in lieu of a series of \{\goto "<intmsgn>INTNAV104I" INTNAV104I\} messages.  Note that it is typical to observe null,blank, or both images in a navigation trace.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Navigation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV106I"
+\0 \0 \{\set_style "MSG" INTNAV106I\}\p
+\p
+\{\set_style "MSG_TEXT" From State:\} \{\set_style "BLK_ITAL" screen(set) name\}\p
+\p
+This message is part of the \{\goto "<intmsgn>INTNAV099I" INTNAV099I\} series of diagnostic messages that report a virtual session navigation trace or failure.  This message identifies the last known state, referred to as the From state.  If the state name is preceded by a \{\set_style "BLK_BLD" +\}, then the from state identifies a screen set. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Navigation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV107I"
+\0 \0 \{\set_style "MSG" INTNAV107I\}\p
+\p
+\{\set_style "MSG_TEXT" To State:\} \{\set_style "BLK_ITAL" screen(set) name1  screen(set) name2  screen(set) name3  ...\}\p
+\p
+This message is part of the \{\goto "<intmsgn>INTNAV099I" INTNAV099I\} series of diagnostic messages that report a virtual session navigation trace or failure.  This message can contain one or more screen or screen set names of the possible states that the plan is attempting to reach, referred to as the TO state.  If more than one state name is displayed, the transition from the state specified in message \{\goto "<intmsgn>INTNAV106I" INTNAV106I\} is conditional and any one of the states specified are possible outcomes.  If a state name is preceded by a \{\set_style "BLK_BLD" +\}, then the state identifies a screen set name.  \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Navigation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV114I"
+\0 \0 \{\set_style "MSG" INTNAV114I\}\p
+\p
+\{\set_style "MSG_TEXT" --- Screen image follows - significant lines only ---\}\p
+\p
+This message is part of the \{\goto "<intmsgn>INTNAV099I" INTNAV099I\} series of diagnostic messages that report a virtual session navigation failure.  This message is a header for the virtual terminal screen image display (refer to messages \{\goto "<intmsgn>INTNAV104I" INTNAV104I\} and \{\goto "<intmsgn>INTNAV105I" INTNAV105I\}).  The screen image shows the virtual terminal buffer after all host application output data has been received into the buffer (if there was output data at this time) and all stored keystrokes and variable data has been typed into the buffer and sent to the application (if there was an input operation at this time).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Navigation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV120I"
+\0 \0 \{\set_style "MSG" INTNAV120I\}\p
+\p
+\{\set_style "MSG_TEXT" Application\} \{\set_style "BLK_ITAL" applname\} \{\set_style "MSG_TEXT" response to plan exec request\}\p
+\{\set_style "MSG_TEXT" RC:\} \{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\} \{\set_style "MSG_TEXT" Qual1:\}  \{\set_style "BLK_ITAL" q1\} \{\set_style "MSG_TEXT" Qual2:\} \{\set_style "BLK_ITAL" q2\}  \{\set_style "MSG_TEXT" Flags:\} \{\set_style "BLK_ITAL" flags\}\p
+\p
+Return code \{\set_style "BLK_BLD_ITAL" retcode\} and associated reason code \{\set_style "BLK_BLD_ITAL" rsncode\} values are as follows:\p
+\p
+     \{\set_style "BLK_BLD" RC00\}  Request completed.\p
+\p
+     \{\set_style "BLK_BLD" RC04\}  A required host application is not defined.\p
+\p
+     \{\set_style "BLK_BLD" RC08\}  A failure was reported by SESSION START.\p
+\p
+     \{\set_style "BLK_BLD" RC12\}  Error encountered during SLU driver initialization.\p
+\p
+     \{\set_style "BLK_BLD" RC16\}  Task or process communication error encountered.\p
+\p
+     \{\set_style "BLK_BLD" RC20\}  Client application access violation.\p
+\p
+     \{\set_style "BLK_BLD" RC24\}  Plan executor error.\p
+\p
+     \{\set_style "BLK_BLD" RC28\}  Plan formulation error.\p
+\p
+     \{\set_style "BLK_BLD" RC32\}  Error encountered that precludes query execution attempt.\p
+\p
+     \{\set_style "BLK_BLD" RC36\}  Unable to materialize a complete result set (SELECT only).\p
+\p
+     \{\set_style "BLK_BLD" RC40\}  Abnormal termination encountered during request.\p
+\p
+     \{\set_style "BLK_BLD" RC44\}  Deficient storage or storage management failure.\p
+\p
+\{\set_style "BLK_BLD_ITAL" flags\}  A flag containing session status.  When the high order bit is set, the ending state is recognized.  Otherwise, the ending state is unknown and the session is terminated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV124I"
+\0 \0 \{\set_style "MSG" INTNAV124I\}\p
+\p
+\{\set_style "MSG_TEXT" --- End of screen image --------------------------------------------\}\p
+\p
+This message is part of the \{\goto "<intmsgn>INTNAV099I" INTNAV099I\} series of diagnostic messages that report a virtual session navigation failure.  This message is a trailer for the virtual terminal screen image display (refer to messages \{\goto "<intmsgn>INTNAV114I" INTNAV114I\}, \{\goto "<intmsgn>INTNAV104I" INTNAV104I\}, and \{\goto "<intmsgn>INTNAV105I" INTNAV105I\}).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Navigation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV130I"
+\0 \0 \{\set_style "MSG" INTNAV130I\}\p
+\p
+\{\set_style "MSG_TEXT" Diagnostic (SUPRARC) data follows:\}\p
+\p
+When a plan cannot be formulated for a particular VDB query, the state transition information encoded in your recordings and provided as input to the planning routines is presented in a series of one or more \{\goto "<intmsgn>INTNAV135I" INTNAV135I\} messages.  This information can be used by PLATINUM Technical Support to aid problem diagnosis.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV131E"
+\0 \0 \{\set_style "MSG" INTNAV131E\}\p
+\p
+\{\set_style "MSG_TEXT" No diagnostic (SUPRARC) data available\}\p
+\p
+A plan cannot be formulated for a particular VDB query type.  State transition information provided as input to the planning routines is either not available or not relevant.  See also message \{\goto "<intmsgn>INTNAV130I" INTNAV130I\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV135I"
+\0 \0 \{\set_style "MSG" INTNAV135I\}\p
+\p
+\{\set_style "BLK_ITAL" Diagnostic data describing plan formulation input data\} \p
+\p
+Notify PLATINUM Technical Support for assistance.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV140I"
+\0 \0 \{\set_style "MSG" INTNAV140I\}\p
+\p
+\{\set_style "MSG_TEXT" Query halted by EXCEPTION noted in state\} \{\set_style "BLK_ITAL" statename\}\p
+\p
+A SQL request was terminated with error when the application responded with a state (screen) that was declared as an Exception state or contained an Exception region.  The query is terminated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV144W"
+\0 \0 \{\set_style "MSG" INTNAV144W\}\p
+\p
+\{\set_style "MSG_TEXT" Query halted by TABLE SELECT entry mismatch in state\} \{\set_style "BLK_ITAL" statename\} \{\set_style "MSG_TEXT" application\} \{\set_style "BLK_ITAL" applname\}\p
+\p
+A SQL request cound not find a match for a row defined as a Table Select.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV147I"
+\0 \0 \{\set_style "MSG" INTNAV147I\}\p
+\p
+\{\set_style "MSG_TEXT" Query halted by PREMATURE SESSION TERMINATION in application\} \{\set_style "BLK_ITAL" applname\}\p
+\p
+A SQL request was terminated with an error when the session with the host application terminated unexpectedly during the execution of a plan.  \p
+\p
+\{\set_style "BLK_BLD_ITAL" applname\}   Identifies the failing application.  \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV150E"
+\0 \0 \{\set_style "MSG" INTNAV150E\}\p
+\p
+\{\set_style "MSG_TEXT" Service failure:\}  \{\set_style "BLK_ITAL" service-name\} \{\set_style "MSG_TEXT" -  RC:\} \{\set_style "BLK_ITAL" retcode\}  \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+An unexpected failure occurred in a screen image or variable processing routine.  \{\set_style "BLK_BLD_ITAL" service-name\} contains either the name of the failing component or a terse description of a failed action.  The \{\set_style "BLK_BLD_ITAL" retcode\} and \{\set_style "BLK_BLD_ITAL" rsncode\} values contain the service routine return and reason codes, respectively.  This information can be used by PLATINUM Technical Support to aid problem diagnosis.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV151E"
+\0 \0 \{\set_style "MSG" INTNAV151E\}\p
+\p
+\{\set_style "MSG_TEXT" A result set could not be constructed because no value was provided for a variable associated with a VDB column defined as NON-NULL\}\p
+\p
+During the construction of a result set on behalf of a VDB SQL SELECT statement, a variable was found to have a value of all white space, or no entry for the variable could be found in the variable pool.  Because the corresponding VDB column is defined as NON-NULL, the query is terminated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV160E"
+\0 \0 \{\set_style "MSG" INTNAV160E\}\p
+\p
+\{\set_style "MSG_TEXT" Variable processing failed on screen(set)\} \{\set_style "BLK_ITAL" statename\}\p
+\{\set_style "MSG_TEXT" RC:\} \{\set_style "BLK_ITAL" retcode\}  \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\}  \{\set_style "MSG_TEXT" INFO:\} \{\set_style "BLK_ITAL" infocode\}\p
+\p
+During the processing of a variable on a \{\set_style "BLK_BLD_ITAL" statename\} image, an error was encountered.  The query is terminated.  This information can be used by PLATINUM Technical Support to aid problem diagnosis.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV170E"
+\0 \0 \{\set_style "MSG" INTNAV170E\}\p
+\p
+\{\set_style "MSG_TEXT" The width of a SPANNING region\} \{\set_style "BLK_ITAL" regionname\} \{\set_style "MSG_TEXT" instance does not agree with instances encountered earlier in the screen set\} \p
+\p
+As members of a scrolling screen set are traversed, the spanning areas of each are extracted and imaged in a separate, contiguous storage area.  The number of rows can vary between instances of the spanning region, but the number of columns (width) cannot.  The query is terminated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV171E"
+\0 \0 \{\set_style "MSG" INTNAV171E\}\p
+\p
+\{\set_style "MSG_TEXT" Error encountered tiling the SPANNING region\} \{\set_style "BLK_ITAL" regionname\}\p
+\p
+A terminating error was encountered when trying to determine the location of region instances within a spanning region.  The query is terminated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV172E"
+\0 \0 \{\set_style "MSG" INTNAV172E\}\p
+\p
+\{\set_style "MSG_TEXT" Total size of the SPANNING area is limited to\} \{\set_style "BLK_ITAL" nn\}\{\set_style "MSG_TEXT" K\}\p
+\p
+The total, accumulated size of the spanning region image buffer exceeded a locally defined maximum storage amount of \{\set_style "BLK_BLD_ITAL" nn\}K.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV173E"
+\0 \0 \{\set_style "MSG" INTNAV173E\}\p
+\p
+\{\set_style "MSG_TEXT" Total number of SPANNING screens is\} \{\set_style "BLK_ITAL" nn\}\p
+\p
+The total number of scrolling screen set images that can concurrently contribute to a separately imaged spanning region exceeded a locally defined maximum of \{\set_style "BLK_BLD_ITAL" nn\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV174E"
+\0 \0 \{\set_style "MSG" INTNAV174E\}\p
+\p
+\{\set_style "MSG_TEXT" Capacity of the SPANNING region\} \{\set_style "BLK_ITAL" regionname\} \{\set_style "MSG_TEXT" was exceeded\}\p
+\p
+This message accompanies \{\goto "<intmsgn>INTNAV172E" INTNAV172E\} or \{\goto "<intmsgn>INTNAV173E" INTNAV173E\} and indicates that the spanning region name \{\set_style "BLK_BLD_ITAL" regionname\} has exceeded locally established capacity thresholds.  The query is terminated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV200E"
+\0 \0 \{\set_style "MSG" INTNAV200E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to formulate a TABLE SELECT strategy\}\p
+\p
+The search argument provided in the SQL statement does not provide search criterea that can be used to select an entry from a repeating group where a "table select" operation has been requested.  The SQL statement is failed and navigation halts at the "table select" screen(set).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV201E"
+\0 \0 \{\set_style "MSG" INTNAV201E\}\p
+\p
+\{\set_style "MSG_TEXT" The table search criteria provided are categorically {\}\{\set_style "BLK_ITAL" TRUE\}|\{\set_style "BLK_ITAL" FALSE\}\{\set_style "MSG_TEXT" }\}\p
+\p
+The search argument provided in the SQL statement is guaranteed to identify either all elements in the "table select" repeating group (catagorically TRUE) or is guaranteed to identify no elements in the repeating group (catagorically FALSE).  In either case, the search argument is not accepted.   The SQL statement is failed and navigation halts at the "table select" screen(set).\p
+\p
+This generally occurs when the search argument contained in a SELECT, UPDATE, or DELETE statement contains references to columns defined on a "table select" screen(set), and all of those columns are associated with input variables.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgn>INTNAV202E"
+\0 \0 \{\set_style "MSG" INTNAV202E\}\p
+\p
+\{\set_style "MSG_TEXT" No table search criteria were provided\}\p
+\p
+The plan generated to satisfy the SQL statement includes a "table select" operation.  However, the SQL statement does not specify a search argument.  The SQL statement is failed and navigation halts at the "table select" screen(set). \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                 

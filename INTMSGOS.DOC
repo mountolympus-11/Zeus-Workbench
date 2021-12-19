@@ -1,0 +1,2296 @@
+\[----------------------------------------------------------------------\]
+\[This file includes the following files...\]
+\[Open Interface Hypertext files:\]
+\file "styles.doc"
+\[...End of included files\]
+
+
+\[----------------------------------------------------------------------\]
+\[--Styles Unique to this file--\]
+
+\def_style "MSG" \fg "Color.Green" \bg "Color.Blue" \font "Fonts.Bold10" 
+\[def_style_key "MSG" <Alt>-Q\]
+\def_style "BLK_ITAL" \fg "Color.Magenta" \font "Fonts.Normal11" 
+\[def_style_key "BLK_ITAL" <Alt>-V\]
+\def_style "BLK_BLD_ITAL" \fg "Color.Magenta" \font "Fonts.Bold08" 
+\[def_style_key "BLK_BLD_ITAL" <Alt>-P\]
+\def_style "TEXT" \font "Fonts.Normal10" 
+\def_style "MSG_TEXT" \fg "Color.Blue" \font "Fonts.Bold10" 
+\[def_style_key "MSG_TEXT" <Alt>-M\]
+\def_style "LINK" \fg "Color.ForestGreen" \font "Fonts.Bold10" 
+\[def_style_key "LINK" <Alt>-G\]
+\def_style "BLK_BLD" \font "Fonts.Bold10" 
+\[def_style_key "BLK_BLD" <Alt>-Z\]
+\def_style "New Style - 8" 
+\[----------------------------------------------------------------------\]
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>OPR"
+\0 \0 \{\set_style "code" Operations Interface (OPR) Commands\}\p
+\p
+These messages give diagnostics about the external operator interface.\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgos>INTOPR001W" INTOPR001W\}\p
+\p
+\{\subtopic "<intmsgos>INTOPR101E" INTOPR101E\}\p
+\{\subtopic "<intmsgos>INTOPR102E" INTOPR102E\}\p
+\{\subtopic "<intmsgos>INTOPR103E" INTOPR103E\}\p
+\{\subtopic "<intmsgos>INTOPR104E" INTOPR104E\}\p
+\p
+\{\subtopic "<intmsgos>INTOPR111E" INTOPR111E\}\p
+\{\subtopic "<intmsgos>INTOPR112E" INTOPR112E\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTOPR001W"
+\0 \0 \{\set_style "MSG" INTOPR001W\}\p
+\p
+\{\set_style "MSG_TEXT" User is not authorized to issue operator requests\}\p
+\p
+An unauthorized user attempted to issue an InfoSession Helpdesk command or message monitor request.  Access for the request has been denied.  \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation\p
+\p
+\{\set_style "MSG_TEXT" Module\}  IOPRCMDX, IOPRMONX                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTOPR101E"
+\0 \0 \{\set_style "MSG" INTOPR101E\}  \p
+\p
+\{\set_style "MSG_TEXT" Command request failure in $COMMAND service\}\p
+\{\set_style "MSG_TEXT" RC:\} \{\set_style "BLK_ITAL" return code\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" reason code\} \{\set_style "MSG_TEXT" INFO:\} \{\set_style "BLK_ITAL" information code\}\p
+\p
+An error in the internal command service was encounted while processing a Helpdesk command request. The \{\set_style "BLK_BLD_ITAL" return\}, \{\set_style "BLK_BLD_ITAL" reason\}, and \{\set_style "BLK_BLD_ITAL" information\} \{\set_style "BLK_BLD_ITAL" codes\} describe the cause of the failure.\p
+\p
+Contact PLATINUM Technical Support. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation\p
+\p
+\{\set_style "MSG_TEXT" Module\}  IOPRCMDX                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTOPR102E"
+\0 \0 \{\set_style "MSG" INTOPR102E\}  \p
+\p
+\{\set_style "MSG_TEXT" Command request failure in $COMACK service\}\p
+\{\set_style "MSG_TEXT" RC:\} \{\set_style "BLK_ITAL" return code\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" reason code\} \{\set_style "MSG_TEXT" INFO:\} \{\set_style "BLK_ITAL" information code\}\p
+\p
+An error in the internal command acknowledgment service was encounted while processing a Helpdesk command request. The \{\set_style "BLK_BLD_ITAL" return\}, \{\set_style "BLK_BLD_ITAL" reason\}, and \{\set_style "BLK_BLD_ITAL" information codes\} describe the cause of the failure.\p
+\p
+Contact PLATINUM Technical Support. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation\p
+\p
+\{\set_style "MSG_TEXT" Module\}  IOPRCMDX                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTOPR103E"
+\0 \0 \{\set_style "MSG" INTOPR103E\}\p
+\p
+\{\set_style "MSG_TEXT" Command request failure in $SRM service\}\p
+\{\set_style "MSG_TEXT" RC:\} \{\set_style "BLK_ITAL" return code\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" reason code\} \{\set_style "MSG_TEXT" INFO:\} \{\set_style "BLK_ITAL" information code\}\p
+\p
+An error in the internal shared resource manager service was encounted while processing a Helpdesk command request. The \{\set_style "BLK_BLD_ITAL" return\}, \{\set_style "BLK_BLD_ITAL" reason\}, and \{\set_style "BLK_BLD_ITAL" information codes\} describe the cause of the failure.\p
+\p
+Contact PLATINUM Technical Support. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation\p
+\p
+\{\set_style "MSG_TEXT" Module\}  IOPRCMDX                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTOPR104E"
+\0 \0 \{\set_style "MSG" INTOPR104E\}\p
+\p
+\{\set_style "MSG_TEXT" Command request failure in $OPRRESP service\}\p
+\{\set_style "MSG_TEXT" RC:\} \{\set_style "BLK_ITAL" return code\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" reason code\} \{\set_style "MSG_TEXT" INFO:\} \{\set_style "BLK_ITAL" information code\}\p
+\p
+An error in the Helpdesk response service was encounted while processing a Helpdesk command request. The \{\set_style "BLK_BLD_ITAL" return\}, \{\set_style "BLK_BLD_ITAL" reason\}, and \{\set_style "BLK_BLD_ITAL" information codes\} describe the cause of the failure.\p
+\p
+Contact PLATINUM Technical Support. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation\p
+\p
+\{\set_style "MSG_TEXT" Module\}  IOPRCMDX                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTOPR111E"
+\0 \0 \{\set_style "MSG" INTOPR111E\}\p
+\p
+\{\set_style "MSG_TEXT" Monitor request failure in $MSGMON service\}\p
+\{\set_style "MSG_TEXT" RC:\} \{\set_style "BLK_ITAL" return code\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" reason code\} \{\set_style "MSG_TEXT" INFO:\} \{\set_style "BLK_ITAL" information code\}\p
+\p
+An error in the internal message monitor service was encounted while processing a Helpdesk monitor request. The \{\set_style "BLK_BLD_ITAL" return\}, \{\set_style "BLK_BLD_ITAL" reason\}, and \{\set_style "BLK_BLD_ITAL" information codes\} describe the cause of the failure.\p
+\p
+Contact PLATINUM Technical Support. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation\p
+\p
+\{\set_style "MSG_TEXT" Module\}  IOPRMONX                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTOPR112E"
+\0 \0 \{\set_style "MSG" INTOPR112E\}\p
+\p
+\{\set_style "MSG_TEXT" Monitor request failure in $OPRRESP service\}\p
+\{\set_style "MSG_TEXT" RC:\} \{\set_style "BLK_ITAL" return code\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" reason code\} \{\set_style "MSG_TEXT" INFO:\} \{\set_style "BLK_ITAL" information code\}\p
+\p
+An error in the Helpdesk response service was encounted while processing a Helpdesk monitor request. The \{\set_style "BLK_BLD_ITAL" return\}, \{\set_style "BLK_BLD_ITAL" reason\}, and \{\set_style "BLK_BLD_ITAL" information\} \{\set_style "BLK_BLD_ITAL" codes\} describe the cause of the failure.\p
+\p
+Contact PLATINUM Technical Support. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation\p
+\p
+\{\set_style "MSG_TEXT" Module\}  IOPRMONX    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>PRJ"
+\0 \0 \{\set_style "bold" Operations Interface (PRJ) Messages\}\p
+\p
+These messages are issued by the Project Management component and indicate the current activity of the InfoSession database.\p
+\p
+The following topics are available:\p
+\p
+\{\subtopic "<intmsgos>INTPRJ001I" INTPRJ001I\}\p
+\{\subtopic "<intmsgos>INTPRJ002I" INTPRJ002I\}\p
+\{\subtopic "<intmsgos>INTPRJ003I" INTPRJ003I\}\p
+\{\subtopic "<intmsgos>INTPRJ004I" INTPRJ004I\}\p
+\{\subtopic "<intmsgos>INTPRJ005I" INTPRJ005I\}\p
+\{\subtopic "<intmsgos>INTPRJ006I" INTPRJ006I\}\p
+\p
+\{\subtopic "<intmsgos>INTPRJ011E" INTPRJ011E\}\p
+\{\subtopic "<intmsgos>INTPRJ012E" INTPRJ012E\}\p
+\{\subtopic "<intmsgos>INTPRJ013E" INTPRJ013E\}\p
+\{\subtopic "<intmsgos>INTPRJ014E" INTPRJ014E\}\p
+\{\subtopic "<intmsgos>INTPRJ015E" INTPRJ015E\}\p
+\{\subtopic "<intmsgos>INTPRJ016E" INTPRJ016E\}\p
+\p
+\{\subtopic "<intmsgos>INTPRJ201I" INTPRJ201I\}\p
+\{\subtopic "<intmsgos>INTPRJ202I" INTPRJ202I\}\p
+\{\subtopic "<intmsgos>INTPRJ203W" INTPRJ203W\}\p
+\{\subtopic "<intmsgos>INTPRJ204W" INTPRJ204W\}\p
+\{\subtopic "<intmsgos>INTPRJ205E" INTPRJ205E\}\p
+\{\subtopic "<intmsgos>INTPRJ206E" INTPRJ206E\}\p
+\{\subtopic "<intmsgos>INTPRJ207E" INTPRJ207E\}\p
+\p
+\{\subtopic "<intmsgos>INTPRJ221I" INTPRJ221I\}\p
+\{\subtopic "<intmsgos>INTPRJ222E" INTPRJ222E\}\p
+\{\subtopic "<intmsgos>INTPRJ223E" INTPRJ223E\}\p
+\{\subtopic "<intmsgos>INTPRJ224E" INTPRJ224E\}\p
+\{\subtopic "<intmsgos>INTPRJ225E" INTPRJ225E\}\p
+\{\subtopic "<intmsgos>INTPRJ226E" INTPRJ226E\}\p
+\{\subtopic "<intmsgos>INTPRJ227E" INTPRJ227E\}\p
+\p
+\{\subtopic "<intmsgos>INTPRJ241I" INTPRJ241I\}\p
+\{\subtopic "<intmsgos>INTPRJ242E" INTPRJ242E\}\p
+\{\subtopic "<intmsgos>INTPRJ243E" INTPRJ243E\}\p
+\{\subtopic "<intmsgos>INTPRJ244E" INTPRJ244E\}\p
+\{\subtopic "<intmsgos>INTPRJ245E" INTPRJ245E\}\p
+\{\subtopic "<intmsgos>INTPRJ246E" INTPRJ246E\}\p
+\{\subtopic "<intmsgos>INTPRJ247E" INTPRJ247E\}\p
+\{\subtopic "<intmsgos>INTPRJ248E" INTPRJ248E\}\p
+\{\subtopic "<intmsgos>INTPRJ249E" INTPRJ249E\}\p
+\p
+\{\subtopic "<intmsgos>INTPRJ275I" INTPRJ275I\}\p
+\{\subtopic "<intmsgos>INTPRJ276E" INTPRJ276E\}\p
+\{\subtopic "<intmsgos>INTPRJ277E" INTPRJ277E\}\p
+\{\subtopic "<intmsgos>INTPRJ278E" INTPRJ278E\}\p
+\{\subtopic "<intmsgos>INTPRJ279E" INTPRJ279E\}\p
+\p
+\{\subtopic "<intmsgos>INTPRJ290E" INTPRJ290E\}\p
+\{\subtopic "<intmsgos>INTPRJ291I" INTPRJ291I\}\p
+\{\subtopic "<intmsgos>INTPRJ292I" INTPRJ292I\}\p
+\{\subtopic "<intmsgos>INTPRJ293I" INTPRJ293I\}\p
+\{\subtopic "<intmsgos>INTPRJ294E" INTPRJ294E\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ001I"
+\0 \0 \{\set_style "MSG" INTPRJ001I\p
+\}\p
+\{\set_style "MSG_TEXT" Project task initialization in progress\}\p
+\p
+During initialization, the project management task issues this message to indicate that it has been created and has received control.  Execution continues.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ002I"
+\0 \0 \{\set_style "MSG" INTPRJ002I\}\p
+\p
+\{\set_style "MSG_TEXT" Project database now available\p
+\}\p
+During initialization, the project management task opens the project data base and performs cursory validation of its content.  This message is issued upon completion of the project database open and validation sequence.  Refer also to message \{\goto "<intmsgos>INTPRJ003I" INTPRJ003I\}.  Messages appearing between the two originate from the VSAM access method.\p
+\p
+Consult the appropriate IBM publication for more information.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ003I"
+\0 \0 \{\set_style "MSG" INTPRJ003I\p
+\}\p
+\{\set_style "MSG_TEXT" Project database initialization in progress\p
+\}\p
+During initialization, the project management task detected that the project data base has not been initialized.  An initialization record is written to the project database and the data base is reopened to enable update processing.  This message is issued only the first time InfoSession is started after the project database has been defined.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ004I"
+\0 \0 \{\set_style "MSG" INTPRJ004I\p
+\}\p
+\{\set_style "MSG_TEXT" Initializing SYSCATLG project\p
+\}\p
+Global configuration information and the project directory are maintained in an internally maintained project referred to as the System Catalog (SYSCATLG).\p
+\p
+This message is issued when the SYSCATLG project is initialized during product startup.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ005I"
+\0 \0 \{\set_style "MSG" INTPRJ005I\}\p
+\p
+\{\set_style "MSG_TEXT" Closing project database\}\p
+\p
+Upon both normal and abnormal system termination, the project database is closed.  This message is issued to indicate that InfoSession has begun final project database close processing.\p
+\p
+\{\set_style "MSG_TEXT" Class \} Geninfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ006I"
+\0 \0 \{\set_style "MSG" INTPRJ006I\}\p
+\p
+\{\set_style "MSG_TEXT" Project task termination complete\}\p
+\p
+The project task is completing its termination.  The project database is no longer available.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ011E"
+\0 \0 \{\set_style "MSG" INTPRJ011E\}\p
+\p
+\{\set_style "MSG_TEXT" Open failed for project database,  RC: \}\{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\p
+\}\p
+The VSAM open request directed against the InfoSession project data base has failed.  VSAM provides error analysis information in the form of a return code \{\set_style "BLK_BLD_ITAL" retcode\} and a reason code \{\set_style "BLK_BLD_ITAL" rsncode\}.\p
+\p
+\{\set_style "MSG_TEXT" Class \} Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ012E"
+\0 \0 \{\set_style "MSG" INTPRJ012E\}\p
+\p
+\{\set_style "MSG_TEXT" Project database initialization failed,  RC:\} \{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+A terminating error was encountered while opening or validating the InfoSession project database.  Consider restoring a backup copy of the project database.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ013E"
+\0 \0 \{\set_style "MSG" INTPRJ013E\}\p
+\p
+\{\set_style "MSG_TEXT" SYSCATLG initialization failed,  RC:\} \{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+A terminating error was encountered while initializing the InfoSession System Catalog (SYSCATLG).  Consider restoring a backup copy of the project database.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ014E"
+\0 \0 \{\set_style "MSG" INTPRJ014E\}\p
+\p
+\{\set_style "MSG_TEXT" Open failed for SYSCATLG,  RC:\} \{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT"  RSN:\} \{\set_style "BLK_ITAL"  rsncode\}\p
+\p
+During project task initialization, the InfoSession System Catalog could not be found or processed in the project database.  Consider restoring a backup copy of the project database.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ015E"
+\0 \0 \{\set_style "MSG" INTPRJ015E\}\p
+\p
+\{\set_style "MSG_TEXT" Open failed for System Table:\} \{\set_style "BLK_ITAL" tablename\}  \{\set_style "MSG_TEXT" RC:\}  \{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT"  RSN:\}  \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+During InfoSession System Catalog initialization, each of its component tables is opened.  This message indicates that the component table named \{\set_style "BLK_BLD_ITAL" tablename\} could not be opened.  Because the System Catalog contains global information applicable to the entire system, execution cannot continue.  Consider restoring a backup copy of the project database.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ016E"
+\0 \0 \{\set_style "MSG" INTPRJ016E\}\p
+\p
+\{\set_style "MSG_TEXT" Close failed for project database,  RC:\}  \{\set_style "BLK_ITAL" retcode\}  \{\set_style "MSG_TEXT" RSN:\}  \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+Upon InfoSession termination the project database is closed.  However, the close request completed with unexpected errors.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ201I"
+\0 \0 \{\set_style "MSG" INTPRJ201I\}\p
+\p
+\{\set_style "MSG_TEXT" Project\} \{\set_style "BLK_ITAL" projectname\} \{\set_style "MSG_TEXT" already exists.  Replace existing Project?\}\p
+\p
+The Workbench user has selected the \{\set_style "BLK_BLD" Project\}, \{\set_style "BLK_BLD" Save As\} function and supplied a new project name.  However, a project having the name \{\set_style "BLK_BLD_ITAL" projectname\} already exists in the project database.  The prompt allows the user to confirm the replacement of the existing project or to cancel the \{\set_style "BLK_BLD" Save As\} request.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workbench    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ202I"
+\0 \0 \{\set_style "MSG" INTPRJ202I\}\p
+\p
+\{\set_style "MSG_TEXT" Confirm deletion of project\} \{\set_style "BLK_ITAL" projectname\}\p
+\p
+The Workbench user has selected the \{\set_style "BLK_BLD" Project\}, \{\set_style "BLK_BLD" Delete\} function and identified a project named \{\set_style "BLK_BLD_ITAL" projectname\}.  The prompt allows the user to confirm the deletion of the project or to cancel the \{\set_style "BLK_BLD" Delete\} request.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workbench    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ203W"
+\0 \0 \{\set_style "MSG" INTPRJ203W\}\p
+\p
+\{\set_style "MSG_TEXT" Project\} \{\set_style "BLK_ITAL" projectname\} \{\set_style "MSG_TEXT" not currently open\}\p
+\p
+A project services request was received for project \{\set_style "BLK_BLD_ITAL" projectname\} that can only be processed when the project is open.  The request is rejected.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ204W"
+\0 \0 \{\set_style "MSG" INTPRJ204W\}\p
+\p
+\{\set_style "MSG_TEXT" Project\} \{\set_style "BLK_ITAL" projectname\} \{\set_style "MSG_TEXT" currently in use\}\p
+\p
+An open request was made for project \{\set_style "BLK_BLD_ITAL" projectname\} but that project is currently open to another user.  (Workbench requests only).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ205E"
+\0 \0 \{\set_style "MSG" INTPRJ205E\}\p
+\p
+\{\set_style "MSG_TEXT" Error occurred acquiring project lock\}\p
+\p
+A project services request was received, but the service routine was unable to acquire the project lock which is used to ensure the integrity of the project data.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ206E"
+\0 \0 \{\set_style "MSG" INTPRJ206E\}\p
+\p
+\{\set_style "MSG_TEXT" Error occurred acquiring storage\p
+\}\p
+A project services request failed because sufficient working storage was not available.  Review the InfoSession address space region allotment.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ207E"
+\0 \0 \{\set_style "MSG" INTPRJ207E\}\p
+\p
+\{\set_style "MSG_TEXT" Error occurred in entity manager\p
+\}\p
+A project services routine was unable to register, unregister, or locate project information because of a failure in the project cross-reference.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ221I"
+\0 \0 \{\set_style "MSG" INTPRJ221I\}\p
+\p
+\{\set_style "MSG_TEXT" Project\} \{\set_style "BLK_ITAL" projectname\} \{\set_style "MSG_TEXT" not found\}\p
+\p
+A Workbench or run-time request was made to open or delete a project named \{\set_style "BLK_BLD_ITAL" projectname\} that no longer exists in the project database.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ222E"
+\0 \0 \{\set_style "MSG" INTPRJ222E\}\p
+\p
+\{\set_style "MSG_TEXT" Project space create failed \}\p
+\p
+A Workbench or run-time request was made to open or create a project.  InfoSession maintains open projects in an MVS/ESA dataspace.  InfoSession was unable to create the dataspace necessary to contain the project.  Refer to message \{\goto "<intmsgos>INTPRJ279E" INTPRJ279E\} for space management diagnostic information.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ223E"
+\0 \0 \{\set_style "MSG" INTPRJ223E\}\p
+\p
+\{\set_style "MSG_TEXT" Project space import failed\p
+\}\p
+A Workbench or run-time request was made to open a project.  InfoSession maintains open projects in an MVS/ESA dataspace.  An error was encountered while InfoSession was importing the project from the data base.  Refer to message \{\goto "<intmsgos>INTPRJ279E" INTPRJ279E\} for space management diagnostic information.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ224E"
+\0 \0 \{\set_style "MSG" INTPRJ224E\}\p
+\p
+\{\set_style "MSG_TEXT" Project space destroy failed\p
+\}\p
+A Workbench or run-time request was made to close a project.  InfoSession maintains projects in an MVS/ESA dataspace.  InfoSession was unable to destroy the dataspace when the project was closed.  Refer to message \{\goto "<intmsgos>INTPRJ279E" INTPRJ279E\} for space management diagnostic information.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ225E"
+\0 \0 \{\set_style "MSG" INTPRJ225E\}\p
+\p
+\{\set_style "MSG_TEXT" Project space export failed\p
+\}\p
+A Workbench request was made to save(as) a project to the project data base.  InfoSession maintains projects in an MVS/ESA dataspace.  An error occurred while InfoSession was exporting the project from the dataspace.  Refer to message \{\goto "<intmsgos>INTPRJ279E" INTPRJ279E\} for space management failure diagnostic information.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ226E"
+\0 \0 \{\set_style "MSG" INTPRJ226E\}\p
+\p
+\{\set_style "MSG_TEXT" Project space configuration failed\p
+\}\p
+A Workbench or run-time request was made to open or create a project.  InfoSession maintains open projects in an MVS/ESA dataspace.  InfoSession was unable to initialize the dataspace with application specific information.  Refer to message \{\goto "<intmsgos>INTPRJ279E" INTPRJ279E\} for space management diagnostic information.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ227E"
+\0 \0 \{\set_style "MSG" INTPRJ227E\}\p
+\p
+\{\set_style "MSG_TEXT" Database request failed\p
+\}\p
+A project request was issued which required access to the project data base.  A VSAM error occurred while reading or writing to the project data base.  Refer to message \{\goto "<intmsgos>INTPRJ279E" INTPRJ279E\} for data base service diagnostic information.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ241I"
+\0 \0 \{\set_style "MSG" INTPRJ241I\p
+\}\p
+\{\set_style "MSG_TEXT" Project\} \{\set_style "BLK_ITAL" projectname\} \{\set_style "MSG_TEXT" not found\p
+\}\p
+A Workbench or run-time request was made to open or delete a project named \{\set_style "BLK_BLD_ITAL" projectname\} that no longer exists in the project database.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ242E"
+\0 \0 \{\set_style "MSG" INTPRJ242E\}\p
+\p
+\{\set_style "MSG_TEXT" Table create failed\}\p
+\p
+A project services routine was unable to create a catalog component table.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ243E"
+\0 \0 \{\set_style "MSG" INTPRJ243E\}\p
+\p
+\{\set_style "MSG_TEXT" Table drop failed\p
+\}\p
+A project services routine was unable to delete (drop) a catalog component table.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ244E"
+\0 \0 \{\set_style "MSG" INTPRJ244E\}\p
+\p
+\{\set_style "MSG_TEXT" Table open failed\}\p
+\p
+A project services routine was unable to open a catalog component table.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ245E"
+\0 \0 \{\set_style "MSG" INTPRJ245E\}\p
+\p
+\{\set_style "MSG_TEXT" Table close failed\}\p
+\p
+A project services routine was unable to open a catalog component table.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ246E"
+\0 \0 \{\set_style "MSG" INTPRJ246E\}\p
+\p
+\{\set_style "MSG_TEXT" Add row to project table failed\p
+\}\p
+A project services routine was unable to update the System Catalog (SYSCATLG) project directory.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ247E"
+\0 \0 \{\set_style "MSG" INTPRJ247E\}\p
+\p
+\{\set_style "MSG_TEXT" Delete row from project table failed\p
+\}\p
+A project services routine was unable to update the System Catalog (SYSCATLG) project directory.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ248E"
+\0 \0 \{\set_style "MSG" INTPRJ248E\}\p
+\p
+\{\set_style "MSG_TEXT" Modify row in project table failed\}\p
+\p
+A project services routine was unable to update the System Catalog (SYSCATLG) project directory.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ249E"
+\0 \0 \{\set_style "MSG" INTPRJ249E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid table requested\p
+\}\p
+A project service routine requested processing of an undefined System Catalog (SYSCATLG) project table.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ275I"
+\0 \0 \{\set_style "MSG" INTPRJ275I\}\p
+\p
+\{\set_style "MSG_TEXT" Project\}  \{\set_style "BLK_ITAL" projectname reqtype\} \{\set_style "MSG_TEXT" operation failed RC:\}  \{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT"  RSN:\}  \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+A project operation type represented by \{\set_style "BLK_BLD_ITAL" reqtype\} failed.  The project intended for the operation was \{\set_style "BLK_BLD_ITAL" projectname\}.  The \{\set_style "BLK_BLD_ITAL" retcode\} and \{\set_style "BLK_BLD_ITAL" rsncode\} identify the specific nature of the failure.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ276E"
+\0 \0 \{\set_style "MSG" INTPRJ276E\}\p
+\p
+\{\set_style "MSG_TEXT" Project service failed RC:\}  \{\set_style "BLK_ITAL" retcode\}  \{\set_style "MSG_TEXT" RSN:\}  \{\set_style "BLK_ITAL" rsncode\p
+\}\p
+A project management service has failed for the current project operation described by message \{\goto "<intmsgos>INTPRJ275I" INTPRJ275I\}.  The \{\set_style "BLK_BLD_ITAL" retcode\} and \{\set_style "BLK_BLD_ITAL" rsncode\} identify the specific nature of the service routine failure.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ277E"
+\0 \0 \{\set_style "MSG" INTPRJ277E\}\p
+\p
+\{\set_style "BLK_ITAL" <message text>\}\p
+\p
+This message is used to journal project related Workbench error messages to the system information message class.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ278E"
+\0 \0 \{\set_style "MSG" INTPRJ278E\}\p
+\p
+\{\set_style "MSG_TEXT" Catalog error:\} \{\set_style "BLK_ITAL" reqtype\}  \{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" tablename\}  \{\set_style "MSG_TEXT" - RC:\}  \{\set_style "BLK_ITAL" retcode\}  \{\set_style "MSG_TEXT" RSN:\}  \{\set_style "BLK_ITAL" rsncode\}  \{\set_style "MSG_TEXT" INFO:\}  \{\set_style "BLK_ITAL" infocode \}  \p
+\p
+A table service request of the type identified by \{\set_style "BLK_BLD_ITAL" reqtype\} was issued against the \{\set_style "BLK_BLD_ITAL" tablename\} catalog component table.  However, the request failed with return code \{\set_style "BLK_BLD_ITAL" retcode\}, reason code \{\set_style "BLK_BLD_ITAL" rsncode\}, and information code \{\set_style "BLK_BLD_ITAL" infocode\}.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ279E"
+\0 \0 \{\set_style "MSG" INTPRJ279E\}\p
+\p
+\{\set_style "MSG_TEXT" Project system service\} \{\set_style "BLK_ITAL" \{\set_style "BLK_BLD_ITAL" servicename \}\}\{\set_style "MSG_TEXT"  failed RC:\}  \{\set_style "BLK_ITAL" retcode\}  \{\set_style "MSG_TEXT" RSN:\}  \{\set_style "BLK_ITAL" rsncode\}  \{\set_style "MSG_TEXT" INFO:\}  \{\set_style "BLK_ITAL" infocode\}\p
+\p
+A system service error has occurred in the project management task while processing a project request.  This message accompanies the associated project request error message with detailed information regarding the error for the failing service identified by \{\set_style "BLK_BLD_ITAL" servicename\}.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ290E"
+\0 \0 \{\set_style "MSG" INTPRJ290E\}\p
+\p
+\{\set_style "MSG_TEXT" Project transfer error:\} \{\set_style "BLK_ITAL" error\}  \{\set_style "MSG_TEXT" Type:\}  \{\set_style "BLK_ITAL" error-type-description\}  \{\set_style "MSG_TEXT" RC:\}  \{\set_style "BLK_ITAL" retcode \} \{\set_style "MSG_TEXT" RSN:\}  \{\set_style "BLK_ITAL" rsncode\}  \{\set_style "MSG_TEXT" INFO:\}  \{\set_style "BLK_ITAL" infocode\}\p
+\p
+This message is issued in response to a failed SYSTEMS IMPORT or SYSTEMS EXPORT command initiated on a local or remote InfoSession system.  The command failed on the local InfoSession system with return code \{\set_style "BLK_BLD_ITAL" retcode\}, reason code \{\set_style "BLK_BLD_ITAL" rsncode\}, and information code \{\set_style "BLK_BLD_ITAL" infocode\}.\p
+\p
+\{\set_style "BLK_BLD_ITAL" error-type-description \} Provides a specific reason for the failure (for example, project currently in use).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ291I"
+\0 \0 \{\set_style "MSG" INTPRJ291I\}\p
+\p
+\{\set_style "MSG_TEXT" Remote project transfer error remote's RC:\} \{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\} \{\set_style "MSG_TEXT" INFO:\} \{\set_style "BLK_ITAL" infocode\}  \{\set_style "MSG_TEXT" Remote's messages follow:\}  \{\set_style "BLK_ITAL" messages\p
+\}\p
+This message is issued in response to a failed SYSTEMS IMPORT or SYSTEMS EXPORT command initiated on a local or remote InfoSession system.  The command failed on the remote InfoSession system with return code \{\set_style "BLK_BLD_ITAL" retcode\}, reason code \{\set_style "BLK_BLD_ITAL" rsncode\}, and information code \{\set_style "BLK_BLD_ITAL" infocode\}.  Message(s) issued on the remote InfoSession system will appear after this message (see \{\goto "<intmsgos>INTPRJ292I" INTPRJ292I\}).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ292I"
+\0 \0 \{\set_style "MSG" INTPRJ292I\}\p
+\p
+\{\set_style "BLK_ITAL" remote-error-message\p
+\}\p
+One or more occurrences of this message is issued in conjunction with \{\goto "<intmsgos>INTPRJ291I" INTPRJ291I\} when a project transfer fails as a result of an error on the remote InfoSession system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" remote-error-message\}  Error message issued on the remote InfoSession system as a result of a failed project transfer.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ293I"
+\0 \0 \{\set_style "MSG" INTPRJ293I\}\p
+\p
+\{\set_style "MSG_TEXT" Project\} \{\set_style "BLK_ITAL" projectname\}\{\set_style "MSG_TEXT"  {\}\{\set_style "BLK_ITAL" imported from\} | \{\set_style "BLK_ITAL" exported to\}\{\set_style "MSG_TEXT" }\} \{\set_style "MSG_TEXT" APPLID(\}\{\set_style "BLK_ITAL" APPLID\}\{\set_style "MSG_TEXT" ) PROJECT(\}\{\set_style "BLK_ITAL" projectname\}\{\set_style "MSG_TEXT" )\{\set_style "MSG_TEXT" \p
+\}\}\p
+This message is issued in response to a SYSTEMS IMPORT or SYSTEMS EXPORT command initiated on the local or a remote InfoSession system.  It indicates the successful transfer of a project named \{\set_style "BLK_BLD_ITAL" projectname\} from one system to the other.  The appropriate message is issued on each system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" projectname\}  Name of the project imported or exported.\p
+\p
+\{\set_style "BLK_BLD_ITAL" APPLID\}  Name of the remote InfoSession's main ACB.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTPRJ294E"
+\0 \0 \{\set_style "MSG" INTPRJ294E\}\p
+\p
+\{\set_style "MSG_TEXT" An ABEND occurred on the host system while processing this request.  Problem documentation has been collected.\}\p
+\p
+This message is issued if a project import or export request abnormally terminates.  An indicative dump and other appropriate diagnostic information is collected in the logfile.  If possible, a SVC dump will also be captured.  \p
+\p
+Contact PLATINUM Technology technical support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>RCV"
+\0 \0 \{\set_style "bold" Abend/Error Recovery (RCV) Messages\}\p
+\p
+These are error recovery messages containing diagnostic information about the system.  Some messages indicate what the system did to recover from the error.\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgos>INTRCV001E" INTRCV001E\}\p
+\p
+\{\subtopic "<intmsgos>INTRCV008I" INTRCV008I\}\p
+\{\subtopic "<intmsgos>INTRCV009I" INTRCV009I\}\p
+\{\subtopic "<intmsgos>INTRCV010I" INTRCV010I\}\p
+\{\subtopic "<intmsgos>INTRCV011E" INTRCV011I\}\p
+\{\subtopic "<intmsgos>INTRCV012E" INTRCV012E\}\p
+\{\subtopic "<intmsgos>INTRCV013E" INTRCV013E\}\p
+\{\subtopic "<intmsgos>INTRCV014E" INTRCV014E\}\p
+\p
+\{\subtopic "<intmsgos>INTRCV018E" INTRCV018E\}\p
+\{\subtopic "<intmsgos>INTRCV019E" INTRCV019E\}\p
+\{\subtopic "<intmsgos>INTRCV020E" INTRCV020E\}\p
+\{\subtopic "<intmsgos>INTRCV021E" INTRCV021E\}\p
+\{\subtopic "<intmsgos>INTRCV022I" INTRCV022I\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTRCV001E"
+\0 \0 \{\set_style "MSG" INTRCV001E\p
+\}\p
+\{\set_style "BLK_ITAL" failure-title-line\p
+\}\p
+This message is produced whenever an unrecoverable program failure occurs.  The failing program might provide a \{\set_style "BLK_BLD_ITAL" failure-title-line\}.  If the failure was not explicitly scheduled by the program, the title presented is Unexpected program failure encountered.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTRCV008I"
+\0 \0 \{\set_style "MSG" INTRCV008I\}\p
+\p
+\{\set_style "MSG_TEXT" SVC dump suppressed -\} \{\set_style "BLK_ITAL" reason\}\p
+\p
+The SVC dump was suppressed for one of the following reasons:  InfoSession has not been started APF-authorized or the SDUMP parameter limit would be exceeded.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTRCV009I"
+\0 \0 \{\set_style "MSG" INTRCV009I\}\p
+\p
+\{\set_style "MSG_TEXT" SVC dump invoked  RC:\}  \{\set_style "BLK_ITAL" retcode \} \{\set_style "MSG_TEXT" RSN:\}  \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+The SVC dump was issued with the resulting return code and reason code.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTRCV010I"
+\0 \0 \{\set_style "MSG" INTRCV010I\}\p
+\p
+\{\set_style "MSG_TEXT" Indicative dump logged\}\p
+\p
+This message is issued once all error information has been written to the log or other selected destination. The indicative dump consists of any of  messages from \{\goto "<intmsgos>INTRCV011E" INTRCV011E\} through \{\goto "<intmsgos>INTRCV019E" INTRCV019E\} as well as a snapshot of the system trace table at the time of error.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTRCV011E"
+\0 \0 \{\set_style "MSG" INTRCV011E\}\p
+\p
+\{\set_style "MSG_TEXT" LMOD:\} \{\set_style "BLK_ITAL" lmod-name\}    \{\set_style "MSG_TEXT" CSECT:\} \{\set_style "BLK_ITAL" csect-name\}   \{\set_style "MSG_TEXT" Process:\} \{\set_style "BLK_ITAL" tasknm.procnm\} \p
+\{\set_style "MSG_TEXT" ADDR:\} \{\set_style "BLK_ITAL" lmod-addr\}      \{\set_style "MSG_TEXT" ADDR:\}  \{\set_style "BLK_ITAL" csect-addr\}     \{\set_style "BLK_ITAL" otype\}\{\set_style "MSG_TEXT" -Offset:\}  \{\set_style "BLK_ITAL" offset\}\p
+\p
+This message is the header of the indicative dump and describes the point of system failure, as described below.  Any of the message fields depicted above might contain N/Avail if the information is not available.\p
+\p
+\{\set_style "BLK_BLD_ITAL" lmod-name\}  Name of the failing load module.\p
+\p
+\{\set_style "BLK_BLD_ITAL" lmod-addr\}  Load module origin address.\p
+\p
+\{\set_style "BLK_BLD_ITAL" csect-name\}  Failing CSECT name if available.\p
+\p
+\{\set_style "BLK_BLD_ITAL" csect-addr \} CSECT origin address if available.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tasknm.procnm\}  TASK and Process names of the failing workunit.\p
+\p
+\{\set_style "BLK_BLD_ITAL" otype\}   Identifies the type of offset provided by offset.  The offset is computed from the origin if the CSECT, if available or is computed from the origin of the load module.  otype is either CSECT or LMOD accordingly.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTRCV012E"
+\0 \0 \{\set_style "MSG" INTRCV012E\}\p
+\p
+\{\set_style "MSG_TEXT" PSW:\} \{\set_style "BLK_ITAL" xxxxxxxx xxxxxxxx\}  \{\set_style "MSG_TEXT" ABEND:\} \{\set_style "BLK_ITAL" txxx-xxx \} \{\set_style "MSG_TEXT" PIC:\} \{\set_style "BLK_ITAL" xx\} \{\set_style "MSG_TEXT" ILC:\} \{\set_style "BLK_ITAL" n \}\p
+\p
+As part of the indicative dump, this message contains the PSW at time of error, the abend type, completion code and reason code, the program interrupt code, and the instruction length code.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTRCV013E"
+\0 \0 \{\set_style "MSG" INTRCV013E\}\p
+\p
+\{\set_style "MSG_TEXT" Translation exception address:\}  \{\set_style "BLK_ITAL" address\}\p
+\p
+The address given in this message line is that causing a S0C4 type abend only when the PIC codes are 10, 11, or 12.  It is meaningless otherwise.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTRCV014E"
+\0 \0 \{\set_style "MSG" INTRCV014E\}\p
+\p
+\{\set_style "MSG_TEXT" Execution environment: {\}\{\set_style "BLK_ITAL" std\} | \{\set_style "BLK_ITAL" non-std\} | \{\set_style "BLK_ITAL" c\}\{\set_style "MSG_TEXT" } ASC mode:\} \{\set_style "MSG_TEXT" {\}\{\set_style "BLK_ITAL" primary\} | \{\set_style "BLK_ITAL" ar\} | \{\set_style "BLK_ITAL" secondary\} | \{\set_style "BLK_ITAL" home\}\{\set_style "MSG_TEXT" }\}\p
+\p
+This message describes the workunit execution environment in affect when the program failure occurred.  The product is usually running in its own standard (STD) environment, but occasionally invokes internal components and MVS system and C-language services that operate outside of the standard environment.  These are referred to as non-standard (NON-STD) environments.  C-language environments are a special case and are distinctly identified as such.\p
+\p
+In the standard and C environments, the product normally runs in the primary S/390 address space control mode.  However, other address space control modes are employed in non-standard environments.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTRCV018E"
+\0 \0 \{\set_style "MSG" INTRCV018E\}\p
+\p
+This four-line message documents the contents of the general purpose registers at the time of program failure.\p
+\p
+\{\set_style "BLK_BLD" GPRs\}      0-3    contents of general purpose registers  0 - 3\p
+                4-7    contents of general purpose registers 4 - 7\p
+                8-11  contents of general purpose registers 8 - 11\p
+              12-15  contents of general purpose registers 12 - 15.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTRCV019E"
+\0 \0 \{\set_style "MSG" INTRCV019E\}\p
+\p
+This four-line message documents the contents of the access registers at the time of program failure if the program was operating in primary address space control mode.  Refer to \{\goto "<intmsgos>INTRCV018E" INTRCV018E\}.\p
+\p
+\{\set_style "BLK_BLD" ARs\}        0-3      contents of access registers 0 - 3\p
+               4-7      contents of access registers 4 - 7\p
+               8-11   contents of access registers 8 - 11\p
+             12-15   contents of access registers 12 - 15.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTRCV020E"
+\0 \0 \{\set_style "MSG" INTRCV020E\}\p
+\p
+\{\set_style "MSG_TEXT" ITASK\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" terminating due to error\}\p
+\p
+The ITASK identified by \{\set_style "BLK_BLD_ITAL" taskname\} cannot be recovered and is about to terminate.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTRCV021E"
+\0 \0 \{\set_style "MSG" INTRCV021E\}\p
+\p
+\{\set_style "MSG_TEXT" Process\} \{\set_style "BLK_ITAL" taskname.proc-name\} \{\set_style "MSG_TEXT" terminating due to error\}\p
+\p
+The process identified by task and process name cannot be recovered and is about to terminate.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTRCV022I"
+\0 \0 \{\set_style "MSG" INTRCV022I\}\p
+\p
+\{\set_style "MSG_TEXT" Process\} \{\set_style "BLK_ITAL" taskname.proc-name\} \{\set_style "MSG_TEXT" attempting recovery\}\p
+\p
+The process identified by task and process name failed, but recovery procedures have corrected the error.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>REC"
+\0 \0 \{\set_style "bold" Recording Control (REC) Messages\}\p
+\p
+These messages indicate normal and abnormal functions of the Recording facility are issued to the workstation.  These messages comprise the administrator and Recording facility dialog.\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgos>INTREC001E" INTREC001E\}\p
+\{\subtopic "<intmsgos>INTREC002E" INTREC002E\}\p
+\{\subtopic "<intmsgos>INTREC003E" INTREC003E\}\p
+\{\subtopic "<intmsgos>INTREC004E" INTREC004E\}\p
+\{\subtopic "<intmsgos>INTREC005E" INTREC005E\}\p
+\{\subtopic "<intmsgos>INTREC006E" INTREC006E\}\p
+\{\subtopic "<intmsgos>INTREC007E" INTREC007E\}\p
+\p
+\{\subtopic "<intmsgos>INTREC101E" INTREC101E\}\p
+\{\subtopic "<intmsgos>INTREC102E" INTREC102E\}\p
+\p
+\{\subtopic "<intmsgos>INTREC104E" INTREC104E\}\p
+\{\subtopic "<intmsgos>INTREC105E" INTREC105E\}\p
+\{\subtopic "<intmsgos>INTREC106E" INTREC106E\}\p
+\p
+\{\subtopic "<intmsgos>INTREC108E" INTREC108E\}\p
+\{\subtopic "<intmsgos>INTREC109E" INTREC109E\}\p
+\p
+\{\subtopic "<intmsgos>INTREC201E" INTREC201E\}\p
+\{\subtopic "<intmsgos>INTREC202E" INTREC202E\}\p
+\{\subtopic "<intmsgos>INTREC203E" INTREC203E\}\p
+\{\subtopic "<intmsgos>INTREC204E" INTREC204E\}\p
+\{\subtopic "<intmsgos>INTREC205E" INTREC205E\}\p
+\{\subtopic "<intmsgos>INTREC206E" INTREC206E\}\p
+\{\subtopic "<intmsgos>INTREC207E" INTREC207E\}\p
+\{\subtopic "<intmsgos>INTREC208E" INTREC208E\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC001E"
+\0 \0 \{\set_style "MSG" INTREC001E\}\p
+\p
+\{\set_style "MSG_TEXT" Unanticipated request error  RC:\} \{\set_style "BLK_ITAL" retcode\}  \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\}  \{\set_style "MSG_TEXT" INFO:\} \{\set_style "BLK_ITAL" infocode\}\p
+\p
+This message is issued when a recording start or stop request terminates with an unknown or unanticipated completion status.\p
+\p
+Retain the \{\set_style "BLK_BLD_ITAL" retcode\}, \{\set_style "BLK_BLD_ITAL" rsncode\}, and \{\set_style "BLK_BLD_ITAL" infocode\} information and contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC002E"
+\0 \0 \{\set_style "MSG" INTREC002E\}\p
+\p
+\{\set_style "MSG_TEXT" Session has terminated unexpectedly\}\p
+\p
+A recording start or stop request was issued but the emulator session with the host application has been severed.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC003E"
+\0 \0 \{\set_style "MSG" INTREC003E\}\p
+\p
+\{\set_style "MSG_TEXT" Recording with that name already exists\}\p
+\p
+The Workbench user attempted to start a recording, but specified a recording name identical to that of one already defined in the project.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC004E"
+\0 \0 \{\set_style "MSG" INTREC004E\}\p
+\p
+\{\set_style "MSG_TEXT" Recording is already active\}\p
+\p
+The Workbench user attempted to start a recording, but a recording is already active on that emulator session.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC005E"
+\0 \0 \{\set_style "MSG" INTREC005E\}\p
+\p
+\{\set_style "MSG_TEXT" Recording was empty and was discarded\}\p
+\p
+The Workbench user started a recording and then stopped it before any meaningful exchanges were made between the emulator and the host application.  The recording is not saved and the recording name can be reused.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC006E"
+\0 \0 \{\set_style "MSG" INTREC006E\}\p
+\p
+\{\set_style "MSG_TEXT" Recording is not active\}\p
+\p
+The Workbench user attempted to stop a recording but no recording is active on that emulator session.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC007E"
+\0 \0 \{\set_style "MSG" INTREC007E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid recording name\}\p
+\p
+The Workbench user attempted to enter a recording name that is invalid.  The recording name must be unique and can be up to 16 alphanumeric characters, including the following special characters: underscores, @, #, and $. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC101E"
+\0 \0 \{\set_style "MSG" INTREC101E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to define navigation circuit \p
+Screen compare failed, unable to allocate storage\}\p
+\p
+The Workbench user invoked the Circuite Definition tool, supplying two candidate matching screen images.  However, the image compare service could not acquire enough working storage on the host system to complete the request.  The request is refused.  Notify PLATINUM Technical Support if the problem persists.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC102E"
+\0 \0 \{\set_style "MSG" INTREC102E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to define navigation circuit\p
+Required regions not present in candidate screen\p
+\}\p
+The Workbench user invoked the Circuite Definition tool, supplying two candidate matching screen images.  However, one of the images contains one or more Required regions that cannot be drawn on the other candidate.  The request is refused.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC104E"
+\0 \0 \{\set_style "MSG" INTREC104E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to define navigation circuit\p
+One of the screens compared specified line mode\p
+\}\p
+The Workbench user invoked the Circuit Definition tool, supplying two candidate matching screen images.  However, one of the candidate images has the Line Mode attribute and the other does not.  The request is refused.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC105E"
+\0 \0 \{\set_style "MSG" INTREC105E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to define navigation circuit\p
+Protected fields on screen are not equal\}\p
+\p
+The Workbench user invoked the Circuit Definition tool, supplying two candidate matching screen images.  In lieu of the presence of Identification regions, the image compare service compared the protected (non-modifiable) fields on each image and found an inequality.  The request is refused.  Consider using Identification regions to expedite the recognition of similar images.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC106E"
+\0 \0 \{\set_style "MSG" INTREC106E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to define navigation circuit\}\p
+\{\set_style "MSG_TEXT" Screen presentation sizes are different\}\p
+\p
+The Workbench user invoked the Circuit Definition tool, supplying two candidate matching screen images.  However, the image sizes of the two candidates differ.  The request is refused.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC108E"
+\0 \0 \{\set_style "MSG" INTREC108E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to define navigation circuit\}\p
+\{\set_style "MSG_TEXT" Screen compare failed, invalid image format\}\p
+\p
+The Workbench user invoked the Circuit Definition tool, supplying two candidate matching screen images.  However, the image compare service rejected one of the candidate images.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC109E"
+\0 \0 \{\set_style "MSG" INTREC109E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to define navigation circuit\p
+Cannot merge regions from two screens\}\p
+\p
+The Workbench user invoked the Circuit Definition tool, supplying two candidate matching screen images.  However, both candidates have region definitions associated with them.  Only one of the candidate images can have region associations.  The request is refused.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC201E"
+\0 \0 \{\set_style "MSG" INTREC201E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to define navigation circuit\p
+Recordings are of different applications\}\p
+\p
+The Workbench user invoked the Circuit Definition tool, supplying two candidate matching screen images taken from two different recordings.  However, the applications that produced the two images differ.  Duplicate states are recognized only within the context of a single application and single logmode.  The request is refused.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC202E"
+\0 \0 \{\set_style "MSG" INTREC202E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to define navigation circuit\p
+Recordings specify different logmodes\} \p
+\p
+The Workbench user invoked the Circuit Definition tool, supplying two candidate matching screen images taken from two different recordings.  However, the recordings were made using different 3270 logmodes.  Duplicate states are recognized only within the context of a single application and single logmode.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC203E"
+\0 \0 \{\set_style "MSG" INTREC203E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to define navigation circuit\p
+Region network construction failed\}\p
+\p
+The Workbench user invoked the Circuit Definition tool.  However, the image compare service could not acquire the region definitions defined against one of the candidate images.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC204E"
+\0 \0 \{\set_style "MSG" INTREC204E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to define navigation circuit\p
+Error occurred retrieving screen image\}\p
+\p
+The Workbench user invoked the Circuit Definition tool.  However, the image compare service could not acquire a screen image in preparation for the compare operation.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC205E"
+\0 \0 \{\set_style "MSG" INTREC205E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to define navigation circuit\p
+Error occurred constructing image structure\}\p
+\p
+The Workbench user invoked the Circuit Definition tool.  However, the image compare service could not coerce one of the candidate images into its pre-compare format.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC206E"
+\0 \0 \{\set_style "MSG" INTREC206E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to define navigation circuit\p
+Error occurred retrieving navigation entry\}\p
+\p
+The Workbench user invoked the Circuit Definition tool. However, the image compare service encountered an error while scanning the SYSNAVIGATION catalog table for eligible candidate images.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC207E"
+\0 \0 \{\set_style "MSG" INTREC207E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to define navigation circuit\p
+Error occurred retrieving recording entry\}\p
+\p
+The Workbench user invoked the Circuit Definition tool.  However, the image compare service encountered an error while scanning the SYSRECORDING catalog table for eligible candidate images.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTREC208E"
+\0 \0 \{\set_style "MSG" INTREC208E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to define navigation circuit\p
+From-screen and To-screen would have the same name\}\p
+\p
+The Workbench user invoked the Circuit Definition tool, supplying two candidate matching screen images.  However, if the duplication were accepted, two adjacent states would have the same name in some recording.  The request is refused.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>SAF"
+\0 \0 \{\set_style "bold" Security Authorization Facility (SAF) Messages\}\p
+\p
+These messages report diagnostic information and document abnormal processing related to security issues.\p
+\p
+The following system messages are available:\p
+\p
+\{\subtopic "<intmsgos>INTSAF001I" INTSAF001I\}\p
+\{\subtopic "<intmsgos>INTSAF002I" INTSAF002I\}\p
+\{\subtopic "<intmsgos>INTSAF003I" INTSAF003I\}\p
+\p
+\{\subtopic "<intmsgos>INTSAF008W" INTSAF008W\}\p
+\p
+\{\subtopic "<intmsgos>INTSAF020E" INTSAF020E\}\p
+\p
+\{\subtopic "<intmsgos>INTSAF099W" INTSAF099W\}\p
+\p
+\{\subtopic "<intmsgos>INTSAF208I" INTSAF208I\}\p
+\p
+\{\subtopic "<intmsgos>INTSAF212I" INTSAF212I\}\p
+\p
+\{\subtopic "<intmsgos>INTSAF216I" INTSAF216I\}\p
+\p
+\{\subtopic "<intmsgos>INTSAF228I" INTSAF228I\}\p
+\p
+\{\subtopic "<intmsgos>INTSAF248I" INTSAF248I\}\p
+\{\subtopic "<intmsgos>INTSAF249I" INTSAF249I\}\p
+\{\subtopic "<intmsgos>INTSAF250I" INTSAF250I\}\p
+\p
+\{\subtopic "<intmsgos>INTSAF252I" INTSAF252I\}\p
+\p
+\{\subtopic "<intmsgos>INTSAF900I" INTSAF900I\}\p
+\{\subtopic "<intmsgos>INTSAF901I" INTSAF901I\}\p
+\{\subtopic "<intmsgos>INTSAF902E" INTSAF902E\}\p
+\{\subtopic "<intmsgos>INTSAF903E" INTSAF903E\}\p
+\{\subtopic "<intmsgos>INTSAF904I" INTSAF904I\}\p
+\p
+\{\subtopic "<intmsgos>INTSAF998I" INTSAF998I\}\p
+\{\subtopic "<intmsgos>INTSAF999I" INTSAF999I\}
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF001I"
+\0 \0 \{\set_style "MSG" INTSAF001I\}\p
+\p
+\{\set_style "MSG_TEXT" User(\}\{\set_style "BLK_ITAL" user\}\{\set_style "MSG_TEXT" )\}\{\set_style "MSG_TEXT"  Group(\}\{\set_style "BLK_ITAL" group\}\{\set_style "MSG_TEXT" ) Name(\}\{\set_style "BLK_ITAL" name\}\{\set_style "MSG_TEXT" ) logon at time\p
+\}\p
+This message is issued when a Workbench or run-time \{\set_style "BLK_BLD_ITAL" user\} is successfully logged on to InfoSession.  If the external security interface in not active, \{\set_style "BLK_BLD_ITAL" group\} and \{\set_style "BLK_BLD_ITAL" name\} are not available to InfoSession and will be left blank.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF002I"
+\0 \0 \{\set_style "MSG" INTSAF002I\}\p
+\p
+\{\set_style "MSG_TEXT" User(\}\{\set_style "BLK_ITAL" user\}\{\set_style "MSG_TEXT" ) Group(\}\{\set_style "BLK_ITAL" group\}\{\set_style "MSG_TEXT" )\}\{\set_style "MSG_TEXT"  Name(\}\{\set_style "BLK_ITAL" name\}\{\set_style "MSG_TEXT" ) logoff at time\p
+\}\p
+This message is issued when a Workbench or run-time \{\set_style "BLK_BLD_ITAL" user\} is logged off or disconnected from InfoSession.  If external security is not active, \{\set_style "BLK_BLD_ITAL" group\} and \{\set_style "BLK_BLD_ITAL" name\} are not available to InfoSession and will be left blank.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF003I"
+\0 \0 \{\set_style "MSG" INTSAF003I\}\p
+\p
+\{\set_style "MSG_TEXT" User\} \{\set_style "BLK_ITAL" userid\} \{\set_style "MSG_TEXT" already logged on at\} \{\set_style "BLK_ITAL" luname\}\p
+\p
+This message is issued if a user attempts to logon from the InfoSession Workbench or a run-time application when the user is already logged at another workstation.  This message is only issued if the InfoSession was started with the Nomultilgn startup parameter.  If Multilgn was specified, or assumed by default, then multiple user access attempts are permitted.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF008W"
+\0 \0 \{\set_style "MSG" INTSAF008W\}\p
+\p
+\{\set_style "MSG_TEXT" Access to resource\} \{\set_style "BLK_ITAL" resource class\}\{\set_style "MSG_TEXT"  failed; security environment not available\p
+\}\p
+An access attempt has been made to an InfoSession resource but a user has not successfully logged on to the Workbench or run-time component. Access to the specified resource is denied.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF020E"
+\0 \0 \{\set_style "MSG" INTSAF020E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid request specified\}\p
+\p
+An internal processing error has occurred in the external security interface routine.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF099W"
+\0 \0 \{\set_style "MSG" INTSAF099W\}\p
+\p
+\{\set_style "MSG_TEXT" SAF Request=\} \{\set_style "BLK_ITAL" request\}  \{\set_style "MSG_TEXT" failed, SAFRC(\}\{\set_style "BLK_ITAL" retcode\}\{\set_style "MSG_TEXT" ) RACFRC(\}\{\set_style "BLK_ITAL" retcode\}\{\set_style "MSG_TEXT" ) RACFRSN(\}\{\set_style "BLK_ITAL" rsncode\}\{\set_style "MSG_TEXT" )\p
+\}\p
+An external security system request was made using the MVS RACROUTE service macro.  The security request was failed by the external security system for the specified return and reason codes.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF208I"
+\0 \0 \{\set_style "MSG" INTSAF208I\}\p
+\p
+\{\set_style "MSG_TEXT" User (\}\{\set_style "BLK_ITAL" user\}\{\set_style "MSG_TEXT" ) Group (\}\{\set_style "BLK_ITAL" group\}\{\set_style "MSG_TEXT" ) Name (\}\{\set_style "BLK_ITAL" name\}\{\set_style "MSG_TEXT" ) Invalid password\p
+\}\p
+The password entered is not valid.  Retry using a valid password.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF212I"
+\0 \0 \{\set_style "MSG" INTSAF212I\}\p
+\p
+\{\set_style "MSG_TEXT" User (\}\{\set_style "BLK_ITAL" user\}\{\set_style "MSG_TEXT" )\{\set_style "MSG_TEXT"  Group (\}\}\{\set_style "BLK_ITAL" group\}\{\set_style "MSG_TEXT" ) Name (\}\{\set_style "BLK_ITAL" name\}\{\set_style "MSG_TEXT" )  Password has expired\p
+\}\p
+The password entered has expired.  Specify a new password.\p
+\p
+\{\set_style "MSG_TEXT" Class \} AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF216I"
+\0 \0 \{\set_style "MSG" INTSAF216I\}\p
+\p
+\{\set_style "MSG_TEXT" User (\}\{\set_style "BLK_ITAL" user\}\{\set_style "MSG_TEXT" ) Group (\}\{\set_style "BLK_ITAL" group\}\{\set_style "MSG_TEXT" ) Name (\}\{\set_style "BLK_ITAL" name\}\{\set_style "MSG_TEXT" )  New Password is invalid\}\p
+\p
+The new password specified is not acceptable to the security system.  Retry using another new password.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF228I"
+\0 \0 \{\set_style "MSG" INTSAF228I\}\p
+\p
+\{\set_style "MSG_TEXT" User (\}\{\set_style "BLK_ITAL" user\}\{\set_style "MSG_TEXT" ) Group (\}\{\set_style "BLK_ITAL" group\}\{\set_style "MSG_TEXT" ) Name (\}\{\set_style "BLK_ITAL" name\}\{\set_style "MSG_TEXT" )  User's access has been revoked\p
+\}\p
+The user attempting to log on to InfoSession no longer has authority.  Contact your Security Administrator.\p
+\p
+\{\set_style "MSG_TEXT" Class \} AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF248I"
+\0 \0 \{\set_style "MSG" INTSAF248I\}\p
+\p
+\{\set_style "MSG_TEXT" User (\}\{\set_style "BLK_ITAL" user\}\{\set_style "MSG_TEXT" )\{\set_style "MSG_TEXT"  Group (\}\}\{\set_style "BLK_ITAL" group\}\{\set_style "MSG_TEXT" ) Name (\}\{\set_style "BLK_ITAL" name\}\{\set_style "MSG_TEXT" )  Access not authorized from terminal\p
+\}\p
+Access to InfoSession from the current terminal is not allowed.  Retry from another terminal.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF249I"
+\0 \0 \{\set_style "MSG" INTSAF249I\}\p
+\p
+\{\set_style "MSG_TEXT" User (\}\{\set_style "MSG_TEXT" \{\set_style "BLK_ITAL" user\}) Group (\}\{\set_style "BLK_ITAL" group\}\{\set_style "MSG_TEXT" ) Name (\}\{\set_style "BLK_ITAL" name\}\{\set_style "MSG_TEXT" )  Access not authorized for day or time of day\}\p
+\p
+Access to InfoSession on this day or at this time is not allowed.  Retry on a valid day or time of day.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF250I"
+\0 \0 \{\set_style "MSG" INTSAF250I\}\p
+\p
+\{\set_style "MSG_TEXT" User (\}\{\set_style "BLK_ITAL" user\}\{\set_style "MSG_TEXT" ) Group (\}\{\set_style "BLK_ITAL" group\}\{\set_style "MSG_TEXT" ) Name (\}\{\set_style "BLK_ITAL" name\}\{\set_style "MSG_TEXT" )  Access not authorized from terminal for day or time\p
+\}\p
+Access to InfoSession from this terminal on this day or time of day is not allowed.  Retry from another terminal, or at a different day or time.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF252I"
+\0 \0 \{\set_style "MSG" INTSAF252I\}\p
+\p
+\{\set_style "MSG_TEXT" User (\}\{\set_style "BLK_ITAL" user\}\{\set_style "MSG_TEXT" ) Group (\}\{\set_style "BLK_ITAL" group\}\{\set_style "MSG_TEXT" ) Name (\}\{\set_style "BLK_ITAL" name\}\{\set_style "MSG_TEXT" )  Access to application is not authorized\p
+\}\p
+The user does not have authority to access the selected application.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF900I"
+\0 \0 \{\set_style "MSG" INTSAF900I\}\p
+\p
+\{\set_style "MSG_TEXT" External security is active\p
+\}\p
+This message is issued during InfoSession initialization to indicate that external Security is active, subject to the control of other security configuration parameters.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF901I"
+\0 \0 \{\set_style "MSG" INTSAF901I\}\p
+\p
+\{\set_style "MSG_TEXT" External security is not active\}\p
+\p
+This message is issued during InfoSession initialization to indicate that external Security is not active.  Note that Security cannot be activated without APF authorization.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  AccessVio                          
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF902E"
+\0 \0 \{\set_style "MSG" INTSAF902E\}\p
+\p
+\{\set_style "MSG_TEXT" APF authorization required for external security\}\p
+\p
+This message is issued during InfoSession initialization to indicate that external Security is not active, because the InfoSession address space is not APF authorized.  Consult the \{\set_style "italic" InfoSession MVS Installation and Configuration Guide\} for a detailed discussion of requirements.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF903E"
+\0 \0 \{\set_style "MSG" INTSAF903E\}\p
+\p
+\{\set_style "MSG_TEXT" External security requested; SAF is not active\}\p
+\p
+This message is issued during InfoSession initialization to indicate that external Security is inactive because the MVS component responsible for security request routing (SAF) is not active.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF904I"
+\0 \0 \{\set_style "MSG" INTSAF904I\}\p
+\p
+\{\set_style "MSG_TEXT" Resource:\} \{\set_style "BLK_ITAL" internal name\} \{\set_style "MSG_TEXT" Class:\} \{\set_style "BLK_ITAL" resource class\}  \{\set_style "MSG_TEXT" Status:\} \{\set_style "BLK_ITAL" status\}\p
+\p
+This message is issued during InfoSession initialization for each of the InfoSession resource classes to document the disposition of the security class.  A request is made to the external security product to determine if the resource class is active or inactive.  If the disposition of a resource class is altered via the external security product, a restart of InfoSession is required to activate the resource class.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF998I"
+\0 \0 \{\set_style "MSG" INTSAF998I\}\p
+\p
+\{\set_style "BLK_ITAL" External Security Project Message Text\} \p
+\p
+This message contains the text of a message originating from your external security product.  It indicates that access to some resource has been denied.  Notify your security officer.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  AccessVio    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSAF999I"
+\0 \0 \{\set_style "MSG" INTSAF999I\}\p
+\p
+\{\set_style "BLK_ITAL" External Security Project Message Text\p
+\}\p
+This message contains the text of a message originating from your external security product.  This is an informational message only.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>SKS"
+\0 \0 \{\set_style "code" Run-time (SKS) Messages\p
+\}\p
+These messages report diagnostic information and document abnormal processing related to run-time issues.\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgos>INTSKS001E" INTSKS001E\}\p
+\{\subtopic "<intmsgos>INTSKS002E" INTSKS002E\}\p
+\{\subtopic "<intmsgos>INTSKS003E" INTSKS003E\}\p
+\{\subtopic "<intmsgos>INTSKS004E" INTSKS004E\}\p
+\{\subtopic "<intmsgos>INTSKS005E" INTSKS005E\}\p
+\{\subtopic "<intmsgos>INTSKS006E" INTSKS006E\}\p
+\{\subtopic "<intmsgos>INTSKS007E" INTSKS007E\}\p
+\{\subtopic "<intmsgos>INTSKS008E" INTSKS008E\}\p
+\{\subtopic "<intmsgos>INTSKS009E" INTSKS009E\}\p
+\{\subtopic "<intmsgos>INTSKS010E" INTSKS010E\}\p
+\{\subtopic "<intmsgos>INTSKS011E" INTSKS011E\}\p
+\{\subtopic "<intmsgos>INTSKS012E" INTSKS012E\}\p
+\{\subtopic "<intmsgos>INTSKS013E" INTSKS013E\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSKS001E"
+\0 \0 \{\set_style "MSG" INTSKS001E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid cursor location encountered in SetCursor SKS statement\}\p
+\p
+The cursor location specified in an SKS set cursor location statement was invalid for the current screen image.  The relative screen address was outside the bounds of the screen geometry.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSKS002E"
+\0 \0 \{\set_style "MSG" INTSKS002E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to insert text or erase to end of field from current cursor position\}\p
+\p
+The run-time keystroke routine was unable to perform an Erase-EOF or insert text from the current cursor position.  Check variable definitions to determine if positional or context locators are positioning cursor on an attribute byte or in a protected field.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSKS003E"
+\0 \0 \{\set_style "MSG" INTSKS003E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to complete text insertion\p
+Protected field or attribute encountered\}\p
+\p
+The run-time keystroke routine was unable to complete text insertion for a literal definition or recorded text input.  Check variable definitions to determine if positional or context locators are positioning cursor on an attribute byte or in a protected field.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSKS004E"
+\0 \0 \{\set_style "MSG" INTSKS004E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to extract \{\set_style "BLK_ITAL" regionname\} region rectangle from session image buffer\}\p
+\p
+An input variable was defined on the current screen inside a region which was unsuccessfully copied from the session image buffer.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSKS005E"
+\0 \0 \{\set_style "MSG" INTSKS005E\}\p
+\p
+\{\set_style "MSG_TEXT" Region\} \{\set_style "BLK_ITAL" region\} \{\set_style "MSG_TEXT" not found in session image buffer\p
+\}\p
+An input variable was defined on the current screen inside a region which was not drawn on the session image buffer.  Validate region and variable definitions for the current screen.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSKS006E"
+\0 \0 \{\set_style "MSG" INTSKS006E\}\p
+\p
+\{\set_style "MSG_TEXT" Region not available for variable/literal\p
+\}\p
+An input variable was defined on the current screen inside a region which was not drawn on the session image buffer.  Validate region and variable definitions for the current screen.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSKS007E"
+\0 \0 \{\set_style "MSG" INTSKS007E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to locate variable/literal \{\set_style "BLK_ITAL" varname\} in session image buffer\}\p
+\p
+The input variable specified by \{\set_style "BLK_BLD_ITAL" varname\} could not be located in the current session image buffer.  Check variable definition to ensure locator method is valid for input variable.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSKS008E"
+\0 \0 \{\set_style "MSG" INTSKS008E\}\p
+\p
+\{\set_style "MSG_TEXT" Required variable \{\set_style "BLK_ITAL" varname\} is not available\p
+\}\p
+The input variable specified by \{\set_style "BLK_BLD_ITAL" varname\} is a required variable and is not available in the variable pool.  Variables are initialized in the variable pool based upon their default values in the variable record or VDB column definition.  If a variable is associated with a column of a VDB table which has an associated WHERE clause or SET clause value on the SQL statement being processed, then that value replaces any default value in the variable pool.  In addition to the initial setting of the variable in the variable pool, if a variable containing the same name on another screen is specified as output, the value variable on the output screen is scraped and placed in the variable pool.  Determine if the variable has the appropriate default settings in the variable or column definition, or if a value was omitted on the SQL statement.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSKS009E"
+\0 \0 \{\set_style "MSG" INTSKS009E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to complete text insertion for variable\p
+Protected field or attribute encountered.\}\p
+\p
+The run-time keystroke routine was unable to complete text insertion for a variable definition.  Check variable definitions to determine if positional or context locators are positioning cursor on an attribute byte or in a protected field.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSKS010E"
+\0 \0 \{\set_style "MSG" INTSKS010E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid SKS statement detected in script\p
+\}\p
+An internal error occurred processing an unknown SKS statement type. Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSKS011E"
+\0 \0 \{\set_style "MSG" INTSKS011E\}\p
+\p
+\{\set_style "MSG_TEXT" Text insertion terminated at Row:\} \{\set_style "BLK_ITAL" row\} \{\set_style "MSG_TEXT" Col:\} \{\set_style "BLK_ITAL" column\p
+\}\p
+This message indicates the \{\set_style "BLK_BLD_ITAL" row\} and \{\set_style "BLK_BLD_ITAL" column\} where text insertion halted when a protected field or attribute byte was encountered.  This message is issued along with message \{\goto "<intmsgos>INTSKS003E" INTSKS003E\} or \{\goto "<intmsgos>INTSKS009E" INTSKS009E\} indicating the text insertion failure.  Check variable definitions to determine if positional or context locators are positioning cursor on an attribute byte or in a protected field.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Requests    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSKS012E"
+\0 \0 \{\set_style "MSG" INTSKS012E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to complete text insertion for variable\} \{\set_style "BLK_ITAL" varname\} \{\set_style "MSG_TEXT" text is longer than variable length defined and truncation occurred\}\p
+\p
+The input variable text for the variable is longer than the length specified in the variable's definition.  \{\set_style "BLK_BLD_ITAL" varname\} is the variable for which a truncated value was supplied.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Navigation    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSKS013E"
+\0 \0 \{\set_style "MSG" INTSKS013E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to complete text insertion for literal, text is longer than variable length defined and truncation occurred\}\p
+\p
+The literal value supplied during the application recording is larger than the length allowed by the variable's definition.  In the Variable Definition window, change the length of the variable to allow for the number of characters in the literal.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Navigation                                                
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>SQL"
+\0 \0 \{\set_style "code" SQL (SQL) Messages\}\p
+\p
+These messages indicate normal and abnormal functions when issuing SQL statements from the Workbench or run-time components.\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgos>INTSQL000I" INTSQL000I\}\p
+\{\subtopic "<intmsgos>INTSQL001I" INTSQL001I\}\p
+\{\subtopic "<intmsgos>INTSQL002I" INTSQL002I\}\p
+\{\subtopic "<intmsgos>INTSQL003I" INTSQL003I\}\p
+\{\subtopic "<intmsgos>INTSQL004I" INTSQL004I\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL010E" INTSQL010E\}\p
+\{\subtopic "<intmsgos>INTSQL011E" INTSQL011E\}\p
+\{\subtopic "<intmsgos>INTSQL012E" INTSQL012E\}\p
+\{\subtopic "<intmsgos>INTSQL013E" INTSQL013E\}\p
+\{\subtopic "<intmsgos>INTSQL014E" INTSQL014E\}\p
+\{\subtopic "<intmsgos>INTSQL015E" INTSQL015E\}\p
+\{\subtopic "<intmsgos>INTSQL016E" INTSQL016E\}\p
+\{\subtopic "<intmsgos>INTSQL017E" INTSQL017E\}\p
+\{\subtopic "<intmsgos>INTSQL018E" INTSQL018E\}\p
+\{\subtopic "<intmsgos>INTSQL019E" INTSQL019E\}\p
+\{\subtopic "<intmsgos>INTSQL020I" INTSQL020I\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL025E" INTSQL025E\}\p
+\{\subtopic "<intmsgos>INTSQL026E" INTSQL026E\}\p
+\{\subtopic "<intmsgos>INTSQL027E" INTSQL027E\}\p
+\{\subtopic "<intmsgos>INTSQL028E" INTSQL028E\}\p
+\{\subtopic "<intmsgos>INTSQL029E" INTSQL029E\}\p
+\{\subtopic "<intmsgos>INTSQL030E" INTSQL030E\}\p
+\{\subtopic "<intmsgos>INTSQL031E" INTSQL031E\}\p
+\{\subtopic "<intmsgos>INTSQL032E" INTSQL032E\}\p
+\{\subtopic "<intmsgos>INTSQL033E" INTSQL033E\}\p
+\{\subtopic "<intmsgos>INTSQL034E" INTSQL034E\}\p
+\{\subtopic "<intmsgos>INTSQL035E" INTSQL035E\}\p
+\{\subtopic "<intmsgos>INTSQL036E" INTSQL036E\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL040E" INTSQL040E\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL050E" INTSQL050E\}\p
+\{\subtopic "<intmsgos>INTSQL051E" INTSQL051E\}\p
+\{\subtopic "<intmsgos>INTSQL052E" INTSQL052E\}\p
+\{\subtopic "<intmsgos>INTSQL053E" INTSQL053E\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL060E" INTSQL060E\}\p
+\{\subtopic "<intmsgos>INTSQL061E" INTSQL061E\}\p
+\{\subtopic "<intmsgos>INTSQL062E" INTSQL062E\}\p
+\{\subtopic "<intmsgos>INTSQL063E" INTSQL063E\}\p
+\{\subtopic "<intmsgos>INTSQL064E" INTSQL064E\}\p
+\{\subtopic "<intmsgos>INTSQL065E" INTSQL065E\}\p
+\{\subtopic "<intmsgos>INTSQL066E" INTSQL066E\}\p
+\{\subtopic "<intmsgos>INTSQL067E" INTSQL067E\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL069E" INTSQL069E\}\p
+\{\subtopic "<intmsgos>INTSQL070E" INTSQL070E\}\p
+\{\subtopic "<intmsgos>INTSQL071E" INTSQL071E\}\p
+\{\subtopic "<intmsgos>INTSQL072E" INTSQL072E\}\p
+\{\subtopic "<intmsgos>INTSQL073E" INTSQL073E\}\p
+\{\subtopic "<intmsgos>INTSQL074E" INTSQL074E\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL080E" INTSQL080E\}\p
+\{\subtopic "<intmsgos>INTSQL081E" INTSQL081E\}\p
+\{\subtopic "<intmsgos>INTSQL082E" INTSQL082E\}\p
+\{\subtopic "<intmsgos>INTSQL083E" INTSQL083E\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL121E" INTSQL121E\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL124E" INTSQL124E\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL140E" INTSQL140E\}\p
+\{\subtopic "<intmsgos>INTSQL141E" INTSQL141E\}\p
+\{\subtopic "<intmsgos>INTSQL142E" INTSQL142E\}\p
+\{\subtopic "<intmsgos>INTSQL143I" INTSQL143I\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL150I" INTSQL150I\}\p
+\{\subtopic "<intmsgos>INTSQL151E" INTSQL151E\}\p
+\{\subtopic "<intmsgos>INTSQL152E" INTSQL152E\}\p
+\{\subtopic "<intmsgos>INTSQL153E" INTSQL153E\}\p
+\{\subtopic "<intmsgos>INTSQL154E" INTSQL154E\}\p
+\{\subtopic "<intmsgos>INTSQL155E" INTSQL155E\}\p
+\{\subtopic "<intmsgos>INTSQL156E" INTSQL156E\}\p
+\{\subtopic "<intmsgos>INTSQL157E" INTSQL157E\}\p
+\{\subtopic "<intmsgos>INTSQL158E" INTSQL158E\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL170E" INTSQL170E\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL175E" INTSQL175E\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL177E" INTSQL177E\}\p
+\{\subtopic "<intmsgos>INTSQL178E" INTSQL178E\}\p
+\{\subtopic "<intmsgos>INTSQL179E" INTSQL179E\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL272E" INTSQL272E\}\p
+\{\subtopic "<intmsgos>INTSQL273E" INTSQL273E\}\p
+\{\subtopic "<intmsgos>INTSQL274E" INTSQL274E\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL400I" INTSQL400I\}\p
+\{\subtopic "<intmsgos>INTSQL401I" INTSQL401I\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL490E" INTSQL490E\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL494E" INTSQL494E\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL901E" INTSQL901E\}\p
+\{\subtopic "<intmsgos>INTSQL902E" INTSQL902E\}\p
+\{\subtopic "<intmsgos>INTSQL903E" INTSQL903E\}\p
+\p
+\{\subtopic "<intmsgos>INTSQL953I" INTSQL953I\}\p
+\{\subtopic "<intmsgos>INTSQL954I" INTSQL954I\}\p
+\{\subtopic "<intmsgos>INTSQL955I" INTSQL955I\}\p
+\{\subtopic "<intmsgos>INTSQL956I" INTSQL956I\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL000I"
+\0 \0 \{\set_style "MSG" INTSQL000I\}\p
+\p
+\{\set_style "MSG_TEXT" Result set is empty; no data satisfies this request\}\p
+\p
+A SQL SELECT statement was issued against a catalog or VDB table, but the result set is empty.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL001I"
+\0 \0 \{\set_style "MSG" INTSQL001I\}\p
+\p
+\{\set_style "MSG_TEXT" Request completed\}\p
+\p
+A dynamic SQL request completed without error.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL002I"
+\0 \0 \{\set_style "MSG" INTSQL002I\}\p
+\p
+\{\set_style "MSG_TEXT" SQL\} \{\set_style "BLK_ITAL" source\} \{\set_style "MSG_TEXT" request received from\} \{\set_style "BLK_ITAL" userid\} -\{\set_style "MSG_TEXT"  {\}\{\set_style "BLK_ITAL" W\}|\{\set_style "BLK_ITAL" R\}\{\set_style "MSG_TEXT" }\} \{\set_style "BLK_ITAL" sqlsmt\}\p
+\p
+When message class (\{\set_style "BLK_BLD_ITAL" R\}) is active, this message is issued upon receipt of a SQL statement.\p
+\p
+\{\set_style "BLK_BLD_ITAL" source\}  The environment from which the SQL statement was issued.  One of the following environment sources will be supplied:  View Plan, SQLPrepare, SQLExecute, or SQLExecDirect.\p
+\p
+\{\set_style "BLK_BLD_ITAL" userid\}  Identifies the user.\p
+\p
+\{\set_style "BLK_BLD_ITAL" W\} or \{\set_style "BLK_BLD_ITAL" R\}  Indicates that the source is either a Workbench or run-time user.\p
+\p
+\{\set_style "BLK_BLD_ITAL" sqlsmt\}  The SQL statement text.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation or Request                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL003I"
+\0 \0 \{\set_style "MSG" INTSQL003I\}\p
+\p
+\{\set_style "MSG_TEXT" Execution-ready predicate ITREE follows:\}\p
+\p
+This message is issued for each SQL statement received that contains a search argument when the SQLTrace startup option is in affect and message class (R) is active.  The message indicates that a display of the execution-ready search argument predicate tree follows in a series of \{\goto "<intmsgos>INTSQL004I" INTSQL004I\} messages.  This message series is intended for  diagnostic use only and is inactive by default.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL004I"
+\0 \0 \{\set_style "MSG" INTSQL004I\}\p
+\p
+This message is issued for each node in the execution-ready search argument predicate tree generated by the SQL statement semantic analysis.  Indentation is used to convey order of precedence.  Refer also to \{\goto "<intmsgos>INTSQL003I" INTSQL003I\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL010E"
+\0 \0 \{\set_style "MSG" INTSQL010E\}\p
+\p
+\{\set_style "MSG_TEXT" Query failed due to storage depletion\}\p
+\p
+The query could not be executed because the SQL processor could not acquire sufficient mainframe memory.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL011E"
+\0 \0 \{\set_style "MSG" INTSQL011E\}\p
+\p
+\{\set_style "MSG_TEXT" Table services failure\}\p
+\p
+An internal table services component failure occurred while attempting to process the request.  Subsequent messages will describe the nature of the failure.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL012E"
+\0 \0 \{\set_style "MSG" INTSQL012E\}\p
+\p
+\{\set_style "MSG_TEXT" Query type not implemented\}\p
+\p
+The DML statement provided has not been implemented.  Note that all DDL occurs interactively on the Workbench.  DDL statements are not supported in this version of the product.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL013E"
+\0 \0 \{\set_style "MSG" INTSQL013E\}\p
+\p
+\{\set_style "MSG_TEXT" Catalog updates are not permitted\}\p
+\p
+A SQL Insert, Update, or Delete statement was directed against a SYSCATLG or project catalog table.  Catalog updates are supported only via Workbench definition, etc.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL014E"
+\0 \0 \{\set_style "MSG" INTSQL014E\}\p
+\p
+\{\set_style "MSG_TEXT" Multiple table references are not allowed\}\p
+\p
+This version of the product does not support Union or Join operations.  The result set of a Select statement must be derived from a single catalog or virtual database table.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL015E"
+\0 \0 \{\set_style "MSG" INTSQL015E\}\p
+\p
+\{\set_style "MSG_TEXT" Column is not defined\}\p
+\p
+The query included a column reference that is not defined in the given catalog or virtual database table.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL016E"
+\0 \0 \{\set_style "MSG" INTSQL016E\}\p
+\p
+\{\set_style "MSG_TEXT" Column cannot be used in this context; Predicate must take the form of an assignment\}\p
+\p
+The column name referred to in a search argument is associated with a session variable that is defined as input data.  Columns backed in this manner must appear in a search argument as an equality test (assignment).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL017E"
+\0 \0 \{\set_style "MSG" INTSQL017E\}\p
+\p
+\{\set_style "MSG_TEXT" The designated project is not available\}\p
+\p
+The project designated a SET CURRENT SQLID statement or as a table name qualifier is not defined or available to your application.  This message is followed by an explanation of the specific error encountered.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL018E"
+\0 \0 \{\set_style "MSG" INTSQL018E\}\p
+\p
+\{\set_style "MSG_TEXT" Undeclared or invalid project name\}\p
+\p
+This message is a continuation of \{\goto "<intmsgos>INTSQL017E" INTSQL017E\}.  It indicates that the named virtual database table is not defined in the current project.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL019E"
+\0 \0 \{\set_style "MSG" INTSQL019E\}\p
+\p
+\{\set_style "MSG_TEXT" Unknown catalog table name\}\p
+\p
+This message is a continuation of \{\goto "<intmsgos>INTSQL017E" INTSQL017E\}.  It indicates that an attempt was made to access a SYS table, but no catalog component table having that name is defined in your level of the product.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL020I"
+\0 \0 \{\set_style "MSG" INTSQL020I\}\p
+\p
+\{\set_style "MSG_TEXT" No navigation plan generated for catalog access\}\p
+\p
+This message is issued if an Execution Plan or Detailed Execution Plan display request is made and the table designated in the query is a catalog component table (i.e. begins with SYS).  Navigation plans are not used to access catalog tables.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL025E"
+\0 \0 \{\set_style "MSG" INTSQL025E\}\p
+\p
+\{\set_style "MSG_TEXT" SET CURRENT SQLID statements cannot be prepared\}\p
+\p
+The SQLPrepare( ) function call cannot use SET CURRENT SQLID.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL026E"
+\0 \0 \{\set_style "MSG" INTSQL026E\}\p
+\p
+\{\set_style "MSG_TEXT" Project name cannot contain quotes\}\p
+\p
+Remove quotes surrounding project name and reissue SQL statement.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL027E"
+\0 \0 \{\set_style "MSG" INTSQL027E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid project name length\}\p
+\p
+The project name referenced in a SET CURRENT SQLID = <project name> statement is null or longer than the longest string allowed for a project name.\p
+\p
+Correct the SQL statement.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL028E"
+\0 \0 \{\set_style "MSG" INTSQL028E\}\p
+\p
+\{\set_style "MSG_TEXT" Parameter is not allowed for SET CURRENT SQLID\}\p
+\p
+The run-time parameter cannot be used in SET CURRENT SQLID.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL029E"
+\0 \0 \{\set_style "MSG" INTSQL029E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid SET CURRENT SQLID statement encountered\}\p
+\p
+A run-time application issued a SET CURRENT SQLID= that is syntactically invalid.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL030E"
+\0 \0 \{\set_style "MSG" INTSQL030E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to Load Virtual Database Definition\}\p
+\p
+An error was encountered while attempting to load a virtual database table definition in response to a SQL query directed against that table.  Subsequent INTSQL03xE messages further describe the source of error.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL031E"
+\0 \0 \{\set_style "MSG" INTSQL031E\}\p
+\p
+\{\set_style "MSG_TEXT" Project not opened\}\p
+\p
+For run-time users only, a project qualifier did not appear in the target table name and no SET CURRENT SQLID = statement has yet been issued.  Virtual database table names are meaningful only in the context of a project.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL032E"
+\0 \0 \{\set_style "MSG" INTSQL032E\}\p
+\p
+\{\set_style "MSG_TEXT" VDB table not defined\}\p
+\p
+The current project does not contain a virtual database table definition for the table named in the query.  Verify the correctness of the virtual database table name and consult your InfoSession administrator.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL033E"
+\0 \0 \{\set_style "MSG" INTSQL033E\}\p
+\p
+\{\set_style "MSG_TEXT" VDB not evaluated for SQL operation\}\p
+\p
+A SQL Select, Insert, Update, or Delete statement was issued against a virtual database table that has not been evaluated for that type of request.  Refer to the discussion of the Evaluate function in the \{\set_style "italic" PLATINUM InfoSession Administrator Guide\} and consult your InfoSession administrator.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL034E"
+\0 \0 \{\set_style "MSG" INTSQL034E\}\p
+\p
+\{\set_style "MSG_TEXT" VDB table has no columns\}\p
+\p
+The virtual database table definition is incomplete.  No column or variable associations have been made for the type of SQL operation (Select, Insert, Update, Delete) attempted.  Consult your InfoSession administrator.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL035E"
+\0 \0 \{\set_style "MSG" INTSQL035E\}\p
+\p
+\{\set_style "MSG_TEXT" VDB table has no session variables\}\p
+\p
+The virtual database table definition is incomplete.  No column - session-variable relationships have been declared for the SQL operation attempted.  Consult your InfoSession administrator.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL036E"
+\0 \0 \{\set_style "MSG" INTSQL036E\}\p
+\p
+\{\set_style "MSG_TEXT" VDB variable variable missing for column\} \{\set_style "BLK_ITAL" column\}\p
+\p
+Subsequent to the construction of a VDB table definition, the named variable associated with \{\set_style "BLK_BLD_ITAL" column\} has been deleted.  The VDB definition is now incomplete and not usable.  Redefine the named variable or update the VDB definition accordingly.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL040E"
+\0 \0 \{\set_style "MSG" INTSQL040E\}\p
+\p
+\{\set_style "MSG_TEXT" SQLExecute( ) LOC or IMPORT of prepared plan failed\}\p
+\p
+An Exectute( ) request was issued from a run-time application program.  The statement handle (HSTMT) provided is associated with a SQL statement previously prepared using Prepare( ) but the associated plan could not be accessed.\p
+\p
+Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL050E"
+\0 \0 \{\set_style "MSG" INTSQL050E\}\p
+\p
+\{\set_style "MSG_TEXT" Query does not conform to restrictions\}\p
+\p
+The SQL statement, although syntactically correct, contains constructs not supported by this version of the product.  Refer to the \{\set_style "italic" PLATINUM InfoSession Programmer Guide\} for a complete description of InfoSession SQL.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL051E"
+\0 \0 \{\set_style "MSG" INTSQL051E\}\p
+\p
+\{\set_style "MSG_TEXT" Query is not processable\}\p
+\p
+The product was unable to complete semantic analysis of the syntactically correct SQL statement provided by in the request.  Refer to the \{\set_style "italic" PLATINUM InfoSession Programmer Guide\} for a complete description of InfoSession SQL.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL052E"
+\0 \0 \{\set_style "MSG" INTSQL052E\}\p
+\p
+\{\set_style "MSG_TEXT" Query depth exceeds supported maximum\}\p
+\p
+A search argument contained in the query is nested to more levels than supported by the current version of the product.  Try to reformulate the search argument into a simpler expression.  Consult the \{\set_style "italic" PLATINUM InfoSession Programmer Guide\} and your InfoSession administrator.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                     
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL053E"
+\0 \0 \{\set_style "MSG" INTSQL053E\}\p
+\p
+\{\set_style "MSG_TEXT" Unrecognized completion condition\}\p
+\p
+SQL statement processing failed with an unknown or otherwise unanticipated error.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL060E"
+\0 \0 \{\set_style "MSG" INTSQL060E\}\p
+\p
+\{\set_style "MSG_TEXT" Search argument is invalid\}\p
+\p
+This message is issued if product is unable to compile a search argument into an execution-ready predicate tree.  Subsequent INTSQL06xE message further describes the source of error. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL061E"
+\0 \0 \{\set_style "MSG" INTSQL061E\}\p
+\p
+\{\set_style "MSG_TEXT" Column name not found in table definition\}\p
+\p
+A column name appearing in the search argument could not be resolved using the table definition provided.  This message indicates the presence of a SQL processing logic error.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL062E"
+\0 \0 \{\set_style "MSG" INTSQL062E\}\p
+\p
+\{\set_style "MSG_TEXT" String size exceeds column width\}\p
+\p
+A string literal exceeds the width (count) of the column to which it is associated in a basic predicate.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL063E"
+\0 \0 \{\set_style "MSG" INTSQL063E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid numeric literal size\}\p
+\p
+A column reference appearing in a basic predicate has integer data type.  However, the value to which it is associated is not a valid numeric literal.  In this version, numeric literals must take the form of integer constants ranging in size from 1 to 10 decimal digits.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL064E"
+\0 \0 \{\set_style "MSG" INTSQL064E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid numeric literal value\}\p
+\p
+A column reference appearing in a basic predicate has integer data type.  However, the value to which it is associated is not a valid numeric literal.  In this version, numeric literals must take the form of integer constants ranging in size from 1 to 10 decimal digits.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL065E"
+\0 \0 \{\set_style "MSG" INTSQL065E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid numeric literal value - capacity exceeded\}\p
+\p
+A column reference appearing in a basic predicate has integer data type.  However, the value to which it is associated is not a valid numeric literal.  In this version, numeric literals must take the form of integer constants ranging in size from 1 to 10 decimal digits.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL066E"
+\0 \0 \{\set_style "MSG" INTSQL066E\}\p
+\p
+\{\set_style "MSG_TEXT" Insufficient storage\}\p
+\p
+The work area provided for execution-ready predicate tree generation was not sufficiently large.  Contact Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL067E"
+\0 \0 \{\set_style "MSG" INTSQL067E\}\p
+\p
+\{\set_style "MSG_TEXT" Column type is not sargable\}\p
+\p
+The column appearing in a basic predicate has a data type that is not supported in a search argument.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL069E"
+\0 \0 \{\set_style "MSG" INTSQL069E\}\p
+\p
+\{\set_style "MSG_TEXT" Signed value not valid with unsigned column\}\p
+\p
+A predicate contains an expression that improperly relates an unsigned numeric column to a negative constant.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL070E"
+\0 \0 \{\set_style "MSG" INTSQL070E\}\p
+\p
+\{\set_style "MSG_TEXT" Result set could not be opened\}\p
+\p
+The result set created by a SQL SELECT operation cannot be delivered to the requester.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL071E"
+\0 \0 \{\set_style "MSG" INTSQL071E\}\p
+\p
+\{\set_style "MSG_TEXT" Result set read failure\}\p
+\p
+The result set created by a SQL Select operation cannot be delivered to the requester.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL072E"
+\0 \0 \{\set_style "MSG" INTSQL072E\}\p
+\p
+\{\set_style "MSG_TEXT" Input variables appear in disjunctions\}\p
+\p
+Columns that are associated with input session variables appear in a disjunction (OR relationship) leaving InfoSession with an ambiguously defined data entry operation.  Refer to the \{\set_style "italic" PLATINUM InfoSession Programmer Guide\} for a discussion of SQL considerations or consult with your InfoSession administrator.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL073E"
+\0 \0 \{\set_style "MSG" INTSQL073E\}\p
+\p
+\{\set_style "MSG_TEXT" Multiple references to input variable\}\p
+\p
+A column associated with a single input session variable appears more than once in a search argument leaving InfoSession with an ambiguously defined data entry operation.  Refer to the \{\set_style "italic" PLATINUM InfoSession Programmer Guide\} for a discussion of SQL considerations or consult your InfoSession administrator.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL074E"
+\0 \0 \{\set_style "MSG" INTSQL074E\}\p
+\p
+\{\set_style "MSG_TEXT" Column references includes an invalid table name reference\}\p
+\p
+The SQL statement contains a reference to column name that is prefixed with a table name.  However, the table name reference is invalid because it is not specified as a table-name in the elsewhere in the SQL statement.  Refer to the SQL Statements chapter of the \{\set_style "italic" Programmer Guide\} for a discussion of  the InfoSession SQL grammar. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL080E"
+\0 \0 \{\set_style "MSG" INTSQL080E\}\p
+\p
+\{\set_style "MSG_TEXT" Error encountered processing a parameterized query\}\p
+\p
+A SQL statement containing parameters received from a run-time application is invalid.  These queries contain one or more parameter markers as described in the \{\set_style "italic" PLATINUM InfoSession Programmer Guide\}.  This message is followed by additional INTSQL08xE messages further describing the type of parameter error encountered.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL081E"
+\0 \0 \{\set_style "MSG" INTSQL081E\}\p
+\p
+\{\set_style "MSG_TEXT" Unsupported parameter value conversion requested\}\p
+\p
+The data type of parameter value cannot be converted to the data type of the corresponding column.  Refer to the \{\set_style "italic" PLATINUM InfoSession Programmer Guide\} for more information.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL082E"
+\0 \0 \{\set_style "MSG" INTSQL082\}\{\set_style "MSG" E\}\p
+\p
+\{\set_style "MSG_TEXT" Parameter values exceed parameter positions\}\p
+\p
+Internal parameter error.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL083E"
+\0 \0 \{\set_style "MSG" INTSQL083E\}\p
+\p
+\{\set_style "MSG_TEXT" Parameter positions exceed parameter values\}\p
+\p
+Internal parameter error.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL121E"
+\0 \0 \{\set_style "MSG" INTSQL121E\}\p
+\p
+\{\set_style "MSG_TEXT" Set clause error, column variable is output only\}\p
+\p
+A SQL Update statement assigns a NON-NULL value to a column that is associated with an output session variable preventing the product from performing the data entry operation indicated by the Set clause.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL124E"
+\0 \0 \{\set_style "MSG" INTSQL124E\}\p
+\p
+\{\set_style "MSG_TEXT" SET clause assigns multiple values to a single variable\}\p
+\p
+A SQL Update statement explicitly provides multiple values for a single column in the Set clause.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL140E"
+\0 \0 \{\set_style "MSG" INTSQL140E\}\p
+\p
+\{\set_style "MSG_TEXT" VALUES list not consistent with table format\}\p
+\p
+The number of column initializations found in a the Values clause of a SQL Update statement is larger than the number of columns defined in the table.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL141E"
+\0 \0 \{\set_style "MSG" INTSQL141E\}\p
+\p
+\{\set_style "MSG_TEXT" Column list does not agree with VALUES\}\p
+\p
+A SQL Update statement contains both an explicit column name list and a Values clause.  The number of columns named in the column list does not match the number of values contained in the Values list.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL142E"
+\0 \0 \{\set_style "MSG" INTSQL142E\}\p
+\p
+\{\set_style "MSG_TEXT" Column variable accepts NULL only\}\p
+\p
+A SQL Insert statement provides NON-NULL initialization for a column that is either not associated with a session variable, or is associated with an output-only variable.  The data entry operation implied by the statement cannot be resolved\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL143I"
+\0 \0 \{\set_style "MSG" INTSQL143I\}\p
+\p
+\{\set_style "MSG_TEXT" Column name duplicated in column list\}\p
+\p
+A SQL Insert statement contains an explicit column list.  A column is named more than once within that list.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL150I"
+\0 \0 \{\set_style "MSG" INTSQL150I\}\p
+\p
+\{\set_style "MSG_TEXT" Screen (set) or region reference error\}\p
+\p
+A SQL statement refers to a virtual database table that has an invalid screen set or region definitions associated with it.  Subsequent INTSQL15xE messages further define the error encountered.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL151E"
+\0 \0 \{\set_style "MSG" INTSQL151E\}\p
+\p
+\{\set_style "MSG_TEXT" Unanticipated return code encountered\}\p
+\p
+The region and screen set analysis component returned an unknown or unexpected completion status.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL152E"
+\0 \0 \{\set_style "MSG" INTSQL152E\}\p
+\p
+\{\set_style "MSG_TEXT" $NAVPARM control block in error\}\p
+\p
+Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL153E"
+\0 \0 \{\set_style "MSG" INTSQL153E\}\p
+\p
+\{\set_style "MSG_TEXT" Variable container region:\} \{\set_style "BLK_ITAL" regionname\} \{\set_style "MSG_TEXT" is not defined\}\p
+\p
+The virtual database table referred to by a SQL statement contains a column backed by a session variable that is incorrectly defined.  Specifically, the variable is associated with a region but the region has not been properly defined.  Detail explanation for message \{\goto "<intmsgos>INTSQL179E" INTSQL179E\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL154E"
+\0 \0 \{\set_style "MSG" INTSQL154E\}\p
+\p
+\{\set_style "MSG_TEXT" Region nesting limit exceeded\}\p
+\p
+Region nesting (that is, the definition of a region contained within a parent region) is allowed up to a maximum depth of 64 regions.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL155E"
+\0 \0 \{\set_style "MSG" INTSQL155E\}\p
+\p
+\{\set_style "MSG_TEXT" Preplan data normalization error\}\p
+\p
+Two or more session variables associated with columns in the named virtual database table reside in independent repeating regions yielding two or more sets of variables that cannot be unambiguously combined, or normalized, into a single result set.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL156E"
+\0 \0 \{\set_style "MSG" INTSQL156E\}\p
+\p
+\{\set_style "MSG_TEXT" Screen (set):\} \{\set_style "BLK_ITAL" screensetname\} \{\set_style "MSG_TEXT" region definitions in error\}\p
+\p
+An error was detected locating or validating a region definition.  Detail explanation for message \{\goto "<intmsgos>INTSQL179E" INTSQL179E\}.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL157E"
+\0 \0 \{\set_style "MSG" INTSQL157E\}\p
+\p
+\{\set_style "MSG_TEXT" Screen (set):\} \{\set_style "BLK_ITAL" screensetname\} \{\set_style "MSG_TEXT" not found\}\p
+\p
+Detail explanation for message \{\goto "<intmsgos>INTSQL179E" INTSQL179E\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL158E"
+\0 \0 \{\set_style "MSG" INTSQL158E\}\p
+\p
+\{\set_style "MSG_TEXT" Screen (set):\} \{\set_style "BLK_ITAL" screensetname\}  \{\set_style "MSG_TEXT" regions:\} \{\set_style "BLK_ITAL" regionname\} \{\set_style "MSG_TEXT" and\} \{\set_style "BLK_ITAL" regionname\} \{\set_style "MSG_TEXT" or their decendents are not hierarchically related\}\p
+\p
+Detail explanation for messages \{\goto "<intmsgos>INTSQL179E" INTSQL179E\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL170E"
+\0 \0 \{\set_style "MSG" INTSQL170E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid ORDER BY clause\}\p
+\p
+A semantic error was encountered in the Order By clause of a Select statement.  Ensure that all columns named are members of the result set (the column must also appear in the Select column list) and that no column name is repeated.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL175E"
+\0 \0 \{\set_style "MSG" INTSQL175E\}\p
+\p
+\{\set_style "MSG_TEXT" Error encountered building DISTINCT index\}\p
+\p
+An error related to the construction of the Distinct index used to identify duplicate result set entries was encountered while processing a SQL Select statement.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL177E"
+\0 \0 \{\set_style "MSG" INTSQL177E\}\p
+\p
+\{\set_style "MSG_TEXT" Value not provided for one or more columns defined as non-null input variables\}\p
+\p
+Each VDB table column is associated with a single session variable that is classified as either an input variable or output variable.  By default, the SQL statement must provide a value, via a basic predicate (Select, Update, or Delete), a Values clause (Insert), or a Set clause (Update), for each column associated with an input variable.  Alternatively, the column can be defined to accept NULL or default values for individual VDB columns.  The last line of the message identifies up to eight of the columns not satisfied by the query.  Consult the \{\set_style "italic" PLATINUM InfoSession Administrator Guide\} for details.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL178E"
+\0 \0 \{\set_style "MSG" INTSQL178E\}\p
+\p
+\{\set_style "MSG_TEXT" Internal error encountered relating SQL variables to the navigational network\}\p
+\p
+Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL179E"
+\0 \0 \{\set_style "MSG" INTSQL179E\}\p
+\p
+\{\set_style "MSG_TEXT" Unable to complete the definition of column:\} \{\set_style "BLK_ITAL" column-name\}\p
+\{\set_style "MSG_TEXT" variable:\} \{\set_style "BLK_ITAL" variable-name\}   \{\set_style "MSG_TEXT" RC:\} \{\set_style "BLK_ITAL" returncode\}   \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" reasoncode\}\p
+\p
+The service responsible for relating columns to variables and their source screens encountered an error identified by \{\set_style "BLK_BLD_ITAL" returncode\} and \{\set_style "BLK_BLD_ITAL" reasoncode\}.  Contact PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL272E"
+\0 \0 \{\set_style "MSG" INTSQL272E\}\p
+\p
+\{\set_style "MSG_TEXT" Column named is not a member of the result set\}\p
+\p
+A column  referred to in a SQL SELECT Order By clause contains a referrence to a column that is not a member of the result set.  Remove the column reference from the Order By clause.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL273E"
+\0 \0 \{\set_style "MSG" INTSQL273E\}\p
+\p
+\{\set_style "MSG_TEXT" Invalid column number reference\}\p
+\p
+The SQL SELECT Order By clause references a column by column number.  The column number is either less than one or greater than the number of columns contained in the result set.  Correct the column number reference or, alternatively, change the column number to the desired column name.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL274E"
+\0 \0 \{\set_style "MSG" INTSQL274E\}\p
+\p
+\{\set_style "MSG_TEXT" Duplicate column reference\}\p
+\p
+The SQL SELECT Order By clause contains multiple references to a single column.  Remove the duplicate column reference from the Order By clause. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL400I"
+\0 \0 \{\set_style "MSG" INTSQL400I\}\p
+\p
+\{\set_style "MSG_TEXT" Error / diagnostic information follows\}\p
+\p
+A SQL request completed with an error or warning notification.  If SQL error variables were defined and encountered during session navigation, they are returned as a series of \{\goto "<intmsgos>INTSQL401I" INTSQL401I\} messages preceded by this introduction.\p
+\p
+\{\set_style "MSG_TEXT" Class\}   Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL401I"
+\0 \0 \{\set_style "MSG" INTSQL401I\}\p
+\p
+\{\set_style "BLK_ITAL" error-variable-value\}\p
+\p
+A SQL request completed with an error or warning notification.  The text contains the value of a SQL error variable encountered during session navigation.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL490E"
+\0 \0 \{\set_style "MSG" INTSQL490E\}\p
+\p
+\{\set_style "MSG_TEXT" Component failure encountered in\} \{\set_style "BLK_ITAL" component-name\}  \p
+\{\set_style "MSG_TEXT" CSECT:\}  \{\set_style "BLK_ITAL" CSECT-name\}  \{\set_style "MSG_TEXT" OFFSET:\}  \{\set_style "BLK_ITAL" hhhh\}  \p
+\{\set_style "MSG_TEXT" RC:\} \{\set_style "BLK_ITAL" retcode\}   \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\}  \{\set_style "MSG_TEXT" INFO:\} \{\set_style "BLK_ITAL" nnnnnnn\}\p
+\p
+An unanticipated component failure occurred while processing a SQL statement.  The \{\set_style "BLK_BLD_ITAL" component-name\} and associated error information provides useful diagnostics for PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL494E"
+\0 \0 \{\set_style "MSG" INTSQL494E\}\p
+\p
+\{\set_style "MSG_TEXT" An ABEND occurred on the host system while processing this request.  Problem documentation has been collected and logged.\}\p
+\p
+An indicitive dump.  The InfoSystem system trace has been written to the LOGFILE# dataset.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL901E"
+\0 \0 \{\set_style "MSG" INTSQL901E\}\p
+\p
+\{\set_style "MSG_TEXT" Query execution failure RC:\} \{\set_style "BLK_ITAL" retcode\} \{\set_style "MSG_TEXT" RSN:\} \{\set_style "BLK_ITAL" rsncode\}\p
+\p
+The query was accepted but was not able to complete because of an execution error.  The \{\set_style "BLK_BLD_ITAL" retcode\} and \{\set_style "BLK_BLD_ITAL" rsncode\} provided can be used by PLATINUM Technical Support to diagnose the problem.  Other INTSQL9xxE series messages that follow describe the nature of the error.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL902E"
+\0 \0 \{\set_style "MSG" INTSQL902E\}\p
+\p
+\{\set_style "MSG_TEXT" Column/Variable resolution error:\} \{\set_style "BLK_ITAL" errcode-errmod\}\p
+\p
+An error was encountered during SQL statement execution that can be related to a specific virtual database column or variable.  The error code and modifier can be used by PLATINUM Technical Support to diagnose the problem.  Messages \{\goto "<intmsgos>INTSQL953I" INTSQL953I\} through \{\goto "<intmsgos>INTSQL956I" INTSQL956I\} follow to identify the column and variable and other relevant structures.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL903E"
+\0 \0 \{\set_style "MSG" INTSQL903E\}\p
+\p
+\{\set_style "MSG_TEXT" Error constructing navigation network RC\}\p
+\p
+When the first SQL request is made against an opened project, all screen(set), region, and variable definitions are retrieved from the catalog and cross-referenced.  The appearance of this message and other related messages describe a failure in the cross-reference procedure.  Notify PLATINUM Technical Support.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL953I"
+\0 \0 \{\set_style "MSG" INTSQL953I\}\p
+\p
+\{\set_style "MSG_TEXT" COLUMN name:\} \{\set_style "BLK_ITAL" column-name\}\p
+\p
+An error was encountered during SQL statement execution that can be related to the indicated \{\set_style "BLK_BLD_ITAL" column-name\}.  This message is displayed along with message \{\goto "<intmsgos>INTSQL902E" INTSQL902E\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL954I"
+\0 \0 \{\set_style "MSG" INTSQL954I\}\p
+\p
+\{\set_style "MSG_TEXT" SCREEN name:\} \{\set_style "BLK_ITAL" screen-name\}\p
+\p
+An error was encountered during SQL statement execution that can be related to the indicated \{\set_style "BLK_BLD_ITAL" screen-name\}.  This message is displayed along with message \{\goto "<intmsgos>INTSQL902E" INTSQL902E\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL955I"
+\0 \0 \{\set_style "MSG" INTSQL955I\}\p
+\p
+\{\set_style "MSG_TEXT" REGION name:\} \{\set_style "BLK_ITAL" region-name\}\p
+\p
+An error was encountered during SQL statement execution that can be related to the indicated \{\set_style "BLK_BLD_ITAL" region-name\}.  This message is displayed along with message \{\goto "<intmsgos>INTSQL902E" INTSQL902E\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation                                    
+\[----------------------------------------------------------------------\]
+\topic "<intmsgos>INTSQL956I"
+\0 \0 \{\set_style "MSG" INTSQL956I\}\p
+\p
+\{\set_style "MSG_TEXT" VARIABLE name:\} \{\set_style "BLK_ITAL" variable-name\}\p
+\p
+An error was encountered during SQL statement execution that can be related to the indicated \{\set_style "BLK_BLD_ITAL" variable-name\}.  This message is displayed along with message \{\goto "<intmsgos>INTSQL902E" INTSQL902E\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Workstation 

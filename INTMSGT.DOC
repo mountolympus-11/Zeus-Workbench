@@ -1,0 +1,923 @@
+\[----------------------------------------------------------------------\]
+\[This file includes the following files...\]
+\[Open Interface Hypertext files:\]
+\file "styles.doc"
+\[...End of included files\]
+
+
+\[----------------------------------------------------------------------\]
+\[--Styles Unique to this file--\]
+
+\def_style "MSG" \fg "Color.Green" \bg "Color.Blue" \font "Fonts.Bold10" 
+\[def_style_key "MSG" <Alt>-Q\]
+\def_style "BLK_ITAL" \fg "Color.Magenta" \font "Fonts.Normal11" 
+\[def_style_key "BLK_ITAL" <Alt>-V\]
+\def_style "BLK_BLD_ITAL" \fg "Color.Magenta" \font "Fonts.Bold08" 
+\[def_style_key "BLK_BLD_ITAL" <Alt>-P\]
+\def_style "TEXT" \font "Fonts.Normal10" 
+\def_style "MSG_TEXT" \fg "Color.Blue" \font "Fonts.Bold10" 
+\[def_style_key "MSG_TEXT" <Alt>-M\]
+\def_style "LINK" \fg "Color.ForestGreen" \font "Fonts.Bold10" 
+\[def_style_key "LINK" <Alt>-G\]
+\def_style "BLK_BLD" \font "Fonts.Bold10" 
+\[def_style_key "BLK_BLD" <Alt>-Z\]
+\def_style "New Style - 8" 
+\[----------------------------------------------------------------------\]
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>TCP"
+\0 \0 \{\set_style "code" TCP/IP (TCP) Messages\p
+\}\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgt>INTTCP000I" INTTCP000I\}\p
+\{\subtopic "<intmsgt>INTTCP001I" INTTCP001I\}\p
+\{\subtopic "<intmsgt>INTTCP002I" INTTCP002I\}\p
+\{\subtopic "<intmsgt>INTTCP003I" INTTCP003I\}\p
+\{\subtopic "<intmsgt>INTTPC004I" INTTCP004I\}\p
+\{\subtopic "<intmsgt>INTTCP005I" INTTCP005I\}\p
+\{\subtopic "<intmsgt>INTTCP006I" INTTCP006I\}\p
+\{\subtopic "<intmsgt>INTTCP007I" INTTCP007I\}\p
+\{\subtopic "<intmsgt>INTTCP008I" INTTCP008I\}\p
+\{\subtopic "<intmsgt>INTTCP009I" INTTCP009I\}\p
+\{\subtopic "<intmsgt>INTTCP010I" INTTCP010I\}\p
+\p
+\{\subtopic "<intmsgt>INTTCP801I" INTTCP801I\}\p
+\{\subtopic "<intmsgt>INTTCP802I" INTTCP802I\}\p
+\{\subtopic "<intmsgt>INTTCP803I" INTTCP803I\}\p
+\{\subtopic "<intmsgt>INTTCP804I" INTTCP804I\}\p
+\{\subtopic "<intmsgt>INTTCP805I" INTTCP805I\}\p
+\{\subtopic "<intmsgt>INTTCP806I" INTTCP806I\}\p
+\{\subtopic "<intmsgt>INTTCP807E" INTTCP807E\}\p
+\{\subtopic "<intmsgt>INTTCP808E" INTTCP808E\}\p
+\{\subtopic "<intmsgt>INTTCP809I" INTTCP809E\}\p
+\{\subtopic "<intmsgt>INTTCP810I" INTTCP810I\}\p
+\{\subtopic "<intmsgt>INTTCP811I" INTTCP811I\}\p
+\{\subtopic "<intmsgt>INTTCP812I" INTTCP812I\}\p
+\{\subtopic "<intmsgt>INTTCP813I" INTTCP813I\}\p
+\{\subtopic "<intmsgt>INTTCP814I" INTTCP814I\}\p
+\{\subtopic "<intmsgt>INTTCP815I" INTTCP815I\}\p
+\{\subtopic "<intmsgt>INTTCP816I" INTTCP816I\}\p
+\p
+\{\subtopic "<intmsgt>INTTCP900E" INTTCP900E\}\p
+\{\subtopic "<intmsgt>INTTCP901I" INTTCP901I\}\p
+\p
+\{\subtopic "<intmsgt>INTTCP995E" INTTCP995E\}\p
+\{\subtopic "<intmsgt>INTTCP996I" INTTCP996I\}\p
+\{\subtopic "<intmsgt>INTTCP997I" INTTCP997I\}\p
+\{\subtopic "<intmsgt>INTTCP998I" INTTCP998I\}\p
+\{\subtopic "<intmsgt>INTTCP999I" INTTCP999I\}\p
+
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP000I"
+\0 \0 \{\set_style "MSG" INTTCP000I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP testing\}  \{\set_style "BLK_ITAL" message-text\}\p
+\p
+This message is issued by various routines to provide additional diagnostic information that  will be logged when message class Tcptrace is active.  For example, some modules may issue an INTTCP000I message before each socket API call to identify the call that is currently being executed.\p
+\p
+\{\set_style "BLK_BLD_ITAL" message-text\}  Variable diagnostic message text.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Tcptrace\p
+\p
+\{\set_style "MSG_TEXT" Module\}  various modules                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP001I"
+\0 \0 \{\set_style "MSG" INTTCP001I\}\p
+\p
+\{\set_style "MSG_TEXT" TCP/IP task initialization in progress\p
+address space name =\} \{\set_style "BLK_ITAL" jobname\}\p
+\{\set_style "MSG_TEXT" superserver port =\} \{\set_style "BLK_ITAL" port-number\p
+\}\{\set_style "MSG_TEXT" maximum iucv paths =\} \{\set_style "BLK_ITAL" max-paths\}\p
+\{\set_style "MSG_TEXT" maximum sockets per path =\} \{\set_style "BLK_ITAL" max-sockets-per-path\}\p
+\{\set_style "MSG_TEXT" maximum sockets available =\} \{\set_style "BLK_ITAL" max-sockets\p
+\}\p
+This message is logged during TCP task initialization to document some basic information about the connection to the IBM TCP/IP for MVS address space.\p
+\p
+\{\set_style "BLK_BLD_ITAL" jobname\}  Jobname or started task name of the IBM TCP/IP for MVS address space, as specified in the InfoSession parmfile TCPNAME parameter.\p
+\p
+\{\set_style "BLK_BLD_ITAL" port-number\}  Port number to which Workbench and run-time clients should connect, as specified in the InfoSession parmfile PORT parameter.\p
+\p
+\{\set_style "BLK_BLD_ITAL" max-paths\}  Maximum number of active IUCV paths that will be permitted in the system.\p
+\p
+\{\set_style "BLK_BLD_ITAL" max-sockets-per-path\}  Maximum number of active sockets that will be permitted on a single IUCV path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" max-sockets\}  System-wide maximum number of active sockets that will be permitted in the system.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPMAIN                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP002I"
+\0 \0 \{\set_style "MSG" INTTCP002I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP user start - tub:\} \{\set_style "BLK_ITAL" tub-address\}  \{\set_style "MSG_TEXT" entity:\} \{\set_style "BLK_ITAL" token\}\p
+\{\set_style "MSG_TEXT" task:\} \{\set_style "BLK_ITAL" taskname/task-address\}  \{\set_style "MSG_TEXT" proc:\} \{\set_style "BLK_ITAL" procname/proc-address\}\p
+\p
+This message is logged when an InfoSession process begins using the sockets API.  The process is the "user" of the API.  A TCP/IP User Block, or TUB, is created for this process.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tub-address \} Storage address of the TCP/IP User Block (TUB).\p
+\p
+\{\set_style "BLK_BLD_ITAL" token\}  Work unit entity token of the process that has begun using the sockets API.\p
+\p
+\{\set_style "BLK_BLD_ITAL" taskname\}  Name of the task that owns the process.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-address\}  Address of the ITASK block for the task.\p
+\p
+\{\set_style "BLK_BLD_ITAL" procname\}  Name of the process that is using the sockets API.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-address\}  Address of the IPCB block for the process.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPACSU                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP003I"
+\0 \0 \{\set_style "MSG" INTTCP003I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP request posting failed\p
+epb:\} \{\set_style "BLK_ITAL" epb-address\}  \{\set_style "MSG_TEXT" work unit token:\} \{\set_style "BLK_ITAL" token\}\{\set_style "MSG_TEXT"  post code:\} \{\set_style "BLK_ITAL" post-code\}\p
+\{\set_style "MSG_TEXT" reason:\} \{\set_style "BLK_ITAL" failure-description\}\p
+\p
+This message is logged when an event block associated with a TCP/IP event cannot be posted.\p
+\p
+\{\set_style "BLK_BLD_ITAL" epb-address\}  Storage address of the event block that could not be posted.\p
+\p
+\{\set_style "BLK_BLD_ITAL" token\}  Work unit token of the process that owns the event block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" post-code\}  Completion code that was going to be posted.\p
+\p
+\{\set_style "BLK_BLD_ITAL" failure-description\}  Text that gives a reason for the posting failure (for example, WORK UNIT TERMINATING).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPAPST                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTPC004I"
+\0 \0 \{\set_style "MSG" INTTCP004I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP user end - tub:\} \{\set_style "BLK_ITAL" tub-address\}  \{\set_style "MSG_TEXT" entity:\} \{\set_style "BLK_ITAL" token\}\p
+\{\set_style "MSG_TEXT" task:\} \{\set_style "BLK_ITAL" taskname/task-address\}  \{\set_style "MSG_TEXT" proc:\} \{\set_style "BLK_ITAL" procname/proc-address\}\p
+\p
+This message is logged when an InfoSession process that has been using the sockets API ends.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tub-address\}  Storage address of the TCP/IP User Block (TUB).\p
+\p
+\{\set_style "BLK_BLD_ITAL" token\}  Work unit entity token of the process that has begun using the sockets API.\p
+\p
+\{\set_style "BLK_BLD_ITAL" taskname\}  Name of the task that owns the process.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-address\}  Address of the ITASK block for the task.\p
+\p
+\{\set_style "BLK_BLD_ITAL" procname\}  Name of the process that is using the sockets API.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-address\}  Address of the IPCB block for the process.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPUSMG                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP005I"
+\0 \0 \{\set_style "MSG" INTTCP005I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP socket start - tub:\} \{\set_style "BLK_ITAL" tub-addr\}  \{\set_style "MSG_TEXT" usb:\} \{\set_style "BLK_ITAL" usb-addr\} \{\set_style "MSG_TEXT" entity:\} \{\set_style "BLK_ITAL" token\}\p
+\{\set_style "MSG_TEXT" task:\} \{\set_style "BLK_ITAL" taskname/task-addr\}  \{\set_style "MSG_TEXT" proc:\} \{\set_style "BLK_ITAL" procname/proc-addr\} \{\set_style "MSG_TEXT" user-socket:\} \{\set_style "BLK_ITAL" number\}\p
+\p
+This message is logged when a socket descriptor is allocated to an InfoSession process.  A socket is allocated by the accept, socket, socket_server, and takesocket calls.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tub-addr\}  Storage address of the TCP/IP User Block (TUB).\p
+\p
+\{\set_style "BLK_BLD_ITAL" usb-addr\}  Storage address of the User Socket Block (USB).\p
+\p
+\{\set_style "BLK_BLD_ITAL" token \} Work unit entity token of the process that allocated the socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" taskname\}  Name of the task that owns the process.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-addr\}  Address of the ITASK block for the task.\p
+\p
+\{\set_style "BLK_BLD_ITAL" procname\}  Name of the process that owns the socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-addr\}  Address of the IPCB block for the process.\p
+\p
+\{\set_style "BLK_BLD_ITAL" number\}  System-wide socket descriptor of the new socket.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPACUS                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP006I"
+\0 \0 \{\set_style "MSG" INTTCP006I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP socket end - tub:\} \{\set_style "BLK_ITAL" tub-addr\}  \{\set_style "MSG_TEXT" usb:\} \{\set_style "BLK_ITAL" usb-addr\}  \{\set_style "MSG_TEXT" entity:\} \{\set_style "BLK_ITAL" token\}\p
+\{\set_style "MSG_TEXT" task:\} \{\set_style "BLK_ITAL" taskname/task-addr\}  \{\set_style "MSG_TEXT" proc:\} \{\set_style "BLK_ITAL" procname/proc-addr\} \{\set_style "MSG_TEXT" user-socket:\} \{\set_style "BLK_ITAL" number\}\p
+\p
+This message is logged when an InfoSession process ends ownership of a socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" tub-addr\}  Storage address of the TCP/IP User Block (TUB).\p
+\p
+\{\set_style "BLK_BLD_ITAL" usb-addr\}  Storage address of the User Socket Block (USB).\p
+\p
+\{\set_style "BLK_BLD_ITAL" token\}  Work unit entity token of the process that owned the socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" taskname\}  Name of the task that owns the process.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-addr\}  Address of the ITASK block for the task.\p
+\p
+\{\set_style "BLK_BLD_ITAL" procname\}  Name of the process that owns the socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-addr\}  Address of the IPCB block for the process.\p
+\p
+\{\set_style "BLK_BLD_ITAL" number\}  System-wide socket descriptor of the socket that has ended.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPADUS                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP007I"
+\0 \0 \{\set_style "MSG" INTTCP007I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP path start - pab:\} \{\set_style "BLK_ITAL" pab-addr\}  \{\set_style "MSG_TEXT" subtaskid:\} \{\set_style "BLK_ITAL" subtaskid\} \{\set_style "MSG_TEXT" pathid\}\{\set_style "BLK_ITAL" : pathid\p
+\}\{\set_style "MSG_TEXT" maxsocket:\} \{\set_style "BLK_ITAL" max-socket-number\}  \{\set_style "MSG_TEXT" msglim:\} \{\set_style "BLK_ITAL" max-requests\}\{\set_style "MSG_TEXT"  apicode:\} \{\set_style "BLK_ITAL" api-type\}\p
+\p
+This message is logged when InfoSession activates an IUCV path to the TCP/IP for MVS address space.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pab-addr\}  Storage address of the InfoSession's Path Block  (PAB) for this path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" subtaskid\}  Unique name that identifies the path to TCP/IP for MVS.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pathid\}  Identification number assigned to the IUCV path by TCP/IP for MVS.\p
+\p
+\{\set_style "BLK_BLD_ITAL" max-socket-number\}  Maximum number of sockets on this IUCVpath.\p
+\p
+\{\set_style "BLK_BLD_ITAL" max-requests\}  Maximum number of active IUCV requests on this path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" api-type\}  Integer value that identifies the API type to TCP/IP for MVS.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPASTP                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP008I"
+\0 \0 \{\set_style "MSG" INTTCP008I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP path stop - pab:\} \{\set_style "BLK_ITAL" pab-addr\}  \{\set_style "MSG_TEXT" subtaskid:\} \{\set_style "BLK_ITAL" subtaskid\} \{\set_style "MSG_TEXT" pathid:\} \{\set_style "BLK_ITAL" pathid\}\p
+\{\set_style "MSG_TEXT" iucv sends...\}\{\set_style "BLK_ITAL" sent-count\}  \{\set_style "MSG_TEXT" #queued...\}\{\set_style "BLK_ITAL" queued-count\}\p
+\p
+This message is logged when InfoSession deactivates an IUCV path to the TCP/IP for MVS address space.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pab-addr\}  Storage address of the InfoSession's Path Block  (PAB) for this path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" subtaskid\}  Unique name that identifies the path to TCP/IP for MVS.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pathid \} Identification number assigned to the IUCV path by TCP/IP for MVS.\p
+\p
+\{\set_style "BLK_BLD_ITAL" sent-count\}  Number of IUCV send requests issued over this path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" queued-count\}  Number of IUCV send requests queued temporarily because the maximum requests value had been reached.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPARTP                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP009I"
+\0 \0 \{\set_style "MSG" INTTCP009I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP event  complete - pathid:\} \{\set_style "BLK_ITAL" pathid\}  \{\set_style "MSG_TEXT" socket:\} \{\set_style "BLK_ITAL" path-socket-descriptor\}  \{\set_style "MSG_TEXT" entity:\} \{\set_style "BLK_ITAL" token\}\p
+\{\set_style "MSG_TEXT" user_socket:\} \{\set_style "BLK_ITAL" socket-descriptor\}  \{\set_style "MSG_TEXT" address_family:\} \{\set_style "BLK_ITAL" family\} \{\set_style "MSG_TEXT" port:\} \{\set_style "BLK_ITAL" port\} \{\set_style "MSG_TEXT" host:\} \{\set_style "BLK_ITAL" host-address\p
+\}\p
+This message is logged when an event that changes the ownership of a socket descriptor completes.  When a problem is being diagnosed, these messages make it possible to see the association between the system-wide socket descriptor (sometimes referred to as the user socket descriptor), the combination of the \{\set_style "BLK_BLD_ITAL" pathid\} and \{\set_style "BLK_BLD_ITAL" path-socket-descriptor\} (the socket as it is known by the TCP/IP for MVS address space), and the work unit that currently owns the socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" event\}  Name of the event that has completed (for example, ACCEPT, BIND, etc.).\p
+\p
+\{\set_style "BLK_BLD_ITAL" pathid \} Unique ID number of the IUCV path assigned to this socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" path-socket-descriptor\}  Socket descriptor used to identify the socket to TCP/IP for MVS.\p
+\p
+\{\set_style "BLK_BLD_ITAL" token\}  Work unit entity token of the process that owns the socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" socket-descriptor\}  System-wide socket descriptor used within the InfoSession to identify this socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" family\}  Addressing family associated with the connection.  Currently, the only valid value is 2 (the Internet addressing family).\p
+\p
+\{\set_style "BLK_BLD_ITAL" port\}  TCP/IP port associated with this connection.\p
+\p
+\{\set_style "BLK_BLD_ITAL" host-address\}  TCP/IP address of the host associated with this connection.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPNACC, ITCPNBIN, ITCPNCLO, ITCPNCON, ITCPNSOC, ITCPNTAK                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP010I"
+\0 \0 \{\set_style "MSG" INTTCP010I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP event  complete - pathid:\} \{\set_style "BLK_ITAL" pathid\} \{\set_style "MSG_TEXT" socket:\} \{\set_style "BLK_ITAL" path-socket-descriptor \}\{\set_style "MSG_TEXT" entity:\} \{\set_style "BLK_ITAL" token\}\p
+\{\set_style "MSG_TEXT" user_socket:\} \{\set_style "BLK_ITAL" socket-descriptor\}  \{\set_style "MSG_TEXT" address_family:\} \{\set_style "BLK_ITAL" family\} \{\set_style "MSG_TEXT" port:\} \{\set_style "BLK_ITAL" port\} \{\set_style "MSG_TEXT" host:\} \{\set_style "BLK_ITAL" host\}\p
+\{\set_style "MSG_TEXT" msgs in...\}\{\set_style "BLK_ITAL" inbound-msg-count\}  \{\set_style "MSG_TEXT" bytes in...\}\{\set_style "BLK_ITAL" inbound-char-count\}\p
+\{\set_style "MSG_TEXT" msgs out...\}\{\set_style "BLK_ITAL" outbound-msg-count\}  \{\set_style "MSG_TEXT" bytes out...\}\{\set_style "BLK_ITAL" outbound-char-count\}\p
+\p
+This message is logged when an event that changes the ownership of a socket descriptor completes.  When a problem is being diagnosed, these messages make it possible to see the association between the system-wide socket descriptor (sometimes referred to as the user socket descriptor), the combination of the \{\set_style "BLK_BLD_ITAL" pathid\} and \{\set_style "BLK_BLD_ITAL" path-socket-descriptor\} (the socket as it is known by the TCP/IP for MVS address space), and the work unit that currently owns the socket.  It is identical to message \{\goto "<intmsgt>INTTCP009I" INTTCP009I\} with the addition of socket statistics.\p
+\p
+\{\set_style "BLK_BLD_ITAL" event \} Name of the event that has completed (for example, ACCEPT, BIND, etc.).\p
+\p
+\{\set_style "BLK_BLD_ITAL" pathid\}  Unique ID number of the IUCV path assigned to this socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" path-socket-descriptor\}  Socket descriptor used to identify the socket to TCP/IP for MVS.\p
+\p
+\{\set_style "BLK_BLD_ITAL" token\}  Work unit entity token of the process that owns the socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" socket-descriptor\}  System-wide socket descriptor used within the InfoSession to identify this socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" family\}  Addressing family associated with the connection.  Currently, the only valid value is 2 (the Internet addressing family).\p
+\p
+\{\set_style "BLK_BLD_ITAL" port \} TCP/IP port associated with this connection.\p
+\p
+\{\set_style "BLK_BLD_ITAL" host-address\}  TCP/IP address of the host associated with this connection.\p
+\p
+\{\set_style "BLK_BLD_ITAL" inbound-msg-count\}  Number of messages received over this socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" inbound-char-count\}  Number of characters received over this socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" outbound-msg-count\}  Number of messages sent over this socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" outbound-char-count\}  Nnumber of characters sent over this socket.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPAKSK                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP801I"
+\0 \0 \{\set_style "MSG" INTTCP801I\} \p
+\p
+\{\set_style "BLK_ITAL" label\}\{\set_style "MSG_TEXT" +\}\{\set_style "BLK_ITAL" offset\}\{\set_style "MSG_TEXT" :\} \{\set_style "BLK_ITAL" xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx cccccccccccccccc\}\p
+\p
+ This diagnostic message is logged when message class TCPTRACE has been activated for gathering problem determination data.  It is used to display up to 16 characters of information from a data buffer, control block, etc.\p
+\p
+\{\set_style "BLK_BLD_ITAL" label\}  Descriptive label of the storage area being displayed.\p
+\p
+\{\set_style "BLK_BLD_ITAL" offset\}  Relative offset into the storage area.\p
+\p
+\{\set_style "BLK_BLD_ITAL" xxxxxxxx\}  Hexadecimal display of one word of data.\p
+\p
+\{\set_style "BLK_BLD_ITAL" cccccccccccccccc\}  Character display of all preceding hexadecimal data.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Tcptrace\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPATRI, ITCPATRQ                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP802I"
+\0 \0 \{\set_style "MSG" INTTCP802I\}\p
+\p
+\{\set_style "BLK_ITAL" \{\set_style "BLK_ITAL" L\}abel\}\{\set_style "MSG_TEXT" +\}\{\set_style "BLK_ITAL" offset1\}\{\set_style "MSG_TEXT" -\}\{\set_style "BLK_ITAL" offset2\}\{\set_style "MSG_TEXT" : all zero\}\p
+\p
+This diagnostic message is logged when message class TCPTRACE has been activated for gathering problem determination data.  It is used to indicate that the data area being displayed contains all zeros.\p
+\p
+\{\set_style "BLK_BLD_ITAL" label\}  Descriptive label of the storage area being displayed.\p
+\p
+\{\set_style "BLK_BLD_ITAL" offset1\}  Relative offset into the storage area of the beginning of the all zeros data.\p
+\p
+\{\set_style "BLK_BLD_ITAL" offset2\}  Relative offset into the storage area of the end of the all zeros data.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Tcptrace\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPATRI, ITCPATRQ                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP803I"
+\0 \0 \{\set_style "MSG" INTTCP803I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP connect start:\} \{\set_style "BLK_ITAL" desc\}\p
+\{\set_style "MSG_TEXT" air\}  \{\set_style "BLK_ITAL" air-addr\}   \{\set_style "MSG_TEXT" rc\}  \{\set_style "BLK_ITAL" return-code\}\p
+\{\set_style "MSG_TEXT" ippathid\}  \{\set_style "BLK_ITAL" pathid\}  \{\set_style "MSG_TEXT" ipflags1\} \{\set_style "BLK_ITAL" flags\}  \{\set_style "MSG_TEXT" iprcode\}  \{\set_style "BLK_ITAL" iprcode\}\p
+\{\set_style "MSG_TEXT" ipmsglim\}  \{\set_style "BLK_ITAL" max-requests\}  \{\set_style "MSG_TEXT" ipvmid\}  \{\set_style "BLK_ITAL" vmid\p
+\}\{\set_style "MSG_TEXT" ipuser\}  \{\set_style "BLK_ITAL" user-data\p
+\}\p
+This message is logged when an IUCV call is issued to establish a path to the TCP/IP for MVS address space.   If \{\set_style "BLK_BLD_ITAL" return-code\} and/or \{\set_style "BLK_BLD_ITAL" iprcode\} are non-zero, an error has occurred.  Otherwise, completion of the request will be indicated by message \{\goto "<intmsgt>INTTCP809I" INTTCP809I\} and the associated connection complete interrupt.\p
+\p
+\{\set_style "BLK_BLD_ITAL" desc\}  Optional descriptive text for the trace point.\p
+\p
+\{\set_style "BLK_BLD_ITAL" air-addr\}  Storage address of the Active IUCV Request block used for the connect request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" return-code\}  Return code of the IUCV connect operation.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pathid\}  Unique ID number of the IUCV path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" flags\}  Flag bits from the IPARML data area.\p
+\p
+\{\set_style "BLK_BLD_ITAL" iprcode\}  Response code from the IUCV connect operation.\p
+\p
+\{\set_style "BLK_BLD_ITAL" max-requests\}  Maxiumum number of IUCV requests that will be permitted on this IUCV path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" vmid\}  IUCV virtual machine ID that is the target of the connect.  This should be the name of the TCP/IP for MVS address space.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-data\}  User data to be passed to the target of the connect.  This data is not used and should be all zero.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPATRQ                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP804I"
+\0 \0 \{\set_style "MSG" INTTCP804I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP sever complete:\}  \{\set_style "BLK_ITAL" desc\}\p
+\{\set_style "MSG_TEXT" air\}  \{\set_style "BLK_ITAL" air-addr\}    \{\set_style "MSG_TEXT" rc\}  \{\set_style "BLK_ITAL" return-code\}\p
+\{\set_style "MSG_TEXT" ippathid\}  \{\set_style "BLK_ITAL" pathid\}  \{\set_style "MSG_TEXT" ipflags1\} \{\set_style "BLK_ITAL" flags \} \{\set_style "MSG_TEXT" iprcode\}  \{\set_style "BLK_ITAL" iprcode\}\p
+\{\set_style "MSG_TEXT" ipuser\}  \{\set_style "BLK_ITAL" user-data\p
+\}\p
+This message is logged when an IUCV call is issued to disconnect a path to the TCP/IP for MVS address space.  If return-code and/or iprcode are non-zero, an error has occurred.\p
+\p
+\{\set_style "BLK_BLD_ITAL" desc\}  Optional descriptive text for the trace point.\p
+\p
+\{\set_style "BLK_BLD_ITAL" air-addr\}  Storage address of the Active IUCV Request block used for the sever request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" return-code\}  Return code of the IUCV sever operation.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pathid\}  Unique ID number of the IUCV path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" flags\}  Flag bits from the IPARML data area.\p
+\p
+\{\set_style "BLK_BLD_ITAL" iprcode\}  Response code from the IUCV sever operation.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-data\}  User data to be passed to the target of the sever.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPATRQ                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP805I"
+\0 \0 \{\set_style "MSG" INTTCP805I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP iucvmini set complete:\}  \{\set_style "BLK_ITAL" desc\}\p
+\{\set_style "MSG_TEXT" air\}  \{\set_style "BLK_ITAL" air-addr\}   \{\set_style "MSG_TEXT" rc\}  \{\set_style "BLK_ITAL" return-code\}\p
+\{\set_style "MSG_TEXT" iucvp1p\} \{\set_style "BLK_ITAL" ptr1\}  \{\set_style "MSG_TEXT" iucvp2p\} \{\set_style "BLK_ITAL" ptr2\}  \{\set_style "MSG_TEXT" iucvp3p\}  \{\set_style "BLK_ITAL" ptr3\}   \{\set_style "MSG_TEXT" iucvp4p\}  \{\set_style "BLK_ITAL" ptr4\p
+\}\{\set_style "MSG_TEXT" iucvp1\}  \{\set_style "BLK_ITAL" parm1\} \{\set_style "MSG_TEXT" iucvp2\}  \{\set_style "BLK_ITAL" parm2\}  \{\set_style "MSG_TEXT" iucvp3\}  \{\set_style "BLK_ITAL" parm3\}  \{\set_style "MSG_TEXT" iucvp4\}  \{\set_style "BLK_ITAL" parm4\}\p
+\{\set_style "MSG_TEXT" iucvdbfr\} \{\set_style "BLK_ITAL" buffer-addr\}  \{\set_style "MSG_TEXT" iucvpcn\}  \{\set_style "BLK_ITAL" pc-number\}\p
+\p
+\{\set_style "BLK_BLD_ITAL" desc\}  Optional descriptive text for the trace point.\p
+\p
+\{\set_style "BLK_BLD_ITAL" air-addr\}  Storage address of the Active IUCV Request block used for the sever request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" return-code\}  Return code of the IUCV sever operation.\p
+\p
+\{\set_style "BLK_BLD_ITAL" ptr1 - ptr4\}  Parm word pointers.\p
+\p
+\{\set_style "BLK_BLD_ITAL" parm1 - parm4\}  Parm words.\p
+\p
+\{\set_style "BLK_BLD_ITAL" buffer-addr\}  Data buffer address.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pc-number\}  Program call number used for the operation.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPATRQ                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP806I"
+\0 \0 \{\set_style "MSG" INTTCP806I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP iucvmini clr complete:\}  \{\set_style "BLK_ITAL" desc\}\p
+\{\set_style "MSG_TEXT" air\}  \{\set_style "BLK_ITAL" air-addr\}   \{\set_style "MSG_TEXT" rc\}  \{\set_style "BLK_ITAL" return-code\}\p
+\{\set_style "MSG_TEXT" iucvp1p\} \{\set_style "BLK_ITAL" ptr\}   \{\set_style "MSG_TEXT" iucvp2p\} \{\set_style "BLK_ITAL" ptr \}  \{\set_style "MSG_TEXT" iucvp3p\} \{\set_style "BLK_ITAL" ptr \}  \{\set_style "MSG_TEXT" iucvp4p\}  \{\set_style "BLK_ITAL" ptr\p
+\}\{\set_style "MSG_TEXT" iucvp1\}  \{\set_style "BLK_ITAL" parm\}  \{\set_style "MSG_TEXT" iucvp2\} \{\set_style "BLK_ITAL" parm\}  \{\set_style "MSG_TEXT" iucvp3\}  \{\set_style "BLK_ITAL" parm\}   \{\set_style "MSG_TEXT" iucvp4\}  \{\set_style "BLK_ITAL" parm\} \p
+\{\set_style "MSG_TEXT" iucvdbfr\} \{\set_style "BLK_ITAL" buffer-addr\}  \{\set_style "MSG_TEXT" iucvpcn\}  \{\set_style "BLK_ITAL" pc-number\}\p
+\p
+This message is logged when an IUCV call is issued to disconnect InfoSession from the VMCF address space (the MVS address space that simulates IUCV communications).  If \{\set_style "BLK_BLD_ITAL" return-code\} is non-zero, an error has occurred.\p
+\p
+\{\set_style "BLK_BLD_ITAL" desc\}  Optional descriptive text for the trace point.\p
+\p
+\{\set_style "BLK_BLD_ITAL" air-addr\}  Storage address of the Active IUCV Request block used for the sever request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" return-code\}  Return code of the IUCV sever operation.\p
+\p
+\{\set_style "BLK_BLD_ITAL" ptr \} Parm word pointers.\p
+\p
+\{\set_style "BLK_BLD_ITAL" parm\}  Parm words.\p
+\p
+\{\set_style "BLK_BLD_ITAL" buffer-addr\}  Data buffer address.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pc-number\}  Program call number used for the operation.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPATRQ                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP807E"
+\0 \0 \{\set_style "MSG" INTTCP807E\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP *unexpected api function*\} \{\set_style "BLK_ITAL" description\}  \{\set_style "MSG_TEXT" api=\}\{\set_style "BLK_ITAL"  call-type\}\p
+\{\set_style "MSG_TEXT" air\} \{\set_style "BLK_ITAL" air-addr \}  \{\set_style "MSG_TEXT" rc\}  \{\set_style "BLK_ITAL" return-code\}  \{\set_style "MSG_TEXT" function\}  \{\set_style "BLK_ITAL" function-code\}  \p
+\p
+This message is logged when an IUCV call is issued and the parameter areas associated with the call have been corrupted.\p
+\p
+\{\set_style "BLK_BLD_ITAL" description\}  Optional trace point descriptive text.\p
+\p
+\{\set_style "BLK_BLD_ITAL" call-type\}  Either IUCVMINI or IUCVMCOM to identify the type of  IUCV call that failed.\p
+\p
+\{\set_style "BLK_BLD_ITAL" air-addr\}  Storage address of the Active IUCV Request block used for the request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" return-code\}  Return code for the request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" function-code\}  Function code that could not be interpreted (displayed in hexadecimal).\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPATRQ                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP808E"
+\0 \0 \{\set_style "MSG" INTTCP808E\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP *unexpected iucv interrupt*\} \{\set_style "BLK_ITAL" desc\}\p
+\{\set_style "MSG_TEXT" air\}  \{\set_style "BLK_ITAL" air-addr \}  \{\set_style "MSG_TEXT" iptype\} \{\set_style "BLK_ITAL" iptype\}\p
+\p
+This message is logged when an IUCV interrupt is received and the interrupt type is not understood by the InfoSession.\p
+\p
+\{\set_style "BLK_BLD_ITAL" desc\}  Optional trace point descriptive text.\p
+\p
+\{\set_style "BLK_BLD_ITAL" air-addr\}  Storage address of the Active IUCV Request block used for the interrupt request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" iptype\}  IUCV interrupt type code in hexadecimal.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPATRI                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP809I"
+\0 \0 \{\set_style "MSG" INTTCP809I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP connection complete interrupt:\}  \{\set_style "BLK_ITAL" desc\} \{\set_style "MSG_TEXT" air\}  \{\set_style "BLK_ITAL" air-addr\}\p
+\{\set_style "MSG_TEXT" ippathid\}  \{\set_style "BLK_ITAL" pathid\}   \{\set_style "MSG_TEXT" ipflags1\} \{\set_style "BLK_ITAL" flags\}  \{\set_style "MSG_TEXT" iptype\}  \{\set_style "BLK_ITAL" iptype\}\p
+\{\set_style "MSG_TEXT" ipmsglim\}  \{\set_style "BLK_ITAL" max-requests\}  \{\set_style "MSG_TEXT" ipvmid\}  \{\set_style "BLK_ITAL" vmid\} \{\set_style "MSG_TEXT" ipuser\}  \{\set_style "BLK_ITAL" user-data\}\p
+\p
+This message is logged when an IUCV interrupt is received in response to an IUCV connect request. \p
+\p
+\{\set_style "BLK_BLD_ITAL" desc\}  Optional trace point descriptive text.\p
+\p
+\{\set_style "BLK_BLD_ITAL" air-addr\}  Storage address of the Active IUCV Request block used for the connect request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pathid\}  Unique ID number of the IUCV path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" flags\}  Fflag bits from the IPARML data area.\p
+\p
+\{\set_style "BLK_BLD_ITAL" iptype\}  IUCV interrupt type code for connection complete.\p
+\p
+\{\set_style "BLK_BLD_ITAL" max-requests\}  Maxiumum number of IUCV requests that will be permitted on this IUCV path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" vmid\}  IUCV virtual machine ID that is the target of the connection complete interrupt.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-data\}  User data to be passed to the target of the connect interrupt.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPATRI                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP810I"
+\0 \0 \{\set_style "MSG" INTTCP810I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP send complete interrupt:\} \{\set_style "BLK_ITAL" desc\}   \{\set_style "MSG_TEXT" func=\} \{\set_style "BLK_ITAL" function-name\}\p
+\{\set_style "MSG_TEXT" air\}  \{\set_style "BLK_ITAL" air-addr\}  \{\set_style "MSG_TEXT" ipaudit1\} \{\set_style "BLK_ITAL" audit\}  \{\set_style "MSG_TEXT" ippathid\}  \{\set_style "BLK_ITAL" pathid\} \{\set_style "MSG_TEXT" socket\} \{\set_style "BLK_ITAL" path-socket-descriptor\} \p
+\{\set_style "MSG_TEXT" ipmsgtag\} \{\set_style "BLK_ITAL" msg-tag\}  \{\set_style "MSG_TEXT" ipmsgid\} \{\set_style "BLK_ITAL" msg-ID\}  \{\set_style "MSG_TEXT" iprmmsg1\} \{\set_style "BLK_ITAL" parm\} \{\set_style "MSG_TEXT" iprmmsg2\} \{\set_style "BLK_ITAL" parm\}\p
+\p
+This message is logged when message class TCPTRACE is active and an IUCV send operation is completed. This message is logically continued by messages \{\goto "<intmsgt>INTTCP811I" INTTCP811I\}, \{\goto "<intmsgt>INTTCP812I" INTTCP812I\}, and \{\goto "<intmsgt>INTTCP813I" INTTCP813I\}.  If the \{\set_style "BLK_BLD_ITAL" audit\} field is non-zero an error has occurred.\p
+\p
+\{\set_style "BLK_BLD_ITAL" desc\}  Optional trace point descriptive text.\p
+\p
+\{\set_style "BLK_BLD_ITAL" function-name\}  Name of TCP/IP function being requested by this send (for example, SOCKET, BIND, etc.).\p
+\p
+\{\set_style "BLK_BLD_ITAL" air-addr\}  Storage address of the Active IUCV Request block used for the send request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" audit\}  Audit flags used to indicate specific errors.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pathid \} Unique ID number of the IUCV path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" path-socket-descriptor\}  Socket descriptor used to identify the socket to TCP/IP for MVS.\p
+\p
+\{\set_style "BLK_BLD_ITAL" msg-tag\}  Tag assigned by the InfoSession and used to identify the reason for the interrupt.\p
+\p
+\{\set_style "BLK_BLD_ITAL" msg-ID\}  Message ID number assigned to the request by IUCV\p
+\p
+\{\set_style "BLK_BLD_ITAL" parm\}  Parm word from the IPARML.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Tcptrace\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPATRI                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP811I"
+\0 \0 \{\set_style "MSG" INTTCP811I\} \p
+\p
+\{\set_style "MSG_TEXT" usocket\}  \{\set_style "BLK_ITAL" socket-descriptor\}   \{\set_style "MSG_TEXT" ipflags1\} \{\set_style "BLK_ITAL" flags\}   \{\set_style "MSG_TEXT" iptype\}  \{\set_style "BLK_ITAL" iptype\}\p
+      \{\set_style "MSG_TEXT" ipbfln2f\} \{\set_style "BLK_ITAL" length\} \p
+\p
+This message is logged when message class TCPTRACE is active and an IUCV send operation is completed. This message follows message \{\goto "<intmsgt>INTTCP810I" INTTCP810I\} and is logically continued by messages \{\goto "<intmsgt>INTTCP812I" INTTCP812I\} and \{\goto "<intmsgt>INTTCP813I" INTTCP813I\}. \p
+\p
+\{\set_style "BLK_BLD_ITAL" socket-descriptor\}  System-wide socket descriptor.\p
+\p
+\{\set_style "BLK_BLD_ITAL" flags\}  Flag bits from the IPARML data area.\p
+\p
+\{\set_style "BLK_BLD_ITAL" iptype\}  IUCV interrupt type code for a send complete interrupt.\p
+\p
+\{\set_style "BLK_BLD_ITAL" length\}  Length remaining in reply buffer area.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Tcptrace\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPATRI                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP812I"
+\0 \0 \{\set_style "MSG" INTTCP812I\} \p
+\p
+\{\set_style "MSG_TEXT" request buffer=\} \{\set_style "BLK_ITAL" bfr-addr\}  \{\set_style "MSG_TEXT" length=\} \{\set_style "BLK_ITAL" bfr-length\} \p
+      \{\set_style "MSG_TEXT" length-used=\} \{\set_style "BLK_ITAL" used-length\}\p
+\p
+This message is logged when message class TCPTRACE is active and an IUCV send operation is completed. This message follows messages \{\goto "<intmsgt>INTTCP810I" INTTCP810I\} and \{\goto "<intmsgt>INTTCP811I" INTTCP811I\} and is logically continued by message \{\goto "<intmsgt>INTTCP813I" INTTCP813I\}.  This message identifies the request data that was sent to TCP/IP.  This message is immediately followed by message \{\goto "<intmsgt>INTTCP801I" INTTCP801I\} which is used to display the actual request data that was in the buffer. \p
+\p
+\{\set_style "BLK_BLD_ITAL" bfr-addr\}  Address of the request buffer list.\p
+\p
+\{\set_style "BLK_BLD_ITAL" bfr-length\}  Total length of the buffer area(s) provided by the buffer(s) identified in the buffer list.\p
+\p
+\{\set_style "BLK_BLD_ITAL" used-length\}  Length of the buffer area(s) that was actually used by TCP/IP during processing of the request.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Tcptrace\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPATRI                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP813I"
+\0 \0 \{\set_style "MSG" INTTCP813I\} \p
+\p
+\{\set_style "MSG_TEXT" reply buffer=\} \{\set_style "BLK_ITAL" bfr-addr\}  \{\set_style "MSG_TEXT" length=\} \{\set_style "BLK_ITAL" bfr-length\} \p
+    \{\set_style "MSG_TEXT" length-used=\} \{\set_style "BLK_ITAL" used-length\p
+\}\p
+This message is logged when message class TCPTRACE is active and an IUCV send operation is completed. This message follows messages \{\goto "<intmsgt>INTTCP810I" INTTCP810I\}, \{\goto "<intmsgt>INTTCP811I" INTTCP811I\}, and \{\goto "<intmsgt>INTTCP812I" INTTCP812I\}.  This message identifies the reply data that was received from TCP/IP.  This message is immediately followed by message \{\goto "<intmsgt>INTTCP801I" INTTCP801I\} which is used to display the actual reply data that was in the buffer. \p
+\p
+\{\set_style "BLK_BLD_ITAL" bfr-addr\}  Address of the request buffer list.\p
+\p
+\{\set_style "BLK_BLD_ITAL" bfr-length\}  Total length of the buffer area(s) provided by the buffer(s) identified in the buffer list.\p
+\p
+\{\set_style "BLK_BLD_ITAL" used-length\}  Length of the buffer area(s) that was actually used by TCP/IP during processing of the reply.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Tcptrace\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPATRI                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP814I"
+\0 \0 \{\set_style "MSG" INTTCP814I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP send start:\} \{\set_style "BLK_ITAL" desc\}  \{\set_style "MSG_TEXT" func=\} \{\set_style "BLK_ITAL" function-name\}\p
+\{\set_style "MSG_TEXT" air\}\{\set_style "BLK_ITAL"  air-addr\}   \{\set_style "MSG_TEXT" rc\} \{\set_style "BLK_ITAL" return-code\}  \{\set_style "MSG_TEXT" ippathid\}  \{\set_style "BLK_ITAL" pathid \} \{\set_style "MSG_TEXT" socket\} \{\set_style "BLK_ITAL" path-socket-descriptor\}\p
+\{\set_style "MSG_TEXT" ipmsgtag\} \{\set_style "BLK_ITAL" msg-tag\}  \{\set_style "MSG_TEXT" ipmsgid\} \{\set_style "BLK_ITAL" msg-ID\}  \{\set_style "MSG_TEXT" iprcode\} \{\set_style "BLK_ITAL" iprcode\}  \{\set_style "MSG_TEXT" iptrgcls\}  \{\set_style "BLK_ITAL" targ-class\}\p
+\p
+This message is logged when an IUCV call is issued to send a request to the TCP/IP for MVS address space.  If the \{\set_style "BLK_BLD_ITAL" return-code\} and/or \{\set_style "BLK_BLD_ITAL" iprcode\} are non-zero, an error has occurred.  Otherwise, completion of the send request will be indicated by a send complete interrupt (see message \{\goto "<intmsgt>INTTCP810I" INTTCP810I\}).  Message \{\goto "<intmsgt>INTTCP815I" INTTCP815I\} logically follows this message.\p
+\p
+\{\set_style "BLK_BLD_ITAL" desc\}  Optional descriptive text for the trace point.\p
+\p
+\{\set_style "BLK_BLD_ITAL" function-name\}  Name of TCP/IP function being requested by this send (for example, SOCKET, BIND, etc.).\p
+\p
+\{\set_style "BLK_BLD_ITAL" air-addr\}  Storage address of the Active IUCV Request block used for the request.\p
+\p
+\{\set_style "BLK_BLD_ITAL" return-code\}  Return code of the IUCV send operation.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pathid\}  Unique ID number of the IUCV path.\p
+\p
+\{\set_style "BLK_BLD_ITAL" path-socket-descriptor\}  Socket descriptor used to identify the socket to TCP/IP for MVS.\p
+\p
+\{\set_style "BLK_BLD_ITAL" msg-tag\}  Tag assigned by the InfoSession and used to identify the request when a send complete interrupt occurs.\p
+\p
+\{\set_style "BLK_BLD_ITAL" msg-ID\}  Message ID number assigned to the request by IUCV.\p
+\p
+\{\set_style "BLK_BLD_ITAL" iprcode\}  Response code from the IUCV send operation.\p
+\p
+\{\set_style "BLK_BLD_ITAL" targ-class\}  Varies...usually the function code is in the high order halfword and the path-socket-descriptor is in the low order halfword.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Tcptrace\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPATRQ                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP815I"
+\0 \0 \{\set_style "MSG" INTTCP815I\} \p
+\p
+\{\set_style "MSG_TEXT" ipbfadr1\} \{\set_style "BLK_ITAL" bfr-addr1\}  \{\set_style "MSG_TEXT" ipbfln1f\} \{\set_style "BLK_ITAL" length1\}  \{\set_style "MSG_TEXT" ipbfadr2\} \{\set_style "BLK_ITAL" bfr-addr2\} \{\set_style "MSG_TEXT" ipbfln2f\} \{\set_style "BLK_ITAL" length2\}\p
+\{\set_style "MSG_TEXT" usocket\} \{\set_style "BLK_ITAL" socket-descriptor\}   \{\set_style "MSG_TEXT" ipflags1\} \{\set_style "BLK_ITAL" flags\}\p
+\p
+This message is logged when an IUCV call is issued to send a request to the TCP/IP for MVS address space.   Message \{\goto "<intmsgt>INTTCP814I" INTTCP814I\} precedes this message.\p
+\p
+\{\set_style "BLK_BLD_ITAL" bfr-addr1\}  Storage address of the buffer list for request data.\p
+\p
+\{\set_style "BLK_BLD_ITAL" length1\}  Total length of the buffer area(s) containing request data.\p
+\p
+\{\set_style "BLK_BLD_ITAL" bfr-addr2\}  Storage address of the buffer list for reply data.\p
+\p
+\{\set_style "BLK_BLD_ITAL" length2\}  Total length of the buffer area(s) for receiving reply data.\p
+\p
+\{\set_style "BLK_BLD_ITAL" socket-descriptor\}  System-wide socket descriptor used within InfoSession to identify the socket.\p
+\p
+\{\set_style "BLK_BLD_ITAL" flags\}  Flag bits from the IPARML data area.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Tcptrace\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPATRQ                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP816I"
+\0 \0 \{\set_style "MSG" INTTCP816I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP connection severed interrupt:\}  \{\set_style "BLK_ITAL" description\}\p
+\{\set_style "MSG_TEXT" air\}  \{\set_style "BLK_ITAL" air-addr\}\p
+\{\set_style "MSG_TEXT" ippathid\}  \{\set_style "BLK_ITAL" pathid\}  \{\set_style "MSG_TEXT" iptype\}  \{\set_style "BLK_ITAL" iptype\}\p
+\{\set_style "MSG_TEXT" ipuser\}  \{\set_style "BLK_ITAL" user-data\}\p
+\p
+This message is logged when an IUCV interrupt is received indicating that the IUCV connection has been severed by TCP/IP for MVS or by VMCF.  All sockets assigned to this path are no longer usable.\p
+\p
+\{\set_style "BLK_BLD_ITAL" description\}  Optional descriptive text for the trace point.\p
+\p
+\{\set_style "BLK_BLD_ITAL" air-addr\}  Storage address of the Active IUCV Request block used for the connection severed interrupt.\p
+\p
+\{\set_style "BLK_BLD_ITAL" pathid\}  Unique ID number of the IUCV path that was severed.\p
+\p
+\{\set_style "BLK_BLD_ITAL" iptype\}  IUCV interrupt type code for connection severed.\p
+\p
+\{\set_style "BLK_BLD_ITAL" user-data\}  User data to be passed to the target of the connect servered interrupt.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPATRI                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP900E"
+\0 \0 \{\set_style "MSG" INTTCP900E\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP server error\}  \{\set_style "BLK_ITAL" message-text\}\p
+\p
+This message is logged by the SuperServer routines to record a serious error. \p
+\p
+\{\set_style "BLK_BLD_ITAL" message-text\}  Variable diagnostic message text. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPSSRV, ITCPSRCV                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP901I"
+\0 \0 \{\set_style "MSG" INTTCP901I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP tcptrace:\}  \{\set_style "BLK_ITAL" message-text\}\p
+\p
+This message is logged by various routines to provide additional diagnostic information. \p
+\p
+\{\set_style "BLK_BLD_ITAL" message-text\}  Variable diagnostic message text.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  various modules                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP995E"
+\0 \0 \{\set_style "MSG" INTTCP995E\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP unknown work element\} \{\set_style "BLK_ITAL" addr\}  \{\set_style "MSG_TEXT" task\} \{\set_style "BLK_ITAL" task-addr\}  \{\set_style "MSG_TEXT" proc\} \{\set_style "BLK_ITAL" proc-addr\p
+\}\{\set_style "MSG_TEXT" for\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" itwid\}  \{\set_style "BLK_ITAL" we-ID\} \{\set_style "MSG_TEXT" itwlen\} \{\set_style "BLK_ITAL" length\} \{\set_style "MSG_TEXT" itwlink\} \{\set_style "BLK_ITAL" next-itw\}  \{\set_style "MSG_TEXT" itwcode\}  \{\set_style "BLK_ITAL" we-code\}\p
+\p
+This message is logged when an unknown work element is found on the work queue of the TCP/IP main task.  The work element is discarded and the system continues normal operation. \p
+\p
+\{\set_style "BLK_BLD_ITAL" addr\}  Storage address of the work element.\p
+\p
+\{\set_style "BLK_BLD_ITAL" task-addr\}  Storage address of the ITASK block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" proc-addr\}  Storage address of the IPCB block.\p
+\p
+\{\set_style "BLK_BLD_ITAL" taskname\}  Name of the associated task.\p
+\p
+\{\set_style "BLK_BLD_ITAL" we-ID\}  ID characters from the unknown work element.\p
+\p
+\{\set_style "BLK_BLD_ITAL" length\}  Length of the unknown work element.\p
+\p
+\{\set_style "BLK_BLD_ITAL" next-itw\}  Link address to the next work element in the queue.\p
+\p
+\{\set_style "BLK_BLD_ITAL" we-code\}  Work element code that could not be identified.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPMAIN                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP996I"
+\0 \0 \{\set_style "MSG" INTTCP996I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP task initialization bypassed - parameter TCPNAME not specified\p
+\}\p
+This message is logged during initialization to document that the TCP/IP component is not being initialized.  If TCP/IP services are required for the system be sure to include the TCPNAME parameter in InfoSession's parmfile dataset. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPMAIN                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP997I"
+\0 \0 \{\set_style "MSG" INTTCP997I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP task cancel requested\}\p
+\p
+This message is logged to document that the TCP/IP main task has received a task cancel request.  A cancel of the TCP/IP main task should only be requested under exceptional circumstances, usually at the direction of PLATINUM Technical Support. The TCP/IP main task begins termination processing which includes termination of all IUCV paths and active sockets. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPMAIN                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP998I"
+\0 \0 \{\set_style "MSG" INTTCP998I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP task stop requested\p
+\}\p
+This message is logged to document that the TCP/IP main task has received a task stop request.  This is a normal stop of the TCP/IP main task that will occur during shutdown of the system. The TCP/IP main task begins termination processing which includes termination of all IUCV paths and active sockets. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPMAIN                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTCP999I"
+\0 \0 \{\set_style "MSG" INTTCP999I\} \p
+\p
+\{\set_style "MSG_TEXT" TCP/IP task termination complete\}\p
+\p
+This message is logged to document that the TCP/IP main task has ended. \p
+\p
+\{\set_style "MSG_TEXT" Class\}  Sysinfo\p
+\p
+\{\set_style "MSG_TEXT" Module\}  ITCPMAIN                                            
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>TRC"
+\0 \0 \{\set_style "code" Trace Facility (TRC) Messages\}\p
+\p
+These messages are used to format the information contained in the trace table and are issued by the Recording component.\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgt>INTTRC001I" INTTRC001I\}\p
+\{\subtopic "<intmsgt>INTTRC002I" INTTRC002I\}\p
+\{\subtopic "<intmsgt>INTTRC003E" INTTRC003E\}\p
+\{\subtopic "<intmsgt>INTTRC004E" INTTRC004E\}\p
+\p
+\{\subtopic "<intmsgt>INTTRC099I" INTTRC099I\}
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTRC001I"
+\0 \0 \{\set_style "MSG" INTTRC001I\}\p
+\p
+\{\set_style "MSG_TEXT" The most recent\} \{\set_style "BLK_ITAL" limit\} \{\set_style "MSG_TEXT" trace table entries follow\}\p
+\p
+This message appears in an indicative dump immediately before the formatted trace table display when the trace table dump limit has been set via the LOGTRACE(limit) startup parameter.  Fewer entries can actually follow depending on the size of the trace table, amount of tracing activity, etc.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTRC002I"
+\0 \0 \{\set_style "MSG" INTTRC002I\}\p
+\p
+\{\set_style "MSG_TEXT" Trace data not available\}\p
+\p
+This message appears in an indicative dump when tracing was not active at the time of error.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTRC003E"
+\0 \0 \{\set_style "MSG" INTTRC003E\}\p
+\p
+\{\set_style "MSG_TEXT" Trace formatting terminated by error - RC:\} \{\set_style "BLK_ITAL" retcode\}\p
+\p
+The trace formatter encountered a terminating error.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTRC004E"
+\0 \0 \{\set_style "MSG" INTTRC004E\}\p
+\p
+\{\set_style "MSG_TEXT" All available trace table entries follow\}\p
+\p
+This message appears in an indicative dump immediately before the  formatted trace table display when the trace table dump limit has been removed via the LOGTRACE(0) startup parameter.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTRC099I"
+\0 \0 \{\set_style "MSG" INTTRC099I\}\p
+\p
+\{\set_style "BLK_ITAL" formatted-trace-table-entry-line-n\}\p
+\p
+The formatted trace is written in most recent to least recent order, with the most recent entry at the top of the list and the least recent at the bottom.  The first line of each trace entry is left justified; subsequent lines are indented.  A leading asterick (*) indicates that the trace entry specifically describes abend and abend recovery events.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Diagnostics                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>TSK"
+\0 \0 \{\set_style "code" Task Management (TSK) Messages\p
+\}\p
+These messages report diagnostic information and document abnormal processing related to task management issues.\p
+\p
+The following messages are available:\p
+\p
+\{\subtopic "<intmsgt>INTTSK010I" INTTSK010I\}\p
+\p
+\{\subtopic "<intmsgt>INTTSK011I" INTTSK011I\}
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTSK010I"
+\0 \0 \{\set_style "MSG" INTTSK010I\}\p
+\p
+\{\set_style "MSG_TEXT" Process\} \{\set_style "BLK_ITAL" procname\} \{\set_style "MSG_TEXT" flushed by parent PCB\}\p
+\p
+A terminating condition was detected in a process that, in turn, created other processes, referred to as child processes.  Process termination logic immediately ends all of the child processes, identifying each by \{\set_style "BLK_BLD_ITAL" procname\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
+\topic "<intmsgt>INTTSK011I"
+\0 \0 \{\set_style "MSG" INTTSK011I\}\p
+\p
+\{\set_style "MSG_TEXT" ITASK\} \{\set_style "BLK_ITAL" taskname\} \{\set_style "MSG_TEXT" flushed by parent ITASK\}\p
+\p
+A terminating condition was detected in a task that, in turn, created other tasks, referred to as child tasks.  Task termination logic immediately ends all of the child tasks, identifying each by \{\set_style "BLK_BLD_ITAL" taskname\}.\p
+\p
+\{\set_style "MSG_TEXT" Class\}  Geninfo                                           
+\[----------------------------------------------------------------------\]
